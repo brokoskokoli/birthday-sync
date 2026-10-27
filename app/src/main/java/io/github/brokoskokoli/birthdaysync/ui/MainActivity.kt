@@ -1,6 +1,7 @@
 package io.github.brokoskokoli.birthdaysync.ui
 
 import android.os.Bundle
+import androidx.annotation.StringRes
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -32,10 +33,13 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.compose.LifecycleEventEffect
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
+import io.github.brokoskokoli.birthdaysync.R
 import io.github.brokoskokoli.birthdaysync.system.CheckId
 import io.github.brokoskokoli.birthdaysync.system.Severity
 
@@ -47,12 +51,12 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-private enum class Tab(val label: String, val icon: ImageVector) {
-    OVERVIEW("Übersicht", Icons.Filled.Home),
-    CONTACTS("Kontakte", Icons.Filled.Person),
-    CALENDAR("Kalender", Icons.Filled.DateRange),
-    NOTIFY("Hinweise", Icons.Filled.Notifications),
-    SYSTEM("System", Icons.Filled.Settings),
+private enum class Tab(@StringRes val label: Int, val icon: ImageVector) {
+    OVERVIEW(R.string.tab_overview, Icons.Filled.Home),
+    CONTACTS(R.string.tab_contacts, Icons.Filled.Person),
+    CALENDAR(R.string.tab_calendar, Icons.Filled.DateRange),
+    NOTIFY(R.string.tab_notify, Icons.Filled.Notifications),
+    SYSTEM(R.string.tab_system, Icons.Filled.Settings),
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -82,7 +86,7 @@ private fun MainScreen(vm: MainViewModel = viewModel()) {
     val openIssues = checks.count { !it.ok && it.severity != Severity.INFO }
 
     Scaffold(
-        topBar = { TopAppBar(title = { Text(if (tab == Tab.OVERVIEW) "Birthday Sync" else tab.label) }) },
+        topBar = { TopAppBar(title = { Text(stringResource(if (tab == Tab.OVERVIEW) R.string.app_name else tab.label)) }) },
         snackbarHost = { SnackbarHost(snackbar) },
         bottomBar = {
             NavigationBar {
@@ -95,7 +99,7 @@ private fun MainScreen(vm: MainViewModel = viewModel()) {
                                 BadgedBox(badge = { Badge { Text("$openIssues") } }) { Icon(t.icon, null) }
                             } else Icon(t.icon, null)
                         },
-                        label = { Text(t.label) },
+                        label = { Text(stringResource(t.label), maxLines = 1, overflow = TextOverflow.Ellipsis) },
                     )
                 }
             }

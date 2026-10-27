@@ -56,6 +56,24 @@ android {
         compose = true
         buildConfig = true
     }
+    // Sprachauswahl pro App (Android 13+): locales_config aus den values-xx-Ordnern, Basissprache in res/resources.properties.
+    androidResources {
+        generateLocaleConfig = true
+    }
+    // Fehlende oder kaputte Übersetzungen brechen den Build ab.
+    lint {
+        error += listOf(
+            "MissingTranslation", "ExtraTranslation", "MissingQuantity", "UnusedQuantity",
+            "StringFormatInvalid", "StringFormatCount", "StringFormatMatches", "PluralsCandidate",
+        )
+    }
+    testOptions {
+        // TranslationsTest prüft die Übersetzungen und Store-Texte direkt in den Quelldateien.
+        unitTests.all {
+            it.systemProperty("resDir", file("src/main/res").absolutePath)
+            it.systemProperty("fastlaneDir", rootProject.file("fastlane/metadata/android").absolutePath)
+        }
+    }
     // Kein verschlüsselter Abhängigkeits-Block im APK (stört F-Droid/IzzyOnDroid-Prüfungen).
     dependenciesInfo {
         includeInApk = false

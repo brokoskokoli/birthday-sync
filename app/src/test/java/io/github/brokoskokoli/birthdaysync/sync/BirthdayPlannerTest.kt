@@ -33,9 +33,23 @@ class BirthdayPlannerTest {
     }
 
     @Test fun titleWithAndWithoutAge() {
+        assertEquals("🎂 Anna (40)", BirthdayPlanner.renderTitle("🎂 {name} ({age})", "Anna", 40))
+        assertEquals("🎂 Anna", BirthdayPlanner.renderTitle("🎂 {name} ({age})", "Anna", null))
+        assertEquals("Anna turns 40", BirthdayPlanner.renderTitle("{name} turns {age}", "Anna", 40))
+        assertEquals("Birthday Anna", BirthdayPlanner.renderTitle("Birthday {name} (turns {age})", "Anna", null))
+    }
+
+    @Test fun defaultTitle() {
+        assertEquals("🎂 Anna (40)", BirthdayPlanner.renderTitle("", "Anna", 40))
+        assertEquals("🎂 Anna", BirthdayPlanner.renderTitle(BirthdayPlanner.DEFAULT_TITLE, "Anna", null))
+    }
+
+    /** Gespeicherte Vorlagen aus älteren Versionen nutzen noch den deutschen Platzhalter {alter}. */
+    @Test fun legacyAgeAlias() {
         assertEquals("🎂 Anna (40)", BirthdayPlanner.renderTitle("🎂 {name} ({alter})", "Anna", 40))
         assertEquals("🎂 Anna", BirthdayPlanner.renderTitle("🎂 {name} ({alter})", "Anna", null))
         assertEquals("Anna wird 40", BirthdayPlanner.renderTitle("{name} wird {alter}", "Anna", 40))
         assertEquals("Geburtstag Anna", BirthdayPlanner.renderTitle("Geburtstag {name} (wird {alter})", "Anna", null))
+        assertEquals("Anna 40/40", BirthdayPlanner.renderTitle("{name} {alter}/{age}", "Anna", 40))
     }
 }

@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.work.WorkInfo
 import androidx.work.WorkManager
+import io.github.brokoskokoli.birthdaysync.R
 import io.github.brokoskokoli.birthdaysync.data.AppSettings
 import io.github.brokoskokoli.birthdaysync.data.CalendarInfo
 import io.github.brokoskokoli.birthdaysync.data.CalendarRepository
@@ -100,20 +101,20 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
             .onSuccess { id ->
                 store.update { it.copy(calendarId = id) }
                 _calendars.value = CalendarRepository(ctx).writableCalendars()
-                _messages.tryEmit("Kalender \"Geburtstage\" ist als Ziel ausgewählt")
+                _messages.tryEmit(ctx.getString(R.string.msg_calendar_selected, ctx.getString(R.string.calendar_local_name)))
             }
-            .onFailure { _messages.tryEmit("Kalender konnte nicht angelegt werden: ${it.message}") }
+            .onFailure { _messages.tryEmit(ctx.getString(R.string.msg_calendar_create_failed, it.message ?: it.javaClass.simpleName)) }
     }
 
     fun removeAllEvents() = viewModelScope.launch(Dispatchers.IO) {
         val n = runCatching { BirthdaySync(ctx).removeAll() }.getOrElse {
-            _messages.tryEmit("Fehler beim Entfernen: ${it.message}"); return@launch
+            _messages.tryEmit(ctx.getString(R.string.msg_remove_failed, it.message ?: it.javaClass.simpleName)); return@launch
         }
-        _messages.tryEmit("$n Termine entfernt")
+        _messages.tryEmit(ctx.resources.getQuantityString(R.plurals.msg_events_removed, n, n))
     }
 
     fun testNotification() = viewModelScope.launch(Dispatchers.IO) {
         val shown = Notifications.showToday(ctx, DailyReminder.todaysBirthdays(ctx), test = true)
-        if (!shown) _messages.tryEmit("Benachrichtigungen sind nicht erlaubt – siehe Tab \"System\"")
+        if (!shown) _messages.tryEmit(ctx.getString(R.string.msg_notifications_not_allowed, ctx.getString(R.string.tab_system)))
     }
 }

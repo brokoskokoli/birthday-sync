@@ -7,6 +7,7 @@ import android.provider.CalendarContract
 import android.provider.CalendarContract.Calendars
 import android.provider.CalendarContract.Events
 import android.provider.CalendarContract.Reminders
+import io.github.brokoskokoli.birthdaysync.R
 import java.util.TimeZone
 
 data class CalendarInfo(
@@ -47,7 +48,7 @@ class CalendarRepository(private val context: Context) {
             while (c.moveToNext()) {
                 list += CalendarInfo(
                     id = c.getLong(0),
-                    name = c.getString(1) ?: "Kalender ${c.getLong(0)}",
+                    name = c.getString(1) ?: context.getString(R.string.calendar_fallback_name, c.getLong(0)),
                     accountName = c.getString(2).orEmpty(),
                     accountType = c.getString(3).orEmpty(),
                     color = c.getInt(4),
@@ -59,7 +60,7 @@ class CalendarRepository(private val context: Context) {
 
     fun findCalendar(id: Long): CalendarInfo? = writableCalendars().firstOrNull { it.id == id }
 
-    /** Legt (falls noch nicht vorhanden) einen lokalen Kalender "Geburtstage" auf dem Gerät an. */
+    /** Legt (falls noch nicht vorhanden) einen lokalen Kalender "Geburtstage" (Name in der App-Sprache) auf dem Gerät an. */
     fun ensureLocalCalendar(): Long {
         writableCalendars().firstOrNull {
             it.accountType == CalendarContract.ACCOUNT_TYPE_LOCAL && it.accountName == LOCAL_ACCOUNT
@@ -74,7 +75,7 @@ class CalendarRepository(private val context: Context) {
             put(Calendars.ACCOUNT_NAME, LOCAL_ACCOUNT)
             put(Calendars.ACCOUNT_TYPE, CalendarContract.ACCOUNT_TYPE_LOCAL)
             put(Calendars.NAME, "geburtstage")
-            put(Calendars.CALENDAR_DISPLAY_NAME, "Geburtstage")
+            put(Calendars.CALENDAR_DISPLAY_NAME, context.getString(R.string.calendar_local_name))
             put(Calendars.CALENDAR_COLOR, 0xFFE8618C.toInt())
             put(Calendars.CALENDAR_ACCESS_LEVEL, Calendars.CAL_ACCESS_OWNER)
             put(Calendars.OWNER_ACCOUNT, LOCAL_ACCOUNT)
@@ -82,7 +83,7 @@ class CalendarRepository(private val context: Context) {
             put(Calendars.SYNC_EVENTS, 1)
             put(Calendars.CALENDAR_TIME_ZONE, TimeZone.getDefault().id)
         }
-        val created = resolver.insert(uri, values) ?: error("Kalender konnte nicht angelegt werden")
+        val created = resolver.insert(uri, values) ?: error("Calendar provider rejected the new calendar")
         return ContentUris.parseId(created)
     }
 
@@ -106,7 +107,7 @@ class CalendarRepository(private val context: Context) {
 
     fun insertEvent(calendarId: Long, spec: EventSpec, key: String, version: String): Long {
         val values = eventValues(spec, key, version).apply { put(Events.CALENDAR_ID, calendarId) }
-        val uri = resolver.insert(Events.CONTENT_URI, values) ?: error("Termin konnte nicht angelegt werden")
+        val uri = resolver.insert(Events.CONTENT_URI, values) ?: error("Calendar provider rejected the new event")
         val id = ContentUris.parseId(uri)
         writeReminder(id, spec.reminderMinutes)
         return id

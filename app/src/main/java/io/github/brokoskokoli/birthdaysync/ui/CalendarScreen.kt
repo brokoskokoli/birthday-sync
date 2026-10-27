@@ -27,29 +27,22 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import io.github.brokoskokoli.birthdaysync.R
 import io.github.brokoskokoli.birthdaysync.sync.BirthdayPlanner
 
-private val ALL_DAY_REMINDERS = listOf(
-    0 to "Am Tag um 00:00 Uhr",
-    360 to "Am Vortag um 18:00 Uhr",
-    540 to "Am Vortag um 15:00 Uhr",
-    900 to "Am Vortag um 09:00 Uhr",
-    2340 to "2 Tage vorher um 09:00 Uhr",
-    9540 to "1 Woche vorher um 09:00 Uhr",
-)
-private val TIMED_REMINDERS = listOf(
-    0 to "Zum Beginn", 10 to "10 Minuten vorher", 15 to "15 Minuten vorher", 30 to "30 Minuten vorher",
-    60 to "1 Stunde vorher", 120 to "2 Stunden vorher", 1440 to "1 Tag vorher", 2880 to "2 Tage vorher",
-    10080 to "1 Woche vorher",
-)
-private val DURATIONS = listOf(15, 30, 60, 120, 240, 480).map { it to formatDuration(it) }
-private val RANGES = listOf(1 to "1 Monat", 2 to "2 Monate", 3 to "3 Monate", 6 to "6 Monate", 12 to "12 Monate")
-private val INTERVALS = listOf(1 to "Täglich", 7 to "Wöchentlich")
+// Erinnerung bei ganztägigen Terminen: Minuten vor Mitternacht des Termintags (900 = Vortag 09:00).
+private val ALL_DAY_REMINDERS = listOf(0, 360, 540, 900, 2340, 9540)
+private val TIMED_REMINDERS = listOf(0, 10, 15, 30, 60, 120, 1440, 2880, 10080)
+private val DURATIONS = listOf(15, 30, 60, 120, 240, 480)
+private val RANGES = listOf(1, 2, 3, 6, 12)
 
 @Composable
 fun CalendarScreen(vm: MainViewModel, modifier: Modifier, onRequestPermission: () -> Unit) {
@@ -59,13 +52,16 @@ fun CalendarScreen(vm: MainViewModel, modifier: Modifier, onRequestPermission: (
     val running by vm.syncRunning.collectAsStateWithLifecycle()
     var confirmRemove by rememberSaveable { mutableStateOf(false) }
     var title by rememberSaveable { mutableStateOf(s.titleTemplate) }
+    val context = LocalContext.current
+    val intervals = listOf(1 to stringResource(R.string.interval_daily), 7 to stringResource(R.string.interval_weekly))
+    val ranges = RANGES.map { it to pluralStringResource(R.plurals.range_months, it, it) }
 
     LazyColumn(modifier, contentPadding = PaddingValues(16.dp), verticalArrangement = ScreenSpacing) {
         item {
-            SectionCard("Zielkalender", subtitle = "Hier werden die Geburtstagstermine angelegt") {
+            SectionCard(stringResource(R.string.calendar_target_title), subtitle = stringResource(R.string.calendar_target_subtitle)) {
                 if (!hasPermission) {
-                    InfoText("Zugriff auf den Kalender fehlt.")
-                    Button(onClick = onRequestPermission, Modifier.padding(horizontal = 16.dp)) { Text("Zugriff erlauben") }
+                    InfoText(stringResource(R.string.calendar_no_permission))
+                    Button(onClick = onRequestPermission, Modifier.padding(horizontal = 16.dp)) { Text(stringResource(R.string.action_allow_access)) }
                 } else {
                     calendars.forEach { cal ->
                         Row(
@@ -85,54 +81,58 @@ fun CalendarScreen(vm: MainViewModel, modifier: Modifier, onRequestPermission: (
                         }
                     }
                     OutlinedButton(onClick = { vm.createLocalCalendar() }, Modifier.padding(horizontal = 16.dp, vertical = 4.dp)) {
-                        Text("Eigenen Kalender \"Geburtstage\" anlegen")
+                        Text(stringResource(R.string.calendar_create_local, stringResource(R.string.calendar_local_name)))
                     }
-                    InfoText("Ein eigener Kalender liegt nur auf dem Gerät und lässt sich in der Kalender-App getrennt ein- und ausblenden.")
+                    InfoText(stringResource(R.string.calendar_local_info))
                 }
             }
         }
         item {
-            SectionCard("Termine") {
-                SwitchRow("Ganztägig", s.allDay, { allDay ->
+            SectionCard(stringResource(R.string.calendar_events_title)) {
+                SwitchRow(stringResource(R.string.calendar_all_day), s.allDay, { allDay ->
                     vm.update { it.copy(allDay = allDay, eventReminderMinutes = if (allDay) 900 else 60) }
                 })
                 if (!s.allDay) {
-                    TimeRow("Beginn", s.eventStartMinuteOfDay, { m -> vm.update { it.copy(eventStartMinuteOfDay = m) } })
-                    ChoiceRow("Dauer", DURATIONS, s.eventDurationMinutes, { d -> vm.update { it.copy(eventDurationMinutes = d) } })
+                    TimeRow(stringResource(R.string.calendar_start), s.eventStartMinuteOfDay, { m -> vm.update { it.copy(eventStartMinuteOfDay = m) } })
+                    ChoiceRow(stringResource(R.string.calendar_duration), DURATIONS.map { it to formatDuration(context, it) }, s.eventDurationMinutes, { d -> vm.update { it.copy(eventDurationMinutes = d) } })
                 }
-                SwitchRow("Kalender-Erinnerung", s.eventReminderEnabled, { on -> vm.update { it.copy(eventReminderEnabled = on) } })
+                SwitchRow(stringResource(R.string.calendar_reminder), s.eventReminderEnabled, { on -> vm.update { it.copy(eventReminderEnabled = on) } })
                 if (s.eventReminderEnabled) {
                     ChoiceRow(
-                        "Erinnern", if (s.allDay) ALL_DAY_REMINDERS else TIMED_REMINDERS, s.eventReminderMinutes,
+                        stringResource(R.string.calendar_remind),
+                        if (s.allDay) ALL_DAY_REMINDERS.map { it to formatAllDayReminder(context, it) }
+                        else TIMED_REMINDERS.map { it to formatTimedReminder(context, it) },
+                        s.eventReminderMinutes,
                         { m -> vm.update { it.copy(eventReminderMinutes = m) } },
                     )
                 }
                 OutlinedTextField(
                     value = title,
                     onValueChange = { t -> title = t; vm.update { it.copy(titleTemplate = t) } },
-                    label = { Text("Titel") },
+                    label = { Text(stringResource(R.string.calendar_title)) },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 4.dp),
                 )
                 InfoText(
-                    "Platzhalter: {name}, {alter}. Beispiel: " +
-                        BirthdayPlanner.renderTitle(title, "Anna Beispiel", 40),
+                    stringResource(
+                        R.string.calendar_title_help,
+                        BirthdayPlanner.renderTitle(title, stringResource(R.string.calendar_example_name), 40),
+                    ),
                 )
             }
         }
         item {
-            SectionCard("Synchronisation") {
-                SwitchRow("Automatisch synchronisieren", s.autoSyncEnabled, { on -> vm.update { it.copy(autoSyncEnabled = on) } })
-                ChoiceRow("Häufigkeit", INTERVALS, s.syncIntervalDays, { d -> vm.update { it.copy(syncIntervalDays = d) } }, enabled = s.autoSyncEnabled)
-                ChoiceRow("Zeitraum im Voraus", RANGES, s.syncRangeMonths, { m -> vm.update { it.copy(syncRangeMonths = m) } })
+            SectionCard(stringResource(R.string.section_sync)) {
+                SwitchRow(stringResource(R.string.calendar_auto_sync), s.autoSyncEnabled, { on -> vm.update { it.copy(autoSyncEnabled = on) } })
+                ChoiceRow(stringResource(R.string.calendar_frequency), intervals, s.syncIntervalDays, { d -> vm.update { it.copy(syncIntervalDays = d) } }, enabled = s.autoSyncEnabled)
+                ChoiceRow(stringResource(R.string.calendar_range), ranges, s.syncRangeMonths, { m -> vm.update { it.copy(syncRangeMonths = m) } })
                 InfoText(
-                    "Geänderte Namen oder Geburtsdaten werden beim nächsten Sync übernommen; entfernte Kontakte " +
-                        "verschwinden aus dem Kalender. Änderungen an diesen Einstellungen werden nach wenigen Sekunden angewendet.",
+                    stringResource(R.string.calendar_sync_info),
                 )
                 Row(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
-                    Button(onClick = vm::syncNow, enabled = !running) { Text(if (running) "Läuft …" else "Jetzt synchronisieren") }
+                    Button(onClick = vm::syncNow, enabled = !running) { Text(stringResource(if (running) R.string.calendar_running else R.string.action_sync_now)) }
                     Spacer(Modifier.width(8.dp))
-                    TextButton(onClick = { confirmRemove = true }) { Text("Termine entfernen") }
+                    TextButton(onClick = { confirmRemove = true }) { Text(stringResource(R.string.calendar_remove_events)) }
                 }
             }
         }
@@ -141,15 +141,10 @@ fun CalendarScreen(vm: MainViewModel, modifier: Modifier, onRequestPermission: (
     if (confirmRemove) {
         AlertDialog(
             onDismissRequest = { confirmRemove = false },
-            title = { Text("Alle Termine entfernen?") },
-            text = {
-                Text(
-                    "Alle von Birthday Sync angelegten Termine werden aus allen Kalendern gelöscht. " +
-                        "Ist der automatische Sync aktiv, legt er sie beim nächsten Lauf neu an.",
-                )
-            },
-            confirmButton = { TextButton(onClick = { confirmRemove = false; vm.removeAllEvents() }) { Text("Entfernen") } },
-            dismissButton = { TextButton(onClick = { confirmRemove = false }) { Text("Abbrechen") } },
+            title = { Text(stringResource(R.string.calendar_remove_confirm_title)) },
+            text = { Text(stringResource(R.string.calendar_remove_confirm_text)) },
+            confirmButton = { TextButton(onClick = { confirmRemove = false; vm.removeAllEvents() }) { Text(stringResource(R.string.action_remove)) } },
+            dismissButton = { TextButton(onClick = { confirmRemove = false }) { Text(stringResource(android.R.string.cancel)) } },
         )
     }
 }

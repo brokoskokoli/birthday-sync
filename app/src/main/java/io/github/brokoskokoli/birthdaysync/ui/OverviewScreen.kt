@@ -27,20 +27,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import io.github.brokoskokoli.birthdaysync.R
 import io.github.brokoskokoli.birthdaysync.sync.Occurrence
-import java.time.Instant
 import java.time.LocalDate
-import java.time.ZoneId
-import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit
-import java.util.Locale
-
-private val DATE_TIME = DateTimeFormatter.ofPattern("EEE, dd.MM.yyyy, HH:mm 'Uhr'", Locale.GERMAN)
-private val DAY = DateTimeFormatter.ofPattern("EEE, dd.MM.", Locale.GERMAN)
-
-fun formatInstant(millis: Long): String = DATE_TIME.format(Instant.ofEpochMilli(millis).atZone(ZoneId.systemDefault()))
 
 @Composable
 fun OverviewScreen(vm: MainViewModel, modifier: Modifier, openIssues: Int, onSetup: () -> Unit, onGoto: (Destination) -> Unit) {
@@ -51,6 +46,7 @@ fun OverviewScreen(vm: MainViewModel, modifier: Modifier, openIssues: Int, onSet
     val upcoming by vm.upcoming.collectAsStateWithLifecycle()
     val calendars by vm.calendars.collectAsStateWithLifecycle()
     val target = calendars.firstOrNull { it.id == settings.calendarId }
+    val context = LocalContext.current
 
     LazyColumn(modifier, contentPadding = PaddingValues(16.dp), verticalArrangement = ScreenSpacing) {
         if (openIssues > 0) {
@@ -60,57 +56,66 @@ fun OverviewScreen(vm: MainViewModel, modifier: Modifier, openIssues: Int, onSet
                         Icon(Icons.Filled.Warning, null)
                         Spacer(Modifier.width(12.dp))
                         Column(Modifier.weight(1f)) {
-                            Text("Einrichtung unvollständig", style = MaterialTheme.typography.titleSmall)
-                            Text("$openIssues Berechtigung(en) oder Einstellung(en) fehlen für den zuverlässigen Sync.", style = MaterialTheme.typography.bodyMedium)
+                            Text(stringResource(R.string.overview_setup_incomplete_title), style = MaterialTheme.typography.titleSmall)
+                            Text(pluralStringResource(R.plurals.overview_setup_incomplete_text, openIssues, openIssues), style = MaterialTheme.typography.bodyMedium)
                         }
                     }
-                    Button(onClick = onSetup, modifier = Modifier.padding(start = 16.dp, bottom = 12.dp)) { Text("Jetzt einrichten") }
+                    Button(onClick = onSetup, modifier = Modifier.padding(start = 16.dp, bottom = 12.dp)) { Text(stringResource(R.string.overview_setup_now)) }
                 }
             }
         }
         if (settings.selectedSources.isEmpty() || target == null) {
             item {
-                SectionCard("Erste Schritte") {
+                SectionCard(stringResource(R.string.overview_first_steps)) {
                     if (settings.selectedSources.isEmpty()) {
-                        InfoText("1. Wähle die Kontaktlisten, deren Geburtstage übernommen werden sollen.")
-                        OutlinedButton(onClick = { onGoto(Destination.CONTACTS) }, Modifier.padding(horizontal = 16.dp)) { Text("Kontaktlisten wählen") }
+                        InfoText(stringResource(R.string.overview_step_contacts))
+                        OutlinedButton(onClick = { onGoto(Destination.CONTACTS) }, Modifier.padding(horizontal = 16.dp)) { Text(stringResource(R.string.overview_choose_contacts)) }
                     }
                     if (target == null) {
-                        InfoText("2. Wähle den Kalender, in dem die Termine angelegt werden.")
-                        OutlinedButton(onClick = { onGoto(Destination.CALENDAR) }, Modifier.padding(horizontal = 16.dp)) { Text("Zielkalender wählen") }
+                        InfoText(stringResource(R.string.overview_step_calendar))
+                        OutlinedButton(onClick = { onGoto(Destination.CALENDAR) }, Modifier.padding(horizontal = 16.dp)) { Text(stringResource(R.string.overview_choose_calendar)) }
                     }
                 }
             }
         }
         item {
-            SectionCard("Synchronisation") {
-                InfoText("Zielkalender: ${target?.name ?: "nicht gewählt"}")
+            SectionCard(stringResource(R.string.section_sync)) {
                 InfoText(
-                    if (settings.autoSyncEnabled) "Automatisch ${if (settings.syncIntervalDays == 1) "täglich" else "wöchentlich"}" +
-                        (if (nextSync > 0) ", nächster Lauf frühestens ${formatInstant(nextSync)}" else "")
-                    else "Automatischer Sync ist aus",
+                    if (target != null) stringResource(R.string.overview_target_calendar, target.name)
+                    else stringResource(R.string.overview_target_calendar_none),
+                )
+                val daily = settings.syncIntervalDays == 1
+                InfoText(
+                    when {
+                        !settings.autoSyncEnabled -> stringResource(R.string.overview_auto_off)
+                        nextSync > 0 -> stringResource(
+                            if (daily) R.string.overview_auto_daily_next else R.string.overview_auto_weekly_next,
+                            formatInstant(context, nextSync),
+                        )
+                        else -> stringResource(if (daily) R.string.overview_auto_daily else R.string.overview_auto_weekly)
+                    },
                 )
                 if (status.lastSyncAt > 0) {
                     Text(
-                        "Letzter Sync: ${formatInstant(status.lastSyncAt)}\n${status.lastSyncMessage}",
+                        stringResource(R.string.overview_last_sync, formatInstant(context, status.lastSyncAt), status.lastSyncMessage),
                         style = MaterialTheme.typography.bodyMedium,
                         color = if (status.lastSyncOk) MaterialTheme.colorScheme.onSurface else MaterialTheme.colorScheme.error,
                         modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
                     )
-                } else InfoText("Noch kein Sync durchgeführt")
+                } else InfoText(stringResource(R.string.overview_no_sync_yet))
                 Button(onClick = vm::syncNow, enabled = !running, modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
                     if (running) CircularProgressIndicator(Modifier.size(18.dp), strokeWidth = 2.dp)
                     else Icon(Icons.Filled.Refresh, null)
                     Spacer(Modifier.width(8.dp))
-                    Text(if (running) "Synchronisiere …" else "Jetzt synchronisieren")
+                    Text(stringResource(if (running) R.string.overview_syncing else R.string.action_sync_now))
                 }
             }
         }
         item {
-            Text("Nächste Geburtstage", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(top = 8.dp))
+            Text(stringResource(R.string.overview_upcoming), style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(top = 8.dp))
         }
         if (upcoming.isEmpty()) {
-            item { InfoText("Keine Geburtstage in den ausgewählten Kontaktlisten gefunden.", Modifier.padding(0.dp)) }
+            item { InfoText(stringResource(R.string.overview_no_birthdays), Modifier.padding(0.dp)) }
         }
         items(upcoming.take(30), key = { it.key }) { UpcomingRow(it) }
     }
@@ -120,16 +125,17 @@ fun OverviewScreen(vm: MainViewModel, modifier: Modifier, openIssues: Int, onSet
 private fun UpcomingRow(o: Occurrence) {
     val days = ChronoUnit.DAYS.between(LocalDate.now(), o.date)
     val whenText = when (days) {
-        0L -> "Heute"
-        1L -> "Morgen"
-        else -> "in $days Tagen"
+        0L -> stringResource(R.string.upcoming_today)
+        1L -> stringResource(R.string.upcoming_tomorrow)
+        else -> pluralStringResource(R.plurals.upcoming_in_days, days.toInt(), days.toInt())
     }
+    val day = formatDay(LocalContext.current, o.date)
     Column {
         Row(Modifier.fillMaxWidth().padding(vertical = 8.dp), horizontalArrangement = Arrangement.SpaceBetween) {
             Column(Modifier.weight(1f)) {
                 Text(o.birthday.name, style = MaterialTheme.typography.bodyLarge)
                 Text(
-                    DAY.format(o.date) + (o.age?.let { " · wird $it" } ?: ""),
+                    o.age?.let { pluralStringResource(R.plurals.upcoming_date_turns, it, day, it) } ?: day,
                     style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }

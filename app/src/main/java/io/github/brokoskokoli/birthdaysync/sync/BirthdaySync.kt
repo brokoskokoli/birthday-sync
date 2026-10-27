@@ -1,6 +1,7 @@
 package io.github.brokoskokoli.birthdaysync.sync
 
 import android.content.Context
+import io.github.brokoskokoli.birthdaysync.R
 import io.github.brokoskokoli.birthdaysync.data.AppSettings
 import io.github.brokoskokoli.birthdaysync.data.CalendarRepository
 import io.github.brokoskokoli.birthdaysync.data.ContactRepository
@@ -28,12 +29,12 @@ class BirthdaySync(private val context: Context) {
 
     fun run(settings: AppSettings): SyncOutcome {
         // Ohne Zielkalender gibt es nichts abzugleichen. Leere Quellen dagegen synchronisieren: dann werden Termine entfernt.
-        if (settings.calendarId < 0) return SyncOutcome(true, "Kein Zielkalender gewählt", skipped = true)
-        if (!Perms.contacts(context)) return SyncOutcome(false, "Keine Berechtigung für Kontakte")
-        if (!Perms.calendar(context)) return SyncOutcome(false, "Keine Berechtigung für den Kalender")
+        if (settings.calendarId < 0) return SyncOutcome(true, context.getString(R.string.sync_no_calendar), skipped = true)
+        if (!Perms.contacts(context)) return SyncOutcome(false, context.getString(R.string.sync_no_contacts_permission))
+        if (!Perms.calendar(context)) return SyncOutcome(false, context.getString(R.string.sync_no_calendar_permission))
         val calendars = CalendarRepository(context)
         if (calendars.findCalendar(settings.calendarId) == null) {
-            return SyncOutcome(false, "Kein gültiger Zielkalender ausgewählt")
+            return SyncOutcome(false, context.getString(R.string.sync_invalid_calendar))
         }
 
         val today = LocalDate.now()
@@ -70,11 +71,11 @@ class BirthdaySync(private val context: Context) {
             created++
         }
 
-        val summary = buildString {
-            append("${birthdays.size} Geburtstage, ${desired.size} Termine im Zeitraum")
-            if (created + updated + deleted == 0) append(" – alles aktuell")
-            else append(" – $created neu, $updated aktualisiert, $deleted entfernt")
-        }
+        val r = context.resources
+        val found = r.getQuantityString(R.plurals.sync_birthdays, birthdays.size, birthdays.size)
+        val inRange = r.getQuantityString(R.plurals.sync_events_in_range, desired.size, desired.size)
+        val summary = if (created + updated + deleted == 0) r.getString(R.string.sync_summary_up_to_date, found, inRange)
+        else r.getString(R.string.sync_summary_changes, found, inRange, created, updated, deleted)
         return SyncOutcome(true, summary)
     }
 
@@ -89,11 +90,11 @@ class BirthdaySync(private val context: Context) {
 
     private fun buildSpec(o: Occurrence, s: AppSettings, zone: ZoneId): EventSpec {
         val title = BirthdayPlanner.renderTitle(s.titleTemplate, o.birthday.name, o.age)
-        val description = buildString {
-            append("Geburtstag von ${o.birthday.name}")
-            o.birthday.date.year?.let { append(" (geboren $it)") }
-            append("\n\nAutomatisch angelegt von Birthday Sync. Änderungen an diesem Termin werden beim nächsten Abgleich überschrieben.")
-        }
+        val year = o.birthday.date.year
+        val about = if (year != null) context.getString(R.string.event_description_born, o.birthday.name, year)
+        else context.getString(R.string.event_description, o.birthday.name)
+        // Absätze; die Markierung für den Abgleich hängt CalendarRepository unverändert an.
+        val description = about + "\n\n" + context.getString(R.string.event_auto_created)
         val reminder = if (s.eventReminderEnabled) s.eventReminderMinutes else null
         return if (s.allDay) {
             val start = o.date.atStartOfDay(ZoneOffset.UTC).toInstant().toEpochMilli()

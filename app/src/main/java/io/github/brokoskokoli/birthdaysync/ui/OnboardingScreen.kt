@@ -1,6 +1,7 @@
 package io.github.brokoskokoli.birthdaysync.ui
 
 import androidx.activity.compose.BackHandler
+import androidx.annotation.StringRes
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -31,66 +32,41 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import io.github.brokoskokoli.birthdaysync.R
 import io.github.brokoskokoli.birthdaysync.system.CheckId
 import io.github.brokoskokoli.birthdaysync.system.Severity
 import kotlinx.coroutines.delay
 
-private class StepText(val emoji: String, val title: String, val reason: String, val action: String)
+private class StepText(val emoji: String, @StringRes val title: Int, @StringRes val reason: Int, @StringRes val action: Int)
 
 private val STEP_TEXTS = mapOf(
     CheckId.CONTACTS to StepText(
-        "👥", "Zugriff auf deine Kontakte",
-        "Die Geburtstage stehen in deinen Kontakten. Damit die App sie findet, braucht sie Lesezugriff.\n\n" +
-            "Gelesen werden nur Namen, Geburtstage und die Zuordnung zu Konten und Gruppen, auch im Hintergrund " +
-            "beim regelmäßigen Abgleich. Die Daten bleiben auf dem Gerät: Die App ändert keine Kontakte, " +
-            "hat keinen Internetzugriff und gibt nichts weiter.",
-        "Erlauben",
+        "👥", R.string.onboarding_contacts_title, R.string.onboarding_contacts_text, R.string.action_allow,
     ),
     CheckId.CALENDAR to StepText(
-        "📅", "Zugriff auf deinen Kalender",
-        "Für jeden Geburtstag legt die App einen Termin in einem Kalender deiner Wahl an und hält ihn aktuell, " +
-            "zum Beispiel wenn sich ein Geburtsdatum ändert.\n\n" +
-            "Dafür muss sie Kalender lesen und schreiben. Verändert werden ausschließlich die eigenen Geburtstagstermine.",
-        "Erlauben",
+        "📅", R.string.onboarding_calendar_title, R.string.onboarding_calendar_text, R.string.action_allow,
     ),
     CheckId.NOTIFICATIONS to StepText(
-        "🔔", "Benachrichtigungen",
-        "Auf Wunsch meldet sich die App zu einer festen Uhrzeit, wenn heute jemand Geburtstag hat.\n\n" +
-            "Ohne diese Berechtigung bleibt die Meldung stumm.",
-        "Erlauben",
+        "🔔", R.string.onboarding_notifications_title, R.string.onboarding_notifications_text, R.string.action_allow,
     ),
     CheckId.EXACT_ALARM to StepText(
-        "⏰", "Pünktliche Erinnerung",
-        "Damit die tägliche Benachrichtigung genau zur eingestellten Uhrzeit kommt und nicht irgendwann später, " +
-            "braucht die App die Erlaubnis für Wecker und Erinnerungen.\n\n" +
-            "Aktiviere auf der folgenden Seite den Schalter für Birthday Sync und kehre dann mit \"Zurück\" hierher zurück.",
-        "Einstellung öffnen",
+        "⏰", R.string.onboarding_exact_alarm_title, R.string.onboarding_exact_alarm_text, R.string.action_open_setting,
     ),
     CheckId.BATTERY_OPTIMIZATION to StepText(
-        "🔋", "Im Hintergrund arbeiten",
-        "Android stellt Apps im Hintergrund gern ruhig, um Akku zu sparen. Dann kann der regelmäßige Abgleich ausfallen.\n\n" +
-            "Der Abgleich dauert nur wenige Sekunden am Tag, der Mehrverbrauch ist kaum messbar. " +
-            "Wähle in der folgenden Liste \"Alle Apps\", dann Birthday Sync und stelle \"Nicht optimieren\" ein.",
-        "Einstellung öffnen",
+        "🔋", R.string.onboarding_battery_title, R.string.onboarding_battery_text, R.string.action_open_setting,
     ),
     CheckId.BACKGROUND_RESTRICTION to StepText(
-        "🚫", "Hintergrundbeschränkung aufheben",
-        "Für diese App ist die Hintergrundaktivität eingeschränkt, dadurch fallen Abgleich und Benachrichtigung aus.\n\n" +
-            "Öffne in der App-Info den Punkt \"Akku\" und wähle \"Nicht eingeschränkt\". Kehre dann mit \"Zurück\" hierher zurück.",
-        "App-Info öffnen",
+        "🚫", R.string.onboarding_background_title, R.string.onboarding_background_text, R.string.action_open_app_info,
     ),
     CheckId.APP_HIBERNATION to StepText(
-        "💤", "Nicht automatisch pausieren",
-        "Öffnest du die App einige Monate nicht, pausiert Android sie und entzieht ihr die Berechtigungen. " +
-            "Der Abgleich würde dann unbemerkt aufhören – obwohl die App ja gerade im Hintergrund arbeiten soll.\n\n" +
-            "Schalte auf der folgenden Seite \"App-Aktivität pausieren, wenn sie nicht verwendet wird\" aus " +
-            "und kehre dann mit \"Zurück\" hierher zurück.",
-        "Einstellung öffnen",
+        "💤", R.string.onboarding_hibernation_title, R.string.onboarding_hibernation_text, R.string.action_open_setting,
     ),
 )
 
@@ -130,7 +106,7 @@ fun OnboardingScreen(vm: MainViewModel, onAction: (CheckId) -> Unit, onFinish: (
             if (steps != null) {
                 LinearProgressIndicator(progress = { (index + 1f) / total }, modifier = Modifier.fillMaxWidth())
                 Text(
-                    "Schritt ${index + 1} von $total",
+                    pluralStringResource(R.plurals.onboarding_step, total, index + 1, total),
                     style = MaterialTheme.typography.labelMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(top = 8.dp),
@@ -144,25 +120,18 @@ fun OnboardingScreen(vm: MainViewModel, onAction: (CheckId) -> Unit, onFinish: (
                 val stepId = stepIds?.getOrNull(i - 1)
                 when {
                     i == 0 -> StepBody(
-                        "🎂", "Willkommen bei Birthday Sync",
-                        "Die App überträgt die Geburtstage aus deinen Kontakten automatisch in einen Kalender " +
-                            "deiner Wahl und erinnert dich am Tag selbst.\n\n" +
-                            "Damit das zuverlässig im Hintergrund klappt, braucht sie ein paar Berechtigungen. " +
-                            "Wir gehen sie Schritt für Schritt durch und erklären jeweils, wofür sie gebraucht werden.\n\n" +
-                            "Alles bleibt auf deinem Gerät – die App hat keinen Internetzugriff.",
+                        "🎂", stringResource(R.string.onboarding_welcome_title), stringResource(R.string.onboarding_welcome_text),
                     )
-                    stepId != null -> STEP_TEXTS.getValue(stepId).let { StepBody(it.emoji, it.title, it.reason) }
+                    stepId != null -> STEP_TEXTS.getValue(stepId).let { StepBody(it.emoji, stringResource(it.title), stringResource(it.reason)) }
                     else -> {
                         val open = checks.count { !it.ok && it.severity != Severity.INFO }
                         StepBody(
                             if (open == 0) "🎉" else "👍",
-                            if (open == 0) "Alles bereit" else "Fast geschafft",
-                            (if (open == 0) "Alle Berechtigungen sind erteilt.\n\n"
-                            else "$open Punkt(e) fehlen noch. Du kannst sie jederzeit im Tab \"System\" nachholen.\n\n") +
-                                "So geht es weiter:\n" +
-                                "1. Kontaktlisten auswählen\n" +
-                                "2. Zielkalender wählen\n" +
-                                "3. Fertig – den Rest erledigt die App automatisch.",
+                            stringResource(if (open == 0) R.string.system_all_ready else R.string.onboarding_almost_title),
+                            // Zwei eigenständige Absätze
+                            (if (open == 0) stringResource(R.string.onboarding_all_granted)
+                            else pluralStringResource(R.plurals.onboarding_missing, open, open, stringResource(R.string.tab_system))) +
+                                "\n\n" + stringResource(R.string.onboarding_next_steps),
                         )
                     }
                 }
@@ -172,8 +141,8 @@ fun OnboardingScreen(vm: MainViewModel, onAction: (CheckId) -> Unit, onFinish: (
             if (current != null) {
                 Text(
                     when {
-                        currentOk -> "✓ Erteilt"
-                        attempted -> "Noch nicht erteilt. Du kannst es erneut versuchen oder den Schritt überspringen."
+                        currentOk -> stringResource(R.string.onboarding_granted)
+                        attempted -> stringResource(R.string.onboarding_not_granted)
                         else -> ""
                     },
                     color = if (currentOk) OkGreen else MaterialTheme.colorScheme.error,
@@ -194,19 +163,19 @@ fun OnboardingScreen(vm: MainViewModel, onAction: (CheckId) -> Unit, onFinish: (
                             },
                             // Prüfungen werden asynchron geladen; vorher ist nicht bekannt, welche Schritte nötig sind.
                             enabled = checks.isNotEmpty(),
-                        ) { Text("Los geht's") }
+                        ) { Text(stringResource(R.string.onboarding_start)) }
                     }
                     current != null -> {
-                        TextButton(onClick = { goTo(index + 1) }) { Text(if (currentOk) "Weiter" else "Überspringen") }
+                        TextButton(onClick = { goTo(index + 1) }) { Text(stringResource(if (currentOk) R.string.onboarding_next else R.string.onboarding_skip)) }
                         if (!currentOk) {
                             Button(onClick = { attempted = true; onAction(current) }) {
-                                Text(if (attempted) "Erneut versuchen" else STEP_TEXTS.getValue(current).action)
+                                Text(stringResource(if (attempted) R.string.onboarding_retry else STEP_TEXTS.getValue(current).action))
                             }
                         }
                     }
                     else -> {
                         Spacer(Modifier)
-                        Button(onClick = onFinish) { Text("Zur App") }
+                        Button(onClick = onFinish) { Text(stringResource(R.string.onboarding_finish)) }
                     }
                 }
             }

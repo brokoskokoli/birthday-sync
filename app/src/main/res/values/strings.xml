@@ -1,3 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Base language: English. The German texts (values-de) define meaning and tone: friendly, informal ("du").
+    Placeholders like %1$s / %2$d and tokens like {name} / {age} must stay intact in every translation.
+    Quoted Android setting names (e.g. “All apps”, “Don’t optimize”) should match what Android shows in that language.
+-->
 <resources>
-    <string name="app_name">Birthday Sync</string>
+    <string name="app_name" translatable="false">Birthday Sync</string>
+
+    <!-- Bottom navigation: keep very short (about 10 characters) -->
+    <string name="tab_overview">Overview</string>
+    <string name="tab_contacts">Contacts</string>
+    <string name="tab_calendar">Calendar</string>
+    <string name="tab_notify">Alerts</string>
+    <string name="tab_system">System</string>
+
+    <!-- Common actions -->
+    <string name="action_allow">Allow</string>
+    <string name="action_allow_access">Allow access</string>
+    <string name="action_open">Open</string>
+    <string name="action_open_setting">Open setting</string>
+    <string name="action_open_app_info">Open App info</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sync_now">Sync now</string>
+    <string name="action_remove">Remove</string>
+    <string name="section_sync">Sync</string>
+
+    <!-- Overview -->
+    <string name="overview_setup_incomplete_title">Setup incomplete</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">%d permission or setting is missing for reliable syncing.</item>
+        <item quantity="other">%d permissions or settings are missing for reliable syncing.</item>
+    </plurals>
+    <string name="overview_setup_now">Set up now</string>
+    <string name="overview_first_steps">Getting started</string>
+    <string name="overview_step_contacts">1. Choose the contact lists whose birthdays should be included.</string>
+    <string name="overview_choose_contacts">Choose contact lists</string>
+    <string name="overview_step_calendar">2. Choose the calendar in which the events will be created.</string>
+    <string name="overview_choose_calendar">Choose target calendar</string>
+    <string name="overview_target_calendar">Target calendar: %1$s</string>
+    <string name="overview_target_calendar_none">Target calendar: not selected</string>
+    <string name="overview_auto_daily">Automatically every day</string>
+    <string name="overview_auto_weekly">Automatically every week</string>
+    <!-- %1$s = date and time of the next automatic sync -->
+    <string name="overview_auto_daily_next">Automatically every day, next run no earlier than %1$s</string>
+    <string name="overview_auto_weekly_next">Automatically every week, next run no earlier than %1$s</string>
+    <string name="overview_auto_off">Automatic sync is off</string>
+    <!-- %1$s = date and time, %2$s = result message of that sync (on its own line) -->
+    <string name="overview_last_sync">Last sync: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">No sync yet</string>
+    <string name="overview_syncing">Syncing …</string>
+    <string name="overview_upcoming">Upcoming birthdays</string>
+    <string name="overview_no_birthdays">No birthdays found in the selected contact lists.</string>
+    <string name="upcoming_today">Today</string>
+    <string name="upcoming_tomorrow">Tomorrow</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">in %d day</item>
+        <item quantity="other">in %d days</item>
+    </plurals>
+    <!-- %1$s = date (e.g. “Tue, 10/27”), %2$d = the age the person turns; quantity = age -->
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · turns %2$d</item>
+        <item quantity="other">%1$s · turns %2$d</item>
+    </plurals>
+
+    <!-- Contacts -->
+    <string name="contacts_intro">Choose whole accounts or individual groups/labels. The birthdays of all contacts in them will be included.</string>
+    <string name="contacts_no_permission_title">No access to contacts</string>
+    <string name="contacts_no_permission_text">Without this permission, no contact lists can be shown.</string>
+    <string name="contacts_none_found">No contacts found on this device.</string>
+    <string name="contacts_all">All contacts</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d contact</item>
+        <item quantity="other">%d contacts</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d with birthday</item>
+        <item quantity="other">%d with birthday</item>
+    </plurals>
+    <!-- %1$s = contacts_count, %2$s = contacts_with_birthday -->
+    <string name="contacts_counts" translatable="false">%1$s · %2$s</string>
+    <!-- Label of contacts stored only on the phone (no account) -->
+    <string name="contacts_device_label">Device</string>
+    <string name="contacts_local_account">Local on this device</string>
+    <!-- %1$d = internal group number -->
+    <string name="contacts_group_fallback">Group %1$d</string>
+    <string name="contacts_unnamed">Unnamed</string>
+
+    <!-- Calendar -->
+    <string name="calendar_target_title">Target calendar</string>
+    <string name="calendar_target_subtitle">This is where the birthday events are created</string>
+    <string name="calendar_no_permission">No access to the calendar.</string>
+    <!-- Display name of the calendar the app can create on the device -->
+    <string name="calendar_local_name">Birthdays</string>
+    <!-- %1$s = calendar_local_name -->
+    <string name="calendar_create_local">Create own calendar “%1$s”</string>
+    <string name="calendar_local_info">An own calendar is stored only on this device and can be shown or hidden separately in the calendar app.</string>
+    <!-- %1$d = internal calendar number -->
+    <string name="calendar_fallback_name">Calendar %1$d</string>
+    <string name="calendar_events_title">Events</string>
+    <string name="calendar_all_day">All-day</string>
+    <string name="calendar_start">Start</string>
+    <string name="calendar_duration">Duration</string>
+    <string name="calendar_reminder">Calendar reminder</string>
+    <string name="calendar_remind">Remind</string>
+    <string name="calendar_title">Title</string>
+    <!-- Keep {name} and {age} literally. %1$s = example title -->
+    <string name="calendar_title_help">Placeholders: {name}, {age}. Example: %1$s</string>
+    <!-- A typical example person name in this language -->
+    <string name="calendar_example_name">Jane Doe</string>
+    <string name="calendar_auto_sync">Sync automatically</string>
+    <string name="calendar_frequency">Frequency</string>
+    <string name="calendar_range">Time range ahead</string>
+    <string name="calendar_sync_info">Changed names or birth dates are applied at the next sync; removed contacts disappear from the calendar. Changes to these settings are applied after a few seconds.</string>
+    <string name="calendar_running">Running …</string>
+    <string name="calendar_remove_events">Remove events</string>
+    <string name="calendar_remove_confirm_title">Remove all events?</string>
+    <string name="calendar_remove_confirm_text">All events created by Birthday Sync will be deleted from all calendars. If automatic sync is on, it will create them again on its next run.</string>
+    <string name="interval_daily">Daily</string>
+    <string name="interval_weekly">Weekly</string>
+    <plurals name="range_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <!-- Short form, e.g. “1 h 30 min” -->
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <!-- A time of day as shown in settings rows; %1$s = formatted time (e.g. “08:00” or “8:00 AM”) -->
+    <string name="time_of_day">%1$s</string>
+
+    <!-- Reminder choices for timed events -->
+    <string name="reminder_at_start">At start time</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minute before</item>
+        <item quantity="other">%d minutes before</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d hour before</item>
+        <item quantity="other">%d hours before</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d day before</item>
+        <item quantity="other">%d days before</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d week before</item>
+        <item quantity="other">%d weeks before</item>
+    </plurals>
+    <!-- Reminder choices for all-day events; %1$s / %2$s = formatted time of day -->
+    <string name="reminder_on_day_at">On the day at %1$s</string>
+    <string name="reminder_day_before_at">The day before at %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d day before at %2$s</item>
+        <item quantity="other">%1$d days before at %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d week before at %2$s</item>
+        <item quantity="other">%1$d weeks before at %2$s</item>
+    </plurals>
+
+    <!-- Notification settings -->
+    <string name="notify_daily_title">Daily notification</string>
+    <string name="notify_daily_subtitle">Independent of the calendar, straight from your contacts</string>
+    <string name="notify_today_switch">Announce today’s birthdays</string>
+    <string name="notify_today_switch_sub">Only on days when someone has a birthday</string>
+    <string name="notify_time">Time</string>
+    <string name="notify_test">Test notification</string>
+    <string name="notify_hint_title">Note</string>
+    <!-- %1$s = list of missing items (titles of system checks) -->
+    <string name="notify_hint_text">For the notification to arrive on time, these are still missing: %1$s</string>
+    <string name="notify_go_system">Go to system settings</string>
+
+    <!-- System tab -->
+    <string name="system_all_ready">All set</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d item open</item>
+        <item quantity="other">%d items open</item>
+    </plurals>
+    <string name="system_subtitle">For reliable background syncs and on-time notifications</string>
+    <string name="system_setup_info">The setup guides you step by step through all missing items, each with an explanation.</string>
+    <string name="system_run_setup">Run setup</string>
+    <!-- %1$s = check description -->
+    <string name="check_state_done">Done. %1$s</string>
+    <string name="check_state_required">Required. %1$s</string>
+    <string name="check_state_recommended">Recommended. %1$s</string>
+    <string name="about_title">About the app</string>
+    <!-- %1$s = version number -->
+    <string name="about_version" translatable="false">Birthday Sync %1$s</string>
+    <string name="about_text">All data stays on your device. The app has no internet access and collects nothing.</string>
+    <string name="about_privacy">Privacy</string>
+    <string name="about_source">Source code</string>
+
+    <!-- System checks -->
+    <string name="check_contacts_title">Read contacts</string>
+    <string name="check_contacts_desc">Needed to read birthdays from the contact lists.</string>
+    <string name="check_calendar_title">Read and write calendar</string>
+    <string name="check_calendar_desc">Needed to create birthday events in the target calendar and keep them up to date.</string>
+    <string name="check_notifications_title">Notifications</string>
+    <string name="check_notifications_desc">Needed for the daily birthday notification and calendar reminders.</string>
+    <string name="check_exact_alarm_title">Exact alarms and reminders</string>
+    <string name="check_exact_alarm_desc">So that the daily notification arrives exactly at the set time. Without this permission it may be slightly late.</string>
+    <string name="check_battery_title">Turn off battery optimization</string>
+    <string name="check_battery_desc">Prevents Android from postponing or suppressing the background sync.</string>
+    <string name="check_background_title">Background activity allowed</string>
+    <!-- Use the Android setting names of this language; in right-to-left languages the arrow should point left -->
+    <string name="check_background_desc">The app must not be restricted in the background (App info → Battery → “Unrestricted”).</string>
+    <string name="check_hibernation_title">App pausing when unused is off</string>
+    <string name="check_hibernation_desc">Otherwise Android revokes the permissions after a few months without opening the app and the sync stops.</string>
+    <string name="check_power_save_title">Battery Saver</string>
+    <string name="check_power_save_on">Battery Saver is on and can delay syncs.</string>
+    <string name="check_power_save_off">Battery Saver is off.</string>
+    <!-- %1$s = device manufacturer, e.g. Xiaomi -->
+    <string name="check_vendor_title">Manufacturer battery management (%1$s)</string>
+    <string name="check_vendor_desc">This manufacturer often stops background apps on top of that. Please allow autostart or “Keep running in background” for Birthday Sync. This can’t be checked automatically.</string>
+
+    <!-- Onboarding -->
+    <plurals name="onboarding_step">
+        <item quantity="one">Step %1$d of %2$d</item>
+        <item quantity="other">Step %1$d of %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Welcome to Birthday Sync</string>
+    <string name="onboarding_welcome_text">The app automatically copies the birthdays from your contacts into a calendar of your choice and reminds you on the day itself.\n\nTo do this reliably in the background, it needs a few permissions. We’ll go through them step by step and explain what each one is for.\n\nEverything stays on your device – the app has no internet access.</string>
+    <string name="onboarding_contacts_title">Access to your contacts</string>
+    <string name="onboarding_contacts_text">The birthdays are stored in your contacts. For the app to find them, it needs read access.\n\nOnly names, birthdays and the assignment to accounts and groups are read, also in the background during the regular sync. The data stays on your device: the app doesn’t change any contacts, has no internet access and shares nothing.</string>
+    <string name="onboarding_calendar_title">Access to your calendar</string>
+    <string name="onboarding_calendar_text">For every birthday, the app creates an event in a calendar of your choice and keeps it up to date, for example when a birth date changes.\n\nFor this it needs to read and write calendars. Only its own birthday events are ever changed.</string>
+    <string name="onboarding_notifications_title">Notifications</string>
+    <string name="onboarding_notifications_text">If you like, the app lets you know at a fixed time when someone has a birthday today.\n\nWithout this permission, the notification stays silent.</string>
+    <string name="onboarding_exact_alarm_title">On-time reminder</string>
+    <string name="onboarding_exact_alarm_text">For the daily notification to arrive exactly at the set time and not sometime later, the app needs the permission for alarms and reminders.\n\nOn the next screen, turn on the switch for Birthday Sync and then come back here with “Back”.</string>
+    <string name="onboarding_battery_title">Work in the background</string>
+    <string name="onboarding_battery_text">Android likes to put background apps to sleep to save battery. Then the regular sync can fail.\n\nThe sync takes only a few seconds a day; the extra battery use is barely measurable. In the following list, choose “All apps”, then Birthday Sync, and select “Don’t optimize”.</string>
+    <string name="onboarding_background_title">Remove background restriction</string>
+    <string name="onboarding_background_text">Background activity is restricted for this app, so the sync and the notification don’t happen.\n\nIn App info, open “Battery” and choose “Unrestricted”. Then come back here with “Back”.</string>
+    <string name="onboarding_hibernation_title">Don’t pause automatically</string>
+    <string name="onboarding_hibernation_text">If you don’t open the app for a few months, Android pauses it and removes its permissions. The sync would then stop without you noticing – even though the app is meant to work in the background.\n\nOn the next screen, turn off “Pause app activity if unused” and then come back here with “Back”.</string>
+    <string name="onboarding_almost_title">Almost done</string>
+    <string name="onboarding_all_granted">All permissions are granted.</string>
+    <!-- %2$s = name of the System tab (tab_system) -->
+    <plurals name="onboarding_missing">
+        <item quantity="one">%1$d item is still missing. You can complete it any time in the “%2$s” tab.</item>
+        <item quantity="other">%1$d items are still missing. You can complete them any time in the “%2$s” tab.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Here’s what comes next:\n1. Choose contact lists\n2. Choose target calendar\n3. Done – the app takes care of the rest automatically.</string>
+    <string name="onboarding_granted">✓ Granted</string>
+    <string name="onboarding_not_granted">Not granted yet. You can try again or skip this step.</string>
+    <string name="onboarding_start">Let’s go</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_retry">Try again</string>
+    <string name="onboarding_finish">Go to app</string>
+
+    <!-- Messages (snackbar) -->
+    <!-- %1$s = calendar name -->
+    <string name="msg_calendar_selected">Calendar “%1$s” is selected as target</string>
+    <!-- %1$s = technical error message -->
+    <string name="msg_calendar_create_failed">Calendar could not be created: %1$s</string>
+    <string name="msg_remove_failed">Error while removing: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d event removed</item>
+        <item quantity="other">%d events removed</item>
+    </plurals>
+    <!-- %1$s = name of the System tab (tab_system) -->
+    <string name="msg_notifications_not_allowed">Notifications are not allowed – see the “%1$s” tab</string>
+
+    <!-- Sync result (shown under “Last sync”) -->
+    <string name="sync_no_calendar">No target calendar selected</string>
+    <string name="sync_no_contacts_permission">No permission for contacts</string>
+    <string name="sync_no_calendar_permission">No permission for the calendar</string>
+    <string name="sync_invalid_calendar">No valid target calendar selected</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d birthday</item>
+        <item quantity="other">%d birthdays</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d event in range</item>
+        <item quantity="other">%d events in range</item>
+    </plurals>
+    <!-- %1$s = sync_birthdays, %2$s = sync_events_in_range -->
+    <string name="sync_summary_up_to_date">%1$s, %2$s – all up to date</string>
+    <!-- %3$d / %4$d / %5$d = number of new / updated / removed events; the “label: number” style avoids plural agreement -->
+    <string name="sync_summary_changes">%1$s, %2$s – new: %3$d, updated: %4$d, removed: %5$d</string>
+    <!-- %1$s = technical error message -->
+    <string name="sync_error">Error: %1$s</string>
+
+    <!-- Calendar event description -->
+    <string name="event_description">Birthday of %1$s</string>
+    <!-- %2$d = year of birth -->
+    <string name="event_description_born">Birthday of %1$s (born %2$d)</string>
+    <string name="event_auto_created">Created automatically by Birthday Sync. Changes to this event will be overwritten at the next sync.</string>
+
+    <!-- Notifications -->
+    <string name="channel_today_name">Birthdays today</string>
+    <string name="channel_today_desc">Daily notification about today’s birthdays</string>
+    <!-- quantity = age -->
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s turns %2$d today</item>
+        <item quantity="other">%1$s turns %2$d today</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s has a birthday today</string>
+    <string name="notification_single_title">🎂 %1$s has a birthday</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d birthday today</item>
+        <item quantity="other">🎂 %d birthdays today</item>
+    </plurals>
+    <string name="notification_nobody_today">Nobody has a birthday today</string>
+    <string name="notification_test_text">Test notification from Birthday Sync</string>
 </resources>

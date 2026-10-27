@@ -7,6 +7,7 @@ import android.provider.ContactsContract.CommonDataKinds.GroupMembership
 import android.provider.ContactsContract.Data
 import android.provider.ContactsContract.Groups
 import android.provider.ContactsContract.RawContacts
+import io.github.brokoskokoli.birthdaysync.R
 
 /** Eine Kontaktquelle (Konto) mit ihren Gruppen/Labels. */
 data class ContactSource(
@@ -50,7 +51,7 @@ class ContactRepository(private val context: Context) {
                 val account = Account(c.getString(2).orEmpty(), c.getString(3).orEmpty())
                 groupsByAccount.getOrPut(account) { mutableListOf() } += ContactGroup(
                     id = groupSourceId(id),
-                    title = c.getString(1)?.takeIf { it.isNotBlank() } ?: "Gruppe $id",
+                    title = c.getString(1)?.takeIf { it.isNotBlank() } ?: context.getString(R.string.contacts_group_fallback, id),
                     contactCount = ids.size,
                     birthdayCount = ids.count { it in birthdayContacts },
                 )
@@ -62,7 +63,7 @@ class ContactRepository(private val context: Context) {
             ContactSource(
                 id = accountSourceId(account.type, account.name),
                 label = accountLabel(account, labels),
-                accountName = account.name.ifEmpty { "Lokal auf dem Gerät" },
+                accountName = account.name.ifEmpty { context.getString(R.string.contacts_local_account) },
                 contactCount = ids.size,
                 birthdayCount = ids.count { it in birthdayContacts },
                 groups = groupsByAccount[account].orEmpty(),
@@ -112,7 +113,7 @@ class ContactRepository(private val context: Context) {
                 rows += BirthdayRow(
                     contactId = contactId,
                     lookupKey = c.getString(1) ?: "id:$contactId",
-                    name = c.getString(2)?.takeIf { it.isNotBlank() } ?: "Unbenannt",
+                    name = c.getString(2)?.takeIf { it.isNotBlank() } ?: context.getString(R.string.contacts_unnamed),
                     date = date,
                 )
             }
@@ -161,7 +162,7 @@ class ContactRepository(private val context: Context) {
     }
 
     private fun accountLabel(account: Account, labels: Map<String, String>): String = when {
-        account.type.isEmpty() || account.type in LOCAL_TYPES -> "Gerät"
+        account.type.isEmpty() || account.type in LOCAL_TYPES -> context.getString(R.string.contacts_device_label)
         account.type == "com.google" -> "Google"
         else -> labels[account.type] ?: account.type
     }

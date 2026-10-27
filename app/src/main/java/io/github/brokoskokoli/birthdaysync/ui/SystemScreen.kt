@@ -5,6 +5,9 @@ import android.net.Uri
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.ui.platform.LocalContext
 import io.github.brokoskokoli.birthdaysync.BuildConfig
+import io.github.brokoskokoli.birthdaysync.R
+import androidx.compose.ui.res.pluralStringResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -45,12 +48,12 @@ fun SystemScreen(vm: MainViewModel, modifier: Modifier, onAction: (CheckId) -> U
     LazyColumn(modifier, contentPadding = PaddingValues(16.dp), verticalArrangement = ScreenSpacing) {
         item {
             SectionCard(
-                if (open == 0) "Alles bereit" else "$open Punkt(e) offen",
-                subtitle = "Für zuverlässige Syncs im Hintergrund und pünktliche Benachrichtigungen",
+                if (open == 0) stringResource(R.string.system_all_ready) else pluralStringResource(R.plurals.system_open_items, open, open),
+                subtitle = stringResource(R.string.system_subtitle),
             ) {
-                InfoText("Die Einrichtung führt Schritt für Schritt durch alle fehlenden Punkte, jeweils mit Erklärung.")
+                InfoText(stringResource(R.string.system_setup_info))
                 Button(onClick = onSetup, enabled = open > 0, modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
-                    Text("Einrichtung durchlaufen")
+                    Text(stringResource(R.string.system_run_setup))
                 }
             }
         }
@@ -69,11 +72,11 @@ private fun AboutCard() {
         runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url))) }
         Unit
     }
-    SectionCard("Über die App", subtitle = "Birthday Sync ${BuildConfig.VERSION_NAME}") {
-        InfoText("Alle Daten bleiben auf dem Gerät. Die App hat keinen Internetzugriff und sammelt nichts.")
+    SectionCard(stringResource(R.string.about_title), subtitle = stringResource(R.string.about_version, BuildConfig.VERSION_NAME)) {
+        InfoText(stringResource(R.string.about_text))
         Row(Modifier.padding(horizontal = 16.dp, vertical = 8.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            OutlinedButton(onClick = { open(PRIVACY_URL) }) { Text("Datenschutz") }
-            OutlinedButton(onClick = { open(REPO_URL) }) { Text("Quellcode") }
+            OutlinedButton(onClick = { open(PRIVACY_URL) }) { Text(stringResource(R.string.about_privacy)) }
+            OutlinedButton(onClick = { open(REPO_URL) }) { Text(stringResource(R.string.about_source)) }
         }
     }
 }
@@ -95,9 +98,9 @@ private fun CheckCard(check: SystemCheck, onAction: (CheckId) -> Unit) {
                 Text(
                     when {
                         check.severity == Severity.INFO -> check.description
-                        check.ok -> "Erledigt. " + check.description
-                        check.severity == Severity.REQUIRED -> "Erforderlich. " + check.description
-                        else -> "Empfohlen. " + check.description
+                        check.ok -> stringResource(R.string.check_state_done, check.description)
+                        check.severity == Severity.REQUIRED -> stringResource(R.string.check_state_required, check.description)
+                        else -> stringResource(R.string.check_state_recommended, check.description)
                     },
                     style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )

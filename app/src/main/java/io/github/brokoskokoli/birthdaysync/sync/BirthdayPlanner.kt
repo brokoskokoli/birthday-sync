@@ -43,18 +43,20 @@ object BirthdayPlanner {
         runCatching { LocalDate.parse(key.substringAfterLast('_')) }.getOrNull()
 
     /**
-     * Setzt den Titel aus der Vorlage zusammen. Platzhalter: {name}, {alter}.
-     * Ist das Alter unbekannt, entfällt eine Klammer, die {alter} enthält, z. B. " ({alter})".
+     * Setzt den Titel aus der Vorlage zusammen. Platzhalter: {name}, {age} ({alter} als Alias für ältere Vorlagen).
+     * Ist das Alter unbekannt, entfällt eine Klammer, die den Alters-Platzhalter enthält, z. B. " ({age})".
      */
     fun renderTitle(template: String, name: String, age: Int?): String {
-        var t = template.ifBlank { DEFAULT_TITLE }
+        var t = template.ifBlank { DEFAULT_TITLE }.replace(AGE_ALIAS, AGE)
         if (age == null) {
-            t = t.replace(Regex("""\s*\([^()]*\{alter\}[^()]*\)"""), "").replace("{alter}", "")
+            t = t.replace(Regex("""\s*\([^()]*\{age\}[^()]*\)"""), "").replace(AGE, "")
         }
-        return t.replace("{name}", name).replace("{alter}", age?.toString().orEmpty()).trim()
+        return t.replace("{name}", name).replace(AGE, age?.toString().orEmpty()).trim()
     }
 
-    const val DEFAULT_TITLE = "🎂 {name} ({alter})"
+    private const val AGE = "{age}"
+    private const val AGE_ALIAS = "{alter}"
+    const val DEFAULT_TITLE = "🎂 {name} ({age})"
 
     private fun sha1(s: String): String =
         MessageDigest.getInstance("SHA-1").digest(s.toByteArray()).joinToString("") { "%02x".format(it) }

@@ -1,5 +1,6 @@
 package io.github.brokoskokoli.birthdaysync.ui
 
+import android.text.format.DateFormat
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,8 +30,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.unit.dp
+import io.github.brokoskokoli.birthdaysync.R
 
 @Composable
 fun SectionCard(title: String, modifier: Modifier = Modifier, subtitle: String? = null, content: @Composable () -> Unit) {
@@ -115,7 +119,7 @@ fun <T> ChoiceRow(title: String, options: List<Pair<T, String>>, selected: T, on
                     }
                 }
             },
-            confirmButton = { TextButton(onClick = { open = false }) { Text("Abbrechen") } },
+            confirmButton = { TextButton(onClick = { open = false }) { Text(stringResource(android.R.string.cancel)) } },
         )
     }
 }
@@ -123,18 +127,19 @@ fun <T> ChoiceRow(title: String, options: List<Pair<T, String>>, selected: T, on
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TimeRow(title: String, minuteOfDay: Int, onChange: (Int) -> Unit, enabled: Boolean = true) {
+    val context = LocalContext.current
     var open by remember { mutableStateOf(false) }
     Row(Modifier.fillMaxWidth().clickable(enabled = enabled) { open = true }.padding(horizontal = 16.dp, vertical = 10.dp)) {
-        RowText(title, formatTime(minuteOfDay) + " Uhr", Modifier.weight(1f))
+        RowText(title, stringResource(R.string.time_of_day, formatTime(context, minuteOfDay)), Modifier.weight(1f))
     }
     if (open) {
-        val state = rememberTimePickerState(minuteOfDay / 60, minuteOfDay % 60, is24Hour = true)
+        val state = rememberTimePickerState(minuteOfDay / 60, minuteOfDay % 60, is24Hour = DateFormat.is24HourFormat(context))
         AlertDialog(
             onDismissRequest = { open = false },
             title = { Text(title) },
             text = { TimePicker(state) },
-            confirmButton = { TextButton(onClick = { onChange(state.hour * 60 + state.minute); open = false }) { Text("OK") } },
-            dismissButton = { TextButton(onClick = { open = false }) { Text("Abbrechen") } },
+            confirmButton = { TextButton(onClick = { onChange(state.hour * 60 + state.minute); open = false }) { Text(stringResource(android.R.string.ok)) } },
+            dismissButton = { TextButton(onClick = { open = false }) { Text(stringResource(android.R.string.cancel)) } },
         )
     }
 }
@@ -148,11 +153,3 @@ fun InfoText(text: String, modifier: Modifier = Modifier) {
 }
 
 val ScreenSpacing = Arrangement.spacedBy(12.dp)
-
-fun formatTime(minuteOfDay: Int) = "%02d:%02d".format(minuteOfDay / 60, minuteOfDay % 60)
-
-fun formatDuration(minutes: Int): String = when {
-    minutes < 60 -> "$minutes Minuten"
-    minutes % 60 == 0 -> if (minutes == 60) "1 Stunde" else "${minutes / 60} Stunden"
-    else -> "${minutes / 60} h ${minutes % 60} min"
-}

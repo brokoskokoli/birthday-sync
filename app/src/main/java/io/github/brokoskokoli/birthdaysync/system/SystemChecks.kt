@@ -13,6 +13,7 @@ import androidx.concurrent.futures.await
 import androidx.core.content.IntentCompat
 import androidx.core.content.PackageManagerCompat
 import androidx.core.content.UnusedAppRestrictionsConstants
+import io.github.brokoskokoli.birthdaysync.R
 
 enum class CheckId {
     CONTACTS, CALENDAR, NOTIFICATIONS, EXACT_ALARM, BATTERY_OPTIMIZATION,
@@ -37,56 +38,48 @@ object SystemChecks {
         val pkg = context.packageName
         val power = context.getSystemService(PowerManager::class.java)
         val list = mutableListOf<SystemCheck>()
+        val s = { id: Int -> context.getString(id) }
 
         list += SystemCheck(
-            CheckId.CONTACTS, "Kontakte lesen",
-            "Nötig, um Geburtstage aus den Kontaktlisten zu lesen.",
-            Perms.contacts(context), Severity.REQUIRED, "Erlauben",
+            CheckId.CONTACTS, s(R.string.check_contacts_title), s(R.string.check_contacts_desc),
+            Perms.contacts(context), Severity.REQUIRED, s(R.string.action_allow),
         )
         list += SystemCheck(
-            CheckId.CALENDAR, "Kalender lesen und schreiben",
-            "Nötig, um Geburtstagstermine im Zielkalender anzulegen und aktuell zu halten.",
-            Perms.calendar(context), Severity.REQUIRED, "Erlauben",
+            CheckId.CALENDAR, s(R.string.check_calendar_title), s(R.string.check_calendar_desc),
+            Perms.calendar(context), Severity.REQUIRED, s(R.string.action_allow),
         )
         list += SystemCheck(
-            CheckId.NOTIFICATIONS, "Benachrichtigungen",
-            "Nötig für die tägliche Geburtstags-Benachrichtigung und Kalendererinnerungen.",
-            Perms.notifications(context), Severity.REQUIRED, "Erlauben",
+            CheckId.NOTIFICATIONS, s(R.string.check_notifications_title), s(R.string.check_notifications_desc),
+            Perms.notifications(context), Severity.REQUIRED, s(R.string.action_allow),
         )
         if (Build.VERSION.SDK_INT >= 31) {
             list += SystemCheck(
-                CheckId.EXACT_ALARM, "Exakte Wecker und Erinnerungen",
-                "Damit die tägliche Benachrichtigung genau zur eingestellten Uhrzeit kommt. Ohne Freigabe kann sie sich etwas verspäten.",
+                CheckId.EXACT_ALARM, s(R.string.check_exact_alarm_title), s(R.string.check_exact_alarm_desc),
                 context.getSystemService(AlarmManager::class.java).canScheduleExactAlarms(),
-                Severity.RECOMMENDED, "Öffnen",
+                Severity.RECOMMENDED, s(R.string.action_open),
             )
         }
         list += SystemCheck(
-            CheckId.BATTERY_OPTIMIZATION, "Akku-Optimierung deaktivieren",
-            "Verhindert, dass Android den Hintergrund-Sync verschiebt oder unterdrückt.",
-            power.isIgnoringBatteryOptimizations(pkg), Severity.RECOMMENDED, "Öffnen",
+            CheckId.BATTERY_OPTIMIZATION, s(R.string.check_battery_title), s(R.string.check_battery_desc),
+            power.isIgnoringBatteryOptimizations(pkg), Severity.RECOMMENDED, s(R.string.action_open),
         )
         if (Build.VERSION.SDK_INT >= 28) {
             val restricted = context.getSystemService(ActivityManager::class.java).isBackgroundRestricted
             list += SystemCheck(
-                CheckId.BACKGROUND_RESTRICTION, "Hintergrundaktivität erlaubt",
-                "Die App darf im Hintergrund nicht eingeschränkt sein (App-Info → Akku → \"Nicht eingeschränkt\").",
-                !restricted, Severity.REQUIRED, "App-Info öffnen",
+                CheckId.BACKGROUND_RESTRICTION, s(R.string.check_background_title), s(R.string.check_background_desc),
+                !restricted, Severity.REQUIRED, s(R.string.action_open_app_info),
             )
         }
         hibernationCheck(context)?.let { list += it }
         list += SystemCheck(
-            CheckId.POWER_SAVE, "Energiesparmodus",
-            if (power.isPowerSaveMode) "Der Energiesparmodus ist aktiv und kann Syncs verzögern."
-            else "Der Energiesparmodus ist aus.",
-            !power.isPowerSaveMode, Severity.INFO, "Einstellungen",
+            CheckId.POWER_SAVE, s(R.string.check_power_save_title),
+            s(if (power.isPowerSaveMode) R.string.check_power_save_on else R.string.check_power_save_off),
+            !power.isPowerSaveMode, Severity.INFO, s(R.string.action_settings),
         )
         if (vendorAutostartIntents().isNotEmpty()) {
             list += SystemCheck(
-                CheckId.VENDOR_AUTOSTART, "Hersteller-Akkuverwaltung (${Build.MANUFACTURER})",
-                "Dieser Hersteller beendet Hintergrund-Apps oft zusätzlich. Bitte Autostart bzw. " +
-                    "\"Im Hintergrund aktiv lassen\" für Birthday Sync erlauben. Der Status lässt sich nicht automatisch prüfen.",
-                true, Severity.INFO, "Öffnen",
+                CheckId.VENDOR_AUTOSTART, context.getString(R.string.check_vendor_title, Build.MANUFACTURER),
+                s(R.string.check_vendor_desc), true, Severity.INFO, s(R.string.action_open),
             )
         }
         return list
@@ -97,9 +90,9 @@ object SystemChecks {
             .getOrNull() ?: return null
         if (status == UnusedAppRestrictionsConstants.FEATURE_NOT_AVAILABLE || status == UnusedAppRestrictionsConstants.ERROR) return null
         return SystemCheck(
-            CheckId.APP_HIBERNATION, "App-Pausierung bei Nichtnutzung aus",
-            "Sonst entzieht Android nach einigen Monaten ohne Öffnen die Berechtigungen und stoppt den Sync.",
-            status == UnusedAppRestrictionsConstants.DISABLED, Severity.RECOMMENDED, "Öffnen",
+            CheckId.APP_HIBERNATION, context.getString(R.string.check_hibernation_title),
+            context.getString(R.string.check_hibernation_desc),
+            status == UnusedAppRestrictionsConstants.DISABLED, Severity.RECOMMENDED, context.getString(R.string.action_open),
         )
     }
 
