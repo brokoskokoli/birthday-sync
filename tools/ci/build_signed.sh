@@ -28,6 +28,8 @@ export SIGNING_STORE_FILE="$keystore"
 
 apk=app/build/outputs/apk/release/app-release.apk
 aab=app/build/outputs/bundle/release/app-release.aab
+set -x  # TEMP: trace failure in CI
+
 # Newest build-tools that actually contain apksigner (the runner image has several versions).
 apksigner=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | while read -r d; do
   [[ -x "$d/apksigner" ]] && echo "$d/apksigner"; done | tail -1)
