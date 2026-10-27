@@ -28,8 +28,12 @@ export SIGNING_STORE_FILE="$keystore"
 
 apk=app/build/outputs/apk/release/app-release.apk
 aab=app/build/outputs/bundle/release/app-release.aab
-build_tools="$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
-"$build_tools/apksigner" verify --print-certs "$apk" | grep -E 'Signer #1 certificate (DN|SHA-256)'
+# Newest build-tools that actually contain apksigner (the runner image has several versions).
+apksigner=$(ls -d "$ANDROID_HOME"/build-tools/*/ | sort -V | while read -r d; do
+  [[ -x "$d/apksigner" ]] && echo "$d/apksigner"; done | tail -1)
+if [[ -z "$apksigner" ]]; then echo "::error::apksigner not found under $ANDROID_HOME/build-tools"; exit 1; fi
+certs=$("$apksigner" verify --print-certs "$apk")
+echo "$certs" | grep -E 'Signer #1 certificate (DN|SHA-256)'
 
 mkdir -p dist
 cp "$apk" "dist/BirthdaySync-$label.apk"
