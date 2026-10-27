@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2026 Stefan Richter
+# SPDX-License-Identifier: MIT
+# Keeps the SHA-pinned GitHub Actions in .github/workflows and the Gradle dependencies (plugins,
+# AndroidX, Compose BOM) up to date: weekly, one grouped PR per ecosystem.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      github-actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: "CI"
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      gradle:
+        patterns: ["*"]
+    commit-message:
+      prefix: "Deps"

@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2026 Stefan Richter
+# SPDX-License-Identifier: MIT
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.jar binary
+*.webp binary
+# Keep the language statistics on Kotlin, not on the website's HTML.
+website/** linguist-documentation

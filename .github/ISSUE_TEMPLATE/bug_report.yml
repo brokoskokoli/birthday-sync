@@ -1,0 +1,104 @@
+# SPDX-FileCopyrightText: 2026 Stefan Richter
+# SPDX-License-Identifier: MIT
+name: Bug report
+description: Something doesn't work as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+        **Security problems:** please don't file them here – see [SECURITY.md](https://github.com/brokoskokoli/birthday-sync/blob/main/SECURITY.md).
+        **Privacy:** please don't post real names, birthdays or other contact data – use made-up examples.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: A clear description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Select the contact account …
+        2. Choose the target calendar …
+        3. Tap "Sync now" …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Contacts / contact selection
+        - Calendar events / sync
+        - Background sync (not running, late)
+        - Daily notification
+        - Setup / permissions / System tab
+        - Translations / UI text
+        - Installation / updates
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Birthday Sync version
+      description: Shown at the bottom of the System tab ("About the app").
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      placeholder: "Android 15"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device manufacturer and model
+      description: Some manufacturers stop background apps more aggressively than others.
+      placeholder: "Google Pixel 8 / Samsung Galaxy S23 / Xiaomi Redmi Note 12"
+    validations:
+      required: true
+  - type: input
+    id: apps
+    attributes:
+      label: Contacts and calendar apps / accounts involved
+      description: Optional, e.g. "Google account, Google Calendar app", "local Birthdays calendar, Samsung Calendar".
+  - type: dropdown
+    id: install
+    attributes:
+      label: Installed via
+      options:
+        - APK from GitHub Releases
+        - Obtainium
+        - Google Play
+        - IzzyOnDroid / F-Droid
+        - Built from source
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: |
+        Screenshots of the System tab or the affected screen help a lot.
+        Please blur or crop names and birthdays of real people.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log output
+      description: Optional, e.g. from `adb logcat`. Remove personal data before posting.
+      render: text

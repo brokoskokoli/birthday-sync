@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2026 Stefan Richter
+# SPDX-License-Identifier: MIT
+blank_issues_enabled: false
+contact_links:
+  - name: Questions & ideas (Discussions)
+    url: https://github.com/brokoskokoli/birthday-sync/discussions
+    about: Ask how something works, share your setup, or discuss an idea before filing a feature request.
+  - name: FAQ
+    url: https://brokoskokoli.github.io/birthday-sync/#faq
+    about: Requirements, background sync, privacy, common questions.
+  - name: Report a security vulnerability
+    url: https://github.com/brokoskokoli/birthday-sync/security/advisories/new
+    about: Please report security issues privately, not as a public issue.

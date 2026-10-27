@@ -1,0 +1,93 @@
+# SPDX-FileCopyrightText: 2026 Stefan Richter
+# SPDX-License-Identifier: MIT
+name: Translation
+description: Report a wrong or awkward translation, or offer to review a language
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Apart from English and German, many translations of Birthday Sync were made with the help
+        of AI and have not been reviewed yet – native speakers are very welcome!
+        App texts live in `app/src/main/res/values-<lang>/strings.xml`, store texts in
+        `fastlane/metadata/android/<locale>/`. Pull requests are welcome, too.
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - Arabic (ar)
+        - Bulgarian (bg)
+        - Catalan (ca)
+        - Chinese, Simplified (zh-CN)
+        - Chinese, Traditional (zh-TW)
+        - Croatian (hr)
+        - Czech (cs)
+        - Danish (da)
+        - Dutch (nl)
+        - English (en)
+        - Estonian (et)
+        - Finnish (fi)
+        - French (fr)
+        - German (de)
+        - Greek (el)
+        - Hebrew (iw / he)
+        - Hindi (hi)
+        - Hungarian (hu)
+        - Indonesian (in / id)
+        - Italian (it)
+        - Japanese (ja)
+        - Korean (ko)
+        - Latvian (lv)
+        - Lithuanian (lt)
+        - Norwegian Bokmål (nb)
+        - Polish (pl)
+        - Portuguese, Brazil (pt-BR)
+        - Portuguese, Portugal (pt)
+        - Romanian (ro)
+        - Russian (ru)
+        - Serbian, Cyrillic (sr)
+        - Serbian, Latin (sr-Latn)
+        - Slovak (sk)
+        - Slovenian (sl)
+        - Spanish (es)
+        - Swedish (sv)
+        - Thai (th)
+        - Turkish (tr)
+        - Ukrainian (uk)
+        - Vietnamese (vi)
+        - New language (please name it below)
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of report?
+      options:
+        - Wrong or awkward translation
+        - Text is cut off / layout problem
+        - Text not translated
+        - Store listing text (fastlane metadata)
+        - I'd like to review this whole language
+        - Request a new language
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where does the text appear?
+      description: Tab, setup step, notification, store listing … A screenshot helps a lot (blur real names).
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+  - type: textarea
+    id: suggested
+    attributes:
+      label: Suggested text
+      description: Keep placeholders like `%1$s`, `%2$d`, `{name}` and `{age}` unchanged.
+  - type: input
+    id: version
+    attributes:
+      label: Birthday Sync version
+      placeholder: "0.1.0"
