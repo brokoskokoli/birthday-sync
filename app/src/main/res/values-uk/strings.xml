@@ -280,7 +280,7 @@
         <item quantity="other">%d події в періоді</item>
     </plurals>
     <string name="sync_summary_up_to_date">%1$s, %2$s – усе актуально</string>
-    <string name="sync_summary_changes">%1$s, %2$s – нових: %3$d, оновлено: %4$d, видалено: %5$d</string>
+    <string name="sync_summary_changes">%1$s, %2$s – створено: %3$d, оновлено: %4$d, видалено: %5$d</string>
     <string name="sync_error">Помилка: %1$s</string>
 
     <string name="event_description">День народження: %1$s</string>
