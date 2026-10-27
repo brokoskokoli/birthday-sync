@@ -5,3 +5,11 @@ local.properties
 *.iml
 signing/
 dist/
+.claude/
+.DS_Store
+.env*
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
