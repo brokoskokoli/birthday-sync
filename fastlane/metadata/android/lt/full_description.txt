@@ -1,0 +1,17 @@
+„Birthday Sync“ perkelia gimtadienius iš jūsų kontaktų į kalendorių, kurį tikrai naudojate, – automatiškai ir be paskyros ar debesijos paslaugos.
+
+Pasirenkate, kurias kontaktų paskyras ar grupes įtraukti ir į kurį kalendorių dėti įvykius. Programa sukuria įvykį kiekvienam gimtadieniui ir jį atnaujina: jei pakeičiate vardą ar gimimo datą arba pašalinate kontaktą, kalendorius atnaujinamas kito sinchronizavimo metu.
+
+Funkcijos:
+• Skaito gimtadienius iš jūsų pasirinktų kontaktų paskyrų ir grupių / etikečių
+• Įrašo juos kaip įvykius į jūsų pasirinktą kalendorių arba į atskirą kalendorių „Gimtadieniai“ įrenginyje
+• Visą dieną arba nustatytu laiku, pasirinktinai su kalendoriaus priminimu
+• Atpažįsta pakeistus gimtadienius ir atnaujina arba pašalina įvykius
+• Kasdienis pranešimas apie šiandienos gimtadienius jūsų pasirinktu laiku
+• Nuosekli sąranka, kuri paaiškina kiekvieną leidimą ir padeda su akumuliatoriaus bei veikimo fone nustatymais
+• Įvykio pavadinimas su kintamaisiais, pvz., „🎂 {name} ({age})“
+
+Privatumas:
+• Jokios prieigos prie interneto – jūsų duomenys niekada nepalieka įrenginio
+• Jokių reklamų, jokio sekimo, jokios analitikos
+• Nemokama ir atvirojo kodo

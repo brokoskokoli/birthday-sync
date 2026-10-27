@@ -1,0 +1,17 @@
+Birthday Sync pārnes dzimšanas dienas no jūsu kontaktiem uz kalendāru, kuru jūs patiešām izmantojat, – automātiski un bez konta vai mākoņpakalpojuma.
+
+Jūs izvēlaties, kurus kontaktu kontus vai grupas iekļaut un kurā kalendārā ievietot notikumus. Lietotne izveido notikumu katrai dzimšanas dienai un to atjaunina: ja maināt vārdu vai dzimšanas datumu vai noņemat kontaktu, kalendārs tiek atjaunināts nākamajā sinhronizācijā.
+
+Funkcijas:
+• Nolasa dzimšanas dienas no jūsu izvēlētajiem kontaktu kontiem un grupām/iezīmēm
+• Ieraksta tās kā notikumus jūsu izvēlētā kalendārā vai atsevišķā kalendārā “Dzimšanas dienas” ierīcē
+• Visu dienu vai noteiktā laikā, pēc izvēles ar kalendāra atgādinājumu
+• Atpazīst mainītas dzimšanas dienas un atjaunina vai noņem notikumus
+• Ikdienas paziņojums par šodienas dzimšanas dienām jūsu izvēlētā laikā
+• Vadīta iestatīšana, kas izskaidro katru atļauju un palīdz ar akumulatora un fona darbības iestatījumiem
+• Notikuma nosaukums ar mainīgajiem, piemēram, “🎂 {name} ({age})”
+
+Privātums:
+• Nav piekļuves internetam – jūsu dati nekad neatstāj ierīci
+• Bez reklāmām, bez izsekošanas, bez analītikas
+• Bezmaksas un atvērtā pirmkoda

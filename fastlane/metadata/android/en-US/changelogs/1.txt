@@ -1,0 +1,1 @@
+First release: birthdays from your contacts as calendar events, daily birthday notification, guided setup, available in many languages.

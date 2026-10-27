@@ -1,0 +1,17 @@
+Birthday Sync memasukkan ulang tahun dari kontak Anda ke kalender yang benar-benar Anda gunakan – otomatis, tanpa akun atau layanan cloud.
+
+Pilih akun kontak atau grup mana yang disertakan dan ke kalender mana acara akan ditambahkan. Aplikasi membuat acara untuk setiap ulang tahun dan terus memperbaruinya: jika Anda mengubah nama atau tanggal lahir, atau menghapus kontak, kalender akan mengikuti saat sinkronisasi berikutnya.
+
+Fitur:
+• Membaca ulang tahun dari akun kontak dan grup/label pilihan Anda
+• Menuliskannya sebagai acara ke kalender pilihan Anda, atau ke kalender sendiri “Ulang Tahun” di perangkat
+• Sepanjang hari atau pada waktu tertentu, dengan pengingat kalender opsional
+• Mendeteksi ulang tahun yang berubah, lalu memperbarui atau menghapus acaranya
+• Notifikasi harian untuk ulang tahun hari ini, pada waktu pilihan Anda
+• Penyiapan terpandu yang menjelaskan setiap izin dan membantu setelan baterai serta latar belakang
+• Judul acara dengan placeholder, mis. “🎂 {name} ({age})”
+
+Privasi:
+• Tanpa akses internet – data Anda tidak pernah keluar dari perangkat
+• Tanpa iklan, tanpa pelacakan, tanpa analitik
+• Gratis dan open source

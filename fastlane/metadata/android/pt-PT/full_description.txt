@@ -1,0 +1,17 @@
+O Birthday Sync coloca os aniversários dos teus contactos no calendário que realmente usas – automaticamente e sem conta nem serviço na nuvem.
+
+Escolhe que contas ou grupos de contactos queres incluir e em que calendário os eventos devem ser criados. A app cria um evento para cada aniversário e mantém-no atualizado: se alterares um nome ou uma data de nascimento, ou removeres um contacto, o calendário acompanha na próxima sincronização.
+
+Funcionalidades:
+• Lê os aniversários das contas e grupos/etiquetas de contactos à tua escolha
+• Adiciona-os como eventos a um calendário à tua escolha ou a um calendário próprio “Aniversários” no dispositivo
+• O dia inteiro ou a uma hora fixa, com lembrete do calendário opcional
+• Deteta aniversários alterados e atualiza ou remove os eventos
+• Notificação diária dos aniversários de hoje, à hora que escolheres
+• Configuração guiada que explica cada autorização e ajuda nas definições de bateria e segundo plano
+• Título do evento com marcadores, p. ex. “🎂 {name} ({age})”
+
+Privacidade:
+• Sem acesso à Internet – os teus dados nunca saem do dispositivo
+• Sem anúncios, sem rastreio, sem análises
+• Gratuita e de código aberto

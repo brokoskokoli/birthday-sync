@@ -1,0 +1,17 @@
+A Birthday Sync átviszi a névjegyeidben szereplő születésnapokat abba a naptárba, amelyet ténylegesen használsz – automatikusan, fiók és felhőszolgáltatás nélkül.
+
+Kiválasztod, mely névjegyfiókok vagy csoportok kerüljenek át, és melyik naptárba kerüljenek az események. Az alkalmazás minden születésnaphoz létrehoz egy eseményt, és naprakészen tartja: ha módosítasz egy nevet vagy születési dátumot, vagy törölsz egy névjegyet, a naptár a következő szinkronizáláskor követi a változást.
+
+Funkciók:
+• Kiolvassa a születésnapokat az általad választott névjegyfiókokból és csoportokból/címkékből
+• Eseményként beírja őket egy általad választott naptárba, vagy egy saját „Születésnapok” naptárba az eszközön
+• Egész napos vagy egy beállított időpontú esemény, igény szerint naptári emlékeztetővel
+• Felismeri a megváltozott születésnapokat, és frissíti vagy eltávolítja az eseményeket
+• Napi értesítés a mai születésnapokról az általad választott időpontban
+• Végigvezető beállítás, amely minden engedélyt elmagyaráz, és segít az akkumulátor- és háttérbeállításokban
+• Eseménycím helyőrzőkkel, pl. „🎂 {name} ({age})”
+
+Adatvédelem:
+• Nincs internet-hozzáférés – az adataid soha nem hagyják el az eszközt
+• Nincs reklám, nincs követés, nincs analitika
+• Ingyenes és nyílt forráskódú

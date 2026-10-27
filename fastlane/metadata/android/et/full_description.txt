@@ -1,0 +1,17 @@
+Birthday Sync kannab sinu kontaktide sünnipäevad kalendrisse, mida sa päriselt kasutad – automaatselt ning ilma konto või pilveteenuseta.
+
+Sina valid, milliste kontaktikontode või gruppide sünnipäevad üle võetakse ja millisesse kalendrisse sündmused lähevad. Rakendus loob iga sünnipäeva kohta sündmuse ja hoiab selle ajakohasena: kui muudad nime või sünnikuupäeva või eemaldad kontakti, järgib kalender seda järgmisel sünkroonimisel.
+
+Funktsioonid:
+• Loeb sünnipäevi sinu valitud kontaktikontodest ja gruppidest/siltidest
+• Lisab need sündmustena sinu valitud kalendrisse või seadmes eraldi kalendrisse „Sünnipäevad“
+• Terve päeva või kindlal kellaajal, soovi korral kalendri meeldetuletusega
+• Tuvastab muutunud sünnipäevad ning uuendab või eemaldab sündmused
+• Igapäevane märguanne tänaste sünnipäevade kohta sinu valitud kellaajal
+• Juhendatud seadistus, mis selgitab iga luba ja aitab aku- ning taustaseadetega
+• Sündmuse pealkiri kohatäidetega, nt „🎂 {name} ({age})“
+
+Privaatsus:
+• Internetiühendus puudub – sinu andmed ei lahku kunagi seadmest
+• Reklaamideta, jälgimiseta, analüütikata
+• Tasuta ja avatud lähtekoodiga

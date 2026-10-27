@@ -1,0 +1,17 @@
+Birthday Sync überträgt die Geburtstage aus deinen Kontakten in den Kalender, den du wirklich nutzt – automatisch und ohne Konto oder Cloud-Dienst.
+
+Du wählst, welche Kontaktkonten oder Gruppen übernommen werden und in welchen Kalender die Termine kommen. Die App legt für jeden Geburtstag einen Termin an und hält ihn aktuell: Änderst du einen Namen oder ein Geburtsdatum oder entfernst einen Kontakt, zieht der Kalender beim nächsten Abgleich nach.
+
+Funktionen:
+• Liest Geburtstage aus den Kontaktkonten und Gruppen/Labels deiner Wahl
+• Trägt sie als Termine in einen Kalender deiner Wahl ein oder in einen eigenen Kalender „Geburtstage“ auf dem Gerät
+• Ganztägig oder zu einer festen Uhrzeit, wahlweise mit Kalender-Erinnerung
+• Erkennt geänderte Geburtstage und aktualisiert oder entfernt die Termine
+• Tägliche Benachrichtigung über die heutigen Geburtstage zur Uhrzeit deiner Wahl
+• Geführte Einrichtung, die jede Berechtigung erklärt und bei Akku- und Hintergrund-Einstellungen hilft
+• Termintitel mit Platzhaltern, z. B. „🎂 {name} ({age})“
+
+Datenschutz:
+• Kein Internetzugriff – deine Daten verlassen das Gerät nicht
+• Keine Werbung, kein Tracking, keine Analyse
+• Kostenlos und Open Source

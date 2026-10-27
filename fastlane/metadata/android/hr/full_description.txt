@@ -1,0 +1,17 @@
+Birthday Sync prenosi rođendane iz tvojih kontakata u kalendar koji stvarno koristiš – automatski i bez ikakvog računa ili usluge u oblaku.
+
+Biraš koji će se računi ili grupe kontakata uključiti i u koji kalendar idu događaji. Aplikacija za svaki rođendan stvara događaj i ažurira ga: ako promijeniš ime ili datum rođenja ili ukloniš kontakt, kalendar će se uskladiti pri sljedećoj sinkronizaciji.
+
+Značajke:
+• Čita rođendane iz računa i grupa/oznaka kontakata po tvom izboru
+• Upisuje ih kao događaje u kalendar po tvom izboru ili u vlastiti kalendar „Rođendani“ na uređaju
+• Cjelodnevno ili u određeno vrijeme, po želji s podsjetnikom u kalendaru
+• Prepoznaje promijenjene rođendane i ažurira ili uklanja događaje
+• Dnevna obavijest o današnjim rođendanima u vrijeme koje odabereš
+• Vođeno postavljanje koje objašnjava svako dopuštenje i pomaže s postavkama baterije i rada u pozadini
+• Naslov događaja sa zamjenskim oznakama, npr. „🎂 {name} ({age})“
+
+Privatnost:
+• Bez pristupa internetu – tvoji podaci nikad ne napuštaju uređaj
+• Bez oglasa, bez praćenja, bez analitike
+• Besplatno i otvorenog koda

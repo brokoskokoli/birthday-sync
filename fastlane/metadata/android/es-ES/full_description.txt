@@ -1,0 +1,17 @@
+Birthday Sync lleva los cumpleaños de tus contactos al calendario que realmente usas, de forma automática y sin cuentas ni servicios en la nube.
+
+Elige qué cuentas o grupos de contactos quieres incluir y en qué calendario se crearán los eventos. La aplicación crea un evento para cada cumpleaños y lo mantiene actualizado: si cambias un nombre o una fecha de nacimiento, o eliminas un contacto, el calendario se actualiza en la próxima sincronización.
+
+Funciones:
+• Lee los cumpleaños de las cuentas y grupos/etiquetas de contactos que elijas
+• Los añade como eventos al calendario que elijas o a un calendario propio “Cumpleaños” en el dispositivo
+• Todo el día o a una hora fija, con recordatorio del calendario opcional
+• Detecta los cumpleaños modificados y actualiza o elimina los eventos
+• Notificación diaria de los cumpleaños de hoy, a la hora que elijas
+• Configuración guiada que explica cada permiso y ayuda con los ajustes de batería y segundo plano
+• Título del evento con marcadores, p. ej., “🎂 {name} ({age})”
+
+Privacidad:
+• Sin acceso a Internet: tus datos nunca salen del dispositivo
+• Sin anuncios, sin seguimiento, sin análisis
+• Gratuita y de código abierto

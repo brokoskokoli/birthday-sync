@@ -1,0 +1,17 @@
+Birthday Sync zet de verjaardagen uit je contacten in de agenda die je echt gebruikt – automatisch en zonder account of clouddienst.
+
+Je kiest welke contactaccounts of groepen worden meegenomen en in welke agenda de afspraken komen. De app maakt voor elke verjaardag een afspraak en houdt die actueel: wijzig je een naam of geboortedatum of verwijder je een contact, dan volgt de agenda bij de volgende synchronisatie.
+
+Functies:
+• Leest verjaardagen uit de contactaccounts en groepen/labels die je kiest
+• Zet ze als afspraken in een agenda naar keuze, of in een eigen agenda “Verjaardagen” op het apparaat
+• De hele dag of op een vaste tijd, eventueel met een agendaherinnering
+• Herkent gewijzigde verjaardagen en werkt de afspraken bij of verwijdert ze
+• Dagelijkse melding over de verjaardagen van vandaag, op een tijd die je zelf kiest
+• Begeleide installatie die elk recht uitlegt en helpt met batterij- en achtergrondinstellingen
+• Afspraaktitel met plaatshouders, bijv. “🎂 {name} ({age})”
+
+Privacy:
+• Geen internettoegang – je gegevens verlaten het apparaat nooit
+• Geen advertenties, geen tracking, geen analyse
+• Gratis en open source

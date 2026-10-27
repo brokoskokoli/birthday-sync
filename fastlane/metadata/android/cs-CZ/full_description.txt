@@ -1,0 +1,17 @@
+Birthday Sync přenese narozeniny z tvých kontaktů do kalendáře, který opravdu používáš – automaticky a bez jakéhokoli účtu nebo cloudové služby.
+
+Vybereš, které účty nebo skupiny kontaktů se mají zahrnout a do kterého kalendáře se mají události ukládat. Aplikace vytvoří událost pro každé narozeniny a udržuje ji aktuální: když změníš jméno nebo datum narození nebo odebereš kontakt, kalendář se při příští synchronizaci přizpůsobí.
+
+Funkce:
+• Čte narozeniny z vybraných účtů a skupin/štítků kontaktů
+• Zapisuje je jako události do kalendáře podle tvého výběru nebo do vlastního kalendáře „Narozeniny“ v zařízení
+• Celodenní nebo v pevně nastavený čas, volitelně s připomenutím v kalendáři
+• Rozpozná změněné narozeniny a události aktualizuje nebo odebere
+• Denní oznámení o dnešních narozeninách v čase, který si vybereš
+• Průvodce nastavením, který vysvětlí každé oprávnění a pomůže s nastavením baterie a činnosti na pozadí
+• Název události se zástupnými symboly, např. „🎂 {name} ({age})“
+
+Ochrana soukromí:
+• Žádný přístup k internetu – tvoje data nikdy neopustí zařízení
+• Žádné reklamy, žádné sledování, žádná analytika
+• Zdarma a open source

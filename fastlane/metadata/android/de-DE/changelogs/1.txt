@@ -1,0 +1,1 @@
+Erste Version: Geburtstage aus deinen Kontakten als Kalendertermine, tägliche Geburtstags-Benachrichtigung, geführte Einrichtung, in vielen Sprachen verfügbar.

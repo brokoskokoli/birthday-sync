@@ -1,0 +1,17 @@
+Birthday Sync siirtää yhteystietojesi syntymäpäivät kalenteriin, jota oikeasti käytät – automaattisesti ja ilman tiliä tai pilvipalvelua.
+
+Valitset itse, mitkä yhteystietotilit tai ryhmät otetaan mukaan ja mihin kalenteriin tapahtumat tulevat. Sovellus luo jokaisesta syntymäpäivästä tapahtuman ja pitää sen ajan tasalla: jos muutat nimeä tai syntymäaikaa tai poistat yhteystiedon, kalenteri päivittyy seuraavassa synkronoinnissa.
+
+Ominaisuudet:
+• Lukee syntymäpäivät valitsemistasi yhteystietotileistä ja ryhmistä/tunnisteista
+• Tallentaa ne tapahtumina valitsemaasi kalenteriin tai omaan ”Syntymäpäivät”-kalenteriin laitteella
+• Koko päivän tai tiettyyn aikaan, halutessasi kalenterimuistutuksella
+• Tunnistaa muuttuneet syntymäpäivät ja päivittää tai poistaa tapahtumat
+• Päivittäinen ilmoitus tämän päivän syntymäpäivistä valitsemaasi aikaan
+• Ohjattu käyttöönotto, joka selittää jokaisen luvan ja auttaa akku- ja taustatoiminta-asetuksissa
+• Tapahtuman otsikko paikkamerkeillä, esim. ”🎂 {name} ({age})”
+
+Tietosuoja:
+• Ei internetyhteyttä – tietosi eivät koskaan poistu laitteelta
+• Ei mainoksia, ei seurantaa, ei analytiikkaa
+• Ilmainen ja avointa lähdekoodia

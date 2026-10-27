@@ -1,0 +1,17 @@
+Birthday Sync aduce zilele de naștere din contactele tale în calendarul pe care chiar îl folosești – automat și fără vreun cont sau serviciu cloud.
+
+Alegi ce conturi sau grupuri de contacte sunt incluse și în ce calendar ajung evenimentele. Aplicația creează un eveniment pentru fiecare zi de naștere și îl menține actualizat: dacă schimbi un nume sau o dată de naștere ori elimini un contact, calendarul se actualizează la următoarea sincronizare.
+
+Funcții:
+• Citește zilele de naștere din conturile și grupurile/etichetele de contacte alese de tine
+• Le scrie ca evenimente într-un calendar ales de tine sau într-un calendar propriu „Zile de naștere” pe dispozitiv
+• Toată ziua sau la o oră fixă, opțional cu memento în calendar
+• Detectează zilele de naștere modificate și actualizează sau elimină evenimentele
+• Notificare zilnică despre zilele de naștere de azi, la ora aleasă de tine
+• Configurare ghidată care explică fiecare permisiune și ajută la setările pentru baterie și fundal
+• Titlul evenimentului cu substituenți, de ex. „🎂 {name} ({age})”
+
+Confidențialitate:
+• Fără acces la internet – datele tale nu părăsesc niciodată dispozitivul
+• Fără reclame, fără urmărire, fără analize
+• Gratuită și open source

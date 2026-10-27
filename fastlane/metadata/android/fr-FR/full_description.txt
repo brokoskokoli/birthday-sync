@@ -1,0 +1,17 @@
+Birthday Sync reporte les anniversaires de vos contacts dans l'agenda que vous utilisez vraiment – automatiquement, sans compte ni service cloud.
+
+Choisissez les comptes ou groupes de contacts à inclure et l'agenda dans lequel les événements doivent être créés. L'application crée un événement pour chaque anniversaire et le tient à jour : si vous modifiez un nom ou une date de naissance, ou supprimez un contact, l'agenda suit lors de la synchronisation suivante.
+
+Fonctionnalités :
+• Lit les anniversaires depuis les comptes et groupes/libellés de contacts de votre choix
+• Les inscrit sous forme d'événements dans l'agenda de votre choix, ou dans un agenda dédié « Anniversaires » sur l'appareil
+• Toute la journée ou à une heure fixe, avec un rappel d'agenda facultatif
+• Détecte les anniversaires modifiés et met à jour ou supprime les événements
+• Notification quotidienne des anniversaires du jour, à l'heure de votre choix
+• Configuration guidée qui explique chaque autorisation et aide à régler la batterie et l'arrière-plan
+• Titre d'événement avec espaces réservés, p. ex. « 🎂 {name} ({age}) »
+
+Confidentialité :
+• Aucun accès à Internet – vos données ne quittent jamais l'appareil
+• Pas de publicité, pas de suivi, pas d'analyse
+• Gratuit et open source

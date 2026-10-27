@@ -1,0 +1,17 @@
+Birthday Sync puts the birthdays from your contacts into the calendar you actually use – automatically and without any account or cloud service.
+
+Choose which contact accounts or groups to include and which calendar the events should go to. The app creates an event for every birthday and keeps it up to date: if you change a name or a birth date, or remove a contact, the calendar follows at the next sync.
+
+Features:
+• Reads birthdays from the contact accounts and groups/labels you choose
+• Writes them as events into a calendar of your choice, or into its own “Birthdays” calendar on the device
+• All-day or at a set time, with an optional calendar reminder
+• Detects changed birthdays and updates or removes the events
+• Daily notification for today’s birthdays, at a time you choose
+• Guided setup that explains every permission and helps with battery and background settings
+• Event title with placeholders, e.g. “🎂 {name} ({age})”
+
+Privacy:
+• No internet access – your data never leaves the device
+• No ads, no tracking, no analytics
+• Free and open source

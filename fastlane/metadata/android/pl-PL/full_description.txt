@@ -1,0 +1,17 @@
+Birthday Sync przenosi urodziny z twoich kontaktów do kalendarza, z którego naprawdę korzystasz – automatycznie i bez żadnego konta ani usługi w chmurze.
+
+Wybierasz, które konta lub grupy kontaktów mają być uwzględnione i do którego kalendarza mają trafiać wydarzenia. Aplikacja tworzy wydarzenie dla każdych urodzin i dba o jego aktualność: gdy zmienisz imię lub datę urodzenia albo usuniesz kontakt, kalendarz zaktualizuje się przy następnej synchronizacji.
+
+Funkcje:
+• Odczytuje urodziny z wybranych kont i grup/etykiet kontaktów
+• Zapisuje je jako wydarzenia w wybranym kalendarzu lub we własnym kalendarzu „Urodziny” na urządzeniu
+• Wydarzenia całodniowe lub o ustalonej godzinie, opcjonalnie z przypomnieniem w kalendarzu
+• Wykrywa zmienione urodziny i aktualizuje lub usuwa wydarzenia
+• Codzienne powiadomienie o dzisiejszych urodzinach o wybranej godzinie
+• Konfiguracja z przewodnikiem, która wyjaśnia każde uprawnienie i pomaga w ustawieniach baterii i pracy w tle
+• Tytuł wydarzenia z symbolami zastępczymi, np. „🎂 {name} ({age})”
+
+Prywatność:
+• Brak dostępu do internetu – twoje dane nigdy nie opuszczają urządzenia
+• Bez reklam, bez śledzenia, bez analityki
+• Bezpłatna i open source

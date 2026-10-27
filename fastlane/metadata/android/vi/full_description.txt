@@ -1,0 +1,17 @@
+Birthday Sync đưa ngày sinh từ danh bạ vào chính lịch mà bạn đang dùng – hoàn toàn tự động, không cần tài khoản hay dịch vụ đám mây nào.
+
+Bạn chọn tài khoản hoặc nhóm liên hệ nào được đưa vào và lịch nào sẽ chứa các sự kiện. Ứng dụng tạo một sự kiện cho mỗi ngày sinh và luôn cập nhật sự kiện đó: nếu bạn đổi tên, đổi ngày sinh hoặc xóa một liên hệ, lịch sẽ thay đổi theo ở lần đồng bộ tiếp theo.
+
+Tính năng:
+• Đọc ngày sinh từ các tài khoản liên hệ và nhóm/nhãn bạn chọn
+• Ghi chúng thành sự kiện vào lịch bạn chọn, hoặc vào lịch riêng “Sinh nhật” trên thiết bị
+• Sự kiện cả ngày hoặc vào giờ cố định, có thể thêm lời nhắc lịch
+• Phát hiện ngày sinh đã thay đổi và cập nhật hoặc xóa sự kiện
+• Thông báo hằng ngày về các sinh nhật hôm nay, vào giờ bạn chọn
+• Trình thiết lập có hướng dẫn, giải thích từng quyền và hỗ trợ cài đặt pin cũng như chạy trong nền
+• Tiêu đề sự kiện có phần giữ chỗ, ví dụ “🎂 {name} ({age})”
+
+Quyền riêng tư:
+• Không truy cập Internet – dữ liệu của bạn không bao giờ rời khỏi thiết bị
+• Không quảng cáo, không theo dõi, không phân tích
+• Miễn phí và mã nguồn mở

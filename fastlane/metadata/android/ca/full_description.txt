@@ -1,0 +1,17 @@
+Birthday Sync porta els aniversaris dels teus contactes al calendari que fas servir de veritat, de manera automàtica i sense comptes ni serveis al núvol.
+
+Tria quins comptes o grups de contactes vols incloure i en quin calendari s'han de crear els esdeveniments. L'aplicació crea un esdeveniment per a cada aniversari i el manté actualitzat: si canvies un nom o una data de naixement, o suprimeixes un contacte, el calendari s'actualitza a la sincronització següent.
+
+Funcions:
+• Llegeix els aniversaris dels comptes i grups/etiquetes de contactes que triïs
+• Els afegeix com a esdeveniments al calendari que triïs o a un calendari propi “Aniversaris” al dispositiu
+• Tot el dia o a una hora fixa, amb un recordatori del calendari opcional
+• Detecta els aniversaris modificats i actualitza o suprimeix els esdeveniments
+• Notificació diària dels aniversaris d'avui, a l'hora que triïs
+• Configuració guiada que explica cada permís i ajuda amb les opcions de bateria i segon pla
+• Títol de l'esdeveniment amb marcadors, p. ex. “🎂 {name} ({age})”
+
+Privadesa:
+• Sense accés a Internet: les teves dades no surten mai del dispositiu
+• Sense anuncis, sense seguiment, sense analítiques
+• Gratuïta i de codi obert

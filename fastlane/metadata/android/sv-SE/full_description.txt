@@ -1,0 +1,17 @@
+Birthday Sync för över födelsedagarna från dina kontakter till den kalender du faktiskt använder – automatiskt och utan konto eller molntjänst.
+
+Du väljer vilka kontaktkonton eller grupper som ska tas med och i vilken kalender händelserna ska hamna. Appen skapar en händelse för varje födelsedag och håller den uppdaterad: om du ändrar ett namn eller ett födelsedatum eller tar bort en kontakt följer kalendern med vid nästa synkning.
+
+Funktioner:
+• Läser födelsedagar från de kontaktkonton och grupper/etiketter du väljer
+• Lägger in dem som händelser i en valfri kalender, eller i en egen kalender ”Födelsedagar” på enheten
+• Heldag eller vid en fast tid, med valfri kalenderpåminnelse
+• Upptäcker ändrade födelsedagar och uppdaterar eller tar bort händelserna
+• Daglig avisering om dagens födelsedagar, vid en tid du väljer
+• Guidad konfiguration som förklarar varje behörighet och hjälper till med batteri- och bakgrundsinställningar
+• Händelsetitel med platshållare, t.ex. ”🎂 {name} ({age})”
+
+Integritet:
+• Ingen internetåtkomst – dina data lämnar aldrig enheten
+• Ingen reklam, ingen spårning, ingen analys
+• Gratis och öppen källkod

@@ -1,0 +1,17 @@
+Birthday Sync prenese rojstne dneve iz tvojih stikov v koledar, ki ga res uporabljaš – samodejno in brez kakršnega koli računa ali storitve v oblaku.
+
+Izbereš, kateri računi ali skupine stikov naj bodo vključeni in v kateri koledar naj gredo dogodki. Aplikacija za vsak rojstni dan ustvari dogodek in ga sproti posodablja: če spremeniš ime ali datum rojstva ali odstraniš stik, koledar ob naslednji sinhronizaciji sledi spremembi.
+
+Funkcije:
+• Bere rojstne dneve iz računov in skupin/oznak stikov po tvoji izbiri
+• Zapiše jih kot dogodke v koledar po tvoji izbiri ali v lasten koledar »Rojstni dnevi« v napravi
+• Ves dan ali ob določeni uri, po želji z opomnikom v koledarju
+• Zazna spremenjene rojstne dneve ter posodobi ali odstrani dogodke
+• Dnevno obvestilo o današnjih rojstnih dnevih ob uri po tvoji izbiri
+• Vodena nastavitev, ki pojasni vsako dovoljenje in pomaga pri nastavitvah baterije in delovanja v ozadju
+• Naslov dogodka z nadomestnimi znaki, npr. »🎂 {name} ({age})«
+
+Zasebnost:
+• Brez dostopa do interneta – tvoji podatki nikoli ne zapustijo naprave
+• Brez oglasov, brez sledenja, brez analitike
+• Brezplačno in odprtokodno

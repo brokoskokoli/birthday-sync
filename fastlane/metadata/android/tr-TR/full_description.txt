@@ -1,0 +1,17 @@
+Birthday Sync, kişilerinizdeki doğum günlerini gerçekten kullandığınız takvime aktarır – otomatik olarak ve hesap ya da bulut hizmeti gerektirmeden.
+
+Hangi kişi hesaplarının veya grupların dahil edileceğini ve etkinliklerin hangi takvime ekleneceğini siz seçersiniz. Uygulama her doğum günü için bir etkinlik oluşturur ve bunu güncel tutar: Bir adı veya doğum tarihini değiştirirseniz ya da bir kişiyi silerseniz takvim bir sonraki senkronizasyonda buna uyar.
+
+Özellikler:
+• Doğum günlerini seçtiğiniz kişi hesaplarından ve gruplardan/etiketlerden okur
+• Bunları etkinlik olarak seçtiğiniz bir takvime ya da cihazdaki ayrı “Doğum Günleri” takvimine yazar
+• Tüm gün veya belirli bir saatte, isteğe bağlı takvim hatırlatıcısıyla
+• Değişen doğum günlerini algılar ve etkinlikleri günceller ya da kaldırır
+• Bugünkü doğum günleri için seçtiğiniz saatte günlük bildirim
+• Her izni açıklayan ve pil ile arka plan ayarlarında yardımcı olan rehberli kurulum
+• Yer tutuculu etkinlik başlığı, ör. “🎂 {name} ({age})”
+
+Gizlilik:
+• İnternet erişimi yok – verileriniz cihazdan asla çıkmaz
+• Reklam yok, izleme yok, analiz yok
+• Ücretsiz ve açık kaynak
