@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- SPDX-FileCopyrightText: 2026 Stefan Richter -->
+<!-- SPDX-License-Identifier: MIT -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Birthday Sync – Contact birthdays in your Android calendar</title>
+<meta name="description" content="Free, open-source Android app that copies your contacts' birthdays into any calendar, e.g. Google Calendar, keeps them up to date and needs no internet access.">
+<link rel="canonical" href="https://brokoskokoli.github.io/birthday-sync/">
+<link rel="alternate" hreflang="en" href="https://brokoskokoli.github.io/birthday-sync/">
+<link rel="alternate" hreflang="de" href="https://brokoskokoli.github.io/birthday-sync/de/">
+<link rel="alternate" hreflang="x-default" href="https://brokoskokoli.github.io/birthday-sync/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbf4f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a0d13" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Birthday Sync">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:title" content="Birthday Sync – Contact birthdays in your Android calendar">
+<meta property="og:description" content="Puts the birthdays from your contacts into the calendar you actually use – automatic, private, no internet access. Free and open source.">
+<meta property="og:url" content="https://brokoskokoli.github.io/birthday-sync/">
+<meta property="og:image" content="https://brokoskokoli.github.io/birthday-sync/images/social-preview.png">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta property="og:image:alt" content="Birthday Sync app icon, a birthday cake, with the name and the tagline">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Birthday Sync – Contact birthdays in your Android calendar">
+<meta name="twitter:description" content="Puts the birthdays from your contacts into the calendar you actually use – automatic, private, no internet access. Free and open source.">
+<meta name="twitter:image" content="https://brokoskokoli.github.io/birthday-sync/images/social-preview.png">
+<meta name="twitter:image:alt" content="Birthday Sync app icon, a birthday cake, with the name and the tagline">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Birthday Sync",
+  "inLanguage": "en",
+  "operatingSystem": "Android 8.0 or later",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "Free, open-source Android app that copies the birthdays from your contacts into a calendar of your choice, keeps the events up to date and sends a daily notification. No internet access.",
+  "url": "https://brokoskokoli.github.io/birthday-sync/",
+  "downloadUrl": "https://github.com/brokoskokoli/birthday-sync/releases/latest",
+  "installUrl": "https://github.com/brokoskokoli/birthday-sync/releases/latest",
+  "softwareVersion": "0.1.0",
+  "screenshot": "https://brokoskokoli.github.io/birthday-sync/images/social-preview.png",
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true,
+  "author": { "@type": "Person", "name": "brokoskokoli", "url": "https://github.com/brokoskokoli" },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<style>
+  /* Brand colours from the app icon: rose #E8618C, candle flame #FFF3B0. */
+  :root {
+    --bg: #fbf4f7;
+    --bg-alt: #ffffff;
+    --text: #33121f;
+    --muted: #6e4a59;
+    --border: #f0d9e2;
+    --accent: #b02a5b;
+    --accent-2: #8a4a00;
+    --accent-text: #ffffff;
+    --yes: #137852;
+    --no: #7d6670;
+    --shadow: 0 24px 60px rgba(90, 20, 50, .16);
+    --bar: #f6e6ed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a0d13;
+      --bg-alt: #25131c;
+      --text: #f8e9ef;
+      --muted: #c7a5b3;
+      --border: #3d2230;
+      --accent: #ff8db3;
+      --accent-2: #ffcf70;
+      --accent-text: #3a0716;
+      --yes: #4fd39f;
+      --no: #9c8090;
+      --shadow: 0 24px 60px rgba(0, 0, 0, .55);
+      --bar: #301a25;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--text); }
+  .brand img { width: 32px; height: 32px; }
+  nav a { margin-left: 20px; color: var(--muted); font-size: 15px; }
+
+  .hero { text-align: center; padding: 40px 0 16px; }
+  .hero img.icon { width: 112px; height: 112px; border-radius: 24px; box-shadow: var(--shadow); }
+  h1 { font-size: clamp(36px, 6vw, 56px); line-height: 1.1; margin: 18px 0 12px; letter-spacing: -.02em; }
+  .tagline { font-size: clamp(22px, 3.4vw, 30px); font-weight: 650; line-height: 1.25; margin: 0 auto 14px; max-width: 760px; letter-spacing: -.01em; }
+  .tagline span { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .subtitle { font-size: clamp(17px, 2.2vw, 20px); color: var(--muted); max-width: 720px; margin: 0 auto 28px; }
+  .buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 12px; font-weight: 600; border: 1px solid var(--border); color: var(--text); background: var(--bg-alt); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+  .btn:hover { text-decoration: none; filter: brightness(1.06); }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 12px; }
+
+  section { padding: 64px 0 8px; }
+  h2 { font-size: clamp(26px, 3.6vw, 34px); letter-spacing: -.01em; margin: 0 0 12px; text-align: center; }
+  .lead { text-align: center; color: var(--muted); max-width: 720px; margin: 0 auto 28px; }
+  .narrow { max-width: 820px; margin: 0 auto; }
+
+  .compare { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; font-size: 16px; }
+  .compare th, .compare td { padding: 12px 16px; border-bottom: 1px solid var(--border); text-align: left; }
+  .compare tr:last-child td { border-bottom: 0; }
+  .compare th { font-size: 14px; color: var(--muted); font-weight: 600; background: var(--bar); }
+  .compare .c { text-align: center; width: 150px; }
+  .yes { color: var(--yes); font-weight: 700; }
+  .no { color: var(--no); }
+  .note { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  .center { text-align: center; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px; }
+  .card { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+  .card .ico { font-size: 26px; line-height: 1; margin-bottom: 10px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .steps li, .install li { margin: 6px 0; }
+  .platforms { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px; margin-top: 20px; }
+  code { font: 14px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; overflow-wrap: anywhere; }
+
+  .faq { max-width: 820px; margin: 0 auto; }
+  .faq details { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; margin: 10px 0; }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq details p { color: var(--muted); margin: 10px 0 0; }
+
+  footer { color: var(--muted); font-size: 14px; text-align: center; padding: 64px 0 40px; }
+  @media (max-width: 760px) {
+    nav a:not(.gh):not(.lang) { display: none; }
+    nav a { margin-left: 14px; }
+    .compare .c { width: 84px; padding: 10px 6px; }
+    .compare th, .compare td { padding: 10px; font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="favicon.png" alt="" width="32" height="32">Birthday Sync</a>
+    <nav>
+      <a href="#why">Why</a>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#install">Install</a>
+      <a href="#faq">FAQ</a>
+      <a class="gh" href="https://github.com/brokoskokoli/birthday-sync">GitHub</a>
+      <a class="lang" href="de/" hreflang="de" lang="de">Deutsch</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img class="icon" src="images/icon.png" alt="Birthday Sync app icon: a birthday cake" width="112" height="112" fetchpriority="high">
+      <h1>Birthday Sync</h1>
+      <p class="tagline">Your contacts’ birthdays in your calendar. <span>Automatic, private, no internet access.</span></p>
+      <p class="subtitle">A free Android app that writes the birthdays from your contacts as real events into the calendar you choose – for example your Google calendar – keeps them up to date and reminds you on the day.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/brokoskokoli/birthday-sync/releases/latest">Download APK</a>
+        <a class="btn" href="https://github.com/brokoskokoli/birthday-sync">View on GitHub</a>
+      </div>
+      <p class="meta">Android 8.0 or later · 40 languages · Free and open source (MIT)</p>
+    </div>
+
+    <section id="why">
+      <h2>Why Birthday Sync?</h2>
+      <p class="lead">Since 2024, Google Calendar no longer reliably shows your contacts’ birthdays for many users in Germany and the EU – Google cites an agreement with a German regulator. The birthdays are still in your contacts; Birthday Sync turns them into calendar events that you control.</p>
+      <table class="compare">
+        <thead><tr><th scope="col"><span class="sr-only">Feature</span></th><th scope="col" class="c">Birthday Adapter</th><th scope="col" class="c">Birthday Sync</th></tr></thead>
+        <tbody>
+          <tr><td>Birthdays from your contacts in a calendar</td><td class="c yes"><span aria-hidden="true">✓</span><span class="sr-only">yes</span></td><td class="c yes"><span aria-hidden="true">✓</span><span class="sr-only">yes</span></td></tr>
+          <tr><td>Write into any calendar, e.g. your Google calendar (visible on the web and other devices)</td><td class="c no"><span aria-hidden="true">–</span><span class="sr-only">no</span></td><td class="c yes"><span aria-hidden="true">✓</span><span class="sr-only">yes</span></td></tr>
+          <tr><td>Daily notification listing today’s birthdays</td><td class="c no"><span aria-hidden="true">–</span><span class="sr-only">no</span></td><td class="c yes"><span aria-hidden="true">✓</span><span class="sr-only">yes</span></td></tr>
+          <tr><td>Free and open source</td><td class="c yes"><span aria-hidden="true">✓</span><span class="sr-only">yes</span></td><td class="c yes"><span aria-hidden="true">✓</span><span class="sr-only">yes</span></td></tr>
+        </tbody>
+      </table>
+      <p class="note"><a href="https://f-droid.org/packages/org.birthdayadapter/">Birthday Adapter</a> (F-Droid) provides its own local birthday calendar and is a good choice if that is all you need.</p>
+    </section>
+
+    <section id="features">
+      <h2>Set it up once, then forget about it</h2>
+      <p class="lead">Birthday Sync runs in the background and keeps your calendar in step with your contacts.</p>
+      <div class="grid">
+        <div class="card"><div class="ico" aria-hidden="true">👥</div><h3>Your choice of contacts</h3><p>Whole contact accounts – Google, device, Exchange and others – or individual groups and labels.</p></div>
+        <div class="card"><div class="ico" aria-hidden="true">📅</div><h3>Any calendar</h3><p>Write into any writable calendar on the phone, or let the app create a local “Birthdays” calendar.</p></div>
+        <div class="card"><div class="ico" aria-hidden="true">🎂</div><h3>Events your way</h3><p>All-day or at a set time with a duration, an optional reminder, and a title template like <code>🎂 {name} ({age})</code>.</p></div>
+        <div class="card"><div class="ico" aria-hidden="true">🔄</div><h3>Always up to date</h3><p>Daily or weekly sync, 1–12 months ahead. Changed birth dates are updated, removed contacts disappear.</p></div>
+        <div class="card"><div class="ico" aria-hidden="true">🔔</div><h3>Daily notification</h3><p>At a time you choose, only on days when someone has a birthday – straight from your contacts.</p></div>
+        <div class="card"><div class="ico" aria-hidden="true">🧭</div><h3>Guided setup</h3><p>Each permission is asked on its own screen with an explanation. The System tab checks battery optimization, background limits and app hibernation.</p></div>
+        <div class="card"><div class="ico" aria-hidden="true">🌍</div><h3>40 languages</h3><p>From Arabic to Vietnamese, with per-app language selection on Android 13 and later.</p></div>
+        <div class="card"><div class="ico" aria-hidden="true">🔒</div><h3>No internet access</h3><p>The app has no internet permission, no ads and no tracking. See the <a href="privacy.html">privacy policy</a>.</p></div>
+        <div class="card"><div class="ico" aria-hidden="true">💗</div><h3>Free and open source</h3><p>MIT License. Read the code, report issues, help with translations.</p></div>
+      </div>
+      <p class="note center">Screenshots will follow.</p>
+    </section>
+
+    <section id="how">
+      <h2>How it works</h2>
+      <div class="narrow">
+        <p>Every event Birthday Sync creates carries a small marker at the end of its description, <code>#birthday-sync key=… v=…</code>. The app only ever touches events with this marker – your other appointments stay as they are. It needs no database of its own and finds its events again even after a reinstall.</p>
+        <ul class="steps">
+          <li>Name, title template, time or reminder changed → the event is updated.</li>
+          <li>Birth date changed, contact removed or deselected → the event is removed (and re-created on the new date).</li>
+          <li>Target calendar changed → the events move to the new calendar.</li>
+          <li>Past events are left alone.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="install" class="install">
+      <h2>Install</h2>
+      <div class="narrow">
+        <ol>
+          <li>Download <code>BirthdaySync-&lt;version&gt;.apk</code> from the <a href="https://github.com/brokoskokoli/birthday-sync/releases/latest">latest release</a> on your phone.</li>
+          <li>Open the file. Android asks once whether your browser or file manager may install apps.</li>
+          <li>Start Birthday Sync and follow the setup: choose contacts, choose a calendar, done.</li>
+        </ol>
+        <div class="platforms">
+          <div class="card"><h3>Obtainium</h3><p>Add <code>https://github.com/brokoskokoli/birthday-sync</code> in <a href="https://github.com/ImranR98/Obtainium">Obtainium</a> to get updates straight from GitHub.</p></div>
+          <div class="card"><h3>App stores</h3><p>Google Play and IzzyOnDroid / F-Droid are planned.</p></div>
+          <div class="card"><h3>Verify or build</h3><p>The signing certificate fingerprint and build instructions are in the <a href="https://github.com/brokoskokoli/birthday-sync#verify-the-download">README</a>.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details><summary>Is Birthday Sync really free?</summary><p>Yes. It is open source under the MIT License, with no ads, no in-app purchases and no account.</p></details>
+        <details><summary>Does Birthday Sync connect to the internet?</summary><p>No. The app has no internet permission and makes no network connections at all – no analytics, no crash reporter. Your contacts and calendar stay on your device. Details in the <a href="privacy.html">privacy policy</a>.</p></details>
+        <details><summary>Will the birthdays show up on my computer, too?</summary><p>Yes, if you choose a synced calendar such as your Google calendar as the target: your calendar provider syncs the events like any other appointment. The local “Birthdays” calendar stays on the phone only.</p></details>
+        <details><summary>Does the app change my contacts or other appointments?</summary><p>No. Contacts are only read. In the calendar, Birthday Sync only creates, updates and deletes its own birthday events, recognised by the marker in their description.</p></details>
+        <details><summary>I see some birthdays twice.</summary><p>If your calendar app still shows its own birthday calendar, hide that one in the calendar app’s settings.</p></details>
+        <details><summary>The sync or the notification doesn’t run in the background.</summary><p>Open the System tab in the app: it checks battery optimization, background restrictions, app hibernation and exact alarms, and shows hints for manufacturers that stop background apps.</p></details>
+        <details><summary>What happens when I uninstall the app?</summary><p>The events stay in your calendar. To remove them, use <b>Calendar → Remove events</b> in the app before uninstalling.</p></details>
+        <details><summary>Which Android versions are supported?</summary><p>Android 8.0 (Oreo) and later.</p></details>
+        <details><summary>How can I help?</summary><p>Report bugs, suggest features or review a translation – many languages were translated with the help of AI. See <a href="https://github.com/brokoskokoli/birthday-sync/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Birthday Sync is free software under the <a href="https://github.com/brokoskokoli/birthday-sync/blob/main/LICENSE">MIT License</a>.
+    © 2026 Stefan Richter and contributors ·
+    <a href="https://github.com/brokoskokoli/birthday-sync">Source code</a> ·
+    <a href="privacy.html">Privacy</a> ·
+    <a href="https://github.com/brokoskokoli/birthday-sync/issues">Report an issue</a>
+  </footer>
+</div>
+</body>
+</html>

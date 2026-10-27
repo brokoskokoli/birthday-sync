@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- SPDX-FileCopyrightText: 2026 Stefan Richter -->
+<!-- SPDX-License-Identifier: MIT -->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Birthday Sync</title>
+<meta name="description" content="Birthday Sync hat keinen Internetzugriff und erhebt oder teilt keine Daten. Was die App auf deinem Gerät liest und schreibt und wozu.">
+<link rel="canonical" href="https://brokoskokoli.github.io/birthday-sync/de/privacy.html">
+<link rel="alternate" hreflang="en" href="https://brokoskokoli.github.io/birthday-sync/privacy.html">
+<link rel="alternate" hreflang="de" href="https://brokoskokoli.github.io/birthday-sync/de/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://brokoskokoli.github.io/birthday-sync/privacy.html">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbf4f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a0d13" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<style>
+  :root { --bg: #fbf4f7; --bg-alt: #ffffff; --text: #33121f; --muted: #6e4a59; --border: #f0d9e2; --accent: #b02a5b; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a0d13; --bg-alt: #25131c; --text: #f8e9ef; --muted: #c7a5b3; --border: #3d2230; --accent: #ff8db3; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 0 16px; }
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--text); }
+  .brand img { width: 32px; height: 32px; }
+  nav a { margin-left: 20px; color: var(--muted); font-size: 15px; }
+  h1 { font-size: clamp(30px, 5vw, 40px); line-height: 1.15; margin: 24px 0 8px; }
+  h2 { font-size: 22px; margin: 32px 0 8px; }
+  .updated { color: var(--muted); font-size: 14px; }
+  .box { background: var(--bg-alt); border: 1px solid var(--border); border-radius: 14px; padding: 16px 20px; margin: 20px 0; }
+  li { margin: 6px 0; }
+  code { font: 14px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; overflow-wrap: anywhere; }
+  footer { color: var(--muted); font-size: 14px; text-align: center; padding: 56px 0 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./"><img src="../favicon.png" alt="" width="32" height="32">Birthday Sync</a>
+    <nav><a href="https://github.com/brokoskokoli/birthday-sync">GitHub</a><a class="lang" href="../privacy.html" hreflang="en" lang="en">English</a></nav>
+  </header>
+
+  <main>
+    <h1>Datenschutzerklärung</h1>
+    <p class="updated">Gilt für alle Versionen der Android-App Birthday Sync. Stand: 28. Oktober 2026.</p>
+
+    <div class="box"><b>Kurz gesagt:</b> Birthday Sync hat keinen Internetzugriff. Die App erhebt, überträgt und teilt keine personenbezogenen Daten. Sie liest deine Kontakte und schreibt Geburtstagstermine in deinen Kalender – nur auf deinem Gerät.</div>
+
+    <h2>Keine Datenerhebung</h2>
+    <p>Birthday Sync enthält keine Analyse, keine Telemetrie, keinen Absturzberichts-Dienst, keine Werbung, keine Tracking-Bibliotheken von Dritten und keine Benutzerkonten. Der Entwickler erhält keine Informationen über dich, deine Kontakte oder deine Nutzung der App.</p>
+
+    <h2>Keine Netzverbindungen</h2>
+    <p>Die App fordert die Android-Berechtigung für den Internetzugriff nicht an und kann sich daher nicht mit dem Internet verbinden – es gibt keine Update-Prüfung, und nichts wird hochgeladen. Tippst du in der App auf <b>Datenschutz</b> oder <b>Quellcode</b>, öffnet sich diese Website bzw. der Quellcode auf GitHub in deinem Browser; diese Verbindung baut dein Browser auf, nicht Birthday Sync (siehe „Diese Website“ unten).</p>
+
+    <h2>Was die App auf deinem Gerät liest und schreibt</h2>
+    <ul>
+      <li><b>Kontakte (nur lesen).</b> Namen, Geburtstage und die Zuordnung der Kontakte zu Konten und Gruppen/Labels, damit du auswählen kannst, welche Kontakte einbezogen werden, und die App deren Geburtstage findet. Das geschieht auch im Hintergrund beim regelmäßigen Abgleich. Birthday Sync ändert deine Kontakte nie.</li>
+      <li><b>Kalender (lesen und schreiben).</b> Die App listet deine Kalender auf, damit du einen Zielkalender wählen kannst, und legt dort <em>ihre eigenen</em> Geburtstagstermine an, aktualisiert und löscht sie. Diese Termine enthalten den Namen des Kontakts, den Geburtstag (und das Alter, wenn deine Titelvorlage es verwendet) sowie am Ende der Beschreibung eine Markierung der Form <code>#birthday-sync key=… v=…</code> mit einem internen Kontaktschlüssel und einer Version, an der die App ihre Termine erkennt. Andere Termine werden nie verändert. Auf Wunsch legt die App einen lokalen Kalender „Geburtstage“ an, der nur auf dem Gerät existiert.</li>
+      <li><b>Benachrichtigungen.</b> Für die optionale tägliche Benachrichtigung mit den heutigen Geburtstagen.</li>
+      <li><b>Wecker und Erinnerungen, Start beim Hochfahren.</b> Damit die tägliche Benachrichtigung zur eingestellten Uhrzeit kommt und nach einem Neustart oder einer Zeitumstellung neu geplant wird.</li>
+      <li><b>Einstellungen.</b> Deine Auswahl (Konten/Gruppen, Zielkalender, Termin- und Abgleichsoptionen, Uhrzeit der Benachrichtigung) und das Ergebnis des letzten Abgleichs werden im privaten Speicher der App auf dem Gerät abgelegt.</li>
+    </ul>
+
+    <h2>Kalender-Synchronisierung und Gerätesicherung</h2>
+    <p>Wählst du einen Kalender, der zu einem Online-Konto gehört (zum Beispiel deinen Google-Kalender), synchronisiert dein Kalenderanbieter die Geburtstagstermine wie jeden anderen Termin, den du anlegst – nach dessen Datenschutzbestimmungen. Birthday Sync selbst überträgt nichts. Ist die Android-Gerätesicherung eingeschaltet, kann Android die Einstellungen der App in diese Sicherung aufnehmen; das steuern dein Gerät und deine Sicherungseinstellungen, nicht Birthday Sync.</p>
+
+    <h2>Weitergabe und Löschung</h2>
+    <p>Birthday Sync gibt keine Daten an den Entwickler oder Dritte weiter. Beim Deinstallieren werden die Einstellungen der App gelöscht. Die Geburtstagstermine bleiben im Kalender; um sie zu löschen, vor dem Deinstallieren in der App <b>Kalender → Termine entfernen</b> wählen oder sie in deiner Kalender-App löschen.</p>
+
+    <h2>Diese Website</h2>
+    <p>Diese Website wird von GitHub Pages ausgeliefert. Sie setzt keine Cookies, nutzt keine Analyse und lädt nichts von Dritten. GitHub kann beim Aufruf technische Daten wie deine IP-Adresse protokollieren; siehe das <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+
+    <h2>Änderungen</h2>
+    <p>Ändert sich diese Erklärung, wird die neue Fassung mit neuem Datum auf dieser Seite veröffentlicht. Der Verlauf ist im <a href="https://github.com/brokoskokoli/birthday-sync/commits/main/website/de/privacy.html">Repository</a> einsehbar.</p>
+
+    <h2>Kontakt</h2>
+    <p>Fragen zum Datenschutz? Bitte <a href="https://github.com/brokoskokoli/birthday-sync/issues">ein Issue auf GitHub eröffnen</a>.</p>
+  </main>
+
+  <footer>
+    Birthday Sync ist freie Software unter der <a href="https://github.com/brokoskokoli/birthday-sync/blob/main/LICENSE">MIT-Lizenz</a>.
+    © 2026 Stefan Richter und Mitwirkende ·
+    <a href="./">Startseite</a> ·
+    <a href="https://github.com/brokoskokoli/birthday-sync">Quellcode</a> ·
+    <a href="https://github.com/brokoskokoli/birthday-sync/issues">Fehler melden</a>
+  </footer>
+</div>
+</body>
+</html>
