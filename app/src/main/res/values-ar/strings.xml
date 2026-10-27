@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">نظرة عامة</string>
+    <string name="tab_contacts">جهات الاتصال</string>
+    <string name="tab_calendar">التقويم</string>
+    <string name="tab_notify">التنبيهات</string>
+    <string name="tab_system">النظام</string>
+
+    <string name="action_allow">سماح</string>
+    <string name="action_allow_access">السماح بالوصول</string>
+    <string name="action_open">فتح</string>
+    <string name="action_open_setting">فتح الإعداد</string>
+    <string name="action_open_app_info">فتح معلومات التطبيق</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="action_sync_now">المزامنة الآن</string>
+    <string name="action_remove">إزالة</string>
+    <string name="section_sync">المزامنة</string>
+
+    <string name="overview_setup_incomplete_title">الإعداد غير مكتمل</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="zero">الأذونات أو الإعدادات الناقصة لمزامنة موثوقة: %d</item>
+        <item quantity="one">الأذونات أو الإعدادات الناقصة لمزامنة موثوقة: %d</item>
+        <item quantity="two">الأذونات أو الإعدادات الناقصة لمزامنة موثوقة: %d</item>
+        <item quantity="few">الأذونات أو الإعدادات الناقصة لمزامنة موثوقة: %d</item>
+        <item quantity="many">الأذونات أو الإعدادات الناقصة لمزامنة موثوقة: %d</item>
+        <item quantity="other">الأذونات أو الإعدادات الناقصة لمزامنة موثوقة: %d</item>
+    </plurals>
+    <string name="overview_setup_now">الإعداد الآن</string>
+    <string name="overview_first_steps">الخطوات الأولى</string>
+    <string name="overview_step_contacts">1. اختَر قوائم جهات الاتصال التي تريد تضمين أعياد ميلادها.</string>
+    <string name="overview_choose_contacts">اختيار قوائم جهات الاتصال</string>
+    <string name="overview_step_calendar">2. اختَر التقويم الذي ستُنشأ فيه الأحداث.</string>
+    <string name="overview_choose_calendar">اختيار التقويم المستهدف</string>
+    <string name="overview_target_calendar">التقويم المستهدف: %1$s</string>
+    <string name="overview_target_calendar_none">التقويم المستهدف: لم يتم اختياره</string>
+    <string name="overview_auto_daily">تلقائيًا كل يوم</string>
+    <string name="overview_auto_weekly">تلقائيًا كل أسبوع</string>
+    <string name="overview_auto_daily_next">تلقائيًا كل يوم، والتشغيل التالي ليس قبل %1$s</string>
+    <string name="overview_auto_weekly_next">تلقائيًا كل أسبوع، والتشغيل التالي ليس قبل %1$s</string>
+    <string name="overview_auto_off">المزامنة التلقائية متوقفة</string>
+    <string name="overview_last_sync">آخر مزامنة: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">لم تتم أي مزامنة بعد</string>
+    <string name="overview_syncing">جارٍ المزامنة …</string>
+    <string name="overview_upcoming">أعياد الميلاد القادمة</string>
+    <string name="overview_no_birthdays">لم يتم العثور على أعياد ميلاد في قوائم جهات الاتصال المحددة.</string>
+    <string name="upcoming_today">اليوم</string>
+    <string name="upcoming_tomorrow">غدًا</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="zero">بعد %d يوم</item>
+        <item quantity="one">بعد %d يوم</item>
+        <item quantity="two">بعد %d يومين</item>
+        <item quantity="few">بعد %d أيام</item>
+        <item quantity="many">بعد %d يومًا</item>
+        <item quantity="other">بعد %d يوم</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="zero">%1$s · عيد الميلاد الـ%2$d</item>
+        <item quantity="one">%1$s · عيد الميلاد الـ%2$d</item>
+        <item quantity="two">%1$s · عيد الميلاد الـ%2$d</item>
+        <item quantity="few">%1$s · عيد الميلاد الـ%2$d</item>
+        <item quantity="many">%1$s · عيد الميلاد الـ%2$d</item>
+        <item quantity="other">%1$s · عيد الميلاد الـ%2$d</item>
+    </plurals>
+
+    <string name="contacts_intro">اختَر حسابات كاملة أو مجموعات/تصنيفات منفردة. سيتم تضمين أعياد ميلاد جميع جهات الاتصال الموجودة فيها.</string>
+    <string name="contacts_no_permission_title">لا يمكن الوصول إلى جهات الاتصال</string>
+    <string name="contacts_no_permission_text">بدون هذا الإذن، لا يمكن عرض قوائم جهات الاتصال.</string>
+    <string name="contacts_none_found">لم يتم العثور على جهات اتصال على هذا الجهاز.</string>
+    <string name="contacts_all">جميع جهات الاتصال</string>
+    <plurals name="contacts_count">
+        <item quantity="zero">%d جهة اتصال</item>
+        <item quantity="one">%d جهة اتصال</item>
+        <item quantity="two">%d جهتا اتصال</item>
+        <item quantity="few">%d جهات اتصال</item>
+        <item quantity="many">%d جهة اتصال</item>
+        <item quantity="other">%d جهة اتصال</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="zero">مع تاريخ ميلاد: %d</item>
+        <item quantity="one">مع تاريخ ميلاد: %d</item>
+        <item quantity="two">مع تاريخ ميلاد: %d</item>
+        <item quantity="few">مع تاريخ ميلاد: %d</item>
+        <item quantity="many">مع تاريخ ميلاد: %d</item>
+        <item quantity="other">مع تاريخ ميلاد: %d</item>
+    </plurals>
+    <string name="contacts_device_label">الجهاز</string>
+    <string name="contacts_local_account">محليًا على هذا الجهاز</string>
+    <string name="contacts_group_fallback">المجموعة %1$d</string>
+    <string name="contacts_unnamed">بدون اسم</string>
+
+    <string name="calendar_target_title">التقويم المستهدف</string>
+    <string name="calendar_target_subtitle">هنا تُنشأ أحداث أعياد الميلاد</string>
+    <string name="calendar_no_permission">لا يمكن الوصول إلى التقويم.</string>
+    <string name="calendar_local_name">أعياد الميلاد</string>
+    <string name="calendar_create_local">إنشاء تقويم خاص «%1$s»</string>
+    <string name="calendar_local_info">يُحفظ التقويم الخاص على هذا الجهاز فقط، ويمكن إظهاره أو إخفاؤه بشكل منفصل في تطبيق التقويم.</string>
+    <string name="calendar_fallback_name">التقويم %1$d</string>
+    <string name="calendar_events_title">الأحداث</string>
+    <string name="calendar_all_day">طوال اليوم</string>
+    <string name="calendar_start">البدء</string>
+    <string name="calendar_duration">المدة</string>
+    <string name="calendar_reminder">تذكير التقويم</string>
+    <string name="calendar_remind">التذكير</string>
+    <string name="calendar_title">العنوان</string>
+    <string name="calendar_title_help">العناصر النائبة: {name}، {age}. مثال: %1$s</string>
+    <string name="calendar_example_name">فلان الفلاني</string>
+    <string name="calendar_auto_sync">المزامنة تلقائيًا</string>
+    <string name="calendar_frequency">عدد المرات</string>
+    <string name="calendar_range">الفترة الزمنية المقبلة</string>
+    <string name="calendar_sync_info">تُطبَّق الأسماء أو تواريخ الميلاد التي تم تغييرها عند المزامنة التالية، وتختفي جهات الاتصال المحذوفة من التقويم. تُطبَّق التغييرات على هذه الإعدادات بعد بضع ثوانٍ.</string>
+    <string name="calendar_running">قيد التشغيل …</string>
+    <string name="calendar_remove_events">إزالة الأحداث</string>
+    <string name="calendar_remove_confirm_title">هل تريد إزالة جميع الأحداث؟</string>
+    <string name="calendar_remove_confirm_text">سيتم حذف جميع الأحداث التي أنشأها Birthday Sync من جميع التقاويم. إذا كانت المزامنة التلقائية مفعّلة، فستنشئها من جديد في التشغيل التالي.</string>
+    <string name="interval_daily">يوميًا</string>
+    <string name="interval_weekly">أسبوعيًا</string>
+    <plurals name="range_months">
+        <item quantity="zero">%d شهر</item>
+        <item quantity="one">%d شهر</item>
+        <item quantity="two">%d شهران</item>
+        <item quantity="few">%d أشهر</item>
+        <item quantity="many">%d شهرًا</item>
+        <item quantity="other">%d شهر</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="zero">%d دقيقة</item>
+        <item quantity="one">%d دقيقة</item>
+        <item quantity="two">%d دقيقتان</item>
+        <item quantity="few">%d دقائق</item>
+        <item quantity="many">%d دقيقة</item>
+        <item quantity="other">%d دقيقة</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="zero">%d ساعة</item>
+        <item quantity="one">%d ساعة</item>
+        <item quantity="two">%d ساعتان</item>
+        <item quantity="few">%d ساعات</item>
+        <item quantity="many">%d ساعة</item>
+        <item quantity="other">%d ساعة</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d س %2$d د</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">عند وقت البدء</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="zero">قبل %d دقيقة</item>
+        <item quantity="one">قبل %d دقيقة</item>
+        <item quantity="two">قبل %d دقيقتين</item>
+        <item quantity="few">قبل %d دقائق</item>
+        <item quantity="many">قبل %d دقيقة</item>
+        <item quantity="other">قبل %d دقيقة</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="zero">قبل %d ساعة</item>
+        <item quantity="one">قبل %d ساعة</item>
+        <item quantity="two">قبل %d ساعتين</item>
+        <item quantity="few">قبل %d ساعات</item>
+        <item quantity="many">قبل %d ساعة</item>
+        <item quantity="other">قبل %d ساعة</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="zero">قبل %d يوم</item>
+        <item quantity="one">قبل %d يوم</item>
+        <item quantity="two">قبل %d يومين</item>
+        <item quantity="few">قبل %d أيام</item>
+        <item quantity="many">قبل %d يومًا</item>
+        <item quantity="other">قبل %d يوم</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="zero">قبل %d أسبوع</item>
+        <item quantity="one">قبل %d أسبوع</item>
+        <item quantity="two">قبل %d أسبوعين</item>
+        <item quantity="few">قبل %d أسابيع</item>
+        <item quantity="many">قبل %d أسبوعًا</item>
+        <item quantity="other">قبل %d أسبوع</item>
+    </plurals>
+    <string name="reminder_on_day_at">في اليوم نفسه الساعة %1$s</string>
+    <string name="reminder_day_before_at">في اليوم السابق الساعة %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="zero">قبل %1$d يوم الساعة %2$s</item>
+        <item quantity="one">قبل %1$d يوم الساعة %2$s</item>
+        <item quantity="two">قبل %1$d يومين الساعة %2$s</item>
+        <item quantity="few">قبل %1$d أيام الساعة %2$s</item>
+        <item quantity="many">قبل %1$d يومًا الساعة %2$s</item>
+        <item quantity="other">قبل %1$d يوم الساعة %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="zero">قبل %1$d أسبوع الساعة %2$s</item>
+        <item quantity="one">قبل %1$d أسبوع الساعة %2$s</item>
+        <item quantity="two">قبل %1$d أسبوعين الساعة %2$s</item>
+        <item quantity="few">قبل %1$d أسابيع الساعة %2$s</item>
+        <item quantity="many">قبل %1$d أسبوعًا الساعة %2$s</item>
+        <item quantity="other">قبل %1$d أسبوع الساعة %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">الإشعار اليومي</string>
+    <string name="notify_daily_subtitle">مستقل عن التقويم، مباشرةً من جهات الاتصال</string>
+    <string name="notify_today_switch">الإعلام بأعياد ميلاد اليوم</string>
+    <string name="notify_today_switch_sub">فقط في الأيام التي يكون فيها عيد ميلاد أحد</string>
+    <string name="notify_time">الوقت</string>
+    <string name="notify_test">إشعار تجريبي</string>
+    <string name="notify_hint_title">ملاحظة</string>
+    <string name="notify_hint_text">لكي يصل الإشعار في الوقت المحدد، لا يزال ما يلي ناقصًا: %1$s</string>
+    <string name="notify_go_system">الانتقال إلى إعدادات النظام</string>
+
+    <string name="system_all_ready">كل شيء جاهز</string>
+    <plurals name="system_open_items">
+        <item quantity="zero">العناصر المتبقية: %d</item>
+        <item quantity="one">العناصر المتبقية: %d</item>
+        <item quantity="two">العناصر المتبقية: %d</item>
+        <item quantity="few">العناصر المتبقية: %d</item>
+        <item quantity="many">العناصر المتبقية: %d</item>
+        <item quantity="other">العناصر المتبقية: %d</item>
+    </plurals>
+    <string name="system_subtitle">لمزامنة موثوقة في الخلفية وإشعارات في الوقت المحدد</string>
+    <string name="system_setup_info">يرشدك الإعداد خطوة بخطوة خلال جميع العناصر الناقصة، مع شرح لكل منها.</string>
+    <string name="system_run_setup">بدء الإعداد</string>
+    <string name="check_state_done">تم. %1$s</string>
+    <string name="check_state_required">مطلوب. %1$s</string>
+    <string name="check_state_recommended">مُستحسَن. %1$s</string>
+    <string name="about_title">حول التطبيق</string>
+    <string name="about_text">تبقى جميع البيانات على جهازك. لا يمكن للتطبيق الوصول إلى الإنترنت ولا يجمع أي شيء.</string>
+    <string name="about_privacy">الخصوصية</string>
+    <string name="about_source">رمز المصدر</string>
+
+    <string name="check_contacts_title">قراءة جهات الاتصال</string>
+    <string name="check_contacts_desc">مطلوب لقراءة أعياد الميلاد من قوائم جهات الاتصال.</string>
+    <string name="check_calendar_title">قراءة التقويم والكتابة فيه</string>
+    <string name="check_calendar_desc">مطلوب لإنشاء أحداث أعياد الميلاد في التقويم المستهدف وتحديثها باستمرار.</string>
+    <string name="check_notifications_title">الإشعارات</string>
+    <string name="check_notifications_desc">مطلوب للإشعار اليومي بأعياد الميلاد وتذكيرات التقويم.</string>
+    <string name="check_exact_alarm_title">المنبّهات والتذكيرات الدقيقة</string>
+    <string name="check_exact_alarm_desc">لكي يصل الإشعار اليومي في الوقت المضبوط تمامًا. بدون هذا الإذن قد يتأخر قليلًا.</string>
+    <string name="check_battery_title">إيقاف تحسين البطارية</string>
+    <string name="check_battery_desc">يمنع Android من تأجيل المزامنة في الخلفية أو منعها.</string>
+    <string name="check_background_title">النشاط في الخلفية مسموح به</string>
+    <string name="check_background_desc">يجب ألا يكون التطبيق مقيَّدًا في الخلفية (معلومات التطبيق ← البطارية ← «غير مقيَّد»).</string>
+    <string name="check_hibernation_title">إيقاف التطبيق مؤقتًا عند عدم الاستخدام غير مفعّل</string>
+    <string name="check_hibernation_desc">وإلا فسيُلغي Android الأذونات بعد بضعة أشهر من عدم فتح التطبيق، وتتوقف المزامنة.</string>
+    <string name="check_power_save_title">توفير شحن البطارية</string>
+    <string name="check_power_save_on">ميزة «توفير شحن البطارية» مفعّلة وقد تؤخر المزامنة.</string>
+    <string name="check_power_save_off">ميزة «توفير شحن البطارية» غير مفعّلة.</string>
+    <string name="check_vendor_title">إدارة البطارية من الشركة المصنّعة (%1$s)</string>
+    <string name="check_vendor_desc">غالبًا ما تُوقف هذه الشركة المصنّعة التطبيقات في الخلفية بالإضافة إلى ذلك. يُرجى السماح بالتشغيل التلقائي أو «الإبقاء على التشغيل في الخلفية» لتطبيق Birthday Sync. لا يمكن التحقق من ذلك تلقائيًا.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="zero">الخطوة %1$d من %2$d</item>
+        <item quantity="one">الخطوة %1$d من %2$d</item>
+        <item quantity="two">الخطوة %1$d من %2$d</item>
+        <item quantity="few">الخطوة %1$d من %2$d</item>
+        <item quantity="many">الخطوة %1$d من %2$d</item>
+        <item quantity="other">الخطوة %1$d من %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">مرحبًا بك في Birthday Sync</string>
+    <string name="onboarding_welcome_text">ينقل التطبيق أعياد الميلاد من جهات الاتصال تلقائيًا إلى تقويم من اختيارك، ويذكّرك بها في اليوم نفسه.\n\nلكي يعمل ذلك بشكل موثوق في الخلفية، يحتاج التطبيق إلى بعض الأذونات. سنمرّ عليها خطوة بخطوة ونشرح الغرض من كل منها.\n\nيبقى كل شيء على جهازك – لا يمكن للتطبيق الوصول إلى الإنترنت.</string>
+    <string name="onboarding_contacts_title">الوصول إلى جهات الاتصال</string>
+    <string name="onboarding_contacts_text">أعياد الميلاد محفوظة في جهات الاتصال. ولكي يعثر عليها التطبيق، يحتاج إلى إذن القراءة.\n\nلا تتم قراءة سوى الأسماء وأعياد الميلاد وانتماء جهات الاتصال إلى الحسابات والمجموعات، وذلك أيضًا في الخلفية أثناء المزامنة المنتظمة. تبقى البيانات على جهازك: لا يغيّر التطبيق أي جهة اتصال، ولا يمكنه الوصول إلى الإنترنت، ولا يشارك أي شيء.</string>
+    <string name="onboarding_calendar_title">الوصول إلى التقويم</string>
+    <string name="onboarding_calendar_text">لكل عيد ميلاد، يُنشئ التطبيق حدثًا في تقويم من اختيارك ويحافظ على تحديثه، مثلًا عند تغيُّر تاريخ الميلاد.\n\nلهذا يحتاج إلى قراءة التقاويم والكتابة فيها. ولا يتم تغيير سوى أحداث أعياد الميلاد التي أنشأها التطبيق نفسه.</string>
+    <string name="onboarding_notifications_title">الإشعارات</string>
+    <string name="onboarding_notifications_text">إذا أردت، يُعلمك التطبيق في وقت محدد عندما يكون اليوم عيد ميلاد أحد.\n\nبدون هذا الإذن، لن يظهر أي إشعار.</string>
+    <string name="onboarding_exact_alarm_title">تذكير في الوقت المحدد</string>
+    <string name="onboarding_exact_alarm_text">لكي يصل الإشعار اليومي في الوقت المضبوط تمامًا وليس في وقت لاحق، يحتاج التطبيق إلى إذن «المنبّهات والتذكيرات».\n\nفي الشاشة التالية، فعّل مفتاح Birthday Sync ثم عُد إلى هنا باستخدام «رجوع».</string>
+    <string name="onboarding_battery_title">العمل في الخلفية</string>
+    <string name="onboarding_battery_text">يميل Android إلى إيقاف التطبيقات في الخلفية لتوفير البطارية، وعندها قد تفشل المزامنة المنتظمة.\n\nلا تستغرق المزامنة سوى بضع ثوانٍ في اليوم، والاستهلاك الإضافي للبطارية لا يكاد يُذكر. في القائمة التالية، اختَر «كل التطبيقات»، ثم Birthday Sync، واختَر «عدم التحسين».</string>
+    <string name="onboarding_background_title">إزالة تقييد الخلفية</string>
+    <string name="onboarding_background_text">النشاط في الخلفية مقيَّد لهذا التطبيق، لذلك لا تتم المزامنة ولا يظهر الإشعار.\n\nفي معلومات التطبيق، افتح «البطارية» واختَر «غير مقيَّد». ثم عُد إلى هنا باستخدام «رجوع».</string>
+    <string name="onboarding_hibernation_title">عدم الإيقاف المؤقت تلقائيًا</string>
+    <string name="onboarding_hibernation_text">إذا لم تفتح التطبيق لبضعة أشهر، يوقفه Android مؤقتًا ويُلغي أذوناته. وعندها ستتوقف المزامنة دون أن تلاحظ – مع أن التطبيق مصمَّم للعمل في الخلفية تحديدًا.\n\nفي الشاشة التالية، أوقِف «إيقاف نشاط التطبيق مؤقتًا في حال عدم استخدامه» ثم عُد إلى هنا باستخدام «رجوع».</string>
+    <string name="onboarding_almost_title">أوشكت على الانتهاء</string>
+    <string name="onboarding_all_granted">تم منح جميع الأذونات.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="zero">العناصر الناقصة: %1$d. يمكنك إكمالها في أي وقت من علامة التبويب «%2$s».</item>
+        <item quantity="one">العناصر الناقصة: %1$d. يمكنك إكماله في أي وقت من علامة التبويب «%2$s».</item>
+        <item quantity="two">العناصر الناقصة: %1$d. يمكنك إكمالها في أي وقت من علامة التبويب «%2$s».</item>
+        <item quantity="few">العناصر الناقصة: %1$d. يمكنك إكمالها في أي وقت من علامة التبويب «%2$s».</item>
+        <item quantity="many">العناصر الناقصة: %1$d. يمكنك إكمالها في أي وقت من علامة التبويب «%2$s».</item>
+        <item quantity="other">العناصر الناقصة: %1$d. يمكنك إكمالها في أي وقت من علامة التبويب «%2$s».</item>
+    </plurals>
+    <string name="onboarding_next_steps">الخطوات التالية:\n1. اختيار قوائم جهات الاتصال\n2. اختيار التقويم المستهدف\n3. انتهى – يتولى التطبيق الباقي تلقائيًا.</string>
+    <string name="onboarding_granted">✓ تم المنح</string>
+    <string name="onboarding_not_granted">لم يتم المنح بعد. يمكنك المحاولة مرة أخرى أو تخطي هذه الخطوة.</string>
+    <string name="onboarding_start">لنبدأ</string>
+    <string name="onboarding_next">التالي</string>
+    <string name="onboarding_skip">تخطٍّ</string>
+    <string name="onboarding_retry">إعادة المحاولة</string>
+    <string name="onboarding_finish">إلى التطبيق</string>
+
+    <string name="msg_calendar_selected">تم اختيار التقويم «%1$s» كتقويم مستهدف</string>
+    <string name="msg_calendar_create_failed">تعذّر إنشاء التقويم: %1$s</string>
+    <string name="msg_remove_failed">حدث خطأ أثناء الإزالة: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="zero">تمت إزالة %d حدث</item>
+        <item quantity="one">تمت إزالة %d حدث</item>
+        <item quantity="two">تمت إزالة %d حدثين</item>
+        <item quantity="few">تمت إزالة %d أحداث</item>
+        <item quantity="many">تمت إزالة %d حدثًا</item>
+        <item quantity="other">تمت إزالة %d حدث</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">الإشعارات غير مسموح بها – راجِع علامة التبويب «%1$s»</string>
+
+    <string name="sync_no_calendar">لم يتم اختيار تقويم مستهدف</string>
+    <string name="sync_no_contacts_permission">لا يوجد إذن للوصول إلى جهات الاتصال</string>
+    <string name="sync_no_calendar_permission">لا يوجد إذن للوصول إلى التقويم</string>
+    <string name="sync_invalid_calendar">لم يتم اختيار تقويم مستهدف صالح</string>
+    <plurals name="sync_birthdays">
+        <item quantity="zero">%d عيد ميلاد</item>
+        <item quantity="one">%d عيد ميلاد</item>
+        <item quantity="two">%d عيدا ميلاد</item>
+        <item quantity="few">%d أعياد ميلاد</item>
+        <item quantity="many">%d عيد ميلاد</item>
+        <item quantity="other">%d عيد ميلاد</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="zero">%d حدث في الفترة</item>
+        <item quantity="one">%d حدث في الفترة</item>
+        <item quantity="two">%d حدثان في الفترة</item>
+        <item quantity="few">%d أحداث في الفترة</item>
+        <item quantity="many">%d حدثًا في الفترة</item>
+        <item quantity="other">%d حدث في الفترة</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s، %2$s – كل شيء محدَّث</string>
+    <string name="sync_summary_changes">%1$s، %2$s – جديدة: %3$d، محدَّثة: %4$d، محذوفة: %5$d</string>
+    <string name="sync_error">خطأ: %1$s</string>
+
+    <string name="event_description">عيد ميلاد %1$s</string>
+    <string name="event_description_born">عيد ميلاد %1$s (مواليد %2$d)</string>
+    <string name="event_auto_created">تم إنشاؤه تلقائيًا بواسطة Birthday Sync. ستُستبدل التغييرات على هذا الحدث عند المزامنة التالية.</string>
+
+    <string name="channel_today_name">أعياد ميلاد اليوم</string>
+    <string name="channel_today_desc">إشعار يومي بأعياد ميلاد اليوم</string>
+    <plurals name="notification_turns_today">
+        <item quantity="zero">اليوم عيد ميلاد %1$s الـ%2$d</item>
+        <item quantity="one">اليوم عيد ميلاد %1$s الـ%2$d</item>
+        <item quantity="two">اليوم عيد ميلاد %1$s الـ%2$d</item>
+        <item quantity="few">اليوم عيد ميلاد %1$s الـ%2$d</item>
+        <item quantity="many">اليوم عيد ميلاد %1$s الـ%2$d</item>
+        <item quantity="other">اليوم عيد ميلاد %1$s الـ%2$d</item>
+    </plurals>
+    <string name="notification_birthday_today">اليوم عيد ميلاد %1$s</string>
+    <string name="notification_single_title">🎂 عيد ميلاد %1$s</string>
+    <plurals name="notification_multi_title">
+        <item quantity="zero">🎂 %d عيد ميلاد اليوم</item>
+        <item quantity="one">🎂 %d عيد ميلاد اليوم</item>
+        <item quantity="two">🎂 %d عيدا ميلاد اليوم</item>
+        <item quantity="few">🎂 %d أعياد ميلاد اليوم</item>
+        <item quantity="many">🎂 %d عيد ميلاد اليوم</item>
+        <item quantity="other">🎂 %d عيد ميلاد اليوم</item>
+    </plurals>
+    <string name="notification_nobody_today">لا يوجد عيد ميلاد لأحد اليوم</string>
+    <string name="notification_test_text">إشعار تجريبي من Birthday Sync</string>
+</resources>

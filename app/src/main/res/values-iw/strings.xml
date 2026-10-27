@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">סקירה</string>
+    <string name="tab_contacts">אנשי קשר</string>
+    <string name="tab_calendar">יומן</string>
+    <string name="tab_notify">התראות</string>
+    <string name="tab_system">מערכת</string>
+
+    <string name="action_allow">לאשר</string>
+    <string name="action_allow_access">לאשר גישה</string>
+    <string name="action_open">פתיחה</string>
+    <string name="action_open_setting">פתיחת ההגדרה</string>
+    <string name="action_open_app_info">פתיחת פרטי האפליקציה</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="action_sync_now">סנכרון עכשיו</string>
+    <string name="action_remove">הסרה</string>
+    <string name="section_sync">סנכרון</string>
+
+    <string name="overview_setup_incomplete_title">ההגדרה לא הושלמה</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">לסנכרון אמין חסרה עוד %d הרשאה או הגדרה.</item>
+        <item quantity="two">לסנכרון אמין חסרות עוד %d הרשאות או הגדרות.</item>
+        <item quantity="other">לסנכרון אמין חסרות עוד %d הרשאות או הגדרות.</item>
+    </plurals>
+    <string name="overview_setup_now">להגדרה עכשיו</string>
+    <string name="overview_first_steps">צעדים ראשונים</string>
+    <string name="overview_step_contacts">1. בחירת רשימות אנשי הקשר שימי ההולדת שלהן ייכללו.</string>
+    <string name="overview_choose_contacts">בחירת רשימות אנשי קשר</string>
+    <string name="overview_step_calendar">2. בחירת היומן שבו ייווצרו האירועים.</string>
+    <string name="overview_choose_calendar">בחירת יומן יעד</string>
+    <string name="overview_target_calendar">יומן יעד: %1$s</string>
+    <string name="overview_target_calendar_none">יומן יעד: לא נבחר</string>
+    <string name="overview_auto_daily">אוטומטית כל יום</string>
+    <string name="overview_auto_weekly">אוטומטית כל שבוע</string>
+    <string name="overview_auto_daily_next">אוטומטית כל יום, ההרצה הבאה לא לפני %1$s</string>
+    <string name="overview_auto_weekly_next">אוטומטית כל שבוע, ההרצה הבאה לא לפני %1$s</string>
+    <string name="overview_auto_off">הסנכרון האוטומטי כבוי</string>
+    <string name="overview_last_sync">סנכרון אחרון: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">עדיין לא בוצע סנכרון</string>
+    <string name="overview_syncing">מתבצע סנכרון …</string>
+    <string name="overview_upcoming">ימי הולדת קרובים</string>
+    <string name="overview_no_birthdays">לא נמצאו ימי הולדת ברשימות אנשי הקשר שנבחרו.</string>
+    <string name="upcoming_today">היום</string>
+    <string name="upcoming_tomorrow">מחר</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">בעוד %d יום</item>
+        <item quantity="two">בעוד %d ימים</item>
+        <item quantity="other">בעוד %d ימים</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · יום הולדת %2$d</item>
+        <item quantity="two">%1$s · יום הולדת %2$d</item>
+        <item quantity="other">%1$s · יום הולדת %2$d</item>
+    </plurals>
+
+    <string name="contacts_intro">אפשר לבחור חשבונות שלמים או קבוצות/תוויות בודדות. ימי ההולדת של כל אנשי הקשר שבהם ייכללו.</string>
+    <string name="contacts_no_permission_title">אין גישה לאנשי הקשר</string>
+    <string name="contacts_no_permission_text">ללא ההרשאה הזו לא ניתן להציג רשימות אנשי קשר.</string>
+    <string name="contacts_none_found">לא נמצאו אנשי קשר במכשיר הזה.</string>
+    <string name="contacts_all">כל אנשי הקשר</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d איש קשר</item>
+        <item quantity="two">%d אנשי קשר</item>
+        <item quantity="other">%d אנשי קשר</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d עם יום הולדת</item>
+        <item quantity="two">%d עם יום הולדת</item>
+        <item quantity="other">%d עם יום הולדת</item>
+    </plurals>
+    <string name="contacts_device_label">מכשיר</string>
+    <string name="contacts_local_account">מקומי במכשיר הזה</string>
+    <string name="contacts_group_fallback">קבוצה %1$d</string>
+    <string name="contacts_unnamed">ללא שם</string>
+
+    <string name="calendar_target_title">יומן יעד</string>
+    <string name="calendar_target_subtitle">כאן נוצרים אירועי ימי ההולדת</string>
+    <string name="calendar_no_permission">אין גישה ליומן.</string>
+    <string name="calendar_local_name">ימי הולדת</string>
+    <string name="calendar_create_local">יצירת יומן נפרד “%1$s”</string>
+    <string name="calendar_local_info">יומן נפרד נשמר רק במכשיר הזה, ואפשר להציג או להסתיר אותו בנפרד באפליקציית היומן.</string>
+    <string name="calendar_fallback_name">יומן %1$d</string>
+    <string name="calendar_events_title">אירועים</string>
+    <string name="calendar_all_day">כל היום</string>
+    <string name="calendar_start">התחלה</string>
+    <string name="calendar_duration">משך</string>
+    <string name="calendar_reminder">תזכורת ביומן</string>
+    <string name="calendar_remind">תזכורת</string>
+    <string name="calendar_title">כותרת</string>
+    <string name="calendar_title_help">ממלאי מקום: {name}, {age}. לדוגמה: %1$s</string>
+    <string name="calendar_example_name">ישראל ישראלי</string>
+    <string name="calendar_auto_sync">סנכרון אוטומטי</string>
+    <string name="calendar_frequency">תדירות</string>
+    <string name="calendar_range">טווח זמן קדימה</string>
+    <string name="calendar_sync_info">שמות או תאריכי לידה שהשתנו יעודכנו בסנכרון הבא; אנשי קשר שהוסרו ייעלמו מהיומן. שינויים בהגדרות האלה ייכנסו לתוקף אחרי כמה שניות.</string>
+    <string name="calendar_running">בתהליך …</string>
+    <string name="calendar_remove_events">הסרת אירועים</string>
+    <string name="calendar_remove_confirm_title">להסיר את כל האירועים?</string>
+    <string name="calendar_remove_confirm_text">כל האירועים ש-Birthday Sync יצרה יימחקו מכל היומנים. אם הסנכרון האוטומטי פועל, הוא ייצור אותם מחדש בהרצה הבאה.</string>
+    <string name="interval_daily">יומי</string>
+    <string name="interval_weekly">שבועי</string>
+    <plurals name="range_months">
+        <item quantity="one">%d חודש</item>
+        <item quantity="two">%d חודשים</item>
+        <item quantity="other">%d חודשים</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d דקה</item>
+        <item quantity="two">%d דקות</item>
+        <item quantity="other">%d דקות</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d שעה</item>
+        <item quantity="two">%d שעות</item>
+        <item quantity="other">%d שעות</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d שע׳ %2$d דק׳</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">בשעת ההתחלה</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d דקה לפני</item>
+        <item quantity="two">%d דקות לפני</item>
+        <item quantity="other">%d דקות לפני</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d שעה לפני</item>
+        <item quantity="two">%d שעות לפני</item>
+        <item quantity="other">%d שעות לפני</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d יום לפני</item>
+        <item quantity="two">%d ימים לפני</item>
+        <item quantity="other">%d ימים לפני</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d שבוע לפני</item>
+        <item quantity="two">%d שבועות לפני</item>
+        <item quantity="other">%d שבועות לפני</item>
+    </plurals>
+    <string name="reminder_on_day_at">באותו יום בשעה %1$s</string>
+    <string name="reminder_day_before_at">יום לפני בשעה %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d יום לפני בשעה %2$s</item>
+        <item quantity="two">%1$d ימים לפני בשעה %2$s</item>
+        <item quantity="other">%1$d ימים לפני בשעה %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d שבוע לפני בשעה %2$s</item>
+        <item quantity="two">%1$d שבועות לפני בשעה %2$s</item>
+        <item quantity="other">%1$d שבועות לפני בשעה %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">התראה יומית</string>
+    <string name="notify_daily_subtitle">ללא תלות ביומן, ישירות מאנשי הקשר</string>
+    <string name="notify_today_switch">התראה על ימי ההולדת של היום</string>
+    <string name="notify_today_switch_sub">רק בימים שבהם למישהו יש יום הולדת</string>
+    <string name="notify_time">שעה</string>
+    <string name="notify_test">התראת בדיקה</string>
+    <string name="notify_hint_title">הערה</string>
+    <string name="notify_hint_text">כדי שההתראה תגיע בזמן, עדיין חסרים: %1$s</string>
+    <string name="notify_go_system">להגדרות המערכת</string>
+
+    <string name="system_all_ready">הכול מוכן</string>
+    <plurals name="system_open_items">
+        <item quantity="one">נשאר %d פריט פתוח</item>
+        <item quantity="two">נשארו %d פריטים פתוחים</item>
+        <item quantity="other">נשארו %d פריטים פתוחים</item>
+    </plurals>
+    <string name="system_subtitle">לסנכרון אמין ברקע ולהתראות בזמן</string>
+    <string name="system_setup_info">תהליך ההגדרה עובר צעד אחר צעד על כל הפריטים החסרים, עם הסבר לכל אחד מהם.</string>
+    <string name="system_run_setup">הפעלת תהליך ההגדרה</string>
+    <string name="check_state_done">בוצע. %1$s</string>
+    <string name="check_state_required">נדרש. %1$s</string>
+    <string name="check_state_recommended">מומלץ. %1$s</string>
+    <string name="about_title">מידע על האפליקציה</string>
+    <string name="about_text">כל הנתונים נשארים במכשיר. לאפליקציה אין גישה לאינטרנט והיא לא אוספת שום מידע.</string>
+    <string name="about_privacy">פרטיות</string>
+    <string name="about_source">קוד מקור</string>
+
+    <string name="check_contacts_title">קריאת אנשי קשר</string>
+    <string name="check_contacts_desc">נדרש כדי לקרוא ימי הולדת מרשימות אנשי הקשר.</string>
+    <string name="check_calendar_title">קריאה וכתיבה ביומן</string>
+    <string name="check_calendar_desc">נדרש כדי ליצור אירועי ימי הולדת ביומן היעד ולעדכן אותם.</string>
+    <string name="check_notifications_title">התראות</string>
+    <string name="check_notifications_desc">נדרש להתראה היומית על ימי הולדת ולתזכורות ביומן.</string>
+    <string name="check_exact_alarm_title">שעונים מעוררים ותזכורות מדויקים</string>
+    <string name="check_exact_alarm_desc">כדי שההתראה היומית תגיע בדיוק בשעה שהוגדרה. בלי ההרשאה הזו היא עלולה להתעכב מעט.</string>
+    <string name="check_battery_title">השבתת אופטימיזציית הסוללה</string>
+    <string name="check_battery_desc">מונע מ-Android לדחות או לחסום את הסנכרון ברקע.</string>
+    <string name="check_background_title">פעילות ברקע מותרת</string>
+    <string name="check_background_desc">אסור שהאפליקציה תהיה מוגבלת ברקע (פרטי האפליקציה ← סוללה ← “ללא הגבלה”).</string>
+    <string name="check_hibernation_title">השהיית האפליקציה כשאין בה שימוש כבויה</string>
+    <string name="check_hibernation_desc">אחרת Android יבטל את ההרשאות אחרי כמה חודשים שבהם האפליקציה לא נפתחה, והסנכרון ייפסק.</string>
+    <string name="check_power_save_title">חיסכון בסוללה</string>
+    <string name="check_power_save_on">מצב “חיסכון בסוללה” פועל ועלול לעכב סנכרונים.</string>
+    <string name="check_power_save_off">מצב “חיסכון בסוללה” כבוי.</string>
+    <string name="check_vendor_title">ניהול הסוללה של היצרן (%1$s)</string>
+    <string name="check_vendor_desc">היצרן הזה נוהג לעצור אפליקציות ברקע גם בנוסף. יש לאשר הפעלה אוטומטית או “המשך פעולה ברקע” עבור Birthday Sync. לא ניתן לבדוק זאת באופן אוטומטי.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">שלב %1$d מתוך %2$d</item>
+        <item quantity="two">שלב %1$d מתוך %2$d</item>
+        <item quantity="other">שלב %1$d מתוך %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">ברוכים הבאים ל-Birthday Sync</string>
+    <string name="onboarding_welcome_text">האפליקציה מעבירה באופן אוטומטי את ימי ההולדת מאנשי הקשר ליומן לבחירתך, ומזכירה לך ביום עצמו.\n\nכדי שזה יעבוד באופן אמין ברקע, היא צריכה כמה הרשאות. נעבור עליהן צעד אחר צעד ונסביר בשביל מה כל אחת מהן נחוצה.\n\nהכול נשאר במכשיר – לאפליקציה אין גישה לאינטרנט.</string>
+    <string name="onboarding_contacts_title">גישה לאנשי הקשר</string>
+    <string name="onboarding_contacts_text">ימי ההולדת שמורים באנשי הקשר. כדי שהאפליקציה תמצא אותם, היא צריכה הרשאת קריאה.\n\nנקראים רק שמות, ימי הולדת והשיוך לחשבונות ולקבוצות, גם ברקע במהלך הסנכרון הקבוע. הנתונים נשארים במכשיר: האפליקציה לא משנה אנשי קשר, אין לה גישה לאינטרנט והיא לא משתפת שום דבר.</string>
+    <string name="onboarding_calendar_title">גישה ליומן</string>
+    <string name="onboarding_calendar_text">לכל יום הולדת האפליקציה יוצרת אירוע ביומן לבחירתך ומעדכנת אותו, למשל כשתאריך לידה משתנה.\n\nלשם כך היא צריכה לקרוא ולכתוב ביומנים. רק אירועי ימי ההולדת שהיא עצמה יצרה משתנים.</string>
+    <string name="onboarding_notifications_title">התראות</string>
+    <string name="onboarding_notifications_text">אם רוצים, האפליקציה מודיעה בשעה קבועה כשלמישהו יש היום יום הולדת.\n\nבלי ההרשאה הזו לא תוצג התראה.</string>
+    <string name="onboarding_exact_alarm_title">תזכורת בזמן</string>
+    <string name="onboarding_exact_alarm_text">כדי שההתראה היומית תגיע בדיוק בשעה שהוגדרה ולא מתישהו אחר כך, האפליקציה צריכה את ההרשאה “שעונים מעוררים ותזכורות”.\n\nבמסך הבא יש להפעיל את המתג של Birthday Sync ואז לחזור לכאן באמצעות “חזרה”.</string>
+    <string name="onboarding_battery_title">פעולה ברקע</string>
+    <string name="onboarding_battery_text">כדי לחסוך בסוללה, Android נוטה להרדים אפליקציות ברקע. במצב כזה הסנכרון הקבוע עלול להיכשל.\n\nהסנכרון נמשך רק כמה שניות ביום, והצריכה הנוספת של הסוללה כמעט לא מורגשת. ברשימה הבאה יש לבחור “כל האפליקציות”, אחר כך את Birthday Sync, ואז “ללא אופטימיזציה”.</string>
+    <string name="onboarding_background_title">ביטול הגבלת הרקע</string>
+    <string name="onboarding_background_text">הפעילות ברקע מוגבלת עבור האפליקציה הזו, ולכן הסנכרון וההתראה לא מתבצעים.\n\nבפרטי האפליקציה יש לפתוח את “סוללה” ולבחור “ללא הגבלה”. אחר כך אפשר לחזור לכאן באמצעות “חזרה”.</string>
+    <string name="onboarding_hibernation_title">בלי השהיה אוטומטית</string>
+    <string name="onboarding_hibernation_text">אם האפליקציה לא נפתחת במשך כמה חודשים, Android משהה אותה ומבטל את ההרשאות שלה. הסנכרון ייפסק בלי שישימו לב – למרות שהאפליקציה נועדה בדיוק לעבוד ברקע.\n\nבמסך הבא יש לכבות את “השהיית הפעילות באפליקציה אם אין בה שימוש” ואז לחזור לכאן באמצעות “חזרה”.</string>
+    <string name="onboarding_almost_title">כמעט סיימנו</string>
+    <string name="onboarding_all_granted">כל ההרשאות ניתנו.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">עדיין חסר %1$d פריט. אפשר להשלים אותו בכל עת בכרטיסייה “%2$s”.</item>
+        <item quantity="two">עדיין חסרים %1$d פריטים. אפשר להשלים אותם בכל עת בכרטיסייה “%2$s”.</item>
+        <item quantity="other">עדיין חסרים %1$d פריטים. אפשר להשלים אותם בכל עת בכרטיסייה “%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">מה הלאה:\n1. בחירת רשימות אנשי קשר\n2. בחירת יומן יעד\n3. זהו – את השאר האפליקציה עושה באופן אוטומטי.</string>
+    <string name="onboarding_granted">✓ ניתנה</string>
+    <string name="onboarding_not_granted">ההרשאה עדיין לא ניתנה. אפשר לנסות שוב או לדלג על השלב הזה.</string>
+    <string name="onboarding_start">קדימה</string>
+    <string name="onboarding_next">הבא</string>
+    <string name="onboarding_skip">דילוג</string>
+    <string name="onboarding_retry">ניסיון חוזר</string>
+    <string name="onboarding_finish">לאפליקציה</string>
+
+    <string name="msg_calendar_selected">היומן “%1$s” נבחר כיעד</string>
+    <string name="msg_calendar_create_failed">לא ניתן היה ליצור את היומן: %1$s</string>
+    <string name="msg_remove_failed">שגיאה בהסרה: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">הוסר %d אירוע</item>
+        <item quantity="two">הוסרו %d אירועים</item>
+        <item quantity="other">הוסרו %d אירועים</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">ההתראות לא מורשות – פרטים בכרטיסייה “%1$s”</string>
+
+    <string name="sync_no_calendar">לא נבחר יומן יעד</string>
+    <string name="sync_no_contacts_permission">אין הרשאה לאנשי הקשר</string>
+    <string name="sync_no_calendar_permission">אין הרשאה ליומן</string>
+    <string name="sync_invalid_calendar">לא נבחר יומן יעד תקין</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d יום הולדת</item>
+        <item quantity="two">%d ימי הולדת</item>
+        <item quantity="other">%d ימי הולדת</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d אירוע בטווח</item>
+        <item quantity="two">%d אירועים בטווח</item>
+        <item quantity="other">%d אירועים בטווח</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – הכול מעודכן</string>
+    <string name="sync_summary_changes">%1$s, %2$s – חדשים: %3$d, עודכנו: %4$d, הוסרו: %5$d</string>
+    <string name="sync_error">שגיאה: %1$s</string>
+
+    <string name="event_description">יום ההולדת של %1$s</string>
+    <string name="event_description_born">יום ההולדת של %1$s (שנת לידה %2$d)</string>
+    <string name="event_auto_created">נוצר באופן אוטומטי על ידי Birthday Sync. שינויים באירוע הזה יידרסו בסנכרון הבא.</string>
+
+    <string name="channel_today_name">ימי הולדת היום</string>
+    <string name="channel_today_desc">התראה יומית על ימי ההולדת של היום</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">היום יום ההולדת ה-%2$d של %1$s</item>
+        <item quantity="two">היום יום ההולדת ה-%2$d של %1$s</item>
+        <item quantity="other">היום יום ההולדת ה-%2$d של %1$s</item>
+    </plurals>
+    <string name="notification_birthday_today">היום יום ההולדת של %1$s</string>
+    <string name="notification_single_title">🎂 יום ההולדת של %1$s</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d יום הולדת היום</item>
+        <item quantity="two">🎂 %d ימי הולדת היום</item>
+        <item quantity="other">🎂 %d ימי הולדת היום</item>
+    </plurals>
+    <string name="notification_nobody_today">אין היום ימי הולדת</string>
+    <string name="notification_test_text">התראת בדיקה מ-Birthday Sync</string>
+</resources>

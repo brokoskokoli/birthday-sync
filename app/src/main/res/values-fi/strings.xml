@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Etusivu</string>
+    <string name="tab_contacts">Yhteystiedot</string>
+    <string name="tab_calendar">Kalenteri</string>
+    <string name="tab_notify">Ilmoitukset</string>
+    <string name="tab_system">Järjestelmä</string>
+
+    <string name="action_allow">Salli</string>
+    <string name="action_allow_access">Salli pääsy</string>
+    <string name="action_open">Avaa</string>
+    <string name="action_open_setting">Avaa asetus</string>
+    <string name="action_open_app_info">Avaa Sovellustiedot</string>
+    <string name="action_settings">Asetukset</string>
+    <string name="action_sync_now">Synkronoi nyt</string>
+    <string name="action_remove">Poista</string>
+    <string name="section_sync">Synkronointi</string>
+
+    <string name="overview_setup_incomplete_title">Käyttöönotto kesken</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">%d lupa tai asetus puuttuu luotettavaa synkronointia varten.</item>
+        <item quantity="other">%d lupaa tai asetusta puuttuu luotettavaa synkronointia varten.</item>
+    </plurals>
+    <string name="overview_setup_now">Ota käyttöön nyt</string>
+    <string name="overview_first_steps">Aloitus</string>
+    <string name="overview_step_contacts">1. Valitse yhteystietoluettelot, joiden syntymäpäivät otetaan mukaan.</string>
+    <string name="overview_choose_contacts">Valitse yhteystietoluettelot</string>
+    <string name="overview_step_calendar">2. Valitse kalenteri, johon tapahtumat luodaan.</string>
+    <string name="overview_choose_calendar">Valitse kohdekalenteri</string>
+    <string name="overview_target_calendar">Kohdekalenteri: %1$s</string>
+    <string name="overview_target_calendar_none">Kohdekalenteri: ei valittu</string>
+    <string name="overview_auto_daily">Automaattisesti päivittäin</string>
+    <string name="overview_auto_weekly">Automaattisesti viikoittain</string>
+    <string name="overview_auto_daily_next">Automaattisesti päivittäin, seuraava ajo aikaisintaan %1$s</string>
+    <string name="overview_auto_weekly_next">Automaattisesti viikoittain, seuraava ajo aikaisintaan %1$s</string>
+    <string name="overview_auto_off">Automaattinen synkronointi on pois päältä</string>
+    <string name="overview_last_sync">Viimeisin synkronointi: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Ei vielä synkronoitu</string>
+    <string name="overview_syncing">Synkronoidaan …</string>
+    <string name="overview_upcoming">Tulevat syntymäpäivät</string>
+    <string name="overview_no_birthdays">Valituista yhteystietoluetteloista ei löytynyt syntymäpäiviä.</string>
+    <string name="upcoming_today">Tänään</string>
+    <string name="upcoming_tomorrow">Huomenna</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">%d päivän päästä</item>
+        <item quantity="other">%d päivän päästä</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · täyttää %2$d</item>
+        <item quantity="other">%1$s · täyttää %2$d</item>
+    </plurals>
+
+    <string name="contacts_intro">Valitse kokonaisia tilejä tai yksittäisiä ryhmiä/tunnisteita. Kaikkien niihin kuuluvien yhteystietojen syntymäpäivät otetaan mukaan.</string>
+    <string name="contacts_no_permission_title">Ei pääsyä yhteystietoihin</string>
+    <string name="contacts_no_permission_text">Ilman tätä lupaa yhteystietoluetteloita ei voi näyttää.</string>
+    <string name="contacts_none_found">Laitteelta ei löytynyt yhteystietoja.</string>
+    <string name="contacts_all">Kaikki yhteystiedot</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d yhteystieto</item>
+        <item quantity="other">%d yhteystietoa</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d syntymäpäivä</item>
+        <item quantity="other">%d syntymäpäivää</item>
+    </plurals>
+    <string name="contacts_device_label">Laite</string>
+    <string name="contacts_local_account">Paikallisesti laitteella</string>
+    <string name="contacts_group_fallback">Ryhmä %1$d</string>
+    <string name="contacts_unnamed">Nimetön</string>
+
+    <string name="calendar_target_title">Kohdekalenteri</string>
+    <string name="calendar_target_subtitle">Syntymäpäivätapahtumat luodaan tähän</string>
+    <string name="calendar_no_permission">Ei pääsyä kalenteriin.</string>
+    <string name="calendar_local_name">Syntymäpäivät</string>
+    <string name="calendar_create_local">Luo oma kalenteri ”%1$s”</string>
+    <string name="calendar_local_info">Oma kalenteri on vain tällä laitteella, ja sen voi näyttää tai piilottaa erikseen kalenterisovelluksessa.</string>
+    <string name="calendar_fallback_name">Kalenteri %1$d</string>
+    <string name="calendar_events_title">Tapahtumat</string>
+    <string name="calendar_all_day">Koko päivän</string>
+    <string name="calendar_start">Alku</string>
+    <string name="calendar_duration">Kesto</string>
+    <string name="calendar_reminder">Kalenterimuistutus</string>
+    <string name="calendar_remind">Muistuta</string>
+    <string name="calendar_title">Otsikko</string>
+    <string name="calendar_title_help">Paikkamerkit: {name}, {age}. Esimerkki: %1$s</string>
+    <string name="calendar_example_name">Matti Meikäläinen</string>
+    <string name="calendar_auto_sync">Synkronoi automaattisesti</string>
+    <string name="calendar_frequency">Toistuvuus</string>
+    <string name="calendar_range">Aikaväli eteenpäin</string>
+    <string name="calendar_sync_info">Muuttuneet nimet tai syntymäpäivät päivittyvät seuraavassa synkronoinnissa; poistetut yhteystiedot katoavat kalenterista. Näiden asetusten muutokset otetaan käyttöön muutaman sekunnin kuluttua.</string>
+    <string name="calendar_running">Käynnissä …</string>
+    <string name="calendar_remove_events">Poista tapahtumat</string>
+    <string name="calendar_remove_confirm_title">Poistetaanko kaikki tapahtumat?</string>
+    <string name="calendar_remove_confirm_text">Kaikki Birthday Syncin luomat tapahtumat poistetaan kaikista kalentereista. Jos automaattinen synkronointi on päällä, se luo ne uudelleen seuraavalla ajokerralla.</string>
+    <string name="interval_daily">Päivittäin</string>
+    <string name="interval_weekly">Viikoittain</string>
+    <plurals name="range_months">
+        <item quantity="one">%d kuukausi</item>
+        <item quantity="other">%d kuukautta</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minuutti</item>
+        <item quantity="other">%d minuuttia</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d tunti</item>
+        <item quantity="other">%d tuntia</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Alkamisaikaan</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minuutti ennen</item>
+        <item quantity="other">%d minuuttia ennen</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d tunti ennen</item>
+        <item quantity="other">%d tuntia ennen</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d päivä ennen</item>
+        <item quantity="other">%d päivää ennen</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d viikko ennen</item>
+        <item quantity="other">%d viikkoa ennen</item>
+    </plurals>
+    <string name="reminder_on_day_at">Samana päivänä klo %1$s</string>
+    <string name="reminder_day_before_at">Edellisenä päivänä klo %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d päivä ennen klo %2$s</item>
+        <item quantity="other">%1$d päivää ennen klo %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d viikko ennen klo %2$s</item>
+        <item quantity="other">%1$d viikkoa ennen klo %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Päivittäinen ilmoitus</string>
+    <string name="notify_daily_subtitle">Kalenterista riippumatta, suoraan yhteystiedoistasi</string>
+    <string name="notify_today_switch">Ilmoita tämän päivän syntymäpäivistä</string>
+    <string name="notify_today_switch_sub">Vain päivinä, joina jollakulla on syntymäpäivä</string>
+    <string name="notify_time">Kellonaika</string>
+    <string name="notify_test">Testi-ilmoitus</string>
+    <string name="notify_hint_title">Huomio</string>
+    <string name="notify_hint_text">Jotta ilmoitus tulee ajallaan, vielä puuttuu: %1$s</string>
+    <string name="notify_go_system">Järjestelmäasetuksiin</string>
+
+    <string name="system_all_ready">Kaikki valmiina</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d kohta avoinna</item>
+        <item quantity="other">%d kohtaa avoinna</item>
+    </plurals>
+    <string name="system_subtitle">Luotettavaa taustasynkronointia ja ajallaan tulevia ilmoituksia varten</string>
+    <string name="system_setup_info">Ohjattu käyttöönotto käy vaihe vaiheelta läpi kaikki puuttuvat kohdat ja selittää jokaisen.</string>
+    <string name="system_run_setup">Aloita ohjattu käyttöönotto</string>
+    <string name="check_state_done">Valmis. %1$s</string>
+    <string name="check_state_required">Pakollinen. %1$s</string>
+    <string name="check_state_recommended">Suositeltu. %1$s</string>
+    <string name="about_title">Tietoja sovelluksesta</string>
+    <string name="about_text">Kaikki tiedot pysyvät laitteellasi. Sovelluksella ei ole internetyhteyttä, eikä se kerää mitään.</string>
+    <string name="about_privacy">Tietosuoja</string>
+    <string name="about_source">Lähdekoodi</string>
+
+    <string name="check_contacts_title">Yhteystietojen lukeminen</string>
+    <string name="check_contacts_desc">Tarvitaan syntymäpäivien lukemiseen yhteystietoluetteloista.</string>
+    <string name="check_calendar_title">Kalenterin lukeminen ja kirjoittaminen</string>
+    <string name="check_calendar_desc">Tarvitaan syntymäpäivätapahtumien luomiseen kohdekalenteriin ja niiden pitämiseen ajan tasalla.</string>
+    <string name="check_notifications_title">Ilmoitukset</string>
+    <string name="check_notifications_desc">Tarvitaan päivittäiseen syntymäpäiväilmoitukseen ja kalenterimuistutuksiin.</string>
+    <string name="check_exact_alarm_title">Tarkat herätykset ja muistutukset</string>
+    <string name="check_exact_alarm_desc">Jotta päivittäinen ilmoitus tulee tarkalleen asetettuun aikaan. Ilman tätä lupaa se voi tulla hieman myöhässä.</string>
+    <string name="check_battery_title">Poista akun optimointi käytöstä</string>
+    <string name="check_battery_desc">Estää Androidia lykkäämästä tai estämästä taustasynkronointia.</string>
+    <string name="check_background_title">Taustatoiminta sallittu</string>
+    <string name="check_background_desc">Sovellusta ei saa rajoittaa taustalla (Sovellustiedot → Akku → ”Ei rajoituksia”).</string>
+    <string name="check_hibernation_title">Sovelluksen keskeytys käyttämättömänä on pois päältä</string>
+    <string name="check_hibernation_desc">Muuten Android peruu luvat, jos sovellusta ei avata muutamaan kuukauteen, ja synkronointi loppuu.</string>
+    <string name="check_power_save_title">Virransäästö</string>
+    <string name="check_power_save_on">Virransäästö on päällä ja voi viivästyttää synkronointia.</string>
+    <string name="check_power_save_off">Virransäästö on pois päältä.</string>
+    <string name="check_vendor_title">Valmistajan akunhallinta (%1$s)</string>
+    <string name="check_vendor_desc">Tämä valmistaja pysäyttää usein lisäksi taustalla olevia sovelluksia. Salli Birthday Syncille automaattinen käynnistys tai ”Pidä käynnissä taustalla”. Tätä ei voi tarkistaa automaattisesti.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Vaihe %1$d/%2$d</item>
+        <item quantity="other">Vaihe %1$d/%2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Tervetuloa Birthday Synciin</string>
+    <string name="onboarding_welcome_text">Sovellus siirtää yhteystietojesi syntymäpäivät automaattisesti valitsemaasi kalenteriin ja muistuttaa sinua itse päivänä.\n\nJotta tämä toimii luotettavasti taustalla, sovellus tarvitsee muutaman luvan. Käymme ne läpi vaihe vaiheelta ja kerromme, mihin kutakin tarvitaan.\n\nKaikki pysyy laitteellasi – sovelluksella ei ole internetyhteyttä.</string>
+    <string name="onboarding_contacts_title">Pääsy yhteystietoihisi</string>
+    <string name="onboarding_contacts_text">Syntymäpäivät ovat yhteystiedoissasi. Jotta sovellus löytää ne, se tarvitsee lukuoikeuden.\n\nVain nimet, syntymäpäivät sekä tieto tileistä ja ryhmistä luetaan, myös taustalla säännöllisen synkronoinnin aikana. Tiedot pysyvät laitteella: sovellus ei muuta yhteystietoja, sillä ei ole internetyhteyttä eikä se jaa mitään.</string>
+    <string name="onboarding_calendar_title">Pääsy kalenteriisi</string>
+    <string name="onboarding_calendar_text">Sovellus luo jokaisesta syntymäpäivästä tapahtuman valitsemaasi kalenteriin ja pitää sen ajan tasalla, esimerkiksi jos syntymäaika muuttuu.\n\nSiksi sen täytyy voida lukea ja kirjoittaa kalentereita. Vain sovelluksen omia syntymäpäivätapahtumia muutetaan.</string>
+    <string name="onboarding_notifications_title">Ilmoitukset</string>
+    <string name="onboarding_notifications_text">Halutessasi sovellus ilmoittaa sinulle tiettyyn aikaan, kun jollakulla on tänään syntymäpäivä.\n\nIlman tätä lupaa ilmoitusta ei tule.</string>
+    <string name="onboarding_exact_alarm_title">Muistutus ajallaan</string>
+    <string name="onboarding_exact_alarm_text">Jotta päivittäinen ilmoitus tulee tarkalleen asetettuun aikaan eikä joskus myöhemmin, sovellus tarvitsee luvan herätyksiin ja muistutuksiin.\n\nOta seuraavalla sivulla käyttöön Birthday Syncin kytkin ja palaa sitten tänne ”Takaisin”-painikkeella.</string>
+    <string name="onboarding_battery_title">Toiminta taustalla</string>
+    <string name="onboarding_battery_text">Android hiljentää mielellään taustalla olevia sovelluksia akun säästämiseksi. Silloin säännöllinen synkronointi voi jäädä tekemättä.\n\nSynkronointi kestää vain muutaman sekunnin päivässä, ja lisäkulutus on tuskin mitattavissa. Valitse seuraavasta luettelosta ”Kaikki sovellukset”, sitten Birthday Sync ja valitse ”Älä optimoi”.</string>
+    <string name="onboarding_background_title">Poista taustarajoitus</string>
+    <string name="onboarding_background_text">Tämän sovelluksen taustatoimintaa on rajoitettu, joten synkronointi ja ilmoitus jäävät tulematta.\n\nAvaa Sovellustiedoissa kohta ”Akku” ja valitse ”Ei rajoituksia”. Palaa sitten tänne ”Takaisin”-painikkeella.</string>
+    <string name="onboarding_hibernation_title">Älä keskeytä automaattisesti</string>
+    <string name="onboarding_hibernation_text">Jos et avaa sovellusta muutamaan kuukauteen, Android keskeyttää sen ja poistaa sen luvat. Synkronointi loppuisi silloin huomaamatta – vaikka sovelluksen on nimenomaan tarkoitus toimia taustalla.\n\nPoista seuraavalla sivulla käytöstä ”Keskeytä sovellustoiminta, jos ei käytössä” ja palaa sitten tänne ”Takaisin”-painikkeella.</string>
+    <string name="onboarding_almost_title">Melkein valmista</string>
+    <string name="onboarding_all_granted">Kaikki luvat on myönnetty.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">%1$d kohta puuttuu vielä. Voit hoitaa sen milloin tahansa välilehdellä ”%2$s”.</item>
+        <item quantity="other">%1$d kohtaa puuttuu vielä. Voit hoitaa ne milloin tahansa välilehdellä ”%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Näin jatketaan:\n1. Valitse yhteystietoluettelot\n2. Valitse kohdekalenteri\n3. Valmis – sovellus hoitaa loput automaattisesti.</string>
+    <string name="onboarding_granted">✓ Myönnetty</string>
+    <string name="onboarding_not_granted">Ei vielä myönnetty. Voit yrittää uudelleen tai ohittaa tämän vaiheen.</string>
+    <string name="onboarding_start">Aloitetaan</string>
+    <string name="onboarding_next">Seuraava</string>
+    <string name="onboarding_skip">Ohita</string>
+    <string name="onboarding_retry">Yritä uudelleen</string>
+    <string name="onboarding_finish">Sovellukseen</string>
+
+    <string name="msg_calendar_selected">Kalenteri ”%1$s” on valittu kohteeksi</string>
+    <string name="msg_calendar_create_failed">Kalenterin luominen epäonnistui: %1$s</string>
+    <string name="msg_remove_failed">Virhe poistettaessa: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d tapahtuma poistettu</item>
+        <item quantity="other">%d tapahtumaa poistettu</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Ilmoitukset eivät ole sallittuja – katso välilehti ”%1$s”</string>
+
+    <string name="sync_no_calendar">Kohdekalenteria ei ole valittu</string>
+    <string name="sync_no_contacts_permission">Ei lupaa yhteystietoihin</string>
+    <string name="sync_no_calendar_permission">Ei lupaa kalenteriin</string>
+    <string name="sync_invalid_calendar">Kelvollista kohdekalenteria ei ole valittu</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d syntymäpäivä</item>
+        <item quantity="other">%d syntymäpäivää</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d tapahtuma aikavälillä</item>
+        <item quantity="other">%d tapahtumaa aikavälillä</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – kaikki ajan tasalla</string>
+    <string name="sync_summary_changes">%1$s, %2$s – uusia: %3$d, päivitetty: %4$d, poistettu: %5$d</string>
+    <string name="sync_error">Virhe: %1$s</string>
+
+    <string name="event_description">Syntymäpäivä: %1$s</string>
+    <string name="event_description_born">Syntymäpäivä: %1$s (syntynyt %2$d)</string>
+    <string name="event_auto_created">Birthday Syncin automaattisesti luoma. Tähän tapahtumaan tehdyt muutokset korvataan seuraavassa synkronoinnissa.</string>
+
+    <string name="channel_today_name">Tämän päivän syntymäpäivät</string>
+    <string name="channel_today_desc">Päivittäinen ilmoitus tämän päivän syntymäpäivistä</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s täyttää tänään %2$d</item>
+        <item quantity="other">%1$s täyttää tänään %2$d</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s viettää tänään syntymäpäiväänsä</string>
+    <string name="notification_single_title">🎂 %1$s viettää syntymäpäiväänsä</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d syntymäpäivä tänään</item>
+        <item quantity="other">🎂 %d syntymäpäivää tänään</item>
+    </plurals>
+    <string name="notification_nobody_today">Kenelläkään ei ole tänään syntymäpäivää</string>
+    <string name="notification_test_text">Birthday Syncin testi-ilmoitus</string>
+</resources>

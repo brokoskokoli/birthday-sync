@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Ülevaade</string>
+    <string name="tab_contacts">Kontaktid</string>
+    <string name="tab_calendar">Kalender</string>
+    <string name="tab_notify">Märguanded</string>
+    <string name="tab_system">Süsteem</string>
+
+    <string name="action_allow">Luba</string>
+    <string name="action_allow_access">Luba juurdepääs</string>
+    <string name="action_open">Ava</string>
+    <string name="action_open_setting">Ava seade</string>
+    <string name="action_open_app_info">Ava rakenduse teave</string>
+    <string name="action_settings">Seaded</string>
+    <string name="action_sync_now">Sünkrooni kohe</string>
+    <string name="action_remove">Eemalda</string>
+    <string name="section_sync">Sünkroonimine</string>
+
+    <string name="overview_setup_incomplete_title">Seadistamine pole lõpetatud</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Usaldusväärseks sünkroonimiseks puudub %d luba või seade.</item>
+        <item quantity="other">Usaldusväärseks sünkroonimiseks puudub %d luba või seadet.</item>
+    </plurals>
+    <string name="overview_setup_now">Seadista kohe</string>
+    <string name="overview_first_steps">Alustamine</string>
+    <string name="overview_step_contacts">1. Vali kontaktiloendid, mille sünnipäevad üle võetakse.</string>
+    <string name="overview_choose_contacts">Vali kontaktiloendid</string>
+    <string name="overview_step_calendar">2. Vali kalender, kuhu sündmused luuakse.</string>
+    <string name="overview_choose_calendar">Vali sihtkalender</string>
+    <string name="overview_target_calendar">Sihtkalender: %1$s</string>
+    <string name="overview_target_calendar_none">Sihtkalender: valimata</string>
+    <string name="overview_auto_daily">Automaatselt iga päev</string>
+    <string name="overview_auto_weekly">Automaatselt iga nädal</string>
+    <string name="overview_auto_daily_next">Automaatselt iga päev, järgmine käivitus kõige varem %1$s</string>
+    <string name="overview_auto_weekly_next">Automaatselt iga nädal, järgmine käivitus kõige varem %1$s</string>
+    <string name="overview_auto_off">Automaatne sünkroonimine on välja lülitatud</string>
+    <string name="overview_last_sync">Viimane sünkroonimine: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Pole veel sünkroonitud</string>
+    <string name="overview_syncing">Sünkroonimine …</string>
+    <string name="overview_upcoming">Eelseisvad sünnipäevad</string>
+    <string name="overview_no_birthdays">Valitud kontaktiloenditest ei leitud ühtegi sünnipäeva.</string>
+    <string name="upcoming_today">Täna</string>
+    <string name="upcoming_tomorrow">Homme</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">%d päeva pärast</item>
+        <item quantity="other">%d päeva pärast</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · saab %2$d</item>
+        <item quantity="other">%1$s · saab %2$d</item>
+    </plurals>
+
+    <string name="contacts_intro">Vali terved kontod või üksikud grupid/sildid. Kõigi nendes olevate kontaktide sünnipäevad võetakse üle.</string>
+    <string name="contacts_no_permission_title">Puudub juurdepääs kontaktidele</string>
+    <string name="contacts_no_permission_text">Ilma selle loata ei saa kontaktiloendeid kuvada.</string>
+    <string name="contacts_none_found">Seadmest ei leitud kontakte.</string>
+    <string name="contacts_all">Kõik kontaktid</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d kontakt</item>
+        <item quantity="other">%d kontakti</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d sünnipäevaga</item>
+        <item quantity="other">%d sünnipäevaga</item>
+    </plurals>
+    <string name="contacts_device_label">Seade</string>
+    <string name="contacts_local_account">Kohalikult selles seadmes</string>
+    <string name="contacts_group_fallback">Grupp %1$d</string>
+    <string name="contacts_unnamed">Nimetu</string>
+
+    <string name="calendar_target_title">Sihtkalender</string>
+    <string name="calendar_target_subtitle">Siia luuakse sünnipäevasündmused</string>
+    <string name="calendar_no_permission">Puudub juurdepääs kalendrile.</string>
+    <string name="calendar_local_name">Sünnipäevad</string>
+    <string name="calendar_create_local">Loo oma kalender „%1$s“</string>
+    <string name="calendar_local_info">Oma kalender asub ainult selles seadmes ja seda saab kalendrirakenduses eraldi kuvada või peita.</string>
+    <string name="calendar_fallback_name">Kalender %1$d</string>
+    <string name="calendar_events_title">Sündmused</string>
+    <string name="calendar_all_day">Terve päev</string>
+    <string name="calendar_start">Algus</string>
+    <string name="calendar_duration">Kestus</string>
+    <string name="calendar_reminder">Kalendri meeldetuletus</string>
+    <string name="calendar_remind">Tuleta meelde</string>
+    <string name="calendar_title">Pealkiri</string>
+    <string name="calendar_title_help">Kohatäited: {name}, {age}. Näide: %1$s</string>
+    <string name="calendar_example_name">Mari Maasikas</string>
+    <string name="calendar_auto_sync">Sünkrooni automaatselt</string>
+    <string name="calendar_frequency">Sagedus</string>
+    <string name="calendar_range">Ajavahemik ette</string>
+    <string name="calendar_sync_info">Muudetud nimed või sünnikuupäevad võetakse üle järgmisel sünkroonimisel; eemaldatud kontaktid kaovad kalendrist. Nende seadete muudatused rakenduvad mõne sekundi pärast.</string>
+    <string name="calendar_running">Käib …</string>
+    <string name="calendar_remove_events">Eemalda sündmused</string>
+    <string name="calendar_remove_confirm_title">Kas eemaldada kõik sündmused?</string>
+    <string name="calendar_remove_confirm_text">Kõik Birthday Synci loodud sündmused kustutatakse kõigist kalendritest. Kui automaatne sünkroonimine on sees, loob see need järgmisel käivitusel uuesti.</string>
+    <string name="interval_daily">Iga päev</string>
+    <string name="interval_weekly">Iga nädal</string>
+    <plurals name="range_months">
+        <item quantity="one">%d kuu</item>
+        <item quantity="other">%d kuud</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="other">%d minutit</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d tund</item>
+        <item quantity="other">%d tundi</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Algusajal</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minut enne</item>
+        <item quantity="other">%d minutit enne</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d tund enne</item>
+        <item quantity="other">%d tundi enne</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d päev enne</item>
+        <item quantity="other">%d päeva enne</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d nädal enne</item>
+        <item quantity="other">%d nädalat enne</item>
+    </plurals>
+    <string name="reminder_on_day_at">Samal päeval kell %1$s</string>
+    <string name="reminder_day_before_at">Eelmisel päeval kell %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d päev enne kell %2$s</item>
+        <item quantity="other">%1$d päeva enne kell %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d nädal enne kell %2$s</item>
+        <item quantity="other">%1$d nädalat enne kell %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Igapäevane märguanne</string>
+    <string name="notify_daily_subtitle">Kalendrist sõltumatu, otse sinu kontaktidest</string>
+    <string name="notify_today_switch">Teavita tänastest sünnipäevadest</string>
+    <string name="notify_today_switch_sub">Ainult päevadel, mil kellelgi on sünnipäev</string>
+    <string name="notify_time">Kellaaeg</string>
+    <string name="notify_test">Testmärguanne</string>
+    <string name="notify_hint_title">Märkus</string>
+    <string name="notify_hint_text">Et märguanne tuleks õigel ajal, puudub veel: %1$s</string>
+    <string name="notify_go_system">Süsteemiseadetesse</string>
+
+    <string name="system_all_ready">Kõik on valmis</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d punkt on pooleli</item>
+        <item quantity="other">%d punkti on pooleli</item>
+    </plurals>
+    <string name="system_subtitle">Usaldusväärse taustal sünkroonimise ja õigeaegsete märguannete jaoks</string>
+    <string name="system_setup_info">Seadistus juhatab sind samm-sammult läbi kõigi puuduvate punktide ja selgitab igaüht.</string>
+    <string name="system_run_setup">Käivita seadistus</string>
+    <string name="check_state_done">Tehtud. %1$s</string>
+    <string name="check_state_required">Nõutav. %1$s</string>
+    <string name="check_state_recommended">Soovitatav. %1$s</string>
+    <string name="about_title">Rakenduse teave</string>
+    <string name="about_text">Kõik andmed jäävad sinu seadmesse. Rakendusel pole internetiühendust ja see ei kogu midagi.</string>
+    <string name="about_privacy">Privaatsus</string>
+    <string name="about_source">Lähtekood</string>
+
+    <string name="check_contacts_title">Kontaktide lugemine</string>
+    <string name="check_contacts_desc">Vajalik sünnipäevade lugemiseks kontaktiloenditest.</string>
+    <string name="check_calendar_title">Kalendri lugemine ja kirjutamine</string>
+    <string name="check_calendar_desc">Vajalik sünnipäevasündmuste loomiseks sihtkalendrisse ja nende ajakohasena hoidmiseks.</string>
+    <string name="check_notifications_title">Märguanded</string>
+    <string name="check_notifications_desc">Vajalik igapäevase sünnipäevamärguande ja kalendri meeldetuletuste jaoks.</string>
+    <string name="check_exact_alarm_title">Täpsed alarmid ja meeldetuletused</string>
+    <string name="check_exact_alarm_desc">Et igapäevane märguanne tuleks täpselt määratud kellaajal. Ilma selle loata võib see veidi hilineda.</string>
+    <string name="check_battery_title">Lülita aku optimeerimine välja</string>
+    <string name="check_battery_desc">Takistab Androidil taustal sünkroonimist edasi lükkamast või peatamast.</string>
+    <string name="check_background_title">Taustategevus lubatud</string>
+    <string name="check_background_desc">Rakendust ei tohi taustal piirata (Rakenduse teave → Aku → „Piiranguteta“).</string>
+    <string name="check_hibernation_title">Kasutamata rakenduse peatamine on väljas</string>
+    <string name="check_hibernation_desc">Muidu tühistab Android load, kui rakendust pole mitu kuud avatud, ja sünkroonimine lõpeb.</string>
+    <string name="check_power_save_title">Akusäästja</string>
+    <string name="check_power_save_on">Akusäästja on sees ja võib sünkroonimist viivitada.</string>
+    <string name="check_power_save_off">Akusäästja on väljas.</string>
+    <string name="check_vendor_title">Tootja akuhaldus (%1$s)</string>
+    <string name="check_vendor_desc">See tootja peatab sageli lisaks taustal töötavaid rakendusi. Luba Birthday Syncile automaatkäivitus või „Hoia taustal aktiivsena“. Seda ei saa automaatselt kontrollida.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Samm %1$d/%2$d</item>
+        <item quantity="other">Samm %1$d/%2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Tere tulemast kasutama Birthday Synci</string>
+    <string name="onboarding_welcome_text">Rakendus kannab sinu kontaktide sünnipäevad automaatselt sinu valitud kalendrisse ja tuletab neid sulle sünnipäeval endal meelde.\n\nEt see taustal usaldusväärselt toimiks, vajab rakendus mõnda luba. Läheme need samm-sammult läbi ja selgitame iga kord, milleks neid vaja on.\n\nKõik jääb sinu seadmesse – rakendusel pole internetiühendust.</string>
+    <string name="onboarding_contacts_title">Juurdepääs sinu kontaktidele</string>
+    <string name="onboarding_contacts_text">Sünnipäevad on salvestatud sinu kontaktides. Et rakendus need üles leiaks, vajab see lugemisõigust.\n\nLoetakse ainult nimesid, sünnipäevi ning kontode ja gruppide kuuluvust, ka taustal regulaarse sünkroonimise ajal. Andmed jäävad seadmesse: rakendus ei muuda kontakte, sel pole internetiühendust ja see ei jaga midagi.</string>
+    <string name="onboarding_calendar_title">Juurdepääs sinu kalendrile</string>
+    <string name="onboarding_calendar_text">Iga sünnipäeva kohta loob rakendus sinu valitud kalendrisse sündmuse ja hoiab selle ajakohasena, näiteks kui sünnikuupäev muutub.\n\nSelleks peab see saama kalendreid lugeda ja neisse kirjutada. Muudetakse ainult rakenduse enda sünnipäevasündmusi.</string>
+    <string name="onboarding_notifications_title">Märguanded</string>
+    <string name="onboarding_notifications_text">Soovi korral annab rakendus kindlal kellaajal teada, kui kellelgi on täna sünnipäev.\n\nIlma selle loata märguannet ei tule.</string>
+    <string name="onboarding_exact_alarm_title">Õigeaegne meeldetuletus</string>
+    <string name="onboarding_exact_alarm_text">Et igapäevane märguanne tuleks täpselt määratud kellaajal ja mitte kunagi hiljem, vajab rakendus alarmide ja meeldetuletuste luba.\n\nLülita järgmisel lehel Birthday Synci lüliti sisse ja tule siis nupuga „Tagasi“ siia tagasi.</string>
+    <string name="onboarding_battery_title">Taustal töötamine</string>
+    <string name="onboarding_battery_text">Android paneb aku säästmiseks taustal olevad rakendused meelsasti magama. Siis võib regulaarne sünkroonimine ära jääda.\n\nSünkroonimine võtab päevas vaid mõne sekundi ja lisakulu on vaevu mõõdetav. Vali järgmises loendis „Kõik rakendused“, seejärel Birthday Sync ja määra „Ära optimeeri“.</string>
+    <string name="onboarding_background_title">Eemalda taustapiirang</string>
+    <string name="onboarding_background_text">Selle rakenduse taustategevus on piiratud, mistõttu sünkroonimine ja märguanne jäävad ära.\n\nAva rakenduse teabes jaotis „Aku“ ja vali „Piiranguteta“. Seejärel tule nupuga „Tagasi“ siia tagasi.</string>
+    <string name="onboarding_hibernation_title">Ära peata automaatselt</string>
+    <string name="onboarding_hibernation_text">Kui sa rakendust mõni kuu ei ava, peatab Android selle ja tühistab selle load. Sünkroonimine lõppeks siis märkamatult – kuigi rakendus peaks just taustal töötama.\n\nLülita järgmisel lehel välja „Peata rakenduse tegevus, kui seda ei kasutata“ ja tule siis nupuga „Tagasi“ siia tagasi.</string>
+    <string name="onboarding_almost_title">Peaaegu valmis</string>
+    <string name="onboarding_all_granted">Kõik load on antud.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">%1$d punkt on veel puudu. Saad selle igal ajal vahekaardil „%2$s“ korda teha.</item>
+        <item quantity="other">%1$d punkti on veel puudu. Saad need igal ajal vahekaardil „%2$s“ korda teha.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Edasi läheb nii:\n1. Vali kontaktiloendid\n2. Vali sihtkalender\n3. Valmis – ülejäänu teeb rakendus automaatselt.</string>
+    <string name="onboarding_granted">✓ Antud</string>
+    <string name="onboarding_not_granted">Pole veel antud. Võid uuesti proovida või selle sammu vahele jätta.</string>
+    <string name="onboarding_start">Alustame</string>
+    <string name="onboarding_next">Edasi</string>
+    <string name="onboarding_skip">Jäta vahele</string>
+    <string name="onboarding_retry">Proovi uuesti</string>
+    <string name="onboarding_finish">Rakendusse</string>
+
+    <string name="msg_calendar_selected">Kalender „%1$s“ on valitud sihtkohaks</string>
+    <string name="msg_calendar_create_failed">Kalendrit ei õnnestunud luua: %1$s</string>
+    <string name="msg_remove_failed">Viga eemaldamisel: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d sündmus eemaldati</item>
+        <item quantity="other">%d sündmust eemaldati</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Märguanded pole lubatud – vt vahekaarti „%1$s“</string>
+
+    <string name="sync_no_calendar">Sihtkalendrit pole valitud</string>
+    <string name="sync_no_contacts_permission">Kontaktide luba puudub</string>
+    <string name="sync_no_calendar_permission">Kalendri luba puudub</string>
+    <string name="sync_invalid_calendar">Kehtivat sihtkalendrit pole valitud</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d sünnipäev</item>
+        <item quantity="other">%d sünnipäeva</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d sündmus ajavahemikus</item>
+        <item quantity="other">%d sündmust ajavahemikus</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – kõik on ajakohane</string>
+    <string name="sync_summary_changes">%1$s, %2$s – uusi: %3$d, uuendatud: %4$d, eemaldatud: %5$d</string>
+    <string name="sync_error">Viga: %1$s</string>
+
+    <string name="event_description">Sünnipäev: %1$s</string>
+    <string name="event_description_born">Sünnipäev: %1$s (sündinud %2$d)</string>
+    <string name="event_auto_created">Loodud automaatselt rakendusega Birthday Sync. Selle sündmuse muudatused kirjutatakse järgmisel sünkroonimisel üle.</string>
+
+    <string name="channel_today_name">Tänased sünnipäevad</string>
+    <string name="channel_today_desc">Igapäevane märguanne tänaste sünnipäevade kohta</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s saab täna %2$d</item>
+        <item quantity="other">%1$s saab täna %2$d</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s tähistab täna sünnipäeva</string>
+    <string name="notification_single_title">🎂 %1$s tähistab sünnipäeva</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d sünnipäev täna</item>
+        <item quantity="other">🎂 %d sünnipäeva täna</item>
+    </plurals>
+    <string name="notification_nobody_today">Täna pole kellelgi sünnipäeva</string>
+    <string name="notification_test_text">Birthday Synci testmärguanne</string>
+</resources>

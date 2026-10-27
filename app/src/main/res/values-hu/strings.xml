@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Áttekintés</string>
+    <string name="tab_contacts">Névjegyek</string>
+    <string name="tab_calendar">Naptár</string>
+    <string name="tab_notify">Értesítés</string>
+    <string name="tab_system">Rendszer</string>
+
+    <string name="action_allow">Engedélyezés</string>
+    <string name="action_allow_access">Hozzáférés engedélyezése</string>
+    <string name="action_open">Megnyitás</string>
+    <string name="action_open_setting">Beállítás megnyitása</string>
+    <string name="action_open_app_info">Alkalmazásinformáció megnyitása</string>
+    <string name="action_settings">Beállítások</string>
+    <string name="action_sync_now">Szinkronizálás most</string>
+    <string name="action_remove">Eltávolítás</string>
+    <string name="section_sync">Szinkronizálás</string>
+
+    <string name="overview_setup_incomplete_title">A beállítás nem teljes</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">A megbízható szinkronizáláshoz még %d engedély vagy beállítás hiányzik.</item>
+        <item quantity="other">A megbízható szinkronizáláshoz még %d engedély vagy beállítás hiányzik.</item>
+    </plurals>
+    <string name="overview_setup_now">Beállítás most</string>
+    <string name="overview_first_steps">Első lépések</string>
+    <string name="overview_step_contacts">1. Válaszd ki azokat a névjegylistákat, amelyekből a születésnapokat át szeretnéd venni.</string>
+    <string name="overview_choose_contacts">Névjegylisták kiválasztása</string>
+    <string name="overview_step_calendar">2. Válaszd ki a naptárat, amelyben az események létrejönnek.</string>
+    <string name="overview_choose_calendar">Célnaptár kiválasztása</string>
+    <string name="overview_target_calendar">Célnaptár: %1$s</string>
+    <string name="overview_target_calendar_none">Célnaptár: nincs kiválasztva</string>
+    <string name="overview_auto_daily">Automatikusan naponta</string>
+    <string name="overview_auto_weekly">Automatikusan hetente</string>
+    <string name="overview_auto_daily_next">Automatikusan naponta, a következő futás legkorábban: %1$s</string>
+    <string name="overview_auto_weekly_next">Automatikusan hetente, a következő futás legkorábban: %1$s</string>
+    <string name="overview_auto_off">Az automatikus szinkronizálás ki van kapcsolva</string>
+    <string name="overview_last_sync">Utolsó szinkronizálás: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Még nem volt szinkronizálás</string>
+    <string name="overview_syncing">Szinkronizálás…</string>
+    <string name="overview_upcoming">Közelgő születésnapok</string>
+    <string name="overview_no_birthdays">A kiválasztott névjegylistákban nem található születésnap.</string>
+    <string name="upcoming_today">Ma</string>
+    <string name="upcoming_tomorrow">Holnap</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">%d nap múlva</item>
+        <item quantity="other">%d nap múlva</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · %2$d éves lesz</item>
+        <item quantity="other">%1$s · %2$d éves lesz</item>
+    </plurals>
+
+    <string name="contacts_intro">Válassz ki teljes fiókokat vagy egyes csoportokat/címkéket. A bennük lévő összes névjegy születésnapja átkerül.</string>
+    <string name="contacts_no_permission_title">Nincs hozzáférés a névjegyekhez</string>
+    <string name="contacts_no_permission_text">Ezen engedély nélkül nem jeleníthetők meg névjegylisták.</string>
+    <string name="contacts_none_found">Nem található névjegy ezen az eszközön.</string>
+    <string name="contacts_all">Összes névjegy</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d névjegy</item>
+        <item quantity="other">%d névjegy</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d születésnappal</item>
+        <item quantity="other">%d születésnappal</item>
+    </plurals>
+    <string name="contacts_device_label">Eszköz</string>
+    <string name="contacts_local_account">Helyileg ezen az eszközön</string>
+    <string name="contacts_group_fallback">Csoport %1$d</string>
+    <string name="contacts_unnamed">Névtelen</string>
+
+    <string name="calendar_target_title">Célnaptár</string>
+    <string name="calendar_target_subtitle">Ide kerülnek a születésnapi események</string>
+    <string name="calendar_no_permission">Nincs hozzáférés a naptárhoz.</string>
+    <string name="calendar_local_name">Születésnapok</string>
+    <string name="calendar_create_local">Saját naptár létrehozása: „%1$s”</string>
+    <string name="calendar_local_info">A saját naptár csak ezen az eszközön tárolódik, és a naptáralkalmazásban külön megjeleníthető vagy elrejthető.</string>
+    <string name="calendar_fallback_name">Naptár %1$d</string>
+    <string name="calendar_events_title">Események</string>
+    <string name="calendar_all_day">Egész napos</string>
+    <string name="calendar_start">Kezdés</string>
+    <string name="calendar_duration">Időtartam</string>
+    <string name="calendar_reminder">Naptári emlékeztető</string>
+    <string name="calendar_remind">Emlékeztetés</string>
+    <string name="calendar_title">Cím</string>
+    <string name="calendar_title_help">Helyőrzők: {name}, {age}. Példa: %1$s</string>
+    <string name="calendar_example_name">Kovács Anna</string>
+    <string name="calendar_auto_sync">Automatikus szinkronizálás</string>
+    <string name="calendar_frequency">Gyakoriság</string>
+    <string name="calendar_range">Időszak előre</string>
+    <string name="calendar_sync_info">A megváltozott nevek és születési dátumok a következő szinkronizáláskor frissülnek, a törölt névjegyek eltűnnek a naptárból. A beállítások módosításai néhány másodperc múlva lépnek életbe.</string>
+    <string name="calendar_running">Folyamatban…</string>
+    <string name="calendar_remove_events">Események eltávolítása</string>
+    <string name="calendar_remove_confirm_title">Eltávolítod az összes eseményt?</string>
+    <string name="calendar_remove_confirm_text">A Birthday Sync által létrehozott összes esemény törlődik az összes naptárból. Ha az automatikus szinkronizálás be van kapcsolva, a következő futáskor újra létrehozza őket.</string>
+    <string name="interval_daily">Naponta</string>
+    <string name="interval_weekly">Hetente</string>
+    <plurals name="range_months">
+        <item quantity="one">%d hónap</item>
+        <item quantity="other">%d hónap</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d perc</item>
+        <item quantity="other">%d perc</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d óra</item>
+        <item quantity="other">%d óra</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d ó %2$d p</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">A kezdés időpontjában</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d perccel előtte</item>
+        <item quantity="other">%d perccel előtte</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d órával előtte</item>
+        <item quantity="other">%d órával előtte</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d nappal előtte</item>
+        <item quantity="other">%d nappal előtte</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d héttel előtte</item>
+        <item quantity="other">%d héttel előtte</item>
+    </plurals>
+    <string name="reminder_on_day_at">Aznap %1$s-kor</string>
+    <string name="reminder_day_before_at">Előző nap %1$s-kor</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d nappal előtte %2$s-kor</item>
+        <item quantity="other">%1$d nappal előtte %2$s-kor</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d héttel előtte %2$s-kor</item>
+        <item quantity="other">%1$d héttel előtte %2$s-kor</item>
+    </plurals>
+
+    <string name="notify_daily_title">Napi értesítés</string>
+    <string name="notify_daily_subtitle">A naptártól függetlenül, közvetlenül a névjegyekből</string>
+    <string name="notify_today_switch">Mai születésnapok jelzése</string>
+    <string name="notify_today_switch_sub">Csak azokon a napokon, amikor valakinek születésnapja van</string>
+    <string name="notify_time">Időpont</string>
+    <string name="notify_test">Tesztértesítés</string>
+    <string name="notify_hint_title">Megjegyzés</string>
+    <string name="notify_hint_text">Ahhoz, hogy az értesítés időben megérkezzen, még hiányzik: %1$s</string>
+    <string name="notify_go_system">Ugrás a rendszerbeállításokhoz</string>
+
+    <string name="system_all_ready">Minden kész</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d pont van még hátra</item>
+        <item quantity="other">%d pont van még hátra</item>
+    </plurals>
+    <string name="system_subtitle">A megbízható háttérszinkronizáláshoz és az időben érkező értesítésekhez</string>
+    <string name="system_setup_info">A beállítás lépésről lépésre végigvezet az összes hiányzó ponton, mindegyiknél magyarázattal.</string>
+    <string name="system_run_setup">Beállítás indítása</string>
+    <string name="check_state_done">Kész. %1$s</string>
+    <string name="check_state_required">Kötelező. %1$s</string>
+    <string name="check_state_recommended">Ajánlott. %1$s</string>
+    <string name="about_title">Az alkalmazásról</string>
+    <string name="about_text">Minden adat az eszközödön marad. Az alkalmazás nem fér hozzá az internethez, és semmit nem gyűjt.</string>
+    <string name="about_privacy">Adatvédelem</string>
+    <string name="about_source">Forráskód</string>
+
+    <string name="check_contacts_title">Névjegyek olvasása</string>
+    <string name="check_contacts_desc">Ahhoz szükséges, hogy a születésnapokat ki lehessen olvasni a névjegylistákból.</string>
+    <string name="check_calendar_title">Naptár olvasása és írása</string>
+    <string name="check_calendar_desc">Ahhoz szükséges, hogy a születésnapi események létrejöjjenek a célnaptárban, és naprakészek maradjanak.</string>
+    <string name="check_notifications_title">Értesítések</string>
+    <string name="check_notifications_desc">A napi születésnapi értesítéshez és a naptári emlékeztetőkhöz szükséges.</string>
+    <string name="check_exact_alarm_title">Pontos ébresztések és emlékeztetők</string>
+    <string name="check_exact_alarm_desc">Hogy a napi értesítés pontosan a beállított időben érkezzen. Ezen engedély nélkül kissé késhet.</string>
+    <string name="check_battery_title">Akkumulátor-optimalizálás kikapcsolása</string>
+    <string name="check_battery_desc">Megakadályozza, hogy az Android elhalassza vagy letiltsa a háttérben futó szinkronizálást.</string>
+    <string name="check_background_title">Háttértevékenység engedélyezve</string>
+    <string name="check_background_desc">Az alkalmazás nem lehet korlátozva a háttérben (Alkalmazásinformáció → Akkumulátor → „Korlátlan”).</string>
+    <string name="check_hibernation_title">Nem használt alkalmazás szüneteltetése kikapcsolva</string>
+    <string name="check_hibernation_desc">Különben az Android visszavonja az engedélyeket, ha néhány hónapig nem nyitod meg az alkalmazást, és a szinkronizálás leáll.</string>
+    <string name="check_power_save_title">Akkumulátorkímélő mód</string>
+    <string name="check_power_save_on">Az Akkumulátorkímélő mód be van kapcsolva, és késleltetheti a szinkronizálást.</string>
+    <string name="check_power_save_off">Az Akkumulátorkímélő mód ki van kapcsolva.</string>
+    <string name="check_vendor_title">Gyártói akkumulátorkezelés (%1$s)</string>
+    <string name="check_vendor_desc">Ez a gyártó gyakran ráadásul le is állítja a háttérben futó alkalmazásokat. Engedélyezd a Birthday Sync számára az automatikus indítást vagy a „Futás a háttérben” lehetőséget. Ez nem ellenőrizhető automatikusan.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">%1$d/%2$d. lépés</item>
+        <item quantity="other">%1$d/%2$d. lépés</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Üdvözöl a Birthday Sync</string>
+    <string name="onboarding_welcome_text">Az alkalmazás automatikusan átviszi a névjegyeidben szereplő születésnapokat egy általad választott naptárba, és az adott napon emlékeztet rájuk.\n\nHogy ez a háttérben is megbízhatóan működjön, szüksége van néhány engedélyre. Lépésről lépésre végigmegyünk rajtuk, és mindegyiknél elmagyarázzuk, mire kell.\n\nMinden az eszközödön marad – az alkalmazás nem fér hozzá az internethez.</string>
+    <string name="onboarding_contacts_title">Hozzáférés a névjegyeidhez</string>
+    <string name="onboarding_contacts_text">A születésnapok a névjegyeidben vannak tárolva. Ahhoz, hogy az alkalmazás megtalálja őket, olvasási hozzáférésre van szüksége.\n\nCsak a neveket, a születésnapokat, valamint a fiókokhoz és csoportokhoz való tartozást olvassa ki, a rendszeres szinkronizáláskor a háttérben is. Az adatok az eszközön maradnak: az alkalmazás nem módosít névjegyeket, nem fér hozzá az internethez, és semmit nem oszt meg.</string>
+    <string name="onboarding_calendar_title">Hozzáférés a naptáradhoz</string>
+    <string name="onboarding_calendar_text">Az alkalmazás minden születésnaphoz létrehoz egy eseményt az általad választott naptárban, és naprakészen tartja, például ha megváltozik egy születési dátum.\n\nEhhez olvasnia és írnia kell a naptárakat. Kizárólag a saját születésnapi eseményeit módosítja.</string>
+    <string name="onboarding_notifications_title">Értesítések</string>
+    <string name="onboarding_notifications_text">Ha szeretnéd, az alkalmazás egy beállított időpontban szól, ha ma valakinek születésnapja van.\n\nEzen engedély nélkül nem jelenik meg értesítés.</string>
+    <string name="onboarding_exact_alarm_title">Pontos emlékeztető</string>
+    <string name="onboarding_exact_alarm_text">Ahhoz, hogy a napi értesítés pontosan a beállított időben érkezzen, és ne valamikor később, az alkalmazásnak szüksége van az „Ébresztések és emlékeztetők” engedélyre.\n\nA következő képernyőn kapcsold be a Birthday Sync kapcsolóját, majd a „Vissza” gombbal térj vissza ide.</string>
+    <string name="onboarding_battery_title">Működés a háttérben</string>
+    <string name="onboarding_battery_text">Az Android az akkumulátor kímélése érdekében szívesen altatja a háttérben lévő alkalmazásokat. Ilyenkor a rendszeres szinkronizálás elmaradhat.\n\nA szinkronizálás naponta csak néhány másodpercig tart, a többletfogyasztás alig mérhető. A következő listában válaszd az „Összes alkalmazás” lehetőséget, majd a Birthday Sync alkalmazást, és állítsd be a „Ne optimalizáljon” opciót.</string>
+    <string name="onboarding_background_title">Háttérkorlátozás feloldása</string>
+    <string name="onboarding_background_text">Ennek az alkalmazásnak korlátozva van a háttértevékenysége, ezért a szinkronizálás és az értesítés elmarad.\n\nAz Alkalmazásinformációban nyisd meg az „Akkumulátor” pontot, és válaszd a „Korlátlan” lehetőséget. Ezután a „Vissza” gombbal térj vissza ide.</string>
+    <string name="onboarding_hibernation_title">Ne szüneteljen automatikusan</string>
+    <string name="onboarding_hibernation_text">Ha néhány hónapig nem nyitod meg az alkalmazást, az Android szünetelteti, és visszavonja az engedélyeit. A szinkronizálás ekkor észrevétlenül leállna – pedig az alkalmazásnak éppen a háttérben kellene dolgoznia.\n\nA következő képernyőn kapcsold ki az „Alkalmazástevékenység szüneteltetése, ha nem használja” beállítást, majd a „Vissza” gombbal térj vissza ide.</string>
+    <string name="onboarding_almost_title">Majdnem kész</string>
+    <string name="onboarding_all_granted">Minden engedély megadva.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Még %1$d pont hiányzik. Bármikor pótolhatod a „%2$s” lapon.</item>
+        <item quantity="other">Még %1$d pont hiányzik. Bármikor pótolhatod őket a „%2$s” lapon.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Így folytatódik:\n1. Névjegylisták kiválasztása\n2. Célnaptár kiválasztása\n3. Kész – a többit az alkalmazás automatikusan elvégzi.</string>
+    <string name="onboarding_granted">✓ Megadva</string>
+    <string name="onboarding_not_granted">Még nincs megadva. Megpróbálhatod újra, vagy kihagyhatod ezt a lépést.</string>
+    <string name="onboarding_start">Kezdjük</string>
+    <string name="onboarding_next">Tovább</string>
+    <string name="onboarding_skip">Kihagyás</string>
+    <string name="onboarding_retry">Újra</string>
+    <string name="onboarding_finish">Az alkalmazáshoz</string>
+
+    <string name="msg_calendar_selected">Célnaptárként kiválasztva: „%1$s”</string>
+    <string name="msg_calendar_create_failed">Nem sikerült létrehozni a naptárat: %1$s</string>
+    <string name="msg_remove_failed">Hiba az eltávolításkor: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d esemény eltávolítva</item>
+        <item quantity="other">%d esemény eltávolítva</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Az értesítések nincsenek engedélyezve – lásd a „%1$s” lapot</string>
+
+    <string name="sync_no_calendar">Nincs kiválasztva célnaptár</string>
+    <string name="sync_no_contacts_permission">Nincs engedély a névjegyekhez</string>
+    <string name="sync_no_calendar_permission">Nincs engedély a naptárhoz</string>
+    <string name="sync_invalid_calendar">Nincs kiválasztva érvényes célnaptár</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d születésnap</item>
+        <item quantity="other">%d születésnap</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d esemény az időszakban</item>
+        <item quantity="other">%d esemény az időszakban</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – minden naprakész</string>
+    <string name="sync_summary_changes">%1$s, %2$s – új: %3$d, frissítve: %4$d, eltávolítva: %5$d</string>
+    <string name="sync_error">Hiba: %1$s</string>
+
+    <string name="event_description">Születésnap: %1$s</string>
+    <string name="event_description_born">Születésnap: %1$s (szül. %2$d)</string>
+    <string name="event_auto_created">A Birthday Sync automatikusan hozta létre. Az eseményen végzett módosítások a következő szinkronizáláskor felülíródnak.</string>
+
+    <string name="channel_today_name">Mai születésnapok</string>
+    <string name="channel_today_desc">Napi értesítés a mai születésnapokról</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s ma %2$d éves</item>
+        <item quantity="other">%1$s ma %2$d éves</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s ma ünnepli a születésnapját</string>
+    <string name="notification_single_title">🎂 %1$s születésnapja</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 Ma %d születésnap van</item>
+        <item quantity="other">🎂 Ma %d születésnap van</item>
+    </plurals>
+    <string name="notification_nobody_today">Ma senkinek sincs születésnapja</string>
+    <string name="notification_test_text">Birthday Sync – tesztértesítés</string>
+</resources>

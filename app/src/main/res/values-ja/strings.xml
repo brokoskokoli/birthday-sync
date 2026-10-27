@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">概要</string>
+    <string name="tab_contacts">連絡先</string>
+    <string name="tab_calendar">カレンダー</string>
+    <string name="tab_notify">通知</string>
+    <string name="tab_system">システム</string>
+
+    <string name="action_allow">許可</string>
+    <string name="action_allow_access">アクセスを許可</string>
+    <string name="action_open">開く</string>
+    <string name="action_open_setting">設定を開く</string>
+    <string name="action_open_app_info">アプリ情報を開く</string>
+    <string name="action_settings">設定</string>
+    <string name="action_sync_now">今すぐ同期</string>
+    <string name="action_remove">削除</string>
+    <string name="section_sync">同期</string>
+
+    <string name="overview_setup_incomplete_title">セットアップが完了していません</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="other">確実に同期するために必要な権限または設定が %d 件不足しています。</item>
+    </plurals>
+    <string name="overview_setup_now">今すぐセットアップ</string>
+    <string name="overview_first_steps">はじめに</string>
+    <string name="overview_step_contacts">1. 誕生日を取り込む連絡先リストを選択します。</string>
+    <string name="overview_choose_contacts">連絡先リストを選択</string>
+    <string name="overview_step_calendar">2. 予定を作成するカレンダーを選択します。</string>
+    <string name="overview_choose_calendar">保存先カレンダーを選択</string>
+    <string name="overview_target_calendar">保存先カレンダー: %1$s</string>
+    <string name="overview_target_calendar_none">保存先カレンダー: 未選択</string>
+    <string name="overview_auto_daily">毎日自動で同期</string>
+    <string name="overview_auto_weekly">毎週自動で同期</string>
+    <string name="overview_auto_daily_next">毎日自動で同期（次回は早くても %1$s）</string>
+    <string name="overview_auto_weekly_next">毎週自動で同期（次回は早くても %1$s）</string>
+    <string name="overview_auto_off">自動同期はオフです</string>
+    <string name="overview_last_sync">前回の同期: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">まだ同期していません</string>
+    <string name="overview_syncing">同期しています…</string>
+    <string name="overview_upcoming">もうすぐ誕生日</string>
+    <string name="overview_no_birthdays">選択した連絡先リストに誕生日が見つかりません。</string>
+    <string name="upcoming_today">今日</string>
+    <string name="upcoming_tomorrow">明日</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="other">%d 日後</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="other">%1$s · %2$d 歳になります</item>
+    </plurals>
+
+    <string name="contacts_intro">アカウント全体、または個別のグループ / ラベルを選択してください。含まれるすべての連絡先の誕生日が取り込まれます。</string>
+    <string name="contacts_no_permission_title">連絡先へのアクセス権がありません</string>
+    <string name="contacts_no_permission_text">この権限がないと、連絡先リストを表示できません。</string>
+    <string name="contacts_none_found">このデバイスに連絡先が見つかりません。</string>
+    <string name="contacts_all">すべての連絡先</string>
+    <plurals name="contacts_count">
+        <item quantity="other">連絡先 %d 件</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="other">誕生日あり %d 件</item>
+    </plurals>
+    <string name="contacts_device_label">デバイス</string>
+    <string name="contacts_local_account">このデバイスのみ</string>
+    <string name="contacts_group_fallback">グループ %1$d</string>
+    <string name="contacts_unnamed">名前なし</string>
+
+    <string name="calendar_target_title">保存先カレンダー</string>
+    <string name="calendar_target_subtitle">誕生日の予定はここに作成されます</string>
+    <string name="calendar_no_permission">カレンダーへのアクセス権がありません。</string>
+    <string name="calendar_local_name">誕生日</string>
+    <string name="calendar_create_local">専用カレンダー「%1$s」を作成</string>
+    <string name="calendar_local_info">専用カレンダーはこのデバイスにのみ保存され、カレンダー アプリで個別に表示 / 非表示を切り替えられます。</string>
+    <string name="calendar_fallback_name">カレンダー %1$d</string>
+    <string name="calendar_events_title">予定</string>
+    <string name="calendar_all_day">終日</string>
+    <string name="calendar_start">開始</string>
+    <string name="calendar_duration">時間の長さ</string>
+    <string name="calendar_reminder">カレンダーのリマインダー</string>
+    <string name="calendar_remind">リマインド</string>
+    <string name="calendar_title">タイトル</string>
+    <string name="calendar_title_help">プレースホルダ: {name}、{age}。例: %1$s</string>
+    <string name="calendar_example_name">山田 花子</string>
+    <string name="calendar_auto_sync">自動で同期</string>
+    <string name="calendar_frequency">頻度</string>
+    <string name="calendar_range">先の期間</string>
+    <string name="calendar_sync_info">名前や生年月日の変更は次回の同期で反映され、削除した連絡先はカレンダーから消えます。これらの設定の変更は数秒後に適用されます。</string>
+    <string name="calendar_running">実行しています…</string>
+    <string name="calendar_remove_events">予定を削除</string>
+    <string name="calendar_remove_confirm_title">すべての予定を削除しますか？</string>
+    <string name="calendar_remove_confirm_text">Birthday Sync が作成したすべての予定を、すべてのカレンダーから削除します。自動同期がオンの場合、次回の実行時に再び作成されます。</string>
+    <string name="interval_daily">毎日</string>
+    <string name="interval_weekly">毎週</string>
+    <plurals name="range_months">
+        <item quantity="other">%d か月</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d 分</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d 時間</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d 時間 %2$d 分</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">開始時</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="other">%d 分前</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="other">%d 時間前</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="other">%d 日前</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="other">%d 週間前</item>
+    </plurals>
+    <string name="reminder_on_day_at">当日の %1$s</string>
+    <string name="reminder_day_before_at">前日の %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="other">%1$d 日前の %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="other">%1$d 週間前の %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">毎日の通知</string>
+    <string name="notify_daily_subtitle">カレンダーとは別に、連絡先から直接お知らせします</string>
+    <string name="notify_today_switch">今日の誕生日を通知する</string>
+    <string name="notify_today_switch_sub">誰かの誕生日がある日のみ</string>
+    <string name="notify_time">時刻</string>
+    <string name="notify_test">テスト通知</string>
+    <string name="notify_hint_title">注意</string>
+    <string name="notify_hint_text">通知を時間どおりに届けるために、次の項目がまだ必要です: %1$s</string>
+    <string name="notify_go_system">システム設定へ</string>
+
+    <string name="system_all_ready">準備完了</string>
+    <plurals name="system_open_items">
+        <item quantity="other">未完了の項目: %d 件</item>
+    </plurals>
+    <string name="system_subtitle">バックグラウンドでの確実な同期と時間どおりの通知のために</string>
+    <string name="system_setup_info">セットアップでは、不足しているすべての項目を説明付きで順番に案内します。</string>
+    <string name="system_run_setup">セットアップを実行</string>
+    <string name="check_state_done">完了。%1$s</string>
+    <string name="check_state_required">必須。%1$s</string>
+    <string name="check_state_recommended">推奨。%1$s</string>
+    <string name="about_title">このアプリについて</string>
+    <string name="about_text">すべてのデータはデバイス内に保存されます。このアプリはインターネットにアクセスせず、データを一切収集しません。</string>
+    <string name="about_privacy">プライバシー</string>
+    <string name="about_source">ソースコード</string>
+
+    <string name="check_contacts_title">連絡先の読み取り</string>
+    <string name="check_contacts_desc">連絡先リストから誕生日を読み取るために必要です。</string>
+    <string name="check_calendar_title">カレンダーの読み取りと書き込み</string>
+    <string name="check_calendar_desc">保存先カレンダーに誕生日の予定を作成し、最新の状態に保つために必要です。</string>
+    <string name="check_notifications_title">通知</string>
+    <string name="check_notifications_desc">毎日の誕生日通知とカレンダーのリマインダーに必要です。</string>
+    <string name="check_exact_alarm_title">正確なアラームとリマインダー</string>
+    <string name="check_exact_alarm_desc">毎日の通知を設定した時刻ちょうどに届けるためです。この権限がないと、少し遅れることがあります。</string>
+    <string name="check_battery_title">電池の最適化をオフにする</string>
+    <string name="check_battery_desc">Android がバックグラウンド同期を延期したり停止したりするのを防ぎます。</string>
+    <string name="check_background_title">バックグラウンド アクティビティを許可</string>
+    <string name="check_background_desc">このアプリはバックグラウンドで制限されていない必要があります（アプリ情報 → バッテリー → 「制限なし」）。</string>
+    <string name="check_hibernation_title">未使用時のアプリの一時停止はオフ</string>
+    <string name="check_hibernation_desc">オフにしないと、アプリを数か月開かなかった場合に Android が権限を取り消し、同期が止まります。</string>
+    <string name="check_power_save_title">バッテリー セーバー</string>
+    <string name="check_power_save_on">バッテリー セーバーがオンになっているため、同期が遅れることがあります。</string>
+    <string name="check_power_save_off">バッテリー セーバーはオフです。</string>
+    <string name="check_vendor_title">メーカーの電池管理（%1$s）</string>
+    <string name="check_vendor_desc">このメーカーの端末は、バックグラウンドのアプリをさらに停止することがよくあります。Birthday Sync の自動起動または「バックグラウンドで実行を続ける」を許可してください。この設定は自動では確認できません。</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="other">ステップ %1$d / %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Birthday Sync へようこそ</string>
+    <string name="onboarding_welcome_text">このアプリは、連絡先の誕生日を選んだカレンダーに自動でコピーし、当日にお知らせします。\n\nこれをバックグラウンドで確実に行うには、いくつかの権限が必要です。それぞれの用途を説明しながら、1 つずつ設定していきます。\n\nすべてのデータはデバイス内に保存されます。このアプリはインターネットにアクセスしません。</string>
+    <string name="onboarding_contacts_title">連絡先へのアクセス</string>
+    <string name="onboarding_contacts_text">誕生日は連絡先に保存されています。アプリが誕生日を見つけるには、読み取りアクセスが必要です。\n\n読み取るのは名前、誕生日、アカウントとグループへの割り当てのみで、定期的な同期の際にバックグラウンドでも読み取ります。データはデバイス内に保存されます。アプリが連絡先を変更することはなく、インターネットにもアクセスせず、何も共有しません。</string>
+    <string name="onboarding_calendar_title">カレンダーへのアクセス</string>
+    <string name="onboarding_calendar_text">アプリは誕生日ごとに、選んだカレンダーに予定を作成し、生年月日が変わった場合などに最新の状態に更新します。\n\nそのため、カレンダーの読み取りと書き込みが必要です。変更するのは、このアプリが作成した誕生日の予定のみです。</string>
+    <string name="onboarding_notifications_title">通知</string>
+    <string name="onboarding_notifications_text">希望すれば、今日が誕生日の人がいるときに、決まった時刻にお知らせします。\n\nこの権限がないと、通知は表示されません。</string>
+    <string name="onboarding_exact_alarm_title">時間どおりのお知らせ</string>
+    <string name="onboarding_exact_alarm_text">毎日の通知を、遅れることなく設定した時刻ちょうどに届けるには、「アラームとリマインダー」の権限が必要です。\n\n次の画面で Birthday Sync のスイッチをオンにし、「戻る」でこの画面に戻ってください。</string>
+    <string name="onboarding_battery_title">バックグラウンドでの動作</string>
+    <string name="onboarding_battery_text">Android は電池を節約するために、バックグラウンドのアプリを休止させることがあります。その場合、定期的な同期が行われないことがあります。\n\n同期にかかるのは 1 日数秒だけで、電池の消費はほとんどありません。次のリストで「すべてのアプリ」を選び、Birthday Sync を選択して「最適化しない」を選んでください。</string>
+    <string name="onboarding_background_title">バックグラウンドの制限を解除</string>
+    <string name="onboarding_background_text">このアプリはバックグラウンド アクティビティが制限されているため、同期と通知が行われません。\n\nアプリ情報で「バッテリー」を開き、「制限なし」を選択してください。その後、「戻る」でこの画面に戻ってください。</string>
+    <string name="onboarding_hibernation_title">自動で一時停止しない</string>
+    <string name="onboarding_hibernation_text">アプリを数か月開かないと、Android はアプリを一時停止し、権限を削除します。そうなると、アプリはバックグラウンドで動作するためのものなのに、同期が気づかないうちに止まってしまいます。\n\n次の画面で「使用されていない場合はアプリのアクティビティを一時停止する」をオフにし、「戻る」でこの画面に戻ってください。</string>
+    <string name="onboarding_almost_title">あと少しです</string>
+    <string name="onboarding_all_granted">すべての権限が付与されています。</string>
+    <plurals name="onboarding_missing">
+        <item quantity="other">あと %1$d 件の項目が残っています。「%2$s」タブでいつでも設定できます。</item>
+    </plurals>
+    <string name="onboarding_next_steps">次の手順:\n1. 連絡先リストを選択\n2. 保存先カレンダーを選択\n3. 完了 – あとはアプリが自動で行います。</string>
+    <string name="onboarding_granted">✓ 許可済み</string>
+    <string name="onboarding_not_granted">まだ許可されていません。もう一度試すか、このステップをスキップできます。</string>
+    <string name="onboarding_start">始める</string>
+    <string name="onboarding_next">次へ</string>
+    <string name="onboarding_skip">スキップ</string>
+    <string name="onboarding_retry">再試行</string>
+    <string name="onboarding_finish">アプリへ</string>
+
+    <string name="msg_calendar_selected">カレンダー「%1$s」を保存先に選択しました</string>
+    <string name="msg_calendar_create_failed">カレンダーを作成できませんでした: %1$s</string>
+    <string name="msg_remove_failed">削除中にエラーが発生しました: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="other">%d 件の予定を削除しました</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">通知が許可されていません。「%1$s」タブをご確認ください</string>
+
+    <string name="sync_no_calendar">保存先カレンダーが選択されていません</string>
+    <string name="sync_no_contacts_permission">連絡先の権限がありません</string>
+    <string name="sync_no_calendar_permission">カレンダーの権限がありません</string>
+    <string name="sync_invalid_calendar">有効な保存先カレンダーが選択されていません</string>
+    <plurals name="sync_birthdays">
+        <item quantity="other">誕生日 %d 件</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="other">期間内の予定 %d 件</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s、%2$s – すべて最新です</string>
+    <string name="sync_summary_changes">%1$s、%2$s – 新規: %3$d、更新: %4$d、削除: %5$d</string>
+    <string name="sync_error">エラー: %1$s</string>
+
+    <string name="event_description">%1$s さんの誕生日</string>
+    <string name="event_description_born">%1$s さんの誕生日（%2$d 年生まれ）</string>
+    <string name="event_auto_created">Birthday Sync により自動作成されました。この予定への変更は、次回の同期で上書きされます。</string>
+
+    <string name="channel_today_name">今日の誕生日</string>
+    <string name="channel_today_desc">今日の誕生日を毎日お知らせする通知</string>
+    <plurals name="notification_turns_today">
+        <item quantity="other">%1$s さんは今日で %2$d 歳です</item>
+    </plurals>
+    <string name="notification_birthday_today">今日は %1$s さんの誕生日です</string>
+    <string name="notification_single_title">🎂 %1$s さんの誕生日</string>
+    <plurals name="notification_multi_title">
+        <item quantity="other">🎂 今日の誕生日: %d 件</item>
+    </plurals>
+    <string name="notification_nobody_today">今日は誰の誕生日もありません</string>
+    <string name="notification_test_text">Birthday Sync からのテスト通知</string>
+</resources>

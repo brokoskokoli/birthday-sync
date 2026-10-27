@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Apžvalga</string>
+    <string name="tab_contacts">Kontaktai</string>
+    <string name="tab_calendar">Kalendorius</string>
+    <string name="tab_notify">Pranešimai</string>
+    <string name="tab_system">Sistema</string>
+
+    <string name="action_allow">Leisti</string>
+    <string name="action_allow_access">Leisti prieigą</string>
+    <string name="action_open">Atidaryti</string>
+    <string name="action_open_setting">Atidaryti nustatymą</string>
+    <string name="action_open_app_info">Atidaryti programos informaciją</string>
+    <string name="action_settings">Nustatymai</string>
+    <string name="action_sync_now">Sinchronizuoti dabar</string>
+    <string name="action_remove">Pašalinti</string>
+    <string name="section_sync">Sinchronizavimas</string>
+
+    <string name="overview_setup_incomplete_title">Sąranka nebaigta</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Patikimam sinchronizavimui trūksta %d leidimo ar nustatymo.</item>
+        <item quantity="few">Patikimam sinchronizavimui trūksta %d leidimų ar nustatymų.</item>
+        <item quantity="many">Patikimam sinchronizavimui trūksta %d leidimo ar nustatymo.</item>
+        <item quantity="other">Patikimam sinchronizavimui trūksta %d leidimų ar nustatymų.</item>
+    </plurals>
+    <string name="overview_setup_now">Nustatyti dabar</string>
+    <string name="overview_first_steps">Pirmieji žingsniai</string>
+    <string name="overview_step_contacts">1. Pasirinkite kontaktų sąrašus, iš kurių bus perkelti gimtadieniai.</string>
+    <string name="overview_choose_contacts">Pasirinkti kontaktų sąrašus</string>
+    <string name="overview_step_calendar">2. Pasirinkite kalendorių, kuriame bus kuriami įvykiai.</string>
+    <string name="overview_choose_calendar">Pasirinkti tikslinį kalendorių</string>
+    <string name="overview_target_calendar">Tikslinis kalendorius: %1$s</string>
+    <string name="overview_target_calendar_none">Tikslinis kalendorius: nepasirinktas</string>
+    <string name="overview_auto_daily">Automatiškai kasdien</string>
+    <string name="overview_auto_weekly">Automatiškai kas savaitę</string>
+    <string name="overview_auto_daily_next">Automatiškai kasdien, kitas paleidimas ne anksčiau kaip %1$s</string>
+    <string name="overview_auto_weekly_next">Automatiškai kas savaitę, kitas paleidimas ne anksčiau kaip %1$s</string>
+    <string name="overview_auto_off">Automatinis sinchronizavimas išjungtas</string>
+    <string name="overview_last_sync">Paskutinis sinchronizavimas: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Dar nesinchronizuota</string>
+    <string name="overview_syncing">Sinchronizuojama …</string>
+    <string name="overview_upcoming">Artėjantys gimtadieniai</string>
+    <string name="overview_no_birthdays">Pasirinktuose kontaktų sąrašuose gimtadienių nerasta.</string>
+    <string name="upcoming_today">Šiandien</string>
+    <string name="upcoming_tomorrow">Rytoj</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">po %d dienos</item>
+        <item quantity="few">po %d dienų</item>
+        <item quantity="many">po %d dienos</item>
+        <item quantity="other">po %d dienų</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · sukaks %2$d metai</item>
+        <item quantity="few">%1$s · sukaks %2$d metai</item>
+        <item quantity="many">%1$s · sukaks %2$d metų</item>
+        <item quantity="other">%1$s · sukaks %2$d metų</item>
+    </plurals>
+
+    <string name="contacts_intro">Pasirinkite visas paskyras arba atskiras grupes / etiketes. Bus perkelti visų jose esančių kontaktų gimtadieniai.</string>
+    <string name="contacts_no_permission_title">Nėra prieigos prie kontaktų</string>
+    <string name="contacts_no_permission_text">Be šio leidimo kontaktų sąrašų parodyti negalima.</string>
+    <string name="contacts_none_found">Įrenginyje kontaktų nerasta.</string>
+    <string name="contacts_all">Visi kontaktai</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d kontaktas</item>
+        <item quantity="few">%d kontaktai</item>
+        <item quantity="many">%d kontakto</item>
+        <item quantity="other">%d kontaktų</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d su gimtadieniu</item>
+        <item quantity="few">%d su gimtadieniu</item>
+        <item quantity="many">%d su gimtadieniu</item>
+        <item quantity="other">%d su gimtadieniu</item>
+    </plurals>
+    <string name="contacts_device_label">Įrenginys</string>
+    <string name="contacts_local_account">Tik šiame įrenginyje</string>
+    <string name="contacts_group_fallback">Grupė %1$d</string>
+    <string name="contacts_unnamed">Be pavadinimo</string>
+
+    <string name="calendar_target_title">Tikslinis kalendorius</string>
+    <string name="calendar_target_subtitle">Čia kuriami gimtadienių įvykiai</string>
+    <string name="calendar_no_permission">Nėra prieigos prie kalendoriaus.</string>
+    <string name="calendar_local_name">Gimtadieniai</string>
+    <string name="calendar_create_local">Sukurti atskirą kalendorių „%1$s“</string>
+    <string name="calendar_local_info">Atskiras kalendorius saugomas tik šiame įrenginyje ir kalendoriaus programoje jį galima atskirai rodyti arba slėpti.</string>
+    <string name="calendar_fallback_name">Kalendorius %1$d</string>
+    <string name="calendar_events_title">Įvykiai</string>
+    <string name="calendar_all_day">Visą dieną</string>
+    <string name="calendar_start">Pradžia</string>
+    <string name="calendar_duration">Trukmė</string>
+    <string name="calendar_reminder">Kalendoriaus priminimas</string>
+    <string name="calendar_remind">Priminti</string>
+    <string name="calendar_title">Pavadinimas</string>
+    <string name="calendar_title_help">Kintamieji: {name}, {age}. Pavyzdys: %1$s</string>
+    <string name="calendar_example_name">Jonas Jonaitis</string>
+    <string name="calendar_auto_sync">Sinchronizuoti automatiškai</string>
+    <string name="calendar_frequency">Dažnumas</string>
+    <string name="calendar_range">Laikotarpis į priekį</string>
+    <string name="calendar_sync_info">Pakeisti vardai ar gimimo datos pritaikomi kito sinchronizavimo metu; pašalinti kontaktai dingsta iš kalendoriaus. Šių nustatymų pakeitimai pritaikomi po kelių sekundžių.</string>
+    <string name="calendar_running">Vykdoma …</string>
+    <string name="calendar_remove_events">Pašalinti įvykius</string>
+    <string name="calendar_remove_confirm_title">Pašalinti visus įvykius?</string>
+    <string name="calendar_remove_confirm_text">Visi „Birthday Sync“ sukurti įvykiai bus ištrinti iš visų kalendorių. Jei automatinis sinchronizavimas įjungtas, kito paleidimo metu jis juos vėl sukurs.</string>
+    <string name="interval_daily">Kasdien</string>
+    <string name="interval_weekly">Kas savaitę</string>
+    <plurals name="range_months">
+        <item quantity="one">%d mėnuo</item>
+        <item quantity="few">%d mėnesiai</item>
+        <item quantity="many">%d mėnesio</item>
+        <item quantity="other">%d mėnesių</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minutė</item>
+        <item quantity="few">%d minutės</item>
+        <item quantity="many">%d minutės</item>
+        <item quantity="other">%d minučių</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d valanda</item>
+        <item quantity="few">%d valandos</item>
+        <item quantity="many">%d valandos</item>
+        <item quantity="other">%d valandų</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d val. %2$d min.</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Pradžios metu</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">Prieš %d minutę</item>
+        <item quantity="few">Prieš %d minutes</item>
+        <item quantity="many">Prieš %d minutės</item>
+        <item quantity="other">Prieš %d minučių</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">Prieš %d valandą</item>
+        <item quantity="few">Prieš %d valandas</item>
+        <item quantity="many">Prieš %d valandos</item>
+        <item quantity="other">Prieš %d valandų</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">Prieš %d dieną</item>
+        <item quantity="few">Prieš %d dienas</item>
+        <item quantity="many">Prieš %d dienos</item>
+        <item quantity="other">Prieš %d dienų</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">Prieš %d savaitę</item>
+        <item quantity="few">Prieš %d savaites</item>
+        <item quantity="many">Prieš %d savaitės</item>
+        <item quantity="other">Prieš %d savaičių</item>
+    </plurals>
+    <string name="reminder_on_day_at">Tą pačią dieną %1$s</string>
+    <string name="reminder_day_before_at">Dieną prieš %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">Prieš %1$d dieną %2$s</item>
+        <item quantity="few">Prieš %1$d dienas %2$s</item>
+        <item quantity="many">Prieš %1$d dienos %2$s</item>
+        <item quantity="other">Prieš %1$d dienų %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">Prieš %1$d savaitę %2$s</item>
+        <item quantity="few">Prieš %1$d savaites %2$s</item>
+        <item quantity="many">Prieš %1$d savaitės %2$s</item>
+        <item quantity="other">Prieš %1$d savaičių %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Kasdienis pranešimas</string>
+    <string name="notify_daily_subtitle">Nepriklausomai nuo kalendoriaus, tiesiai iš kontaktų</string>
+    <string name="notify_today_switch">Pranešti apie šiandienos gimtadienius</string>
+    <string name="notify_today_switch_sub">Tik tomis dienomis, kai kas nors švenčia gimtadienį</string>
+    <string name="notify_time">Laikas</string>
+    <string name="notify_test">Bandomasis pranešimas</string>
+    <string name="notify_hint_title">Pastaba</string>
+    <string name="notify_hint_text">Kad pranešimas atkeliautų laiku, dar trūksta: %1$s</string>
+    <string name="notify_go_system">Į sistemos nustatymus</string>
+
+    <string name="system_all_ready">Viskas paruošta</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d neatliktas punktas</item>
+        <item quantity="few">%d neatlikti punktai</item>
+        <item quantity="many">%d neatlikto punkto</item>
+        <item quantity="other">%d neatliktų punktų</item>
+    </plurals>
+    <string name="system_subtitle">Patikimam sinchronizavimui fone ir laiku gaunamiems pranešimams</string>
+    <string name="system_setup_info">Sąranka žingsnis po žingsnio praveda per visus trūkstamus punktus ir kiekvieną paaiškina.</string>
+    <string name="system_run_setup">Paleisti sąranką</string>
+    <string name="check_state_done">Atlikta. %1$s</string>
+    <string name="check_state_required">Būtina. %1$s</string>
+    <string name="check_state_recommended">Rekomenduojama. %1$s</string>
+    <string name="about_title">Apie programą</string>
+    <string name="about_text">Visi duomenys lieka jūsų įrenginyje. Programa neturi prieigos prie interneto ir nieko nerenka.</string>
+    <string name="about_privacy">Privatumas</string>
+    <string name="about_source">Šaltinio kodas</string>
+
+    <string name="check_contacts_title">Kontaktų skaitymas</string>
+    <string name="check_contacts_desc">Reikia, kad būtų galima skaityti gimtadienius iš kontaktų sąrašų.</string>
+    <string name="check_calendar_title">Kalendoriaus skaitymas ir rašymas</string>
+    <string name="check_calendar_desc">Reikia, kad tiksliniame kalendoriuje būtų galima kurti gimtadienių įvykius ir juos atnaujinti.</string>
+    <string name="check_notifications_title">Pranešimai</string>
+    <string name="check_notifications_desc">Reikia kasdieniam gimtadienių pranešimui ir kalendoriaus priminimams.</string>
+    <string name="check_exact_alarm_title">Tikslūs signalai ir priminimai</string>
+    <string name="check_exact_alarm_desc">Kad kasdienis pranešimas atkeliautų tiksliai nustatytu laiku. Be šio leidimo jis gali šiek tiek vėluoti.</string>
+    <string name="check_battery_title">Išjungti akumuliatoriaus optimizavimą</string>
+    <string name="check_battery_desc">Neleidžia „Android“ atidėti ar blokuoti sinchronizavimo fone.</string>
+    <string name="check_background_title">Veikla fone leidžiama</string>
+    <string name="check_background_desc">Programos veikla fone neturi būti apribota (Programos informacija → Akumuliatorius → „Neapribota“).</string>
+    <string name="check_hibernation_title">Nenaudojamos programos pristabdymas išjungtas</string>
+    <string name="check_hibernation_desc">Kitaip po kelių mėnesių neatidarius programos „Android“ atšaukia leidimus ir sinchronizavimas sustoja.</string>
+    <string name="check_power_save_title">Akumuliatoriaus tausojimo priemonė</string>
+    <string name="check_power_save_on">Akumuliatoriaus tausojimo priemonė įjungta ir gali uždelsti sinchronizavimą.</string>
+    <string name="check_power_save_off">Akumuliatoriaus tausojimo priemonė išjungta.</string>
+    <string name="check_vendor_title">Gamintojo akumuliatoriaus valdymas (%1$s)</string>
+    <string name="check_vendor_desc">Šis gamintojas dažnai papildomai sustabdo fone veikiančias programas. Leiskite „Birthday Sync“ automatinį paleidimą arba „Veikimą fone“. To negalima patikrinti automatiškai.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">%1$d veiksmas iš %2$d</item>
+        <item quantity="few">%1$d veiksmas iš %2$d</item>
+        <item quantity="many">%1$d veiksmas iš %2$d</item>
+        <item quantity="other">%1$d veiksmas iš %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Sveiki atvykę į „Birthday Sync“</string>
+    <string name="onboarding_welcome_text">Programa automatiškai perkelia gimtadienius iš jūsų kontaktų į jūsų pasirinktą kalendorių ir primena apie juos tą pačią dieną.\n\nKad tai patikimai veiktų fone, jai reikia kelių leidimų. Peržiūrėsime juos žingsnis po žingsnio ir paaiškinsime, kam reikalingas kiekvienas.\n\nViskas lieka jūsų įrenginyje – programa neturi prieigos prie interneto.</string>
+    <string name="onboarding_contacts_title">Prieiga prie jūsų kontaktų</string>
+    <string name="onboarding_contacts_text">Gimtadieniai saugomi jūsų kontaktuose. Kad programa juos rastų, jai reikia skaitymo prieigos.\n\nSkaitomi tik vardai, gimtadieniai ir priskyrimas paskyroms bei grupėms, taip pat fone reguliaraus sinchronizavimo metu. Duomenys lieka įrenginyje: programa nekeičia kontaktų, neturi prieigos prie interneto ir nieko nebendrina.</string>
+    <string name="onboarding_calendar_title">Prieiga prie jūsų kalendoriaus</string>
+    <string name="onboarding_calendar_text">Kiekvienam gimtadieniui programa sukuria įvykį jūsų pasirinktame kalendoriuje ir jį atnaujina, pavyzdžiui, kai pasikeičia gimimo data.\n\nTam jai reikia skaityti ir rašyti kalendorius. Keičiami tik jos pačios sukurti gimtadienių įvykiai.</string>
+    <string name="onboarding_notifications_title">Pranešimai</string>
+    <string name="onboarding_notifications_text">Jei norite, programa nustatytu laiku praneš, kai kas nors šiandien švenčia gimtadienį.\n\nBe šio leidimo pranešimas nebus rodomas.</string>
+    <string name="onboarding_exact_alarm_title">Laiku gaunamas priminimas</string>
+    <string name="onboarding_exact_alarm_text">Kad kasdienis pranešimas atkeliautų tiksliai nustatytu laiku, o ne kada nors vėliau, programai reikia leidimo „Signalai ir priminimai“.\n\nKitame ekrane įjunkite „Birthday Sync“ jungiklį ir grįžkite čia paspaudę „Atgal“.</string>
+    <string name="onboarding_battery_title">Veikimas fone</string>
+    <string name="onboarding_battery_text">„Android“ mėgsta užmigdyti fone veikiančias programas, kad taupytų akumuliatorių. Tada reguliarus sinchronizavimas gali neįvykti.\n\nSinchronizavimas trunka vos kelias sekundes per dieną, papildomas energijos suvartojimas beveik nepastebimas. Kitame sąraše pasirinkite „Visos programos“, tada „Birthday Sync“ ir nustatykite „Neoptimizuoti“.</string>
+    <string name="onboarding_background_title">Panaikinti fono apribojimą</string>
+    <string name="onboarding_background_text">Šios programos veikla fone apribota, todėl sinchronizavimas ir pranešimas neįvyksta.\n\nProgramos informacijoje atidarykite „Akumuliatorius“ ir pasirinkite „Neapribota“. Tada grįžkite čia paspaudę „Atgal“.</string>
+    <string name="onboarding_hibernation_title">Nepristabdyti automatiškai</string>
+    <string name="onboarding_hibernation_text">Jei kelis mėnesius neatidarote programos, „Android“ ją pristabdo ir atšaukia jos leidimus. Tada sinchronizavimas nepastebimai sustotų – nors programa kaip tik turi veikti fone.\n\nKitame ekrane išjunkite „Pristabdyti programos veiklą, jei ji nenaudojama“ ir grįžkite čia paspaudę „Atgal“.</string>
+    <string name="onboarding_almost_title">Beveik baigta</string>
+    <string name="onboarding_all_granted">Visi leidimai suteikti.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Dar trūksta %1$d punkto. Jį bet kada galite užbaigti skirtuke „%2$s“.</item>
+        <item quantity="few">Dar trūksta %1$d punktų. Juos bet kada galite užbaigti skirtuke „%2$s“.</item>
+        <item quantity="many">Dar trūksta %1$d punkto. Juos bet kada galite užbaigti skirtuke „%2$s“.</item>
+        <item quantity="other">Dar trūksta %1$d punktų. Juos bet kada galite užbaigti skirtuke „%2$s“.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Kas toliau:\n1. Pasirinkti kontaktų sąrašus\n2. Pasirinkti tikslinį kalendorių\n3. Baigta – visa kita programa atliks automatiškai.</string>
+    <string name="onboarding_granted">✓ Suteikta</string>
+    <string name="onboarding_not_granted">Dar nesuteikta. Galite bandyti dar kartą arba praleisti šį veiksmą.</string>
+    <string name="onboarding_start">Pradėkime</string>
+    <string name="onboarding_next">Toliau</string>
+    <string name="onboarding_skip">Praleisti</string>
+    <string name="onboarding_retry">Bandyti dar kartą</string>
+    <string name="onboarding_finish">Į programą</string>
+
+    <string name="msg_calendar_selected">Kalendorius „%1$s“ pasirinktas kaip tikslinis</string>
+    <string name="msg_calendar_create_failed">Nepavyko sukurti kalendoriaus: %1$s</string>
+    <string name="msg_remove_failed">Šalinant įvyko klaida: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">Pašalintas %d įvykis</item>
+        <item quantity="few">Pašalinti %d įvykiai</item>
+        <item quantity="many">Pašalinta %d įvykio</item>
+        <item quantity="other">Pašalinta %d įvykių</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Pranešimai neleidžiami – žr. skirtuką „%1$s“</string>
+
+    <string name="sync_no_calendar">Nepasirinktas tikslinis kalendorius</string>
+    <string name="sync_no_contacts_permission">Nėra leidimo pasiekti kontaktus</string>
+    <string name="sync_no_calendar_permission">Nėra leidimo pasiekti kalendorių</string>
+    <string name="sync_invalid_calendar">Nepasirinktas tinkamas tikslinis kalendorius</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d gimtadienis</item>
+        <item quantity="few">%d gimtadieniai</item>
+        <item quantity="many">%d gimtadienio</item>
+        <item quantity="other">%d gimtadienių</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d įvykis laikotarpyje</item>
+        <item quantity="few">%d įvykiai laikotarpyje</item>
+        <item quantity="many">%d įvykio laikotarpyje</item>
+        <item quantity="other">%d įvykių laikotarpyje</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – viskas atnaujinta</string>
+    <string name="sync_summary_changes">%1$s, %2$s – nauji: %3$d, atnaujinti: %4$d, pašalinti: %5$d</string>
+    <string name="sync_error">Klaida: %1$s</string>
+
+    <string name="event_description">Gimtadienis: %1$s</string>
+    <string name="event_description_born">Gimtadienis: %1$s (gim. %2$d m.)</string>
+    <string name="event_auto_created">Automatiškai sukūrė „Birthday Sync“. Šio įvykio pakeitimai bus perrašyti kito sinchronizavimo metu.</string>
+
+    <string name="channel_today_name">Šiandienos gimtadieniai</string>
+    <string name="channel_today_desc">Kasdienis pranešimas apie šiandienos gimtadienius</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s: šiandien sukanka %2$d metai</item>
+        <item quantity="few">%1$s: šiandien sukanka %2$d metai</item>
+        <item quantity="many">%1$s: šiandien sukanka %2$d metų</item>
+        <item quantity="other">%1$s: šiandien sukanka %2$d metų</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s: šiandien gimtadienis</string>
+    <string name="notification_single_title">🎂 %1$s: gimtadienis</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 Šiandien %d gimtadienis</item>
+        <item quantity="few">🎂 Šiandien %d gimtadieniai</item>
+        <item quantity="many">🎂 Šiandien %d gimtadienio</item>
+        <item quantity="other">🎂 Šiandien %d gimtadienių</item>
+    </plurals>
+    <string name="notification_nobody_today">Šiandien niekas nešvenčia gimtadienio</string>
+    <string name="notification_test_text">Bandomasis „Birthday Sync“ pranešimas</string>
+</resources>

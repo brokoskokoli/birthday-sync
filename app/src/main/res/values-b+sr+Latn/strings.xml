@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Pregled</string>
+    <string name="tab_contacts">Kontakti</string>
+    <string name="tab_calendar">Kalendar</string>
+    <string name="tab_notify">Obaveštenja</string>
+    <string name="tab_system">Sistem</string>
+
+    <string name="action_allow">Dozvoli</string>
+    <string name="action_allow_access">Dozvoli pristup</string>
+    <string name="action_open">Otvori</string>
+    <string name="action_open_setting">Otvori podešavanje</string>
+    <string name="action_open_app_info">Otvori „Informacije o aplikaciji“</string>
+    <string name="action_settings">Podešavanja</string>
+    <string name="action_sync_now">Sinhronizuj</string>
+    <string name="action_remove">Ukloni</string>
+    <string name="section_sync">Sinhronizacija</string>
+
+    <string name="overview_setup_incomplete_title">Podešavanje nije dovršeno</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Za pouzdanu sinhronizaciju nedostaje %d dozvola ili podešavanje.</item>
+        <item quantity="few">Za pouzdanu sinhronizaciju nedostaju %d dozvole ili podešavanja.</item>
+        <item quantity="other">Za pouzdanu sinhronizaciju nedostaje %d dozvola ili podešavanja.</item>
+    </plurals>
+    <string name="overview_setup_now">Podesi sada</string>
+    <string name="overview_first_steps">Prvi koraci</string>
+    <string name="overview_step_contacts">1. Izaberi liste kontakata čiji rođendani treba da se preuzmu.</string>
+    <string name="overview_choose_contacts">Izaberi liste kontakata</string>
+    <string name="overview_step_calendar">2. Izaberi kalendar u kom će se praviti događaji.</string>
+    <string name="overview_choose_calendar">Izaberi ciljni kalendar</string>
+    <string name="overview_target_calendar">Ciljni kalendar: %1$s</string>
+    <string name="overview_target_calendar_none">Ciljni kalendar: nije izabran</string>
+    <string name="overview_auto_daily">Automatski svakog dana</string>
+    <string name="overview_auto_weekly">Automatski svake nedelje</string>
+    <string name="overview_auto_daily_next">Automatski svakog dana, sledeće pokretanje najranije %1$s</string>
+    <string name="overview_auto_weekly_next">Automatski svake nedelje, sledeće pokretanje najranije %1$s</string>
+    <string name="overview_auto_off">Automatska sinhronizacija je isključena</string>
+    <string name="overview_last_sync">Poslednja sinhronizacija: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Još nije bilo sinhronizacije</string>
+    <string name="overview_syncing">Sinhronizuje se …</string>
+    <string name="overview_upcoming">Predstojeći rođendani</string>
+    <string name="overview_no_birthdays">U izabranim listama kontakata nisu pronađeni rođendani.</string>
+    <string name="upcoming_today">Danas</string>
+    <string name="upcoming_tomorrow">Sutra</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">za %d dan</item>
+        <item quantity="few">za %d dana</item>
+        <item quantity="other">za %d dana</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · puni %2$d godinu</item>
+        <item quantity="few">%1$s · puni %2$d godine</item>
+        <item quantity="other">%1$s · puni %2$d godina</item>
+    </plurals>
+
+    <string name="contacts_intro">Izaberi cele naloge ili pojedinačne grupe/oznake. Rođendani svih kontakata u njima biće preuzeti.</string>
+    <string name="contacts_no_permission_title">Nema pristupa kontaktima</string>
+    <string name="contacts_no_permission_text">Bez ove dozvole liste kontakata ne mogu da se prikažu.</string>
+    <string name="contacts_none_found">Na uređaju nisu pronađeni kontakti.</string>
+    <string name="contacts_all">Svi kontakti</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d kontakt</item>
+        <item quantity="few">%d kontakta</item>
+        <item quantity="other">%d kontakata</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d sa rođendanom</item>
+        <item quantity="few">%d sa rođendanom</item>
+        <item quantity="other">%d sa rođendanom</item>
+    </plurals>
+    <string name="contacts_device_label">Uređaj</string>
+    <string name="contacts_local_account">Samo na ovom uređaju</string>
+    <string name="contacts_group_fallback">Grupa %1$d</string>
+    <string name="contacts_unnamed">Bez naziva</string>
+
+    <string name="calendar_target_title">Ciljni kalendar</string>
+    <string name="calendar_target_subtitle">Ovde se prave događaji za rođendane</string>
+    <string name="calendar_no_permission">Nema pristupa kalendaru.</string>
+    <string name="calendar_local_name">Rođendani</string>
+    <string name="calendar_create_local">Napravi sopstveni kalendar „%1$s“</string>
+    <string name="calendar_local_info">Sopstveni kalendar čuva se samo na ovom uređaju i u aplikaciji za kalendar može zasebno da se prikazuje ili sakriva.</string>
+    <string name="calendar_fallback_name">Kalendar %1$d</string>
+    <string name="calendar_events_title">Događaji</string>
+    <string name="calendar_all_day">Ceo dan</string>
+    <string name="calendar_start">Početak</string>
+    <string name="calendar_duration">Trajanje</string>
+    <string name="calendar_reminder">Podsetnik u kalendaru</string>
+    <string name="calendar_remind">Podseti</string>
+    <string name="calendar_title">Naslov</string>
+    <string name="calendar_title_help">Promenljive: {name}, {age}. Primer: %1$s</string>
+    <string name="calendar_example_name">Petar Petrović</string>
+    <string name="calendar_auto_sync">Sinhronizuj automatski</string>
+    <string name="calendar_frequency">Učestalost</string>
+    <string name="calendar_range">Period unapred</string>
+    <string name="calendar_sync_info">Promenjena imena ili datumi rođenja primenjuju se pri sledećoj sinhronizaciji; uklonjeni kontakti nestaju iz kalendara. Promene ovih podešavanja primenjuju se posle nekoliko sekundi.</string>
+    <string name="calendar_running">Pokreće se …</string>
+    <string name="calendar_remove_events">Ukloni događaje</string>
+    <string name="calendar_remove_confirm_title">Želiš da ukloniš sve događaje?</string>
+    <string name="calendar_remove_confirm_text">Svi događaji koje je napravio Birthday Sync biće izbrisani iz svih kalendara. Ako je automatska sinhronizacija uključena, ona će ih ponovo napraviti pri sledećem pokretanju.</string>
+    <string name="interval_daily">Dnevno</string>
+    <string name="interval_weekly">Nedeljno</string>
+    <plurals name="range_months">
+        <item quantity="one">%d mesec</item>
+        <item quantity="few">%d meseca</item>
+        <item quantity="other">%d meseci</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="few">%d minuta</item>
+        <item quantity="other">%d minuta</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d sat</item>
+        <item quantity="few">%d sata</item>
+        <item quantity="other">%d sati</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d č %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">U vreme početka</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minut ranije</item>
+        <item quantity="few">%d minuta ranije</item>
+        <item quantity="other">%d minuta ranije</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d sat ranije</item>
+        <item quantity="few">%d sata ranije</item>
+        <item quantity="other">%d sati ranije</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d dan ranije</item>
+        <item quantity="few">%d dana ranije</item>
+        <item quantity="other">%d dana ranije</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d nedelju ranije</item>
+        <item quantity="few">%d nedelje ranije</item>
+        <item quantity="other">%d nedelja ranije</item>
+    </plurals>
+    <string name="reminder_on_day_at">Istog dana u %1$s</string>
+    <string name="reminder_day_before_at">Dan ranije u %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d dan ranije u %2$s</item>
+        <item quantity="few">%1$d dana ranije u %2$s</item>
+        <item quantity="other">%1$d dana ranije u %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d nedelju ranije u %2$s</item>
+        <item quantity="few">%1$d nedelje ranije u %2$s</item>
+        <item quantity="other">%1$d nedelja ranije u %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Dnevno obaveštenje</string>
+    <string name="notify_daily_subtitle">Nezavisno od kalendara, direktno iz kontakata</string>
+    <string name="notify_today_switch">Najavi današnje rođendane</string>
+    <string name="notify_today_switch_sub">Samo danima kada neko ima rođendan</string>
+    <string name="notify_time">Vreme</string>
+    <string name="notify_test">Probno obaveštenje</string>
+    <string name="notify_hint_title">Napomena</string>
+    <string name="notify_hint_text">Da bi obaveštenje stizalo na vreme, još nedostaje: %1$s</string>
+    <string name="notify_go_system">Idi na sistemska podešavanja</string>
+
+    <string name="system_all_ready">Sve je spremno</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d otvorena stavka</item>
+        <item quantity="few">%d otvorene stavke</item>
+        <item quantity="other">%d otvorenih stavki</item>
+    </plurals>
+    <string name="system_subtitle">Za pouzdanu sinhronizaciju u pozadini i blagovremena obaveštenja</string>
+    <string name="system_setup_info">Podešavanje te korak po korak vodi kroz sve stavke koje nedostaju, uz objašnjenje za svaku.</string>
+    <string name="system_run_setup">Pokreni podešavanje</string>
+    <string name="check_state_done">Gotovo. %1$s</string>
+    <string name="check_state_required">Obavezno. %1$s</string>
+    <string name="check_state_recommended">Preporučeno. %1$s</string>
+    <string name="about_title">O aplikaciji</string>
+    <string name="about_text">Svi podaci ostaju na tvom uređaju. Aplikacija nema pristup internetu i ništa ne prikuplja.</string>
+    <string name="about_privacy">Privatnost</string>
+    <string name="about_source">Izvorni kôd</string>
+
+    <string name="check_contacts_title">Čitanje kontakata</string>
+    <string name="check_contacts_desc">Potrebno za čitanje rođendana iz lista kontakata.</string>
+    <string name="check_calendar_title">Čitanje i upisivanje u kalendar</string>
+    <string name="check_calendar_desc">Potrebno za pravljenje događaja za rođendane u ciljnom kalendaru i njihovo ažuriranje.</string>
+    <string name="check_notifications_title">Obaveštenja</string>
+    <string name="check_notifications_desc">Potrebno za dnevno obaveštenje o rođendanima i podsetnike iz kalendara.</string>
+    <string name="check_exact_alarm_title">Precizni alarmi i podsetnici</string>
+    <string name="check_exact_alarm_desc">Da bi dnevno obaveštenje stiglo tačno u podešeno vreme. Bez ove dozvole može malo da kasni.</string>
+    <string name="check_battery_title">Isključi optimizaciju baterije</string>
+    <string name="check_battery_desc">Sprečava da Android odlaže ili blokira sinhronizaciju u pozadini.</string>
+    <string name="check_background_title">Aktivnost u pozadini je dozvoljena</string>
+    <string name="check_background_desc">Aplikacija ne sme da bude ograničena u pozadini (Informacije o aplikaciji → Baterija → „Neograničeno“).</string>
+    <string name="check_hibernation_title">Pauziranje neaktivne aplikacije je isključeno</string>
+    <string name="check_hibernation_desc">U suprotnom Android posle nekoliko meseci bez otvaranja oduzima dozvole i sinhronizacija prestaje.</string>
+    <string name="check_power_save_title">Ušteda baterije</string>
+    <string name="check_power_save_on">Ušteda baterije je uključena i može da odloži sinhronizaciju.</string>
+    <string name="check_power_save_off">Ušteda baterije je isključena.</string>
+    <string name="check_vendor_title">Upravljanje baterijom proizvođača (%1$s)</string>
+    <string name="check_vendor_desc">Ovaj proizvođač često dodatno gasi aplikacije u pozadini. Dozvoli automatsko pokretanje ili „Rad u pozadini“ za Birthday Sync. To ne može automatski da se proveri.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Korak %1$d od %2$d</item>
+        <item quantity="few">Korak %1$d od %2$d</item>
+        <item quantity="other">Korak %1$d od %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Dobro došli u Birthday Sync</string>
+    <string name="onboarding_welcome_text">Aplikacija automatski prenosi rođendane iz tvojih kontakata u kalendar po tvom izboru i podseća te na sam dan.\n\nDa bi to pouzdano radilo u pozadini, potrebno joj je nekoliko dozvola. Proći ćemo kroz njih korak po korak i objasniti čemu koja služi.\n\nSve ostaje na tvom uređaju – aplikacija nema pristup internetu.</string>
+    <string name="onboarding_contacts_title">Pristup tvojim kontaktima</string>
+    <string name="onboarding_contacts_text">Rođendani se nalaze u tvojim kontaktima. Da bi ih aplikacija pronašla, potreban joj je pristup za čitanje.\n\nČitaju se samo imena, rođendani i pripadnost nalozima i grupama, i u pozadini tokom redovne sinhronizacije. Podaci ostaju na uređaju: aplikacija ne menja kontakte, nema pristup internetu i ništa ne deli.</string>
+    <string name="onboarding_calendar_title">Pristup tvom kalendaru</string>
+    <string name="onboarding_calendar_text">Za svaki rođendan aplikacija pravi događaj u kalendaru po tvom izboru i ažurira ga, na primer kada se promeni datum rođenja.\n\nZa to mora da čita i upisuje u kalendare. Menjaju se isključivo njeni sopstveni događaji za rođendane.</string>
+    <string name="onboarding_notifications_title">Obaveštenja</string>
+    <string name="onboarding_notifications_text">Ako želiš, aplikacija će ti se javiti u određeno vreme kada neko danas ima rođendan.\n\nBez ove dozvole obaveštenje izostaje.</string>
+    <string name="onboarding_exact_alarm_title">Podsetnik na vreme</string>
+    <string name="onboarding_exact_alarm_text">Da bi dnevno obaveštenje stiglo tačno u podešeno vreme, a ne nekad kasnije, aplikaciji je potrebna dozvola za „Alarme i podsetnike“.\n\nNa sledećem ekranu uključi prekidač za Birthday Sync, a zatim se vrati ovde pomoću „Nazad“.</string>
+    <string name="onboarding_battery_title">Rad u pozadini</string>
+    <string name="onboarding_battery_text">Android rado uspavljuje aplikacije u pozadini da bi štedeo bateriju. Tada redovna sinhronizacija može da izostane.\n\nSinhronizacija traje samo nekoliko sekundi dnevno, a dodatna potrošnja je jedva merljiva. Na sledećoj listi izaberi „Sve aplikacije“, zatim Birthday Sync i podesi „Ne optimizuj“.</string>
+    <string name="onboarding_background_title">Ukloni ograničenje u pozadini</string>
+    <string name="onboarding_background_text">Za ovu aplikaciju je ograničena aktivnost u pozadini, pa sinhronizacija i obaveštenje izostaju.\n\nU informacijama o aplikaciji otvori „Baterija“ i izaberi „Neograničeno“. Zatim se vrati ovde pomoću „Nazad“.</string>
+    <string name="onboarding_hibernation_title">Bez automatskog pauziranja</string>
+    <string name="onboarding_hibernation_text">Ako nekoliko meseci ne otvaraš aplikaciju, Android je pauzira i oduzima joj dozvole. Sinhronizacija bi tada neprimetno prestala – iako aplikacija upravo treba da radi u pozadini.\n\nNa sledećem ekranu isključi „Pauziraj aktivnost u aplikaciji ako se ne koristi“, a zatim se vrati ovde pomoću „Nazad“.</string>
+    <string name="onboarding_almost_title">Skoro gotovo</string>
+    <string name="onboarding_all_granted">Sve dozvole su date.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Još nedostaje %1$d stavka. Možeš da je dovršiš bilo kada na kartici „%2$s“.</item>
+        <item quantity="few">Još nedostaju %1$d stavke. Možeš da ih dovršiš bilo kada na kartici „%2$s“.</item>
+        <item quantity="other">Još nedostaje %1$d stavki. Možeš da ih dovršiš bilo kada na kartici „%2$s“.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Evo šta sledi:\n1. Izaberi liste kontakata\n2. Izaberi ciljni kalendar\n3. Gotovo – ostalo aplikacija radi automatski.</string>
+    <string name="onboarding_granted">✓ Dato</string>
+    <string name="onboarding_not_granted">Još nije dato. Možeš da pokušaš ponovo ili da preskočiš ovaj korak.</string>
+    <string name="onboarding_start">Hajde</string>
+    <string name="onboarding_next">Dalje</string>
+    <string name="onboarding_skip">Preskoči</string>
+    <string name="onboarding_retry">Pokušaj ponovo</string>
+    <string name="onboarding_finish">U aplikaciju</string>
+
+    <string name="msg_calendar_selected">Kalendar „%1$s“ je izabran kao ciljni</string>
+    <string name="msg_calendar_create_failed">Pravljenje kalendara nije uspelo: %1$s</string>
+    <string name="msg_remove_failed">Greška pri uklanjanju: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">Uklonjen je %d događaj</item>
+        <item quantity="few">Uklonjena su %d događaja</item>
+        <item quantity="other">Uklonjeno je %d događaja</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Obaveštenja nisu dozvoljena – pogledaj karticu „%1$s“</string>
+
+    <string name="sync_no_calendar">Nije izabran ciljni kalendar</string>
+    <string name="sync_no_contacts_permission">Nema dozvole za kontakte</string>
+    <string name="sync_no_calendar_permission">Nema dozvole za kalendar</string>
+    <string name="sync_invalid_calendar">Nije izabran važeći ciljni kalendar</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d rođendan</item>
+        <item quantity="few">%d rođendana</item>
+        <item quantity="other">%d rođendana</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d događaj u periodu</item>
+        <item quantity="few">%d događaja u periodu</item>
+        <item quantity="other">%d događaja u periodu</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – sve je ažurno</string>
+    <string name="sync_summary_changes">%1$s, %2$s – novo: %3$d, ažurirano: %4$d, uklonjeno: %5$d</string>
+    <string name="sync_error">Greška: %1$s</string>
+
+    <string name="event_description">Rođendan: %1$s</string>
+    <string name="event_description_born">Rođendan: %1$s (rođen/a %2$d.)</string>
+    <string name="event_auto_created">Automatski napravio Birthday Sync. Promene ovog događaja biće zamenjene pri sledećoj sinhronizaciji.</string>
+
+    <string name="channel_today_name">Današnji rođendani</string>
+    <string name="channel_today_desc">Dnevno obaveštenje o današnjim rođendanima</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s danas puni %2$d godinu</item>
+        <item quantity="few">%1$s danas puni %2$d godine</item>
+        <item quantity="other">%1$s danas puni %2$d godina</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s danas ima rođendan</string>
+    <string name="notification_single_title">🎂 %1$s ima rođendan</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 Danas %d rođendan</item>
+        <item quantity="few">🎂 Danas %d rođendana</item>
+        <item quantity="other">🎂 Danas %d rođendana</item>
+    </plurals>
+    <string name="notification_nobody_today">Danas niko nema rođendan</string>
+    <string name="notification_test_text">Probno obaveštenje aplikacije Birthday Sync</string>
+</resources>

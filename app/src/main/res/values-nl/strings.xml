@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Overzicht</string>
+    <string name="tab_contacts">Contacten</string>
+    <string name="tab_calendar">Agenda</string>
+    <string name="tab_notify">Meldingen</string>
+    <string name="tab_system">Systeem</string>
+
+    <string name="action_allow">Toestaan</string>
+    <string name="action_allow_access">Toegang toestaan</string>
+    <string name="action_open">Openen</string>
+    <string name="action_open_setting">Instelling openen</string>
+    <string name="action_open_app_info">App-info openen</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="action_sync_now">Nu synchroniseren</string>
+    <string name="action_remove">Verwijderen</string>
+    <string name="section_sync">Synchronisatie</string>
+
+    <string name="overview_setup_incomplete_title">Instellen niet voltooid</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Er ontbreekt nog %d recht of instelling voor een betrouwbare synchronisatie.</item>
+        <item quantity="other">Er ontbreken nog %d rechten of instellingen voor een betrouwbare synchronisatie.</item>
+    </plurals>
+    <string name="overview_setup_now">Nu instellen</string>
+    <string name="overview_first_steps">Aan de slag</string>
+    <string name="overview_step_contacts">1. Kies de contactlijsten waarvan de verjaardagen moeten worden overgenomen.</string>
+    <string name="overview_choose_contacts">Contactlijsten kiezen</string>
+    <string name="overview_step_calendar">2. Kies de agenda waarin de afspraken worden gemaakt.</string>
+    <string name="overview_choose_calendar">Doelagenda kiezen</string>
+    <string name="overview_target_calendar">Doelagenda: %1$s</string>
+    <string name="overview_target_calendar_none">Doelagenda: niet gekozen</string>
+    <string name="overview_auto_daily">Automatisch elke dag</string>
+    <string name="overview_auto_weekly">Automatisch elke week</string>
+    <string name="overview_auto_daily_next">Automatisch elke dag, volgende keer niet eerder dan %1$s</string>
+    <string name="overview_auto_weekly_next">Automatisch elke week, volgende keer niet eerder dan %1$s</string>
+    <string name="overview_auto_off">Automatische synchronisatie staat uit</string>
+    <string name="overview_last_sync">Laatste synchronisatie: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Nog niet gesynchroniseerd</string>
+    <string name="overview_syncing">Synchroniseren …</string>
+    <string name="overview_upcoming">Komende verjaardagen</string>
+    <string name="overview_no_birthdays">Geen verjaardagen gevonden in de gekozen contactlijsten.</string>
+    <string name="upcoming_today">Vandaag</string>
+    <string name="upcoming_tomorrow">Morgen</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">over %d dag</item>
+        <item quantity="other">over %d dagen</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · wordt %2$d</item>
+        <item quantity="other">%1$s · wordt %2$d</item>
+    </plurals>
+
+    <string name="contacts_intro">Kies hele accounts of afzonderlijke groepen/labels. Van alle contacten daarin worden de verjaardagen overgenomen.</string>
+    <string name="contacts_no_permission_title">Geen toegang tot contacten</string>
+    <string name="contacts_no_permission_text">Zonder dit recht kunnen er geen contactlijsten worden getoond.</string>
+    <string name="contacts_none_found">Geen contacten gevonden op dit apparaat.</string>
+    <string name="contacts_all">Alle contacten</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d contact</item>
+        <item quantity="other">%d contacten</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d met verjaardag</item>
+        <item quantity="other">%d met verjaardag</item>
+    </plurals>
+    <string name="contacts_device_label">Apparaat</string>
+    <string name="contacts_local_account">Lokaal op dit apparaat</string>
+    <string name="contacts_group_fallback">Groep %1$d</string>
+    <string name="contacts_unnamed">Naamloos</string>
+
+    <string name="calendar_target_title">Doelagenda</string>
+    <string name="calendar_target_subtitle">Hier worden de verjaardagsafspraken gemaakt</string>
+    <string name="calendar_no_permission">Geen toegang tot de agenda.</string>
+    <string name="calendar_local_name">Verjaardagen</string>
+    <string name="calendar_create_local">Eigen agenda ‘%1$s’ maken</string>
+    <string name="calendar_local_info">Een eigen agenda staat alleen op dit apparaat en kan in de agenda-app los worden getoond of verborgen.</string>
+    <string name="calendar_fallback_name">Agenda %1$d</string>
+    <string name="calendar_events_title">Afspraken</string>
+    <string name="calendar_all_day">Hele dag</string>
+    <string name="calendar_start">Begin</string>
+    <string name="calendar_duration">Duur</string>
+    <string name="calendar_reminder">Agendaherinnering</string>
+    <string name="calendar_remind">Herinneren</string>
+    <string name="calendar_title">Titel</string>
+    <string name="calendar_title_help">Plaatshouders: {name}, {age}. Voorbeeld: %1$s</string>
+    <string name="calendar_example_name">Jan Jansen</string>
+    <string name="calendar_auto_sync">Automatisch synchroniseren</string>
+    <string name="calendar_frequency">Frequentie</string>
+    <string name="calendar_range">Periode vooruit</string>
+    <string name="calendar_sync_info">Gewijzigde namen of geboortedatums worden bij de volgende synchronisatie overgenomen; verwijderde contacten verdwijnen uit de agenda. Wijzigingen in deze instellingen worden na een paar seconden toegepast.</string>
+    <string name="calendar_running">Bezig …</string>
+    <string name="calendar_remove_events">Afspraken verwijderen</string>
+    <string name="calendar_remove_confirm_title">Alle afspraken verwijderen?</string>
+    <string name="calendar_remove_confirm_text">Alle afspraken die Birthday Sync heeft gemaakt, worden uit alle agenda\'s verwijderd. Staat automatische synchronisatie aan, dan worden ze bij de volgende keer opnieuw gemaakt.</string>
+    <string name="interval_daily">Dagelijks</string>
+    <string name="interval_weekly">Wekelijks</string>
+    <plurals name="range_months">
+        <item quantity="one">%d maand</item>
+        <item quantity="other">%d maanden</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minuut</item>
+        <item quantity="other">%d minuten</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d uur</item>
+        <item quantity="other">%d uur</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d u %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Bij begin</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minuut van tevoren</item>
+        <item quantity="other">%d minuten van tevoren</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d uur van tevoren</item>
+        <item quantity="other">%d uur van tevoren</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d dag van tevoren</item>
+        <item quantity="other">%d dagen van tevoren</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d week van tevoren</item>
+        <item quantity="other">%d weken van tevoren</item>
+    </plurals>
+    <string name="reminder_on_day_at">Op de dag zelf om %1$s</string>
+    <string name="reminder_day_before_at">De dag ervoor om %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d dag van tevoren om %2$s</item>
+        <item quantity="other">%1$d dagen van tevoren om %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d week van tevoren om %2$s</item>
+        <item quantity="other">%1$d weken van tevoren om %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Dagelijkse melding</string>
+    <string name="notify_daily_subtitle">Los van de agenda, rechtstreeks uit je contacten</string>
+    <string name="notify_today_switch">Verjaardagen van vandaag melden</string>
+    <string name="notify_today_switch_sub">Alleen op dagen waarop iemand jarig is</string>
+    <string name="notify_time">Tijd</string>
+    <string name="notify_test">Testmelding</string>
+    <string name="notify_hint_title">Let op</string>
+    <string name="notify_hint_text">Om de melding op tijd te laten komen, ontbreekt nog: %1$s</string>
+    <string name="notify_go_system">Naar systeeminstellingen</string>
+
+    <string name="system_all_ready">Alles klaar</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d punt open</item>
+        <item quantity="other">%d punten open</item>
+    </plurals>
+    <string name="system_subtitle">Voor betrouwbare synchronisatie op de achtergrond en meldingen op tijd</string>
+    <string name="system_setup_info">De installatiehulp loodst je stap voor stap langs alle ontbrekende punten, telkens met uitleg.</string>
+    <string name="system_run_setup">Installatiehulp starten</string>
+    <string name="check_state_done">Klaar. %1$s</string>
+    <string name="check_state_required">Vereist. %1$s</string>
+    <string name="check_state_recommended">Aanbevolen. %1$s</string>
+    <string name="about_title">Over de app</string>
+    <string name="about_text">Alle gegevens blijven op je apparaat. De app heeft geen internettoegang en verzamelt niets.</string>
+    <string name="about_privacy">Privacy</string>
+    <string name="about_source">Broncode</string>
+
+    <string name="check_contacts_title">Contacten lezen</string>
+    <string name="check_contacts_desc">Nodig om verjaardagen uit de contactlijsten te lezen.</string>
+    <string name="check_calendar_title">Agenda lezen en schrijven</string>
+    <string name="check_calendar_desc">Nodig om verjaardagsafspraken in de doelagenda te maken en actueel te houden.</string>
+    <string name="check_notifications_title">Meldingen</string>
+    <string name="check_notifications_desc">Nodig voor de dagelijkse verjaardagsmelding en agendaherinneringen.</string>
+    <string name="check_exact_alarm_title">Exacte wekkers en herinneringen</string>
+    <string name="check_exact_alarm_desc">Zodat de dagelijkse melding precies op de ingestelde tijd komt. Zonder dit recht kan hij iets later komen.</string>
+    <string name="check_battery_title">Batterijoptimalisatie uitzetten</string>
+    <string name="check_battery_desc">Voorkomt dat Android de synchronisatie op de achtergrond uitstelt of tegenhoudt.</string>
+    <string name="check_background_title">Achtergrondactiviteit toegestaan</string>
+    <string name="check_background_desc">De app mag op de achtergrond niet beperkt zijn (App-info → Batterij → ‘Onbeperkt’).</string>
+    <string name="check_hibernation_title">App pauzeren bij niet-gebruik staat uit</string>
+    <string name="check_hibernation_desc">Anders trekt Android na een paar maanden zonder openen de rechten in en stopt de synchronisatie.</string>
+    <string name="check_power_save_title">Batterijbesparing</string>
+    <string name="check_power_save_on">Batterijbesparing staat aan en kan de synchronisatie vertragen.</string>
+    <string name="check_power_save_off">Batterijbesparing staat uit.</string>
+    <string name="check_vendor_title">Batterijbeheer van fabrikant (%1$s)</string>
+    <string name="check_vendor_desc">Deze fabrikant stopt achtergrond-apps vaak extra. Sta voor Birthday Sync autostart of ‘Actief houden op achtergrond’ toe. Dit kan niet automatisch worden gecontroleerd.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Stap %1$d van %2$d</item>
+        <item quantity="other">Stap %1$d van %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Welkom bij Birthday Sync</string>
+    <string name="onboarding_welcome_text">De app zet de verjaardagen uit je contacten automatisch in een agenda naar keuze en herinnert je op de dag zelf.\n\nOm dat betrouwbaar op de achtergrond te doen, heeft de app een paar rechten nodig. We lopen ze stap voor stap door en leggen telkens uit waarvoor ze nodig zijn.\n\nAlles blijft op je apparaat – de app heeft geen internettoegang.</string>
+    <string name="onboarding_contacts_title">Toegang tot je contacten</string>
+    <string name="onboarding_contacts_text">De verjaardagen staan in je contacten. Om ze te vinden, heeft de app leestoegang nodig.\n\nAlleen namen, verjaardagen en de indeling in accounts en groepen worden gelezen, ook op de achtergrond bij de regelmatige synchronisatie. De gegevens blijven op je apparaat: de app wijzigt geen contacten, heeft geen internettoegang en deelt niets.</string>
+    <string name="onboarding_calendar_title">Toegang tot je agenda</string>
+    <string name="onboarding_calendar_text">Voor elke verjaardag maakt de app een afspraak in een agenda naar keuze en houdt die actueel, bijvoorbeeld als een geboortedatum verandert.\n\nDaarvoor moet de app agenda\'s kunnen lezen en schrijven. Alleen de eigen verjaardagsafspraken worden ooit gewijzigd.</string>
+    <string name="onboarding_notifications_title">Meldingen</string>
+    <string name="onboarding_notifications_text">Als je wilt, laat de app je op een vaste tijd weten dat er vandaag iemand jarig is.\n\nZonder dit recht blijft de melding stil.</string>
+    <string name="onboarding_exact_alarm_title">Herinnering op tijd</string>
+    <string name="onboarding_exact_alarm_text">Om de dagelijkse melding precies op de ingestelde tijd te laten komen en niet ergens later, heeft de app het recht voor wekkers en herinneringen nodig.\n\nZet op het volgende scherm de schakelaar voor Birthday Sync aan en kom daarna met ‘Terug’ hier terug.</string>
+    <string name="onboarding_battery_title">Op de achtergrond werken</string>
+    <string name="onboarding_battery_text">Android legt apps op de achtergrond graag stil om batterij te besparen. Dan kan de regelmatige synchronisatie uitvallen.\n\nDe synchronisatie duurt maar een paar seconden per dag; het extra batterijverbruik is nauwelijks meetbaar. Kies in de volgende lijst ‘Alle apps’, dan Birthday Sync, en selecteer ‘Niet optimaliseren’.</string>
+    <string name="onboarding_background_title">Achtergrondbeperking opheffen</string>
+    <string name="onboarding_background_text">Voor deze app is de achtergrondactiviteit beperkt, waardoor synchronisatie en melding niet plaatsvinden.\n\nOpen in App-info het onderdeel ‘Batterij’ en kies ‘Onbeperkt’. Kom daarna met ‘Terug’ hier terug.</string>
+    <string name="onboarding_hibernation_title">Niet automatisch pauzeren</string>
+    <string name="onboarding_hibernation_text">Als je de app een paar maanden niet opent, pauzeert Android hem en trekt de rechten in. De synchronisatie stopt dan zonder dat je het merkt – terwijl de app juist op de achtergrond hoort te werken.\n\nZet op het volgende scherm ‘App-activiteit pauzeren als app niet wordt gebruikt’ uit en kom daarna met ‘Terug’ hier terug.</string>
+    <string name="onboarding_almost_title">Bijna klaar</string>
+    <string name="onboarding_all_granted">Alle rechten zijn verleend.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Er ontbreekt nog %1$d punt. Je kunt het altijd later regelen op het tabblad ‘%2$s’.</item>
+        <item quantity="other">Er ontbreken nog %1$d punten. Je kunt ze altijd later regelen op het tabblad ‘%2$s’.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Zo gaat het verder:\n1. Contactlijsten kiezen\n2. Doelagenda kiezen\n3. Klaar – de rest doet de app automatisch.</string>
+    <string name="onboarding_granted">✓ Verleend</string>
+    <string name="onboarding_not_granted">Nog niet verleend. Je kunt het opnieuw proberen of deze stap overslaan.</string>
+    <string name="onboarding_start">Aan de slag</string>
+    <string name="onboarding_next">Volgende</string>
+    <string name="onboarding_skip">Overslaan</string>
+    <string name="onboarding_retry">Opnieuw proberen</string>
+    <string name="onboarding_finish">Naar de app</string>
+
+    <string name="msg_calendar_selected">Agenda ‘%1$s’ is gekozen als doel</string>
+    <string name="msg_calendar_create_failed">Agenda kan niet worden gemaakt: %1$s</string>
+    <string name="msg_remove_failed">Fout bij verwijderen: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d afspraak verwijderd</item>
+        <item quantity="other">%d afspraken verwijderd</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Meldingen zijn niet toegestaan – zie tabblad ‘%1$s’</string>
+
+    <string name="sync_no_calendar">Geen doelagenda gekozen</string>
+    <string name="sync_no_contacts_permission">Geen toestemming voor contacten</string>
+    <string name="sync_no_calendar_permission">Geen toestemming voor de agenda</string>
+    <string name="sync_invalid_calendar">Geen geldige doelagenda gekozen</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d verjaardag</item>
+        <item quantity="other">%d verjaardagen</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d afspraak in periode</item>
+        <item quantity="other">%d afspraken in periode</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – alles actueel</string>
+    <string name="sync_summary_changes">%1$s, %2$s – nieuw: %3$d, bijgewerkt: %4$d, verwijderd: %5$d</string>
+    <string name="sync_error">Fout: %1$s</string>
+
+    <string name="event_description">Verjaardag van %1$s</string>
+    <string name="event_description_born">Verjaardag van %1$s (geboren in %2$d)</string>
+    <string name="event_auto_created">Automatisch gemaakt door Birthday Sync. Wijzigingen in deze afspraak worden bij de volgende synchronisatie overschreven.</string>
+
+    <string name="channel_today_name">Verjaardagen vandaag</string>
+    <string name="channel_today_desc">Dagelijkse melding over de verjaardagen van vandaag</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s wordt vandaag %2$d</item>
+        <item quantity="other">%1$s wordt vandaag %2$d</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s is vandaag jarig</string>
+    <string name="notification_single_title">🎂 %1$s is jarig</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d verjaardag vandaag</item>
+        <item quantity="other">🎂 %d verjaardagen vandaag</item>
+    </plurals>
+    <string name="notification_nobody_today">Vandaag is niemand jarig</string>
+    <string name="notification_test_text">Testmelding van Birthday Sync</string>
+</resources>

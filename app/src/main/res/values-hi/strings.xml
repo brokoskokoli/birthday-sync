@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">सारांश</string>
+    <string name="tab_contacts">संपर्क</string>
+    <string name="tab_calendar">कैलेंडर</string>
+    <string name="tab_notify">सूचनाएं</string>
+    <string name="tab_system">सिस्टम</string>
+
+    <string name="action_allow">अनुमति दें</string>
+    <string name="action_allow_access">ऐक्सेस की अनुमति दें</string>
+    <string name="action_open">खोलें</string>
+    <string name="action_open_setting">सेटिंग खोलें</string>
+    <string name="action_open_app_info">ऐप्लिकेशन की जानकारी खोलें</string>
+    <string name="action_settings">सेटिंग</string>
+    <string name="action_sync_now">अभी सिंक करें</string>
+    <string name="action_remove">हटाएं</string>
+    <string name="section_sync">सिंक</string>
+
+    <string name="overview_setup_incomplete_title">सेटअप अधूरा है</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">भरोसेमंद सिंक के लिए %d अनुमति या सेटिंग बाकी है.</item>
+        <item quantity="other">भरोसेमंद सिंक के लिए %d अनुमतियां या सेटिंग बाकी हैं.</item>
+    </plurals>
+    <string name="overview_setup_now">अभी सेट अप करें</string>
+    <string name="overview_first_steps">शुरुआत करें</string>
+    <string name="overview_step_contacts">1. वे संपर्क सूचियां चुनें जिनके जन्मदिन शामिल किए जाने चाहिए.</string>
+    <string name="overview_choose_contacts">संपर्क सूचियां चुनें</string>
+    <string name="overview_step_calendar">2. वह कैलेंडर चुनें जिसमें इवेंट बनाए जाएंगे.</string>
+    <string name="overview_choose_calendar">टारगेट कैलेंडर चुनें</string>
+    <string name="overview_target_calendar">टारगेट कैलेंडर: %1$s</string>
+    <string name="overview_target_calendar_none">टारगेट कैलेंडर: नहीं चुना गया</string>
+    <string name="overview_auto_daily">हर दिन अपने-आप</string>
+    <string name="overview_auto_weekly">हर हफ़्ते अपने-आप</string>
+    <string name="overview_auto_daily_next">हर दिन अपने-आप, अगली बार %1$s से पहले नहीं</string>
+    <string name="overview_auto_weekly_next">हर हफ़्ते अपने-आप, अगली बार %1$s से पहले नहीं</string>
+    <string name="overview_auto_off">अपने-आप सिंक होना बंद है</string>
+    <string name="overview_last_sync">पिछला सिंक: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">अभी तक कोई सिंक नहीं हुआ</string>
+    <string name="overview_syncing">सिंक हो रहा है …</string>
+    <string name="overview_upcoming">आने वाले जन्मदिन</string>
+    <string name="overview_no_birthdays">चुनी गई संपर्क सूचियों में कोई जन्मदिन नहीं मिला.</string>
+    <string name="upcoming_today">आज</string>
+    <string name="upcoming_tomorrow">कल</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">%d दिन में</item>
+        <item quantity="other">%d दिन में</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · %2$d साल पूरे होंगे</item>
+        <item quantity="other">%1$s · %2$d साल पूरे होंगे</item>
+    </plurals>
+
+    <string name="contacts_intro">पूरे खाते या अलग-अलग ग्रुप/लेबल चुनें. उनमें मौजूद सभी संपर्कों के जन्मदिन शामिल किए जाएंगे.</string>
+    <string name="contacts_no_permission_title">संपर्कों का ऐक्सेस नहीं है</string>
+    <string name="contacts_no_permission_text">इस अनुमति के बिना संपर्क सूचियां नहीं दिखाई जा सकतीं.</string>
+    <string name="contacts_none_found">इस डिवाइस पर कोई संपर्क नहीं मिला.</string>
+    <string name="contacts_all">सभी संपर्क</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d संपर्क</item>
+        <item quantity="other">%d संपर्क</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d में जन्मदिन है</item>
+        <item quantity="other">%d में जन्मदिन है</item>
+    </plurals>
+    <string name="contacts_device_label">डिवाइस</string>
+    <string name="contacts_local_account">सिर्फ़ इस डिवाइस पर</string>
+    <string name="contacts_group_fallback">ग्रुप %1$d</string>
+    <string name="contacts_unnamed">बिना नाम का</string>
+
+    <string name="calendar_target_title">टारगेट कैलेंडर</string>
+    <string name="calendar_target_subtitle">जन्मदिन के इवेंट यहां बनाए जाते हैं</string>
+    <string name="calendar_no_permission">कैलेंडर का ऐक्सेस नहीं है.</string>
+    <string name="calendar_local_name">जन्मदिन</string>
+    <string name="calendar_create_local">अपना कैलेंडर “%1$s” बनाएं</string>
+    <string name="calendar_local_info">अपना कैलेंडर सिर्फ़ इस डिवाइस पर सेव होता है और इसे कैलेंडर ऐप्लिकेशन में अलग से दिखाया या छिपाया जा सकता है.</string>
+    <string name="calendar_fallback_name">कैलेंडर %1$d</string>
+    <string name="calendar_events_title">इवेंट</string>
+    <string name="calendar_all_day">पूरे दिन</string>
+    <string name="calendar_start">शुरू होने का समय</string>
+    <string name="calendar_duration">अवधि</string>
+    <string name="calendar_reminder">कैलेंडर रिमाइंडर</string>
+    <string name="calendar_remind">याद दिलाएं</string>
+    <string name="calendar_title">टाइटल</string>
+    <string name="calendar_title_help">प्लेसहोल्डर: {name}, {age}. उदाहरण: %1$s</string>
+    <string name="calendar_example_name">प्रिया शर्मा</string>
+    <string name="calendar_auto_sync">अपने-आप सिंक करें</string>
+    <string name="calendar_frequency">कितनी बार</string>
+    <string name="calendar_range">आगे की समय-सीमा</string>
+    <string name="calendar_sync_info">बदले गए नाम या जन्मतिथि अगले सिंक में लागू होते हैं; हटाए गए संपर्क कैलेंडर से गायब हो जाते हैं. इन सेटिंग में किए गए बदलाव कुछ सेकंड बाद लागू होते हैं.</string>
+    <string name="calendar_running">चल रहा है …</string>
+    <string name="calendar_remove_events">इवेंट हटाएं</string>
+    <string name="calendar_remove_confirm_title">सभी इवेंट हटाएं?</string>
+    <string name="calendar_remove_confirm_text">Birthday Sync के बनाए सभी इवेंट सभी कैलेंडर से मिटा दिए जाएंगे. अगर अपने-आप सिंक होना चालू है, तो अगली बार चलने पर यह उन्हें फिर से बना देगा.</string>
+    <string name="interval_daily">हर दिन</string>
+    <string name="interval_weekly">हर हफ़्ते</string>
+    <plurals name="range_months">
+        <item quantity="one">%d महीना</item>
+        <item quantity="other">%d महीने</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d मिनट</item>
+        <item quantity="other">%d मिनट</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d घंटा</item>
+        <item quantity="other">%d घंटे</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d घं %2$d मि</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">शुरू होने के समय</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d मिनट पहले</item>
+        <item quantity="other">%d मिनट पहले</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d घंटा पहले</item>
+        <item quantity="other">%d घंटे पहले</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d दिन पहले</item>
+        <item quantity="other">%d दिन पहले</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d हफ़्ता पहले</item>
+        <item quantity="other">%d हफ़्ते पहले</item>
+    </plurals>
+    <string name="reminder_on_day_at">उसी दिन %1$s पर</string>
+    <string name="reminder_day_before_at">एक दिन पहले %1$s पर</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d दिन पहले %2$s पर</item>
+        <item quantity="other">%1$d दिन पहले %2$s पर</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d हफ़्ता पहले %2$s पर</item>
+        <item quantity="other">%1$d हफ़्ते पहले %2$s पर</item>
+    </plurals>
+
+    <string name="notify_daily_title">रोज़ की सूचना</string>
+    <string name="notify_daily_subtitle">कैलेंडर से अलग, सीधे आपके संपर्कों से</string>
+    <string name="notify_today_switch">आज के जन्मदिन बताएं</string>
+    <string name="notify_today_switch_sub">सिर्फ़ उन दिनों पर जब किसी का जन्मदिन हो</string>
+    <string name="notify_time">समय</string>
+    <string name="notify_test">टेस्ट सूचना</string>
+    <string name="notify_hint_title">ध्यान दें</string>
+    <string name="notify_hint_text">सूचना समय पर आए, इसके लिए ये अब भी बाकी हैं: %1$s</string>
+    <string name="notify_go_system">सिस्टम सेटिंग पर जाएं</string>
+
+    <string name="system_all_ready">सब तैयार है</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d आइटम बाकी है</item>
+        <item quantity="other">%d आइटम बाकी हैं</item>
+    </plurals>
+    <string name="system_subtitle">बैकग्राउंड में भरोसेमंद सिंक और समय पर सूचनाओं के लिए</string>
+    <string name="system_setup_info">सेटअप आपको सभी बाकी आइटम से एक-एक करके ले जाता है और हर एक के बारे में बताता है.</string>
+    <string name="system_run_setup">सेटअप शुरू करें</string>
+    <string name="check_state_done">हो गया. %1$s</string>
+    <string name="check_state_required">ज़रूरी. %1$s</string>
+    <string name="check_state_recommended">सुझाया गया. %1$s</string>
+    <string name="about_title">ऐप्लिकेशन के बारे में</string>
+    <string name="about_text">सारा डेटा आपके डिवाइस पर ही रहता है. इस ऐप्लिकेशन के पास इंटरनेट का ऐक्सेस नहीं है और यह कुछ भी इकट्ठा नहीं करता.</string>
+    <string name="about_privacy">निजता</string>
+    <string name="about_source">सोर्स कोड</string>
+
+    <string name="check_contacts_title">संपर्क पढ़ना</string>
+    <string name="check_contacts_desc">संपर्क सूचियों से जन्मदिन पढ़ने के लिए ज़रूरी है.</string>
+    <string name="check_calendar_title">कैलेंडर पढ़ना और उसमें लिखना</string>
+    <string name="check_calendar_desc">टारगेट कैलेंडर में जन्मदिन के इवेंट बनाने और उन्हें अप-टू-डेट रखने के लिए ज़रूरी है.</string>
+    <string name="check_notifications_title">सूचनाएं</string>
+    <string name="check_notifications_desc">जन्मदिन की रोज़ की सूचना और कैलेंडर रिमाइंडर के लिए ज़रूरी है.</string>
+    <string name="check_exact_alarm_title">सटीक समय पर अलार्म और रिमाइंडर</string>
+    <string name="check_exact_alarm_desc">ताकि रोज़ की सूचना ठीक सेट किए गए समय पर आए. इस अनुमति के बिना इसमें थोड़ी देर हो सकती है.</string>
+    <string name="check_battery_title">बैटरी ऑप्टिमाइज़ेशन बंद करें</string>
+    <string name="check_battery_desc">Android को बैकग्राउंड सिंक टालने या रोकने से बचाता है.</string>
+    <string name="check_background_title">बैकग्राउंड गतिविधि की अनुमति है</string>
+    <string name="check_background_desc">बैकग्राउंड में ऐप्लिकेशन पर पाबंदी नहीं होनी चाहिए (ऐप्लिकेशन की जानकारी → बैटरी → “बिना पाबंदी के”).</string>
+    <string name="check_hibernation_title">इस्तेमाल न होने पर ऐप्लिकेशन रोकना बंद है</string>
+    <string name="check_hibernation_desc">वरना कुछ महीनों तक ऐप्लिकेशन न खोलने पर Android अनुमतियां हटा देता है और सिंक रुक जाता है.</string>
+    <string name="check_power_save_title">बैटरी सेवर</string>
+    <string name="check_power_save_on">बैटरी सेवर चालू है और इससे सिंक में देरी हो सकती है.</string>
+    <string name="check_power_save_off">बैटरी सेवर बंद है.</string>
+    <string name="check_vendor_title">डिवाइस बनाने वाली कंपनी का बैटरी मैनेजमेंट (%1$s)</string>
+    <string name="check_vendor_desc">यह कंपनी अक्सर बैकग्राउंड ऐप्लिकेशन को अलग से भी बंद कर देती है. कृपया Birthday Sync के लिए ऑटो-स्टार्ट या “बैकग्राउंड में चालू रखें” की अनुमति दें. इसकी जांच अपने-आप नहीं की जा सकती.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">%2$d में से चरण %1$d</item>
+        <item quantity="other">%2$d में से चरण %1$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Birthday Sync में आपका स्वागत है</string>
+    <string name="onboarding_welcome_text">यह ऐप्लिकेशन आपके संपर्कों के जन्मदिन अपने-आप आपकी पसंद के कैलेंडर में डाल देता है और उसी दिन आपको याद दिलाता है.\n\nबैकग्राउंड में यह भरोसेमंद तरीके से काम करे, इसके लिए इसे कुछ अनुमतियों की ज़रूरत है. हम इन्हें एक-एक करके देखेंगे और बताएंगे कि हर अनुमति किस काम की है.\n\nसब कुछ आपके डिवाइस पर ही रहता है – इस ऐप्लिकेशन के पास इंटरनेट का ऐक्सेस नहीं है.</string>
+    <string name="onboarding_contacts_title">आपके संपर्कों का ऐक्सेस</string>
+    <string name="onboarding_contacts_text">जन्मदिन आपके संपर्कों में सेव होते हैं. उन्हें ढूंढने के लिए ऐप्लिकेशन को पढ़ने का ऐक्सेस चाहिए.\n\nसिर्फ़ नाम, जन्मदिन और खातों व ग्रुप से जुड़ी जानकारी पढ़ी जाती है, नियमित सिंक के दौरान बैकग्राउंड में भी. डेटा आपके डिवाइस पर ही रहता है: ऐप्लिकेशन किसी संपर्क में बदलाव नहीं करता, उसके पास इंटरनेट का ऐक्सेस नहीं है और वह कुछ भी शेयर नहीं करता.</string>
+    <string name="onboarding_calendar_title">आपके कैलेंडर का ऐक्सेस</string>
+    <string name="onboarding_calendar_text">हर जन्मदिन के लिए ऐप्लिकेशन आपकी पसंद के कैलेंडर में एक इवेंट बनाता है और उसे अप-टू-डेट रखता है, जैसे कि जन्मतिथि बदलने पर.\n\nइसके लिए उसे कैलेंडर पढ़ने और उनमें लिखने की ज़रूरत होती है. सिर्फ़ उसके अपने बनाए जन्मदिन के इवेंट ही बदले जाते हैं.</string>
+    <string name="onboarding_notifications_title">सूचनाएं</string>
+    <string name="onboarding_notifications_text">आप चाहें, तो आज किसी का जन्मदिन होने पर ऐप्लिकेशन तय समय पर आपको बताएगा.\n\nइस अनुमति के बिना कोई सूचना नहीं दिखेगी.</string>
+    <string name="onboarding_exact_alarm_title">समय पर रिमाइंडर</string>
+    <string name="onboarding_exact_alarm_text">रोज़ की सूचना बाद में कभी नहीं, बल्कि ठीक सेट किए गए समय पर आए, इसके लिए ऐप्लिकेशन को “अलार्म और रिमाइंडर” की अनुमति चाहिए.\n\nअगली स्क्रीन पर Birthday Sync का स्विच चालू करें और फिर “वापस जाएं” से यहां लौट आएं.</string>
+    <string name="onboarding_battery_title">बैकग्राउंड में काम करना</string>
+    <string name="onboarding_battery_text">बैटरी बचाने के लिए Android बैकग्राउंड ऐप्लिकेशन को अक्सर रोक देता है. ऐसे में नियमित सिंक नहीं हो पाता.\n\nसिंक में हर दिन सिर्फ़ कुछ सेकंड लगते हैं; बैटरी की अतिरिक्त खपत न के बराबर होती है. अगली सूची में “सभी ऐप्लिकेशन” चुनें, फिर Birthday Sync चुनें और “ऑप्टिमाइज़ न करें” सेट करें.</string>
+    <string name="onboarding_background_title">बैकग्राउंड पाबंदी हटाएं</string>
+    <string name="onboarding_background_text">इस ऐप्लिकेशन की बैकग्राउंड गतिविधि पर पाबंदी है, इसलिए सिंक और सूचना नहीं हो पाते.\n\nऐप्लिकेशन की जानकारी में “बैटरी” खोलें और “बिना पाबंदी के” चुनें. फिर “वापस जाएं” से यहां लौट आएं.</string>
+    <string name="onboarding_hibernation_title">अपने-आप न रोकें</string>
+    <string name="onboarding_hibernation_text">अगर आप कुछ महीनों तक ऐप्लिकेशन नहीं खोलते, तो Android उसे रोक देता है और उसकी अनुमतियां हटा देता है. फिर सिंक बिना पता चले बंद हो जाएगा – जबकि ऐप्लिकेशन का काम ही बैकग्राउंड में चलना है.\n\nअगली स्क्रीन पर “इस्तेमाल न होने पर ऐप्लिकेशन की गतिविधि रोकें” बंद करें और फिर “वापस जाएं” से यहां लौट आएं.</string>
+    <string name="onboarding_almost_title">बस हो ही गया</string>
+    <string name="onboarding_all_granted">सभी अनुमतियां दे दी गई हैं.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">%1$d आइटम अभी बाकी है. आप इसे कभी भी “%2$s” टैब में पूरा कर सकते हैं.</item>
+        <item quantity="other">%1$d आइटम अभी बाकी हैं. आप इन्हें कभी भी “%2$s” टैब में पूरा कर सकते हैं.</item>
+    </plurals>
+    <string name="onboarding_next_steps">आगे क्या करना है:\n1. संपर्क सूचियां चुनें\n2. टारगेट कैलेंडर चुनें\n3. हो गया – बाकी काम ऐप्लिकेशन अपने-आप कर लेगा.</string>
+    <string name="onboarding_granted">✓ अनुमति दी गई</string>
+    <string name="onboarding_not_granted">अभी अनुमति नहीं दी गई. आप फिर से कोशिश कर सकते हैं या इस चरण को छोड़ सकते हैं.</string>
+    <string name="onboarding_start">चलिए शुरू करें</string>
+    <string name="onboarding_next">आगे बढ़ें</string>
+    <string name="onboarding_skip">छोड़ें</string>
+    <string name="onboarding_retry">फिर कोशिश करें</string>
+    <string name="onboarding_finish">ऐप्लिकेशन पर जाएं</string>
+
+    <string name="msg_calendar_selected">कैलेंडर “%1$s” को टारगेट के तौर पर चुना गया है</string>
+    <string name="msg_calendar_create_failed">कैलेंडर नहीं बनाया जा सका: %1$s</string>
+    <string name="msg_remove_failed">हटाते समय गड़बड़ी हुई: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d इवेंट हटाया गया</item>
+        <item quantity="other">%d इवेंट हटाए गए</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">सूचनाओं की अनुमति नहीं है – “%1$s” टैब देखें</string>
+
+    <string name="sync_no_calendar">कोई टारगेट कैलेंडर नहीं चुना गया</string>
+    <string name="sync_no_contacts_permission">संपर्कों की अनुमति नहीं है</string>
+    <string name="sync_no_calendar_permission">कैलेंडर की अनुमति नहीं है</string>
+    <string name="sync_invalid_calendar">कोई मान्य टारगेट कैलेंडर नहीं चुना गया</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d जन्मदिन</item>
+        <item quantity="other">%d जन्मदिन</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">समय-सीमा में %d इवेंट</item>
+        <item quantity="other">समय-सीमा में %d इवेंट</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – सब अप-टू-डेट है</string>
+    <string name="sync_summary_changes">%1$s, %2$s – नए: %3$d, अपडेट किए गए: %4$d, हटाए गए: %5$d</string>
+    <string name="sync_error">गड़बड़ी: %1$s</string>
+
+    <string name="event_description">%1$s का जन्मदिन</string>
+    <string name="event_description_born">%1$s का जन्मदिन (जन्म %2$d)</string>
+    <string name="event_auto_created">Birthday Sync ने अपने-आप बनाया. इस इवेंट में किए गए बदलाव अगले सिंक में बदल दिए जाएंगे.</string>
+
+    <string name="channel_today_name">आज के जन्मदिन</string>
+    <string name="channel_today_desc">आज के जन्मदिनों के बारे में रोज़ की सूचना</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">आज %1$s के %2$d साल पूरे हुए</item>
+        <item quantity="other">आज %1$s के %2$d साल पूरे हुए</item>
+    </plurals>
+    <string name="notification_birthday_today">आज %1$s का जन्मदिन है</string>
+    <string name="notification_single_title">🎂 %1$s का जन्मदिन है</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 आज %d जन्मदिन है</item>
+        <item quantity="other">🎂 आज %d जन्मदिन हैं</item>
+    </plurals>
+    <string name="notification_nobody_today">आज किसी का जन्मदिन नहीं है</string>
+    <string name="notification_test_text">Birthday Sync की टेस्ट सूचना</string>
+</resources>

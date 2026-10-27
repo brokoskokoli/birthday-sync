@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Panoramica</string>
+    <string name="tab_contacts">Contatti</string>
+    <string name="tab_calendar">Calendario</string>
+    <string name="tab_notify">Avvisi</string>
+    <string name="tab_system">Sistema</string>
+
+    <string name="action_allow">Consenti</string>
+    <string name="action_allow_access">Consenti accesso</string>
+    <string name="action_open">Apri</string>
+    <string name="action_open_setting">Apri impostazione</string>
+    <string name="action_open_app_info">Apri Informazioni app</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="action_sync_now">Sincronizza ora</string>
+    <string name="action_remove">Rimuovi</string>
+    <string name="section_sync">Sincronizzazione</string>
+
+    <string name="overview_setup_incomplete_title">Configurazione incompleta</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Manca %d autorizzazione o impostazione per una sincronizzazione affidabile.</item>
+        <item quantity="many">Mancano %d autorizzazioni o impostazioni per una sincronizzazione affidabile.</item>
+        <item quantity="other">Mancano %d autorizzazioni o impostazioni per una sincronizzazione affidabile.</item>
+    </plurals>
+    <string name="overview_setup_now">Configura ora</string>
+    <string name="overview_first_steps">Primi passi</string>
+    <string name="overview_step_contacts">1. Scegli gli elenchi di contatti di cui includere i compleanni.</string>
+    <string name="overview_choose_contacts">Scegli elenchi di contatti</string>
+    <string name="overview_step_calendar">2. Scegli il calendario in cui creare gli eventi.</string>
+    <string name="overview_choose_calendar">Scegli calendario di destinazione</string>
+    <string name="overview_target_calendar">Calendario di destinazione: %1$s</string>
+    <string name="overview_target_calendar_none">Calendario di destinazione: non selezionato</string>
+    <string name="overview_auto_daily">Automatica ogni giorno</string>
+    <string name="overview_auto_weekly">Automatica ogni settimana</string>
+    <string name="overview_auto_daily_next">Automatica ogni giorno, prossima esecuzione non prima di %1$s</string>
+    <string name="overview_auto_weekly_next">Automatica ogni settimana, prossima esecuzione non prima di %1$s</string>
+    <string name="overview_auto_off">La sincronizzazione automatica è disattivata</string>
+    <string name="overview_last_sync">Ultima sincronizzazione: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Nessuna sincronizzazione eseguita</string>
+    <string name="overview_syncing">Sincronizzazione in corso…</string>
+    <string name="overview_upcoming">Prossimi compleanni</string>
+    <string name="overview_no_birthdays">Nessun compleanno trovato negli elenchi di contatti selezionati.</string>
+    <string name="upcoming_today">Oggi</string>
+    <string name="upcoming_tomorrow">Domani</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">tra %d giorno</item>
+        <item quantity="many">tra %d giorni</item>
+        <item quantity="other">tra %d giorni</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · compie %2$d anno</item>
+        <item quantity="many">%1$s · compie %2$d anni</item>
+        <item quantity="other">%1$s · compie %2$d anni</item>
+    </plurals>
+
+    <string name="contacts_intro">Scegli interi account o singoli gruppi/etichette. Verranno inclusi i compleanni di tutti i contatti che contengono.</string>
+    <string name="contacts_no_permission_title">Nessun accesso ai contatti</string>
+    <string name="contacts_no_permission_text">Senza questa autorizzazione non è possibile mostrare gli elenchi di contatti.</string>
+    <string name="contacts_none_found">Nessun contatto trovato sul dispositivo.</string>
+    <string name="contacts_all">Tutti i contatti</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d contatto</item>
+        <item quantity="many">%d contatti</item>
+        <item quantity="other">%d contatti</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d con compleanno</item>
+        <item quantity="many">%d con compleanno</item>
+        <item quantity="other">%d con compleanno</item>
+    </plurals>
+    <string name="contacts_device_label">Dispositivo</string>
+    <string name="contacts_local_account">Solo su questo dispositivo</string>
+    <string name="contacts_group_fallback">Gruppo %1$d</string>
+    <string name="contacts_unnamed">Senza nome</string>
+
+    <string name="calendar_target_title">Calendario di destinazione</string>
+    <string name="calendar_target_subtitle">Qui vengono creati gli eventi dei compleanni</string>
+    <string name="calendar_no_permission">Nessun accesso al calendario.</string>
+    <string name="calendar_local_name">Compleanni</string>
+    <string name="calendar_create_local">Crea un calendario dedicato “%1$s”</string>
+    <string name="calendar_local_info">Un calendario dedicato viene salvato solo su questo dispositivo e può essere mostrato o nascosto separatamente nell\'app Calendario.</string>
+    <string name="calendar_fallback_name">Calendario %1$d</string>
+    <string name="calendar_events_title">Eventi</string>
+    <string name="calendar_all_day">Tutto il giorno</string>
+    <string name="calendar_start">Inizio</string>
+    <string name="calendar_duration">Durata</string>
+    <string name="calendar_reminder">Promemoria calendario</string>
+    <string name="calendar_remind">Promemoria</string>
+    <string name="calendar_title">Titolo</string>
+    <string name="calendar_title_help">Segnaposto: {name}, {age}. Esempio: %1$s</string>
+    <string name="calendar_example_name">Mario Rossi</string>
+    <string name="calendar_auto_sync">Sincronizza automaticamente</string>
+    <string name="calendar_frequency">Frequenza</string>
+    <string name="calendar_range">Periodo in anticipo</string>
+    <string name="calendar_sync_info">Nomi o date di nascita modificati vengono applicati alla sincronizzazione successiva; i contatti rimossi spariscono dal calendario. Le modifiche a queste impostazioni vengono applicate dopo pochi secondi.</string>
+    <string name="calendar_running">In corso…</string>
+    <string name="calendar_remove_events">Rimuovi eventi</string>
+    <string name="calendar_remove_confirm_title">Rimuovere tutti gli eventi?</string>
+    <string name="calendar_remove_confirm_text">Tutti gli eventi creati da Birthday Sync verranno eliminati da tutti i calendari. Se la sincronizzazione automatica è attiva, li ricreerà alla prossima esecuzione.</string>
+    <string name="interval_daily">Ogni giorno</string>
+    <string name="interval_weekly">Ogni settimana</string>
+    <plurals name="range_months">
+        <item quantity="one">%d mese</item>
+        <item quantity="many">%d mesi</item>
+        <item quantity="other">%d mesi</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minuto</item>
+        <item quantity="many">%d minuti</item>
+        <item quantity="other">%d minuti</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d ora</item>
+        <item quantity="many">%d ore</item>
+        <item quantity="other">%d ore</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">All\'ora di inizio</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minuto prima</item>
+        <item quantity="many">%d minuti prima</item>
+        <item quantity="other">%d minuti prima</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d ora prima</item>
+        <item quantity="many">%d ore prima</item>
+        <item quantity="other">%d ore prima</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d giorno prima</item>
+        <item quantity="many">%d giorni prima</item>
+        <item quantity="other">%d giorni prima</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d settimana prima</item>
+        <item quantity="many">%d settimane prima</item>
+        <item quantity="other">%d settimane prima</item>
+    </plurals>
+    <string name="reminder_on_day_at">Il giorno stesso alle %1$s</string>
+    <string name="reminder_day_before_at">Il giorno prima alle %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d giorno prima alle %2$s</item>
+        <item quantity="many">%1$d giorni prima alle %2$s</item>
+        <item quantity="other">%1$d giorni prima alle %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d settimana prima alle %2$s</item>
+        <item quantity="many">%1$d settimane prima alle %2$s</item>
+        <item quantity="other">%1$d settimane prima alle %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Notifica giornaliera</string>
+    <string name="notify_daily_subtitle">Indipendente dal calendario, direttamente dai tuoi contatti</string>
+    <string name="notify_today_switch">Avvisa dei compleanni di oggi</string>
+    <string name="notify_today_switch_sub">Solo nei giorni in cui qualcuno compie gli anni</string>
+    <string name="notify_time">Ora</string>
+    <string name="notify_test">Notifica di prova</string>
+    <string name="notify_hint_title">Nota</string>
+    <string name="notify_hint_text">Perché la notifica arrivi puntuale, manca ancora: %1$s</string>
+    <string name="notify_go_system">Vai alle impostazioni di sistema</string>
+
+    <string name="system_all_ready">Tutto pronto</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d punto in sospeso</item>
+        <item quantity="many">%d punti in sospeso</item>
+        <item quantity="other">%d punti in sospeso</item>
+    </plurals>
+    <string name="system_subtitle">Per sincronizzazioni affidabili in background e notifiche puntuali</string>
+    <string name="system_setup_info">La configurazione ti guida passo passo attraverso tutti i punti mancanti, spiegando ciascuno di essi.</string>
+    <string name="system_run_setup">Avvia configurazione</string>
+    <string name="check_state_done">Fatto. %1$s</string>
+    <string name="check_state_required">Obbligatorio. %1$s</string>
+    <string name="check_state_recommended">Consigliato. %1$s</string>
+    <string name="about_title">Informazioni sull\'app</string>
+    <string name="about_text">Tutti i dati restano sul tuo dispositivo. L\'app non ha accesso a Internet e non raccoglie nulla.</string>
+    <string name="about_privacy">Privacy</string>
+    <string name="about_source">Codice sorgente</string>
+
+    <string name="check_contacts_title">Leggere i contatti</string>
+    <string name="check_contacts_desc">Necessario per leggere i compleanni dagli elenchi di contatti.</string>
+    <string name="check_calendar_title">Leggere e modificare il calendario</string>
+    <string name="check_calendar_desc">Necessario per creare gli eventi dei compleanni nel calendario di destinazione e mantenerli aggiornati.</string>
+    <string name="check_notifications_title">Notifiche</string>
+    <string name="check_notifications_desc">Necessario per la notifica giornaliera dei compleanni e i promemoria del calendario.</string>
+    <string name="check_exact_alarm_title">Sveglie e promemoria esatti</string>
+    <string name="check_exact_alarm_desc">Perché la notifica giornaliera arrivi esattamente all\'ora impostata. Senza questa autorizzazione potrebbe arrivare con un leggero ritardo.</string>
+    <string name="check_battery_title">Disattiva l\'ottimizzazione della batteria</string>
+    <string name="check_battery_desc">Impedisce ad Android di rimandare o bloccare la sincronizzazione in background.</string>
+    <string name="check_background_title">Attività in background consentita</string>
+    <string name="check_background_desc">L\'app non deve avere limitazioni in background (Informazioni app → Batteria → “Senza restrizioni”).</string>
+    <string name="check_hibernation_title">Sospensione dell\'app se inutilizzata disattivata</string>
+    <string name="check_hibernation_desc">Altrimenti Android revoca le autorizzazioni dopo alcuni mesi senza aprire l\'app e la sincronizzazione si interrompe.</string>
+    <string name="check_power_save_title">Risparmio energetico</string>
+    <string name="check_power_save_on">Il risparmio energetico è attivo e può ritardare le sincronizzazioni.</string>
+    <string name="check_power_save_off">Il risparmio energetico è disattivato.</string>
+    <string name="check_vendor_title">Gestione batteria del produttore (%1$s)</string>
+    <string name="check_vendor_desc">Questo produttore spesso chiude anche le app in background. Consenti l\'avvio automatico o “Mantieni attiva in background” per Birthday Sync. Non è possibile verificarlo automaticamente.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Passaggio %1$d di %2$d</item>
+        <item quantity="many">Passaggio %1$d di %2$d</item>
+        <item quantity="other">Passaggio %1$d di %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Ti diamo il benvenuto in Birthday Sync</string>
+    <string name="onboarding_welcome_text">L\'app copia automaticamente i compleanni dei tuoi contatti in un calendario a tua scelta e te li ricorda il giorno stesso.\n\nPer funzionare in modo affidabile in background, ha bisogno di alcune autorizzazioni. Le vedremo passo passo, spiegando a cosa serve ciascuna.\n\nTutto resta sul tuo dispositivo: l\'app non ha accesso a Internet.</string>
+    <string name="onboarding_contacts_title">Accesso ai tuoi contatti</string>
+    <string name="onboarding_contacts_text">I compleanni sono salvati nei tuoi contatti. Per trovarli, l\'app ha bisogno dell\'accesso in lettura.\n\nVengono letti solo i nomi, i compleanni e l\'appartenenza ad account e gruppi, anche in background durante la sincronizzazione periodica. I dati restano sul tuo dispositivo: l\'app non modifica alcun contatto, non ha accesso a Internet e non condivide nulla.</string>
+    <string name="onboarding_calendar_title">Accesso al tuo calendario</string>
+    <string name="onboarding_calendar_text">Per ogni compleanno, l\'app crea un evento in un calendario a tua scelta e lo mantiene aggiornato, ad esempio se cambia una data di nascita.\n\nPer farlo deve poter leggere e modificare i calendari. Vengono modificati solo i suoi eventi dei compleanni.</string>
+    <string name="onboarding_notifications_title">Notifiche</string>
+    <string name="onboarding_notifications_text">Se vuoi, l\'app ti avvisa a un\'ora fissa quando oggi è il compleanno di qualcuno.\n\nSenza questa autorizzazione, la notifica resta muta.</string>
+    <string name="onboarding_exact_alarm_title">Promemoria puntuale</string>
+    <string name="onboarding_exact_alarm_text">Perché la notifica giornaliera arrivi esattamente all\'ora impostata e non chissà quando, l\'app ha bisogno dell\'autorizzazione per sveglie e promemoria.\n\nNella schermata successiva, attiva l\'opzione per Birthday Sync e poi torna qui con “Indietro”.</string>
+    <string name="onboarding_battery_title">Funzionare in background</string>
+    <string name="onboarding_battery_text">Android tende a mettere in pausa le app in background per risparmiare batteria. In questo caso la sincronizzazione periodica può saltare.\n\nLa sincronizzazione richiede solo pochi secondi al giorno e il consumo aggiuntivo è appena misurabile. Nell\'elenco seguente scegli “Tutte le app”, poi Birthday Sync, e seleziona “Non ottimizzare”.</string>
+    <string name="onboarding_background_title">Rimuovi la limitazione in background</string>
+    <string name="onboarding_background_text">L\'attività in background di questa app è limitata, quindi la sincronizzazione e la notifica non avvengono.\n\nIn Informazioni app apri “Batteria” e scegli “Senza restrizioni”. Poi torna qui con “Indietro”.</string>
+    <string name="onboarding_hibernation_title">Non sospendere automaticamente</string>
+    <string name="onboarding_hibernation_text">Se non apri l\'app per alcuni mesi, Android la sospende e le revoca le autorizzazioni. La sincronizzazione si fermerebbe senza che tu te ne accorga, anche se l\'app è fatta proprio per lavorare in background.\n\nNella schermata successiva, disattiva “Sospendi attività app se inutilizzata” e poi torna qui con “Indietro”.</string>
+    <string name="onboarding_almost_title">Quasi fatto</string>
+    <string name="onboarding_all_granted">Tutte le autorizzazioni sono state concesse.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Manca ancora %1$d punto. Puoi completarlo in qualsiasi momento nella scheda “%2$s”.</item>
+        <item quantity="many">Mancano ancora %1$d punti. Puoi completarli in qualsiasi momento nella scheda “%2$s”.</item>
+        <item quantity="other">Mancano ancora %1$d punti. Puoi completarli in qualsiasi momento nella scheda “%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Ecco i prossimi passi:\n1. Scegli gli elenchi di contatti\n2. Scegli il calendario di destinazione\n3. Fatto: al resto pensa l\'app in automatico.</string>
+    <string name="onboarding_granted">✓ Concessa</string>
+    <string name="onboarding_not_granted">Non ancora concessa. Puoi riprovare o saltare questo passaggio.</string>
+    <string name="onboarding_start">Iniziamo</string>
+    <string name="onboarding_next">Avanti</string>
+    <string name="onboarding_skip">Salta</string>
+    <string name="onboarding_retry">Riprova</string>
+    <string name="onboarding_finish">Vai all\'app</string>
+
+    <string name="msg_calendar_selected">Il calendario “%1$s” è selezionato come destinazione</string>
+    <string name="msg_calendar_create_failed">Impossibile creare il calendario: %1$s</string>
+    <string name="msg_remove_failed">Errore durante la rimozione: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d evento rimosso</item>
+        <item quantity="many">%d eventi rimossi</item>
+        <item quantity="other">%d eventi rimossi</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Le notifiche non sono consentite: vedi la scheda “%1$s”</string>
+
+    <string name="sync_no_calendar">Nessun calendario di destinazione selezionato</string>
+    <string name="sync_no_contacts_permission">Nessuna autorizzazione per i contatti</string>
+    <string name="sync_no_calendar_permission">Nessuna autorizzazione per il calendario</string>
+    <string name="sync_invalid_calendar">Nessun calendario di destinazione valido selezionato</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d compleanno</item>
+        <item quantity="many">%d compleanni</item>
+        <item quantity="other">%d compleanni</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d evento nel periodo</item>
+        <item quantity="many">%d eventi nel periodo</item>
+        <item quantity="other">%d eventi nel periodo</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – tutto aggiornato</string>
+    <string name="sync_summary_changes">%1$s, %2$s – nuovi: %3$d, aggiornati: %4$d, rimossi: %5$d</string>
+    <string name="sync_error">Errore: %1$s</string>
+
+    <string name="event_description">Compleanno di %1$s</string>
+    <string name="event_description_born">Compleanno di %1$s (anno di nascita: %2$d)</string>
+    <string name="event_auto_created">Creato automaticamente da Birthday Sync. Le modifiche a questo evento verranno sovrascritte alla prossima sincronizzazione.</string>
+
+    <string name="channel_today_name">Compleanni di oggi</string>
+    <string name="channel_today_desc">Notifica giornaliera dei compleanni di oggi</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">Oggi %1$s compie %2$d anno</item>
+        <item quantity="many">Oggi %1$s compie %2$d anni</item>
+        <item quantity="other">Oggi %1$s compie %2$d anni</item>
+    </plurals>
+    <string name="notification_birthday_today">Oggi è il compleanno di %1$s</string>
+    <string name="notification_single_title">🎂 Compleanno di %1$s</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d compleanno oggi</item>
+        <item quantity="many">🎂 %d compleanni oggi</item>
+        <item quantity="other">🎂 %d compleanni oggi</item>
+    </plurals>
+    <string name="notification_nobody_today">Oggi non compie gli anni nessuno</string>
+    <string name="notification_test_text">Notifica di prova di Birthday Sync</string>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Resum</string>
+    <string name="tab_contacts">Contactes</string>
+    <string name="tab_calendar">Calendari</string>
+    <string name="tab_notify">Avisos</string>
+    <string name="tab_system">Sistema</string>
+
+    <string name="action_allow">Permet</string>
+    <string name="action_allow_access">Permet l\'accés</string>
+    <string name="action_open">Obre</string>
+    <string name="action_open_setting">Obre l\'opció</string>
+    <string name="action_open_app_info">Obre Informació de l\'aplicació</string>
+    <string name="action_settings">Configuració</string>
+    <string name="action_sync_now">Sincronitza ara</string>
+    <string name="action_remove">Suprimeix</string>
+    <string name="section_sync">Sincronització</string>
+
+    <string name="overview_setup_incomplete_title">Configuració incompleta</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Falta %d permís o opció per a una sincronització fiable.</item>
+        <item quantity="many">Falten %d permisos o opcions per a una sincronització fiable.</item>
+        <item quantity="other">Falten %d permisos o opcions per a una sincronització fiable.</item>
+    </plurals>
+    <string name="overview_setup_now">Configura ara</string>
+    <string name="overview_first_steps">Primers passos</string>
+    <string name="overview_step_contacts">1. Tria les llistes de contactes amb els aniversaris que vols incloure.</string>
+    <string name="overview_choose_contacts">Tria llistes de contactes</string>
+    <string name="overview_step_calendar">2. Tria el calendari on es crearan els esdeveniments.</string>
+    <string name="overview_choose_calendar">Tria el calendari de destinació</string>
+    <string name="overview_target_calendar">Calendari de destinació: %1$s</string>
+    <string name="overview_target_calendar_none">Calendari de destinació: no seleccionat</string>
+    <string name="overview_auto_daily">Automàtica cada dia</string>
+    <string name="overview_auto_weekly">Automàtica cada setmana</string>
+    <string name="overview_auto_daily_next">Automàtica cada dia, propera execució no abans de: %1$s</string>
+    <string name="overview_auto_weekly_next">Automàtica cada setmana, propera execució no abans de: %1$s</string>
+    <string name="overview_auto_off">La sincronització automàtica està desactivada</string>
+    <string name="overview_last_sync">Darrera sincronització: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Encara no s\'ha sincronitzat</string>
+    <string name="overview_syncing">S\'està sincronitzant…</string>
+    <string name="overview_upcoming">Propers aniversaris</string>
+    <string name="overview_no_birthdays">No s\'ha trobat cap aniversari a les llistes de contactes seleccionades.</string>
+    <string name="upcoming_today">Avui</string>
+    <string name="upcoming_tomorrow">Demà</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">d\'aquí a %d dia</item>
+        <item quantity="many">d\'aquí a %d dies</item>
+        <item quantity="other">d\'aquí a %d dies</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · fa %2$d any</item>
+        <item quantity="many">%1$s · fa %2$d anys</item>
+        <item quantity="other">%1$s · fa %2$d anys</item>
+    </plurals>
+
+    <string name="contacts_intro">Tria comptes sencers o grups/etiquetes concrets. S\'inclouran els aniversaris de tots els contactes que contenen.</string>
+    <string name="contacts_no_permission_title">No hi ha accés als contactes</string>
+    <string name="contacts_no_permission_text">Sense aquest permís no es poden mostrar llistes de contactes.</string>
+    <string name="contacts_none_found">No s\'ha trobat cap contacte en aquest dispositiu.</string>
+    <string name="contacts_all">Tots els contactes</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d contacte</item>
+        <item quantity="many">%d contactes</item>
+        <item quantity="other">%d contactes</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d amb aniversari</item>
+        <item quantity="many">%d amb aniversari</item>
+        <item quantity="other">%d amb aniversari</item>
+    </plurals>
+    <string name="contacts_device_label">Dispositiu</string>
+    <string name="contacts_local_account">Només en aquest dispositiu</string>
+    <string name="contacts_group_fallback">Grup %1$d</string>
+    <string name="contacts_unnamed">Sense nom</string>
+
+    <string name="calendar_target_title">Calendari de destinació</string>
+    <string name="calendar_target_subtitle">Aquí es creen els esdeveniments d\'aniversari</string>
+    <string name="calendar_no_permission">No hi ha accés al calendari.</string>
+    <string name="calendar_local_name">Aniversaris</string>
+    <string name="calendar_create_local">Crea un calendari propi “%1$s”</string>
+    <string name="calendar_local_info">Un calendari propi només es desa en aquest dispositiu i es pot mostrar o amagar per separat a l\'aplicació de calendari.</string>
+    <string name="calendar_fallback_name">Calendari %1$d</string>
+    <string name="calendar_events_title">Esdeveniments</string>
+    <string name="calendar_all_day">Tot el dia</string>
+    <string name="calendar_start">Inici</string>
+    <string name="calendar_duration">Durada</string>
+    <string name="calendar_reminder">Recordatori del calendari</string>
+    <string name="calendar_remind">Recorda</string>
+    <string name="calendar_title">Títol</string>
+    <string name="calendar_title_help">Marcadors: {name}, {age}. Exemple: %1$s</string>
+    <string name="calendar_example_name">Anna Puig</string>
+    <string name="calendar_auto_sync">Sincronitza automàticament</string>
+    <string name="calendar_frequency">Freqüència</string>
+    <string name="calendar_range">Període per endavant</string>
+    <string name="calendar_sync_info">Els canvis de nom o de data de naixement s\'apliquen a la propera sincronització; els contactes suprimits desapareixen del calendari. Els canvis en aquestes opcions s\'apliquen al cap d\'uns segons.</string>
+    <string name="calendar_running">En curs…</string>
+    <string name="calendar_remove_events">Suprimeix els esdeveniments</string>
+    <string name="calendar_remove_confirm_title">Vols suprimir tots els esdeveniments?</string>
+    <string name="calendar_remove_confirm_text">Se suprimiran de tots els calendaris tots els esdeveniments creats per Birthday Sync. Si la sincronització automàtica està activada, els tornarà a crear a la propera execució.</string>
+    <string name="interval_daily">Cada dia</string>
+    <string name="interval_weekly">Cada setmana</string>
+    <plurals name="range_months">
+        <item quantity="one">%d mes</item>
+        <item quantity="many">%d mesos</item>
+        <item quantity="other">%d mesos</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="many">%d minuts</item>
+        <item quantity="other">%d minuts</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d hora</item>
+        <item quantity="many">%d hores</item>
+        <item quantity="other">%d hores</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">A l\'hora d\'inici</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minut abans</item>
+        <item quantity="many">%d minuts abans</item>
+        <item quantity="other">%d minuts abans</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d hora abans</item>
+        <item quantity="many">%d hores abans</item>
+        <item quantity="other">%d hores abans</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d dia abans</item>
+        <item quantity="many">%d dies abans</item>
+        <item quantity="other">%d dies abans</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d setmana abans</item>
+        <item quantity="many">%d setmanes abans</item>
+        <item quantity="other">%d setmanes abans</item>
+    </plurals>
+    <string name="reminder_on_day_at">El mateix dia a les %1$s</string>
+    <string name="reminder_day_before_at">El dia abans a les %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d dia abans a les %2$s</item>
+        <item quantity="many">%1$d dies abans a les %2$s</item>
+        <item quantity="other">%1$d dies abans a les %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d setmana abans a les %2$s</item>
+        <item quantity="many">%1$d setmanes abans a les %2$s</item>
+        <item quantity="other">%1$d setmanes abans a les %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Notificació diària</string>
+    <string name="notify_daily_subtitle">Independent del calendari, directament dels teus contactes</string>
+    <string name="notify_today_switch">Avisa dels aniversaris d\'avui</string>
+    <string name="notify_today_switch_sub">Només els dies que algú fa anys</string>
+    <string name="notify_time">Hora</string>
+    <string name="notify_test">Notificació de prova</string>
+    <string name="notify_hint_title">Nota</string>
+    <string name="notify_hint_text">Perquè la notificació arribi a temps, encara falta: %1$s</string>
+    <string name="notify_go_system">Ves a la configuració del sistema</string>
+
+    <string name="system_all_ready">Tot a punt</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d punt pendent</item>
+        <item quantity="many">%d punts pendents</item>
+        <item quantity="other">%d punts pendents</item>
+    </plurals>
+    <string name="system_subtitle">Per a sincronitzacions fiables en segon pla i notificacions puntuals</string>
+    <string name="system_setup_info">La configuració et guia pas a pas per tots els punts pendents, amb una explicació de cadascun.</string>
+    <string name="system_run_setup">Inicia la configuració</string>
+    <string name="check_state_done">Fet. %1$s</string>
+    <string name="check_state_required">Obligatori. %1$s</string>
+    <string name="check_state_recommended">Recomanat. %1$s</string>
+    <string name="about_title">Sobre l\'aplicació</string>
+    <string name="about_text">Totes les dades es queden al teu dispositiu. L\'aplicació no té accés a Internet i no recopila res.</string>
+    <string name="about_privacy">Privadesa</string>
+    <string name="about_source">Codi font</string>
+
+    <string name="check_contacts_title">Llegir els contactes</string>
+    <string name="check_contacts_desc">Necessari per llegir els aniversaris de les llistes de contactes.</string>
+    <string name="check_calendar_title">Llegir i modificar el calendari</string>
+    <string name="check_calendar_desc">Necessari per crear els esdeveniments d\'aniversari al calendari de destinació i mantenir-los actualitzats.</string>
+    <string name="check_notifications_title">Notificacions</string>
+    <string name="check_notifications_desc">Necessari per a la notificació diària d\'aniversaris i els recordatoris del calendari.</string>
+    <string name="check_exact_alarm_title">Alarmes i recordatoris exactes</string>
+    <string name="check_exact_alarm_desc">Perquè la notificació diària arribi exactament a l\'hora definida. Sense aquest permís, pot arribar amb una mica de retard.</string>
+    <string name="check_battery_title">Desactiva l\'optimització de la bateria</string>
+    <string name="check_battery_desc">Evita que Android ajorni o bloquegi la sincronització en segon pla.</string>
+    <string name="check_background_title">Activitat en segon pla permesa</string>
+    <string name="check_background_desc">L\'aplicació no ha de tenir restriccions en segon pla (Informació de l\'aplicació → Bateria → “Sense restriccions”).</string>
+    <string name="check_hibernation_title">Pausa per inactivitat desactivada</string>
+    <string name="check_hibernation_desc">Si no, Android retira els permisos després d\'uns quants mesos sense obrir l\'aplicació i la sincronització s\'atura.</string>
+    <string name="check_power_save_title">Estalvi de bateria</string>
+    <string name="check_power_save_on">L\'estalvi de bateria està activat i pot endarrerir les sincronitzacions.</string>
+    <string name="check_power_save_off">L\'estalvi de bateria està desactivat.</string>
+    <string name="check_vendor_title">Gestió de la bateria del fabricant (%1$s)</string>
+    <string name="check_vendor_desc">Aquest fabricant sovint tanca a més les aplicacions en segon pla. Permet l\'inici automàtic o “Mantén activa en segon pla” per a Birthday Sync. Això no es pot comprovar automàticament.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Pas %1$d de %2$d</item>
+        <item quantity="many">Pas %1$d de %2$d</item>
+        <item quantity="other">Pas %1$d de %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Et donem la benvinguda a Birthday Sync</string>
+    <string name="onboarding_welcome_text">L\'aplicació copia automàticament els aniversaris dels teus contactes al calendari que triïs i te\'ls recorda el mateix dia.\n\nPerquè això funcioni bé en segon pla, necessita uns quants permisos. Els repassarem pas a pas i t\'explicarem per a què serveix cadascun.\n\nTot es queda al teu dispositiu: l\'aplicació no té accés a Internet.</string>
+    <string name="onboarding_contacts_title">Accés als teus contactes</string>
+    <string name="onboarding_contacts_text">Els aniversaris estan desats als teus contactes. Per trobar-los, l\'aplicació necessita accés de lectura.\n\nNomés es llegeixen els noms, els aniversaris i la pertinença a comptes i grups, també en segon pla durant la sincronització periòdica. Les dades es queden al teu dispositiu: l\'aplicació no modifica cap contacte, no té accés a Internet i no comparteix res.</string>
+    <string name="onboarding_calendar_title">Accés al teu calendari</string>
+    <string name="onboarding_calendar_text">Per a cada aniversari, l\'aplicació crea un esdeveniment al calendari que triïs i el manté actualitzat, per exemple si canvia una data de naixement.\n\nPer fer-ho, necessita llegir i modificar calendaris. Només modifica els seus propis esdeveniments d\'aniversari.</string>
+    <string name="onboarding_notifications_title">Notificacions</string>
+    <string name="onboarding_notifications_text">Si vols, l\'aplicació t\'avisa a una hora fixa quan algú fa anys avui.\n\nSense aquest permís, la notificació no apareix.</string>
+    <string name="onboarding_exact_alarm_title">Recordatori puntual</string>
+    <string name="onboarding_exact_alarm_text">Perquè la notificació diària arribi exactament a l\'hora definida i no en qualsevol moment més tard, l\'aplicació necessita el permís d\'alarmes i recordatoris.\n\nA la pantalla següent, activa l\'interruptor de Birthday Sync i després torna aquí amb “Enrere”.</string>
+    <string name="onboarding_battery_title">Funcionar en segon pla</string>
+    <string name="onboarding_battery_text">Android sol adormir les aplicacions en segon pla per estalviar bateria. Llavors la sincronització periòdica pot fallar.\n\nLa sincronització només dura uns segons al dia i el consum addicional és gairebé inapreciable. A la llista següent, tria “Totes les aplicacions”, després Birthday Sync, i selecciona “No optimitzis”.</string>
+    <string name="onboarding_background_title">Elimina la restricció en segon pla</string>
+    <string name="onboarding_background_text">L\'activitat en segon pla d\'aquesta aplicació està restringida, de manera que la sincronització i la notificació no es fan.\n\nA Informació de l\'aplicació, obre “Bateria” i tria “Sense restriccions”. Després torna aquí amb “Enrere”.</string>
+    <string name="onboarding_hibernation_title">No posar en pausa automàticament</string>
+    <string name="onboarding_hibernation_text">Si no obres l\'aplicació durant uns quants mesos, Android la posa en pausa i li retira els permisos. La sincronització s\'aturaria sense que te n\'adonessis, tot i que l\'aplicació està pensada precisament per funcionar en segon pla.\n\nA la pantalla següent, desactiva “Posa en pausa l\'activitat de l\'aplicació si no s\'utilitza” i després torna aquí amb “Enrere”.</string>
+    <string name="onboarding_almost_title">Gairebé fet</string>
+    <string name="onboarding_all_granted">S\'han concedit tots els permisos.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Encara falta %1$d punt. Pots completar-lo en qualsevol moment a la pestanya “%2$s”.</item>
+        <item quantity="many">Encara falten %1$d punts. Pots completar-los en qualsevol moment a la pestanya “%2$s”.</item>
+        <item quantity="other">Encara falten %1$d punts. Pots completar-los en qualsevol moment a la pestanya “%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Aquests són els passos següents:\n1. Tria les llistes de contactes\n2. Tria el calendari de destinació\n3. Fet: l\'aplicació s\'encarrega de la resta automàticament.</string>
+    <string name="onboarding_granted">✓ Concedit</string>
+    <string name="onboarding_not_granted">Encara no s\'ha concedit. Pots tornar-ho a provar o ometre aquest pas.</string>
+    <string name="onboarding_start">Som-hi</string>
+    <string name="onboarding_next">Següent</string>
+    <string name="onboarding_skip">Omet</string>
+    <string name="onboarding_retry">Torna-ho a provar</string>
+    <string name="onboarding_finish">Ves a l\'app</string>
+
+    <string name="msg_calendar_selected">S\'ha seleccionat el calendari “%1$s” com a destinació</string>
+    <string name="msg_calendar_create_failed">No s\'ha pogut crear el calendari: %1$s</string>
+    <string name="msg_remove_failed">Error en suprimir: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">S\'ha suprimit %d esdeveniment</item>
+        <item quantity="many">S\'han suprimit %d esdeveniments</item>
+        <item quantity="other">S\'han suprimit %d esdeveniments</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Les notificacions no estan permeses: consulta la pestanya “%1$s”</string>
+
+    <string name="sync_no_calendar">No s\'ha triat cap calendari de destinació</string>
+    <string name="sync_no_contacts_permission">No hi ha permís per als contactes</string>
+    <string name="sync_no_calendar_permission">No hi ha permís per al calendari</string>
+    <string name="sync_invalid_calendar">No s\'ha triat cap calendari de destinació vàlid</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d aniversari</item>
+        <item quantity="many">%d aniversaris</item>
+        <item quantity="other">%d aniversaris</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d esdeveniment al període</item>
+        <item quantity="many">%d esdeveniments al període</item>
+        <item quantity="other">%d esdeveniments al període</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – tot al dia</string>
+    <string name="sync_summary_changes">%1$s, %2$s – nous: %3$d, actualitzats: %4$d, suprimits: %5$d</string>
+    <string name="sync_error">Error: %1$s</string>
+
+    <string name="event_description">Aniversari de %1$s</string>
+    <string name="event_description_born">Aniversari de %1$s (any de naixement: %2$d)</string>
+    <string name="event_auto_created">Creat automàticament per Birthday Sync. Els canvis en aquest esdeveniment se sobreescriuran a la propera sincronització.</string>
+
+    <string name="channel_today_name">Aniversaris d\'avui</string>
+    <string name="channel_today_desc">Notificació diària dels aniversaris d\'avui</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s fa %2$d any avui</item>
+        <item quantity="many">%1$s fa %2$d anys avui</item>
+        <item quantity="other">%1$s fa %2$d anys avui</item>
+    </plurals>
+    <string name="notification_birthday_today">Avui és l\'aniversari de %1$s</string>
+    <string name="notification_single_title">🎂 Aniversari de %1$s</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d aniversari avui</item>
+        <item quantity="many">🎂 %d aniversaris avui</item>
+        <item quantity="other">🎂 %d aniversaris avui</item>
+    </plurals>
+    <string name="notification_nobody_today">Avui ningú no fa anys</string>
+    <string name="notification_test_text">Notificació de prova de Birthday Sync</string>
+</resources>

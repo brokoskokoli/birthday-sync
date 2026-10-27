@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">개요</string>
+    <string name="tab_contacts">연락처</string>
+    <string name="tab_calendar">캘린더</string>
+    <string name="tab_notify">알림</string>
+    <string name="tab_system">시스템</string>
+
+    <string name="action_allow">허용</string>
+    <string name="action_allow_access">액세스 허용</string>
+    <string name="action_open">열기</string>
+    <string name="action_open_setting">설정 열기</string>
+    <string name="action_open_app_info">앱 정보 열기</string>
+    <string name="action_settings">설정</string>
+    <string name="action_sync_now">지금 동기화</string>
+    <string name="action_remove">삭제</string>
+    <string name="section_sync">동기화</string>
+
+    <string name="overview_setup_incomplete_title">설정이 완료되지 않음</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="other">안정적인 동기화에 필요한 권한 또는 설정 %d개가 누락되었습니다.</item>
+    </plurals>
+    <string name="overview_setup_now">지금 설정</string>
+    <string name="overview_first_steps">시작하기</string>
+    <string name="overview_step_contacts">1. 생일을 가져올 연락처 목록을 선택하세요.</string>
+    <string name="overview_choose_contacts">연락처 목록 선택</string>
+    <string name="overview_step_calendar">2. 일정을 만들 캘린더를 선택하세요.</string>
+    <string name="overview_choose_calendar">대상 캘린더 선택</string>
+    <string name="overview_target_calendar">대상 캘린더: %1$s</string>
+    <string name="overview_target_calendar_none">대상 캘린더: 선택 안 됨</string>
+    <string name="overview_auto_daily">매일 자동</string>
+    <string name="overview_auto_weekly">매주 자동</string>
+    <string name="overview_auto_daily_next">매일 자동, 다음 실행은 빨라도 %1$s</string>
+    <string name="overview_auto_weekly_next">매주 자동, 다음 실행은 빨라도 %1$s</string>
+    <string name="overview_auto_off">자동 동기화가 꺼져 있음</string>
+    <string name="overview_last_sync">마지막 동기화: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">아직 동기화하지 않음</string>
+    <string name="overview_syncing">동기화 중…</string>
+    <string name="overview_upcoming">다가오는 생일</string>
+    <string name="overview_no_birthdays">선택한 연락처 목록에서 생일을 찾을 수 없습니다.</string>
+    <string name="upcoming_today">오늘</string>
+    <string name="upcoming_tomorrow">내일</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="other">%d일 후</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="other">%1$s · 만 %2$d세</item>
+    </plurals>
+
+    <string name="contacts_intro">계정 전체 또는 개별 그룹/라벨을 선택하세요. 포함된 모든 연락처의 생일을 가져옵니다.</string>
+    <string name="contacts_no_permission_title">연락처에 액세스할 수 없음</string>
+    <string name="contacts_no_permission_text">이 권한이 없으면 연락처 목록을 표시할 수 없습니다.</string>
+    <string name="contacts_none_found">이 기기에서 연락처를 찾을 수 없습니다.</string>
+    <string name="contacts_all">모든 연락처</string>
+    <plurals name="contacts_count">
+        <item quantity="other">연락처 %d개</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="other">생일 있음 %d개</item>
+    </plurals>
+    <string name="contacts_device_label">기기</string>
+    <string name="contacts_local_account">이 기기에만 저장됨</string>
+    <string name="contacts_group_fallback">그룹 %1$d</string>
+    <string name="contacts_unnamed">이름 없음</string>
+
+    <string name="calendar_target_title">대상 캘린더</string>
+    <string name="calendar_target_subtitle">생일 일정이 여기에 만들어집니다</string>
+    <string name="calendar_no_permission">캘린더에 액세스할 수 없습니다.</string>
+    <string name="calendar_local_name">생일</string>
+    <string name="calendar_create_local">전용 캘린더 ‘%1$s’ 만들기</string>
+    <string name="calendar_local_info">전용 캘린더는 이 기기에만 저장되며 캘린더 앱에서 따로 표시하거나 숨길 수 있습니다.</string>
+    <string name="calendar_fallback_name">캘린더 %1$d</string>
+    <string name="calendar_events_title">일정</string>
+    <string name="calendar_all_day">종일</string>
+    <string name="calendar_start">시작</string>
+    <string name="calendar_duration">지속 시간</string>
+    <string name="calendar_reminder">캘린더 알림</string>
+    <string name="calendar_remind">알림</string>
+    <string name="calendar_title">제목</string>
+    <string name="calendar_title_help">자리표시자: {name}, {age}. 예: %1$s</string>
+    <string name="calendar_example_name">홍길동</string>
+    <string name="calendar_auto_sync">자동 동기화</string>
+    <string name="calendar_frequency">빈도</string>
+    <string name="calendar_range">미리 만들 기간</string>
+    <string name="calendar_sync_info">변경된 이름이나 생년월일은 다음 동기화 때 반영되며, 삭제된 연락처는 캘린더에서 사라집니다. 이 설정의 변경사항은 몇 초 후에 적용됩니다.</string>
+    <string name="calendar_running">실행 중…</string>
+    <string name="calendar_remove_events">일정 삭제</string>
+    <string name="calendar_remove_confirm_title">모든 일정을 삭제하시겠습니까?</string>
+    <string name="calendar_remove_confirm_text">Birthday Sync에서 만든 모든 일정이 모든 캘린더에서 삭제됩니다. 자동 동기화가 켜져 있으면 다음 실행 때 다시 만들어집니다.</string>
+    <string name="interval_daily">매일</string>
+    <string name="interval_weekly">매주</string>
+    <plurals name="range_months">
+        <item quantity="other">%d개월</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d분</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d시간</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d시간 %2$d분</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">시작 시간</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="other">%d분 전</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="other">%d시간 전</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="other">%d일 전</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="other">%d주 전</item>
+    </plurals>
+    <string name="reminder_on_day_at">당일 %1$s</string>
+    <string name="reminder_day_before_at">전날 %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="other">%1$d일 전 %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="other">%1$d주 전 %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">매일 알림</string>
+    <string name="notify_daily_subtitle">캘린더와 관계없이 연락처에서 바로 가져옵니다</string>
+    <string name="notify_today_switch">오늘의 생일 알리기</string>
+    <string name="notify_today_switch_sub">생일인 사람이 있는 날에만</string>
+    <string name="notify_time">시간</string>
+    <string name="notify_test">테스트 알림</string>
+    <string name="notify_hint_title">참고</string>
+    <string name="notify_hint_text">알림이 제시간에 도착하려면 다음 항목이 아직 필요합니다: %1$s</string>
+    <string name="notify_go_system">시스템 설정으로 이동</string>
+
+    <string name="system_all_ready">모두 준비됨</string>
+    <plurals name="system_open_items">
+        <item quantity="other">남은 항목 %d개</item>
+    </plurals>
+    <string name="system_subtitle">안정적인 백그라운드 동기화와 제시간 알림을 위해</string>
+    <string name="system_setup_info">설정 과정에서 누락된 모든 항목을 설명과 함께 단계별로 안내합니다.</string>
+    <string name="system_run_setup">설정 시작</string>
+    <string name="check_state_done">완료. %1$s</string>
+    <string name="check_state_required">필수. %1$s</string>
+    <string name="check_state_recommended">권장. %1$s</string>
+    <string name="about_title">앱 정보</string>
+    <string name="about_text">모든 데이터는 기기에만 저장됩니다. 이 앱은 인터넷에 액세스하지 않으며 아무것도 수집하지 않습니다.</string>
+    <string name="about_privacy">개인정보 보호</string>
+    <string name="about_source">소스 코드</string>
+
+    <string name="check_contacts_title">연락처 읽기</string>
+    <string name="check_contacts_desc">연락처 목록에서 생일을 읽는 데 필요합니다.</string>
+    <string name="check_calendar_title">캘린더 읽기 및 쓰기</string>
+    <string name="check_calendar_desc">대상 캘린더에 생일 일정을 만들고 최신 상태로 유지하는 데 필요합니다.</string>
+    <string name="check_notifications_title">알림</string>
+    <string name="check_notifications_desc">매일 생일 알림과 캘린더 알림에 필요합니다.</string>
+    <string name="check_exact_alarm_title">정확한 알람 및 리마인더</string>
+    <string name="check_exact_alarm_desc">매일 알림이 설정한 시간에 정확히 도착하도록 합니다. 이 권한이 없으면 조금 늦게 도착할 수 있습니다.</string>
+    <string name="check_battery_title">배터리 최적화 사용 중지</string>
+    <string name="check_battery_desc">Android가 백그라운드 동기화를 미루거나 막지 않도록 합니다.</string>
+    <string name="check_background_title">백그라운드 활동 허용됨</string>
+    <string name="check_background_desc">앱이 백그라운드에서 제한되지 않아야 합니다(앱 정보 → 배터리 → ‘제한 없음’).</string>
+    <string name="check_hibernation_title">미사용 시 앱 일시중지 꺼짐</string>
+    <string name="check_hibernation_desc">그렇지 않으면 앱을 몇 달 동안 열지 않았을 때 Android가 권한을 취소하고 동기화가 중지됩니다.</string>
+    <string name="check_power_save_title">절전 모드</string>
+    <string name="check_power_save_on">절전 모드가 켜져 있어 동기화가 지연될 수 있습니다.</string>
+    <string name="check_power_save_off">절전 모드가 꺼져 있습니다.</string>
+    <string name="check_vendor_title">제조업체 배터리 관리(%1$s)</string>
+    <string name="check_vendor_desc">이 제조업체는 백그라운드 앱을 추가로 종료하는 경우가 많습니다. Birthday Sync의 자동 실행 또는 ‘백그라운드에서 계속 실행’을 허용해 주세요. 이 항목은 자동으로 확인할 수 없습니다.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="other">%2$d단계 중 %1$d단계</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Birthday Sync에 오신 것을 환영합니다</string>
+    <string name="onboarding_welcome_text">이 앱은 연락처의 생일을 원하는 캘린더에 자동으로 복사하고 당일에 알려 드립니다.\n\n백그라운드에서 안정적으로 작동하려면 몇 가지 권한이 필요합니다. 각 권한이 어디에 쓰이는지 설명하면서 하나씩 안내해 드릴게요.\n\n모든 데이터는 기기에만 저장되며, 이 앱은 인터넷에 액세스하지 않습니다.</string>
+    <string name="onboarding_contacts_title">연락처 액세스</string>
+    <string name="onboarding_contacts_text">생일은 연락처에 저장되어 있습니다. 앱이 생일을 찾으려면 읽기 권한이 필요합니다.\n\n이름, 생일, 계정 및 그룹 정보만 읽으며, 정기 동기화 중에는 백그라운드에서도 읽습니다. 데이터는 기기에만 저장됩니다. 앱은 연락처를 변경하지 않고, 인터넷에 액세스하지 않으며, 아무것도 공유하지 않습니다.</string>
+    <string name="onboarding_calendar_title">캘린더 액세스</string>
+    <string name="onboarding_calendar_text">앱은 생일마다 원하는 캘린더에 일정을 만들고, 생년월일이 바뀌는 경우 등에 최신 상태로 유지합니다.\n\n이를 위해 캘린더 읽기 및 쓰기 권한이 필요합니다. 앱이 직접 만든 생일 일정만 변경합니다.</string>
+    <string name="onboarding_notifications_title">알림</string>
+    <string name="onboarding_notifications_text">원하는 경우 오늘 생일인 사람이 있으면 정해진 시간에 알려 드립니다.\n\n이 권한이 없으면 알림이 표시되지 않습니다.</string>
+    <string name="onboarding_exact_alarm_title">제시간 알림</string>
+    <string name="onboarding_exact_alarm_text">매일 알림이 늦지 않고 설정한 시간에 정확히 도착하려면 ‘알람 및 리마인더’ 권한이 필요합니다.\n\n다음 화면에서 Birthday Sync의 스위치를 켠 다음 ‘뒤로’를 눌러 이곳으로 돌아오세요.</string>
+    <string name="onboarding_battery_title">백그라운드에서 작동</string>
+    <string name="onboarding_battery_text">Android는 배터리를 절약하기 위해 백그라운드 앱을 잠자기 상태로 전환하는 경우가 많습니다. 그러면 정기 동기화가 실패할 수 있습니다.\n\n동기화는 하루에 몇 초밖에 걸리지 않으며 추가 배터리 사용량은 거의 없습니다. 다음 목록에서 ‘모든 앱’을 선택하고 Birthday Sync를 선택한 다음 ‘최적화 안함’을 선택하세요.</string>
+    <string name="onboarding_background_title">백그라운드 제한 해제</string>
+    <string name="onboarding_background_text">이 앱의 백그라운드 활동이 제한되어 있어 동기화와 알림이 작동하지 않습니다.\n\n앱 정보에서 ‘배터리’를 열고 ‘제한 없음’을 선택하세요. 그런 다음 ‘뒤로’를 눌러 이곳으로 돌아오세요.</string>
+    <string name="onboarding_hibernation_title">자동으로 일시중지하지 않기</string>
+    <string name="onboarding_hibernation_text">앱을 몇 달 동안 열지 않으면 Android가 앱을 일시중지하고 권한을 삭제합니다. 그러면 앱이 백그라운드에서 작동해야 하는데도 동기화가 모르는 사이에 중지됩니다.\n\n다음 화면에서 ‘사용하지 않는 앱 활동 일시중지’를 끈 다음 ‘뒤로’를 눌러 이곳으로 돌아오세요.</string>
+    <string name="onboarding_almost_title">거의 완료되었습니다</string>
+    <string name="onboarding_all_granted">모든 권한이 부여되었습니다.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="other">아직 %1$d개 항목이 남아 있습니다. ‘%2$s’ 탭에서 언제든지 완료할 수 있습니다.</item>
+    </plurals>
+    <string name="onboarding_next_steps">다음 단계:\n1. 연락처 목록 선택\n2. 대상 캘린더 선택\n3. 완료 – 나머지는 앱이 자동으로 처리합니다.</string>
+    <string name="onboarding_granted">✓ 허용됨</string>
+    <string name="onboarding_not_granted">아직 허용되지 않았습니다. 다시 시도하거나 이 단계를 건너뛸 수 있습니다.</string>
+    <string name="onboarding_start">시작하기</string>
+    <string name="onboarding_next">다음</string>
+    <string name="onboarding_skip">건너뛰기</string>
+    <string name="onboarding_retry">다시 시도</string>
+    <string name="onboarding_finish">앱으로 이동</string>
+
+    <string name="msg_calendar_selected">‘%1$s’ 캘린더가 대상으로 선택되었습니다</string>
+    <string name="msg_calendar_create_failed">캘린더를 만들 수 없습니다: %1$s</string>
+    <string name="msg_remove_failed">삭제 중 오류 발생: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="other">일정 %d개 삭제됨</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">알림이 허용되지 않음 – ‘%1$s’ 탭을 확인하세요</string>
+
+    <string name="sync_no_calendar">대상 캘린더가 선택되지 않음</string>
+    <string name="sync_no_contacts_permission">연락처 권한 없음</string>
+    <string name="sync_no_calendar_permission">캘린더 권한 없음</string>
+    <string name="sync_invalid_calendar">유효한 대상 캘린더가 선택되지 않음</string>
+    <plurals name="sync_birthdays">
+        <item quantity="other">생일 %d개</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="other">기간 내 일정 %d개</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – 모두 최신 상태</string>
+    <string name="sync_summary_changes">%1$s, %2$s – 신규: %3$d, 업데이트: %4$d, 삭제: %5$d</string>
+    <string name="sync_error">오류: %1$s</string>
+
+    <string name="event_description">%1$s님의 생일</string>
+    <string name="event_description_born">%1$s님의 생일(%2$d년생)</string>
+    <string name="event_auto_created">Birthday Sync에서 자동으로 만든 일정입니다. 이 일정을 변경하면 다음 동기화 때 덮어쓰게 됩니다.</string>
+
+    <string name="channel_today_name">오늘의 생일</string>
+    <string name="channel_today_desc">오늘의 생일에 관한 매일 알림</string>
+    <plurals name="notification_turns_today">
+        <item quantity="other">%1$s님이 오늘 만 %2$d세가 됩니다</item>
+    </plurals>
+    <string name="notification_birthday_today">오늘은 %1$s님의 생일입니다</string>
+    <string name="notification_single_title">🎂 %1$s님의 생일</string>
+    <plurals name="notification_multi_title">
+        <item quantity="other">🎂 오늘 생일 %d명</item>
+    </plurals>
+    <string name="notification_nobody_today">오늘은 생일인 사람이 없습니다</string>
+    <string name="notification_test_text">Birthday Sync 테스트 알림</string>
+</resources>

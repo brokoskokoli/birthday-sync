@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Σύνοψη</string>
+    <string name="tab_contacts">Επαφές</string>
+    <string name="tab_calendar">Ημερολόγιο</string>
+    <string name="tab_notify">Ειδοποιήσεις</string>
+    <string name="tab_system">Σύστημα</string>
+
+    <string name="action_allow">Να επιτρέπεται</string>
+    <string name="action_allow_access">Παραχώρηση πρόσβασης</string>
+    <string name="action_open">Άνοιγμα</string>
+    <string name="action_open_setting">Άνοιγμα ρύθμισης</string>
+    <string name="action_open_app_info">Άνοιγμα «Πληροφορίες εφαρμογής»</string>
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="action_sync_now">Συγχρονισμός τώρα</string>
+    <string name="action_remove">Κατάργηση</string>
+    <string name="section_sync">Συγχρονισμός</string>
+
+    <string name="overview_setup_incomplete_title">Η ρύθμιση δεν ολοκληρώθηκε</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Λείπει %d άδεια ή ρύθμιση για αξιόπιστο συγχρονισμό.</item>
+        <item quantity="other">Λείπουν %d άδειες ή ρυθμίσεις για αξιόπιστο συγχρονισμό.</item>
+    </plurals>
+    <string name="overview_setup_now">Ρύθμιση τώρα</string>
+    <string name="overview_first_steps">Πρώτα βήματα</string>
+    <string name="overview_step_contacts">1. Επιλέξτε τις λίστες επαφών των οποίων τα γενέθλια θα μεταφερθούν.</string>
+    <string name="overview_choose_contacts">Επιλογή λιστών επαφών</string>
+    <string name="overview_step_calendar">2. Επιλέξτε το ημερολόγιο στο οποίο θα δημιουργούνται τα συμβάντα.</string>
+    <string name="overview_choose_calendar">Επιλογή ημερολογίου προορισμού</string>
+    <string name="overview_target_calendar">Ημερολόγιο προορισμού: %1$s</string>
+    <string name="overview_target_calendar_none">Ημερολόγιο προορισμού: δεν έχει επιλεγεί</string>
+    <string name="overview_auto_daily">Αυτόματα κάθε μέρα</string>
+    <string name="overview_auto_weekly">Αυτόματα κάθε εβδομάδα</string>
+    <string name="overview_auto_daily_next">Αυτόματα κάθε μέρα, επόμενη εκτέλεση όχι νωρίτερα από %1$s</string>
+    <string name="overview_auto_weekly_next">Αυτόματα κάθε εβδομάδα, επόμενη εκτέλεση όχι νωρίτερα από %1$s</string>
+    <string name="overview_auto_off">Ο αυτόματος συγχρονισμός είναι απενεργοποιημένος</string>
+    <string name="overview_last_sync">Τελευταίος συγχρονισμός: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Δεν έχει γίνει ακόμη συγχρονισμός</string>
+    <string name="overview_syncing">Συγχρονισμός …</string>
+    <string name="overview_upcoming">Επερχόμενα γενέθλια</string>
+    <string name="overview_no_birthdays">Δεν βρέθηκαν γενέθλια στις επιλεγμένες λίστες επαφών.</string>
+    <string name="upcoming_today">Σήμερα</string>
+    <string name="upcoming_tomorrow">Αύριο</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">σε %d ημέρα</item>
+        <item quantity="other">σε %d ημέρες</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · γίνεται %2$d έτους</item>
+        <item quantity="other">%1$s · γίνεται %2$d ετών</item>
+    </plurals>
+
+    <string name="contacts_intro">Επιλέξτε ολόκληρους λογαριασμούς ή μεμονωμένες ομάδες/ετικέτες. Θα μεταφερθούν τα γενέθλια όλων των επαφών τους.</string>
+    <string name="contacts_no_permission_title">Δεν υπάρχει πρόσβαση στις επαφές</string>
+    <string name="contacts_no_permission_text">Χωρίς αυτή την άδεια δεν είναι δυνατή η εμφάνιση λιστών επαφών.</string>
+    <string name="contacts_none_found">Δεν βρέθηκαν επαφές στη συσκευή.</string>
+    <string name="contacts_all">Όλες οι επαφές</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d επαφή</item>
+        <item quantity="other">%d επαφές</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d με γενέθλια</item>
+        <item quantity="other">%d με γενέθλια</item>
+    </plurals>
+    <string name="contacts_device_label">Συσκευή</string>
+    <string name="contacts_local_account">Τοπικά σε αυτή τη συσκευή</string>
+    <string name="contacts_group_fallback">Ομάδα %1$d</string>
+    <string name="contacts_unnamed">Χωρίς όνομα</string>
+
+    <string name="calendar_target_title">Ημερολόγιο προορισμού</string>
+    <string name="calendar_target_subtitle">Εδώ δημιουργούνται τα συμβάντα γενεθλίων</string>
+    <string name="calendar_no_permission">Δεν υπάρχει πρόσβαση στο ημερολόγιο.</string>
+    <string name="calendar_local_name">Γενέθλια</string>
+    <string name="calendar_create_local">Δημιουργία ξεχωριστού ημερολογίου «%1$s»</string>
+    <string name="calendar_local_info">Ένα ξεχωριστό ημερολόγιο αποθηκεύεται μόνο σε αυτή τη συσκευή και μπορεί να εμφανίζεται ή να αποκρύπτεται χωριστά στην εφαρμογή ημερολογίου.</string>
+    <string name="calendar_fallback_name">Ημερολόγιο %1$d</string>
+    <string name="calendar_events_title">Συμβάντα</string>
+    <string name="calendar_all_day">Ολοήμερο</string>
+    <string name="calendar_start">Έναρξη</string>
+    <string name="calendar_duration">Διάρκεια</string>
+    <string name="calendar_reminder">Υπενθύμιση ημερολογίου</string>
+    <string name="calendar_remind">Υπενθύμιση</string>
+    <string name="calendar_title">Τίτλος</string>
+    <string name="calendar_title_help">Μεταβλητές: {name}, {age}. Παράδειγμα: %1$s</string>
+    <string name="calendar_example_name">Μαρία Παπαδοπούλου</string>
+    <string name="calendar_auto_sync">Αυτόματος συγχρονισμός</string>
+    <string name="calendar_frequency">Συχνότητα</string>
+    <string name="calendar_range">Χρονικό διάστημα μπροστά</string>
+    <string name="calendar_sync_info">Τα αλλαγμένα ονόματα ή οι ημερομηνίες γέννησης εφαρμόζονται στον επόμενο συγχρονισμό· οι επαφές που καταργήθηκαν εξαφανίζονται από το ημερολόγιο. Οι αλλαγές σε αυτές τις ρυθμίσεις εφαρμόζονται μετά από λίγα δευτερόλεπτα.</string>
+    <string name="calendar_running">Εκτελείται …</string>
+    <string name="calendar_remove_events">Κατάργηση συμβάντων</string>
+    <string name="calendar_remove_confirm_title">Κατάργηση όλων των συμβάντων;</string>
+    <string name="calendar_remove_confirm_text">Όλα τα συμβάντα που δημιούργησε το Birthday Sync θα διαγραφούν από όλα τα ημερολόγια. Αν ο αυτόματος συγχρονισμός είναι ενεργός, θα τα δημιουργήσει ξανά στην επόμενη εκτέλεση.</string>
+    <string name="interval_daily">Καθημερινά</string>
+    <string name="interval_weekly">Εβδομαδιαία</string>
+    <plurals name="range_months">
+        <item quantity="one">%d μήνας</item>
+        <item quantity="other">%d μήνες</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d λεπτό</item>
+        <item quantity="other">%d λεπτά</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d ώρα</item>
+        <item quantity="other">%d ώρες</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d ώρ. %2$d λεπ.</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Την ώρα έναρξης</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d λεπτό πριν</item>
+        <item quantity="other">%d λεπτά πριν</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d ώρα πριν</item>
+        <item quantity="other">%d ώρες πριν</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d ημέρα πριν</item>
+        <item quantity="other">%d ημέρες πριν</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d εβδομάδα πριν</item>
+        <item quantity="other">%d εβδομάδες πριν</item>
+    </plurals>
+    <string name="reminder_on_day_at">Την ίδια μέρα στις %1$s</string>
+    <string name="reminder_day_before_at">Την προηγούμενη μέρα στις %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d ημέρα πριν στις %2$s</item>
+        <item quantity="other">%1$d ημέρες πριν στις %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d εβδομάδα πριν στις %2$s</item>
+        <item quantity="other">%1$d εβδομάδες πριν στις %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Καθημερινή ειδοποίηση</string>
+    <string name="notify_daily_subtitle">Ανεξάρτητα από το ημερολόγιο, απευθείας από τις επαφές</string>
+    <string name="notify_today_switch">Ειδοποίηση για τα σημερινά γενέθλια</string>
+    <string name="notify_today_switch_sub">Μόνο τις μέρες που κάποιος έχει γενέθλια</string>
+    <string name="notify_time">Ώρα</string>
+    <string name="notify_test">Δοκιμαστική ειδοποίηση</string>
+    <string name="notify_hint_title">Σημείωση</string>
+    <string name="notify_hint_text">Για να φτάνει η ειδοποίηση στην ώρα της, λείπουν ακόμη: %1$s</string>
+    <string name="notify_go_system">Στις ρυθμίσεις συστήματος</string>
+
+    <string name="system_all_ready">Όλα έτοιμα</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d εκκρεμές στοιχείο</item>
+        <item quantity="other">%d εκκρεμή στοιχεία</item>
+    </plurals>
+    <string name="system_subtitle">Για αξιόπιστους συγχρονισμούς στο παρασκήνιο και έγκαιρες ειδοποιήσεις</string>
+    <string name="system_setup_info">Η ρύθμιση σάς καθοδηγεί βήμα προς βήμα σε όλα τα στοιχεία που λείπουν, με εξήγηση για το καθένα.</string>
+    <string name="system_run_setup">Εκτέλεση ρύθμισης</string>
+    <string name="check_state_done">Ολοκληρώθηκε. %1$s</string>
+    <string name="check_state_required">Απαιτείται. %1$s</string>
+    <string name="check_state_recommended">Συνιστάται. %1$s</string>
+    <string name="about_title">Σχετικά με την εφαρμογή</string>
+    <string name="about_text">Όλα τα δεδομένα παραμένουν στη συσκευή σας. Η εφαρμογή δεν έχει πρόσβαση στο διαδίκτυο και δεν συλλέγει τίποτα.</string>
+    <string name="about_privacy">Απόρρητο</string>
+    <string name="about_source">Πηγαίος κώδικας</string>
+
+    <string name="check_contacts_title">Ανάγνωση επαφών</string>
+    <string name="check_contacts_desc">Απαιτείται για την ανάγνωση γενεθλίων από τις λίστες επαφών.</string>
+    <string name="check_calendar_title">Ανάγνωση και εγγραφή ημερολογίου</string>
+    <string name="check_calendar_desc">Απαιτείται για τη δημιουργία συμβάντων γενεθλίων στο ημερολόγιο προορισμού και την ενημέρωσή τους.</string>
+    <string name="check_notifications_title">Ειδοποιήσεις</string>
+    <string name="check_notifications_desc">Απαιτείται για την καθημερινή ειδοποίηση γενεθλίων και τις υπενθυμίσεις ημερολογίου.</string>
+    <string name="check_exact_alarm_title">Ακριβή ξυπνητήρια και υπενθυμίσεις</string>
+    <string name="check_exact_alarm_desc">Ώστε η καθημερινή ειδοποίηση να φτάνει ακριβώς την ώρα που ορίσατε. Χωρίς αυτή την άδεια μπορεί να καθυστερεί λίγο.</string>
+    <string name="check_battery_title">Απενεργοποίηση βελτιστοποίησης μπαταρίας</string>
+    <string name="check_battery_desc">Εμποδίζει το Android να αναβάλλει ή να αποκλείει τον συγχρονισμό στο παρασκήνιο.</string>
+    <string name="check_background_title">Επιτρέπεται η δραστηριότητα στο παρασκήνιο</string>
+    <string name="check_background_desc">Η εφαρμογή δεν πρέπει να είναι περιορισμένη στο παρασκήνιο (Πληροφορίες εφαρμογής → Μπαταρία → «Χωρίς περιορισμούς»).</string>
+    <string name="check_hibernation_title">Η παύση εφαρμογής όταν δεν χρησιμοποιείται είναι ανενεργή</string>
+    <string name="check_hibernation_desc">Διαφορετικά, μετά από μερικούς μήνες χωρίς άνοιγμα, το Android ανακαλεί τις άδειες και ο συγχρονισμός σταματά.</string>
+    <string name="check_power_save_title">Εξοικονόμηση μπαταρίας</string>
+    <string name="check_power_save_on">Η Εξοικονόμηση μπαταρίας είναι ενεργή και μπορεί να καθυστερεί τους συγχρονισμούς.</string>
+    <string name="check_power_save_off">Η Εξοικονόμηση μπαταρίας είναι ανενεργή.</string>
+    <string name="check_vendor_title">Διαχείριση μπαταρίας κατασκευαστή (%1$s)</string>
+    <string name="check_vendor_desc">Αυτός ο κατασκευαστής συχνά τερματίζει επιπλέον τις εφαρμογές στο παρασκήνιο. Επιτρέψτε την αυτόματη εκκίνηση ή τη «Λειτουργία στο παρασκήνιο» για το Birthday Sync. Αυτό δεν μπορεί να ελεγχθεί αυτόματα.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Βήμα %1$d από %2$d</item>
+        <item quantity="other">Βήμα %1$d από %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Καλώς ορίσατε στο Birthday Sync</string>
+    <string name="onboarding_welcome_text">Η εφαρμογή μεταφέρει αυτόματα τα γενέθλια από τις επαφές σας σε ένα ημερολόγιο της επιλογής σας και σας υπενθυμίζει την ίδια μέρα.\n\nΓια να λειτουργεί αυτό αξιόπιστα στο παρασκήνιο, χρειάζεται μερικές άδειες. Θα τις δούμε βήμα προς βήμα και θα εξηγήσουμε σε τι χρησιμεύει η καθεμία.\n\nΌλα παραμένουν στη συσκευή σας – η εφαρμογή δεν έχει πρόσβαση στο διαδίκτυο.</string>
+    <string name="onboarding_contacts_title">Πρόσβαση στις επαφές σας</string>
+    <string name="onboarding_contacts_text">Τα γενέθλια βρίσκονται στις επαφές σας. Για να τα βρει η εφαρμογή, χρειάζεται πρόσβαση ανάγνωσης.\n\nΔιαβάζονται μόνο ονόματα, γενέθλια και η αντιστοίχιση σε λογαριασμούς και ομάδες, και στο παρασκήνιο κατά τον τακτικό συγχρονισμό. Τα δεδομένα παραμένουν στη συσκευή: η εφαρμογή δεν αλλάζει επαφές, δεν έχει πρόσβαση στο διαδίκτυο και δεν κοινοποιεί τίποτα.</string>
+    <string name="onboarding_calendar_title">Πρόσβαση στο ημερολόγιό σας</string>
+    <string name="onboarding_calendar_text">Για κάθε γενέθλια η εφαρμογή δημιουργεί ένα συμβάν σε ένα ημερολόγιο της επιλογής σας και το διατηρεί ενημερωμένο, για παράδειγμα όταν αλλάξει μια ημερομηνία γέννησης.\n\nΓια αυτό χρειάζεται να διαβάζει και να γράφει ημερολόγια. Αλλάζει αποκλειστικά τα δικά της συμβάντα γενεθλίων.</string>
+    <string name="onboarding_notifications_title">Ειδοποιήσεις</string>
+    <string name="onboarding_notifications_text">Αν θέλετε, η εφαρμογή σάς ειδοποιεί σε μια συγκεκριμένη ώρα όταν κάποιος έχει σήμερα γενέθλια.\n\nΧωρίς αυτή την άδεια, η ειδοποίηση δεν εμφανίζεται.</string>
+    <string name="onboarding_exact_alarm_title">Έγκαιρη υπενθύμιση</string>
+    <string name="onboarding_exact_alarm_text">Για να φτάνει η καθημερινή ειδοποίηση ακριβώς την ώρα που ορίσατε και όχι κάποια στιγμή αργότερα, η εφαρμογή χρειάζεται την άδεια για «Ξυπνητήρια και υπενθυμίσεις».\n\nΣτην επόμενη οθόνη ενεργοποιήστε τον διακόπτη για το Birthday Sync και, στη συνέχεια, επιστρέψτε εδώ με το «Πίσω».</string>
+    <string name="onboarding_battery_title">Λειτουργία στο παρασκήνιο</string>
+    <string name="onboarding_battery_text">Το Android συχνά «κοιμίζει» εφαρμογές στο παρασκήνιο για εξοικονόμηση μπαταρίας. Τότε ο τακτικός συγχρονισμός μπορεί να μη γίνει.\n\nΟ συγχρονισμός διαρκεί μόνο λίγα δευτερόλεπτα την ημέρα και η επιπλέον κατανάλωση είναι σχεδόν αμελητέα. Στην παρακάτω λίστα επιλέξτε «Όλες οι εφαρμογές», μετά Birthday Sync και ορίστε «Χωρίς βελτιστοποίηση».</string>
+    <string name="onboarding_background_title">Άρση περιορισμού παρασκηνίου</string>
+    <string name="onboarding_background_text">Η δραστηριότητα στο παρασκήνιο είναι περιορισμένη για αυτή την εφαρμογή, γι’ αυτό ο συγχρονισμός και η ειδοποίηση δεν γίνονται.\n\nΣτις Πληροφορίες εφαρμογής ανοίξτε την επιλογή «Μπαταρία» και επιλέξτε «Χωρίς περιορισμούς». Στη συνέχεια, επιστρέψτε εδώ με το «Πίσω».</string>
+    <string name="onboarding_hibernation_title">Χωρίς αυτόματη παύση</string>
+    <string name="onboarding_hibernation_text">Αν δεν ανοίξετε την εφαρμογή για μερικούς μήνες, το Android τη θέτει σε παύση και ανακαλεί τις άδειές της. Ο συγχρονισμός θα σταματούσε τότε χωρίς να το καταλάβετε – παρόλο που η εφαρμογή προορίζεται ακριβώς για να λειτουργεί στο παρασκήνιο.\n\nΣτην επόμενη οθόνη απενεργοποιήστε την επιλογή «Παύση δραστηριότητας εφαρμογής εάν δεν χρησιμοποιείται» και, στη συνέχεια, επιστρέψτε εδώ με το «Πίσω».</string>
+    <string name="onboarding_almost_title">Σχεδόν έτοιμο</string>
+    <string name="onboarding_all_granted">Έχουν παραχωρηθεί όλες οι άδειες.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Λείπει ακόμη %1$d στοιχείο. Μπορείτε να το ολοκληρώσετε ανά πάσα στιγμή στην καρτέλα «%2$s».</item>
+        <item quantity="other">Λείπουν ακόμη %1$d στοιχεία. Μπορείτε να τα ολοκληρώσετε ανά πάσα στιγμή στην καρτέλα «%2$s».</item>
+    </plurals>
+    <string name="onboarding_next_steps">Τι ακολουθεί:\n1. Επιλογή λιστών επαφών\n2. Επιλογή ημερολογίου προορισμού\n3. Τέλος – τα υπόλοιπα τα αναλαμβάνει αυτόματα η εφαρμογή.</string>
+    <string name="onboarding_granted">✓ Παραχωρήθηκε</string>
+    <string name="onboarding_not_granted">Δεν έχει παραχωρηθεί ακόμη. Μπορείτε να δοκιμάσετε ξανά ή να παραλείψετε αυτό το βήμα.</string>
+    <string name="onboarding_start">Ας ξεκινήσουμε</string>
+    <string name="onboarding_next">Επόμενο</string>
+    <string name="onboarding_skip">Παράλειψη</string>
+    <string name="onboarding_retry">Δοκιμή ξανά</string>
+    <string name="onboarding_finish">Στην εφαρμογή</string>
+
+    <string name="msg_calendar_selected">Το ημερολόγιο «%1$s» επιλέχθηκε ως προορισμός</string>
+    <string name="msg_calendar_create_failed">Δεν ήταν δυνατή η δημιουργία ημερολογίου: %1$s</string>
+    <string name="msg_remove_failed">Σφάλμα κατά την κατάργηση: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">Καταργήθηκε %d συμβάν</item>
+        <item quantity="other">Καταργήθηκαν %d συμβάντα</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Οι ειδοποιήσεις δεν επιτρέπονται – δείτε την καρτέλα «%1$s»</string>
+
+    <string name="sync_no_calendar">Δεν έχει επιλεγεί ημερολόγιο προορισμού</string>
+    <string name="sync_no_contacts_permission">Δεν υπάρχει άδεια για τις επαφές</string>
+    <string name="sync_no_calendar_permission">Δεν υπάρχει άδεια για το ημερολόγιο</string>
+    <string name="sync_invalid_calendar">Δεν έχει επιλεγεί έγκυρο ημερολόγιο προορισμού</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d γενέθλια</item>
+        <item quantity="other">%d γενέθλια</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d συμβάν στο διάστημα</item>
+        <item quantity="other">%d συμβάντα στο διάστημα</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – όλα ενημερωμένα</string>
+    <string name="sync_summary_changes">%1$s, %2$s – νέα: %3$d, ενημερωμένα: %4$d, καταργημένα: %5$d</string>
+    <string name="sync_error">Σφάλμα: %1$s</string>
+
+    <string name="event_description">Γενέθλια: %1$s</string>
+    <string name="event_description_born">Γενέθλια: %1$s (γεν. %2$d)</string>
+    <string name="event_auto_created">Δημιουργήθηκε αυτόματα από το Birthday Sync. Οι αλλαγές σε αυτό το συμβάν θα αντικατασταθούν στον επόμενο συγχρονισμό.</string>
+
+    <string name="channel_today_name">Σημερινά γενέθλια</string>
+    <string name="channel_today_desc">Καθημερινή ειδοποίηση για τα σημερινά γενέθλια</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s: σήμερα γίνεται %2$d έτους</item>
+        <item quantity="other">%1$s: σήμερα γίνεται %2$d ετών</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s: σήμερα έχει γενέθλια</string>
+    <string name="notification_single_title">🎂 %1$s: γενέθλια σήμερα</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d γενέθλια σήμερα</item>
+        <item quantity="other">🎂 %d γενέθλια σήμερα</item>
+    </plurals>
+    <string name="notification_nobody_today">Σήμερα δεν έχει κανείς γενέθλια</string>
+    <string name="notification_test_text">Δοκιμαστική ειδοποίηση από το Birthday Sync</string>
+</resources>

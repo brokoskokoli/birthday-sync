@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Tổng quan</string>
+    <string name="tab_contacts">Danh bạ</string>
+    <string name="tab_calendar">Lịch</string>
+    <string name="tab_notify">Thông báo</string>
+    <string name="tab_system">Hệ thống</string>
+
+    <string name="action_allow">Cho phép</string>
+    <string name="action_allow_access">Cho phép truy cập</string>
+    <string name="action_open">Mở</string>
+    <string name="action_open_setting">Mở cài đặt</string>
+    <string name="action_open_app_info">Mở Thông tin ứng dụng</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="action_sync_now">Đồng bộ ngay</string>
+    <string name="action_remove">Xóa</string>
+    <string name="section_sync">Đồng bộ hóa</string>
+
+    <string name="overview_setup_incomplete_title">Chưa thiết lập xong</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="other">Còn thiếu %d quyền hoặc chế độ cài đặt để đồng bộ ổn định.</item>
+    </plurals>
+    <string name="overview_setup_now">Thiết lập ngay</string>
+    <string name="overview_first_steps">Bắt đầu</string>
+    <string name="overview_step_contacts">1. Chọn các danh sách liên hệ có ngày sinh cần đưa vào lịch.</string>
+    <string name="overview_choose_contacts">Chọn danh sách liên hệ</string>
+    <string name="overview_step_calendar">2. Chọn lịch để tạo các sự kiện.</string>
+    <string name="overview_choose_calendar">Chọn lịch đích</string>
+    <string name="overview_target_calendar">Lịch đích: %1$s</string>
+    <string name="overview_target_calendar_none">Lịch đích: chưa chọn</string>
+    <string name="overview_auto_daily">Tự động hằng ngày</string>
+    <string name="overview_auto_weekly">Tự động hằng tuần</string>
+    <string name="overview_auto_daily_next">Tự động hằng ngày, lần tới sớm nhất vào %1$s</string>
+    <string name="overview_auto_weekly_next">Tự động hằng tuần, lần tới sớm nhất vào %1$s</string>
+    <string name="overview_auto_off">Tự động đồng bộ đang tắt</string>
+    <string name="overview_last_sync">Lần đồng bộ gần nhất: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Chưa đồng bộ lần nào</string>
+    <string name="overview_syncing">Đang đồng bộ…</string>
+    <string name="overview_upcoming">Sinh nhật sắp tới</string>
+    <string name="overview_no_birthdays">Không tìm thấy ngày sinh nào trong các danh sách liên hệ đã chọn.</string>
+    <string name="upcoming_today">Hôm nay</string>
+    <string name="upcoming_tomorrow">Ngày mai</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="other">%d ngày nữa</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="other">%1$s · tròn %2$d tuổi</item>
+    </plurals>
+
+    <string name="contacts_intro">Chọn toàn bộ tài khoản hoặc từng nhóm/nhãn. Ngày sinh của tất cả liên hệ trong đó sẽ được đưa vào.</string>
+    <string name="contacts_no_permission_title">Không có quyền truy cập danh bạ</string>
+    <string name="contacts_no_permission_text">Không có quyền này thì không thể hiển thị danh sách liên hệ.</string>
+    <string name="contacts_none_found">Không tìm thấy liên hệ nào trên thiết bị này.</string>
+    <string name="contacts_all">Tất cả liên hệ</string>
+    <plurals name="contacts_count">
+        <item quantity="other">%d liên hệ</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="other">%d có ngày sinh</item>
+    </plurals>
+    <string name="contacts_device_label">Thiết bị</string>
+    <string name="contacts_local_account">Chỉ lưu trên thiết bị này</string>
+    <string name="contacts_group_fallback">Nhóm %1$d</string>
+    <string name="contacts_unnamed">Chưa đặt tên</string>
+
+    <string name="calendar_target_title">Lịch đích</string>
+    <string name="calendar_target_subtitle">Các sự kiện sinh nhật sẽ được tạo ở đây</string>
+    <string name="calendar_no_permission">Không có quyền truy cập lịch.</string>
+    <string name="calendar_local_name">Sinh nhật</string>
+    <string name="calendar_create_local">Tạo lịch riêng “%1$s”</string>
+    <string name="calendar_local_info">Lịch riêng chỉ được lưu trên thiết bị này và có thể ẩn hoặc hiện riêng trong ứng dụng lịch.</string>
+    <string name="calendar_fallback_name">Lịch %1$d</string>
+    <string name="calendar_events_title">Sự kiện</string>
+    <string name="calendar_all_day">Cả ngày</string>
+    <string name="calendar_start">Bắt đầu</string>
+    <string name="calendar_duration">Thời lượng</string>
+    <string name="calendar_reminder">Lời nhắc lịch</string>
+    <string name="calendar_remind">Nhắc</string>
+    <string name="calendar_title">Tiêu đề</string>
+    <string name="calendar_title_help">Phần giữ chỗ: {name}, {age}. Ví dụ: %1$s</string>
+    <string name="calendar_example_name">Nguyễn Văn A</string>
+    <string name="calendar_auto_sync">Tự động đồng bộ</string>
+    <string name="calendar_frequency">Tần suất</string>
+    <string name="calendar_range">Khoảng thời gian phía trước</string>
+    <string name="calendar_sync_info">Tên hoặc ngày sinh đã thay đổi sẽ được cập nhật ở lần đồng bộ tiếp theo; các liên hệ đã xóa sẽ biến mất khỏi lịch. Thay đổi đối với các chế độ cài đặt này sẽ được áp dụng sau vài giây.</string>
+    <string name="calendar_running">Đang chạy…</string>
+    <string name="calendar_remove_events">Xóa sự kiện</string>
+    <string name="calendar_remove_confirm_title">Xóa tất cả sự kiện?</string>
+    <string name="calendar_remove_confirm_text">Tất cả sự kiện do Birthday Sync tạo sẽ bị xóa khỏi mọi lịch. Nếu tự động đồng bộ đang bật, các sự kiện sẽ được tạo lại ở lần chạy tiếp theo.</string>
+    <string name="interval_daily">Hằng ngày</string>
+    <string name="interval_weekly">Hằng tuần</string>
+    <plurals name="range_months">
+        <item quantity="other">%d tháng</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d phút</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d giờ</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d giờ %2$d phút</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Vào lúc bắt đầu</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="other">%d phút trước</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="other">%d giờ trước</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="other">%d ngày trước</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="other">%d tuần trước</item>
+    </plurals>
+    <string name="reminder_on_day_at">Trong ngày lúc %1$s</string>
+    <string name="reminder_day_before_at">Ngày hôm trước lúc %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="other">%1$d ngày trước lúc %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="other">%1$d tuần trước lúc %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Thông báo hằng ngày</string>
+    <string name="notify_daily_subtitle">Không phụ thuộc vào lịch, lấy trực tiếp từ danh bạ</string>
+    <string name="notify_today_switch">Báo sinh nhật hôm nay</string>
+    <string name="notify_today_switch_sub">Chỉ vào những ngày có người sinh nhật</string>
+    <string name="notify_time">Thời gian</string>
+    <string name="notify_test">Thông báo thử</string>
+    <string name="notify_hint_title">Lưu ý</string>
+    <string name="notify_hint_text">Để thông báo đến đúng giờ, vẫn còn thiếu: %1$s</string>
+    <string name="notify_go_system">Đến phần cài đặt hệ thống</string>
+
+    <string name="system_all_ready">Đã sẵn sàng</string>
+    <plurals name="system_open_items">
+        <item quantity="other">Còn %d mục</item>
+    </plurals>
+    <string name="system_subtitle">Để đồng bộ ổn định trong nền và thông báo đúng giờ</string>
+    <string name="system_setup_info">Trình thiết lập sẽ hướng dẫn bạn từng bước qua mọi mục còn thiếu, kèm giải thích cho từng mục.</string>
+    <string name="system_run_setup">Chạy trình thiết lập</string>
+    <string name="check_state_done">Đã xong. %1$s</string>
+    <string name="check_state_required">Bắt buộc. %1$s</string>
+    <string name="check_state_recommended">Nên bật. %1$s</string>
+    <string name="about_title">Giới thiệu về ứng dụng</string>
+    <string name="about_text">Mọi dữ liệu đều nằm trên thiết bị của bạn. Ứng dụng không truy cập Internet và không thu thập gì cả.</string>
+    <string name="about_privacy">Quyền riêng tư</string>
+    <string name="about_source">Mã nguồn</string>
+
+    <string name="check_contacts_title">Đọc danh bạ</string>
+    <string name="check_contacts_desc">Cần để đọc ngày sinh từ các danh sách liên hệ.</string>
+    <string name="check_calendar_title">Đọc và ghi lịch</string>
+    <string name="check_calendar_desc">Cần để tạo sự kiện sinh nhật trong lịch đích và luôn cập nhật chúng.</string>
+    <string name="check_notifications_title">Thông báo</string>
+    <string name="check_notifications_desc">Cần cho thông báo sinh nhật hằng ngày và lời nhắc lịch.</string>
+    <string name="check_exact_alarm_title">Chuông báo và lời nhắc chính xác</string>
+    <string name="check_exact_alarm_desc">Để thông báo hằng ngày đến đúng giờ đã đặt. Nếu không có quyền này, thông báo có thể đến muộn một chút.</string>
+    <string name="check_battery_title">Tắt tính năng tối ưu hóa pin</string>
+    <string name="check_battery_desc">Ngăn Android hoãn hoặc chặn hoạt động đồng bộ trong nền.</string>
+    <string name="check_background_title">Đã cho phép hoạt động trong nền</string>
+    <string name="check_background_desc">Ứng dụng không được bị hạn chế trong nền (Thông tin ứng dụng → Pin → “Không hạn chế”).</string>
+    <string name="check_hibernation_title">Đã tắt tạm dừng ứng dụng khi không dùng</string>
+    <string name="check_hibernation_desc">Nếu không, Android sẽ thu hồi các quyền khi bạn không mở ứng dụng trong vài tháng và việc đồng bộ sẽ dừng.</string>
+    <string name="check_power_save_title">Trình tiết kiệm pin</string>
+    <string name="check_power_save_on">Trình tiết kiệm pin đang bật và có thể làm chậm việc đồng bộ.</string>
+    <string name="check_power_save_off">Trình tiết kiệm pin đang tắt.</string>
+    <string name="check_vendor_title">Quản lý pin của nhà sản xuất (%1$s)</string>
+    <string name="check_vendor_desc">Nhà sản xuất này thường dừng thêm các ứng dụng chạy trong nền. Hãy cho phép tự khởi động hoặc “Tiếp tục chạy trong nền” cho Birthday Sync. Không thể tự động kiểm tra mục này.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="other">Bước %1$d/%2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Chào mừng bạn đến với Birthday Sync</string>
+    <string name="onboarding_welcome_text">Ứng dụng tự động sao chép ngày sinh từ danh bạ của bạn vào một lịch bạn chọn và nhắc bạn vào đúng ngày.\n\nĐể làm việc này ổn định trong nền, ứng dụng cần một vài quyền. Chúng ta sẽ đi qua từng bước và giải thích mỗi quyền dùng để làm gì.\n\nMọi thứ đều nằm trên thiết bị của bạn – ứng dụng không truy cập Internet.</string>
+    <string name="onboarding_contacts_title">Truy cập danh bạ của bạn</string>
+    <string name="onboarding_contacts_text">Ngày sinh được lưu trong danh bạ của bạn. Để tìm thấy chúng, ứng dụng cần quyền đọc.\n\nỨng dụng chỉ đọc tên, ngày sinh và việc liên hệ thuộc tài khoản, nhóm nào, kể cả trong nền khi đồng bộ định kỳ. Dữ liệu nằm trên thiết bị của bạn: ứng dụng không thay đổi liên hệ nào, không truy cập Internet và không chia sẻ gì cả.</string>
+    <string name="onboarding_calendar_title">Truy cập lịch của bạn</string>
+    <string name="onboarding_calendar_text">Với mỗi ngày sinh, ứng dụng tạo một sự kiện trong lịch bạn chọn và luôn cập nhật sự kiện đó, chẳng hạn khi ngày sinh thay đổi.\n\nVì vậy, ứng dụng cần quyền đọc và ghi lịch. Ứng dụng chỉ thay đổi những sự kiện sinh nhật do chính nó tạo.</string>
+    <string name="onboarding_notifications_title">Thông báo</string>
+    <string name="onboarding_notifications_text">Nếu muốn, ứng dụng sẽ báo cho bạn vào một giờ cố định khi hôm nay có người sinh nhật.\n\nNếu không có quyền này, thông báo sẽ không hiển thị.</string>
+    <string name="onboarding_exact_alarm_title">Nhắc đúng giờ</string>
+    <string name="onboarding_exact_alarm_text">Để thông báo hằng ngày đến đúng giờ đã đặt chứ không phải lúc nào đó muộn hơn, ứng dụng cần quyền “Chuông báo và lời nhắc”.\n\nTrên màn hình tiếp theo, hãy bật nút chuyển cho Birthday Sync rồi quay lại đây bằng nút “Quay lại”.</string>
+    <string name="onboarding_battery_title">Hoạt động trong nền</string>
+    <string name="onboarding_battery_text">Android thường cho ứng dụng chạy trong nền “ngủ” để tiết kiệm pin. Khi đó, việc đồng bộ định kỳ có thể không diễn ra.\n\nViệc đồng bộ chỉ mất vài giây mỗi ngày, mức pin tiêu hao thêm gần như không đáng kể. Trong danh sách tiếp theo, hãy chọn “Tất cả ứng dụng”, sau đó chọn Birthday Sync và chọn “Không tối ưu hóa”.</string>
+    <string name="onboarding_background_title">Bỏ hạn chế chạy trong nền</string>
+    <string name="onboarding_background_text">Hoạt động trong nền của ứng dụng này đang bị hạn chế nên việc đồng bộ và thông báo không diễn ra.\n\nTrong Thông tin ứng dụng, hãy mở “Pin” và chọn “Không hạn chế”. Sau đó quay lại đây bằng nút “Quay lại”.</string>
+    <string name="onboarding_hibernation_title">Không tự động tạm dừng</string>
+    <string name="onboarding_hibernation_text">Nếu bạn không mở ứng dụng trong vài tháng, Android sẽ tạm dừng ứng dụng và xóa các quyền của ứng dụng. Khi đó, việc đồng bộ sẽ dừng mà bạn không hề hay biết – trong khi ứng dụng vốn được tạo ra để chạy trong nền.\n\nTrên màn hình tiếp theo, hãy tắt “Tạm dừng hoạt động của ứng dụng nếu không dùng” rồi quay lại đây bằng nút “Quay lại”.</string>
+    <string name="onboarding_almost_title">Sắp xong rồi</string>
+    <string name="onboarding_all_granted">Đã cấp tất cả các quyền.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="other">Vẫn còn thiếu %1$d mục. Bạn có thể hoàn tất bất cứ lúc nào trong thẻ “%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Các bước tiếp theo:\n1. Chọn danh sách liên hệ\n2. Chọn lịch đích\n3. Xong – ứng dụng sẽ tự động lo phần còn lại.</string>
+    <string name="onboarding_granted">✓ Đã cấp</string>
+    <string name="onboarding_not_granted">Chưa được cấp. Bạn có thể thử lại hoặc bỏ qua bước này.</string>
+    <string name="onboarding_start">Bắt đầu</string>
+    <string name="onboarding_next">Tiếp</string>
+    <string name="onboarding_skip">Bỏ qua</string>
+    <string name="onboarding_retry">Thử lại</string>
+    <string name="onboarding_finish">Vào ứng dụng</string>
+
+    <string name="msg_calendar_selected">Đã chọn lịch “%1$s” làm lịch đích</string>
+    <string name="msg_calendar_create_failed">Không tạo được lịch: %1$s</string>
+    <string name="msg_remove_failed">Lỗi khi xóa: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="other">Đã xóa %d sự kiện</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Chưa cho phép thông báo – xem thẻ “%1$s”</string>
+
+    <string name="sync_no_calendar">Chưa chọn lịch đích</string>
+    <string name="sync_no_contacts_permission">Không có quyền truy cập danh bạ</string>
+    <string name="sync_no_calendar_permission">Không có quyền truy cập lịch</string>
+    <string name="sync_invalid_calendar">Chưa chọn lịch đích hợp lệ</string>
+    <plurals name="sync_birthdays">
+        <item quantity="other">%d ngày sinh</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="other">%d sự kiện trong khoảng thời gian</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – tất cả đều đã cập nhật</string>
+    <string name="sync_summary_changes">%1$s, %2$s – mới: %3$d, đã cập nhật: %4$d, đã xóa: %5$d</string>
+    <string name="sync_error">Lỗi: %1$s</string>
+
+    <string name="event_description">Sinh nhật của %1$s</string>
+    <string name="event_description_born">Sinh nhật của %1$s (sinh năm %2$d)</string>
+    <string name="event_auto_created">Được Birthday Sync tạo tự động. Mọi thay đổi đối với sự kiện này sẽ bị ghi đè ở lần đồng bộ tiếp theo.</string>
+
+    <string name="channel_today_name">Sinh nhật hôm nay</string>
+    <string name="channel_today_desc">Thông báo hằng ngày về các sinh nhật hôm nay</string>
+    <plurals name="notification_turns_today">
+        <item quantity="other">Hôm nay %1$s tròn %2$d tuổi</item>
+    </plurals>
+    <string name="notification_birthday_today">Hôm nay là sinh nhật của %1$s</string>
+    <string name="notification_single_title">🎂 Sinh nhật của %1$s</string>
+    <plurals name="notification_multi_title">
+        <item quantity="other">🎂 %d sinh nhật hôm nay</item>
+    </plurals>
+    <string name="notification_nobody_today">Hôm nay không có ai sinh nhật</string>
+    <string name="notification_test_text">Thông báo thử từ Birthday Sync</string>
+</resources>

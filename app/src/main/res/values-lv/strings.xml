@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Pārskats</string>
+    <string name="tab_contacts">Kontakti</string>
+    <string name="tab_calendar">Kalendārs</string>
+    <string name="tab_notify">Paziņojumi</string>
+    <string name="tab_system">Sistēma</string>
+
+    <string name="action_allow">Atļaut</string>
+    <string name="action_allow_access">Atļaut piekļuvi</string>
+    <string name="action_open">Atvērt</string>
+    <string name="action_open_setting">Atvērt iestatījumu</string>
+    <string name="action_open_app_info">Atvērt lietotnes informāciju</string>
+    <string name="action_settings">Iestatījumi</string>
+    <string name="action_sync_now">Sinhronizēt tagad</string>
+    <string name="action_remove">Noņemt</string>
+    <string name="section_sync">Sinhronizācija</string>
+
+    <string name="overview_setup_incomplete_title">Iestatīšana nav pabeigta</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="zero">Uzticamai sinhronizācijai trūkst %d atļauju vai iestatījumu.</item>
+        <item quantity="one">Uzticamai sinhronizācijai trūkst %d atļaujas vai iestatījuma.</item>
+        <item quantity="other">Uzticamai sinhronizācijai trūkst %d atļauju vai iestatījumu.</item>
+    </plurals>
+    <string name="overview_setup_now">Iestatīt tagad</string>
+    <string name="overview_first_steps">Pirmie soļi</string>
+    <string name="overview_step_contacts">1. Izvēlieties kontaktu sarakstus, kuru dzimšanas dienas jāpārnes.</string>
+    <string name="overview_choose_contacts">Izvēlēties kontaktu sarakstus</string>
+    <string name="overview_step_calendar">2. Izvēlieties kalendāru, kurā tiks izveidoti notikumi.</string>
+    <string name="overview_choose_calendar">Izvēlēties mērķa kalendāru</string>
+    <string name="overview_target_calendar">Mērķa kalendārs: %1$s</string>
+    <string name="overview_target_calendar_none">Mērķa kalendārs: nav izvēlēts</string>
+    <string name="overview_auto_daily">Automātiski katru dienu</string>
+    <string name="overview_auto_weekly">Automātiski katru nedēļu</string>
+    <string name="overview_auto_daily_next">Automātiski katru dienu, nākamā palaišana ne agrāk kā %1$s</string>
+    <string name="overview_auto_weekly_next">Automātiski katru nedēļu, nākamā palaišana ne agrāk kā %1$s</string>
+    <string name="overview_auto_off">Automātiskā sinhronizācija ir izslēgta</string>
+    <string name="overview_last_sync">Pēdējā sinhronizācija: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Sinhronizācija vēl nav veikta</string>
+    <string name="overview_syncing">Notiek sinhronizācija …</string>
+    <string name="overview_upcoming">Tuvākās dzimšanas dienas</string>
+    <string name="overview_no_birthdays">Atlasītajos kontaktu sarakstos netika atrasta neviena dzimšanas diena.</string>
+    <string name="upcoming_today">Šodien</string>
+    <string name="upcoming_tomorrow">Rīt</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="zero">pēc %d dienām</item>
+        <item quantity="one">pēc %d dienas</item>
+        <item quantity="other">pēc %d dienām</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="zero">%1$s · paliks %2$d gadi</item>
+        <item quantity="one">%1$s · paliks %2$d gads</item>
+        <item quantity="other">%1$s · paliks %2$d gadi</item>
+    </plurals>
+
+    <string name="contacts_intro">Izvēlieties veselus kontus vai atsevišķas grupas/iezīmes. Tiks pārnestas visu tajos esošo kontaktu dzimšanas dienas.</string>
+    <string name="contacts_no_permission_title">Nav piekļuves kontaktiem</string>
+    <string name="contacts_no_permission_text">Bez šīs atļaujas nevar parādīt kontaktu sarakstus.</string>
+    <string name="contacts_none_found">Ierīcē netika atrasts neviens kontakts.</string>
+    <string name="contacts_all">Visi kontakti</string>
+    <plurals name="contacts_count">
+        <item quantity="zero">%d kontakti</item>
+        <item quantity="one">%d kontakts</item>
+        <item quantity="other">%d kontakti</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="zero">%d ar dzimšanas dienu</item>
+        <item quantity="one">%d ar dzimšanas dienu</item>
+        <item quantity="other">%d ar dzimšanas dienu</item>
+    </plurals>
+    <string name="contacts_device_label">Ierīce</string>
+    <string name="contacts_local_account">Tikai šajā ierīcē</string>
+    <string name="contacts_group_fallback">Grupa %1$d</string>
+    <string name="contacts_unnamed">Bez nosaukuma</string>
+
+    <string name="calendar_target_title">Mērķa kalendārs</string>
+    <string name="calendar_target_subtitle">Šeit tiek izveidoti dzimšanas dienu notikumi</string>
+    <string name="calendar_no_permission">Nav piekļuves kalendāram.</string>
+    <string name="calendar_local_name">Dzimšanas dienas</string>
+    <string name="calendar_create_local">Izveidot atsevišķu kalendāru “%1$s”</string>
+    <string name="calendar_local_info">Atsevišķs kalendārs tiek glabāts tikai šajā ierīcē, un kalendāra lietotnē to var atsevišķi rādīt vai paslēpt.</string>
+    <string name="calendar_fallback_name">Kalendārs %1$d</string>
+    <string name="calendar_events_title">Notikumi</string>
+    <string name="calendar_all_day">Visu dienu</string>
+    <string name="calendar_start">Sākums</string>
+    <string name="calendar_duration">Ilgums</string>
+    <string name="calendar_reminder">Kalendāra atgādinājums</string>
+    <string name="calendar_remind">Atgādināt</string>
+    <string name="calendar_title">Nosaukums</string>
+    <string name="calendar_title_help">Mainīgie: {name}, {age}. Piemērs: %1$s</string>
+    <string name="calendar_example_name">Jānis Bērziņš</string>
+    <string name="calendar_auto_sync">Sinhronizēt automātiski</string>
+    <string name="calendar_frequency">Biežums</string>
+    <string name="calendar_range">Periods uz priekšu</string>
+    <string name="calendar_sync_info">Mainīti vārdi vai dzimšanas datumi tiek piemēroti nākamajā sinhronizācijā; noņemtie kontakti pazūd no kalendāra. Šo iestatījumu izmaiņas stājas spēkā pēc dažām sekundēm.</string>
+    <string name="calendar_running">Darbojas …</string>
+    <string name="calendar_remove_events">Noņemt notikumus</string>
+    <string name="calendar_remove_confirm_title">Vai noņemt visus notikumus?</string>
+    <string name="calendar_remove_confirm_text">Visi Birthday Sync izveidotie notikumi tiks dzēsti no visiem kalendāriem. Ja automātiskā sinhronizācija ir ieslēgta, nākamajā palaišanā tā tos izveidos no jauna.</string>
+    <string name="interval_daily">Katru dienu</string>
+    <string name="interval_weekly">Katru nedēļu</string>
+    <plurals name="range_months">
+        <item quantity="zero">%d mēneši</item>
+        <item quantity="one">%d mēnesis</item>
+        <item quantity="other">%d mēneši</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="zero">%d minūtes</item>
+        <item quantity="one">%d minūte</item>
+        <item quantity="other">%d minūtes</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="zero">%d stundas</item>
+        <item quantity="one">%d stunda</item>
+        <item quantity="other">%d stundas</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d st. %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Sākuma laikā</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="zero">%d minūtes iepriekš</item>
+        <item quantity="one">%d minūti iepriekš</item>
+        <item quantity="other">%d minūtes iepriekš</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="zero">%d stundas iepriekš</item>
+        <item quantity="one">%d stundu iepriekš</item>
+        <item quantity="other">%d stundas iepriekš</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="zero">%d dienas iepriekš</item>
+        <item quantity="one">%d dienu iepriekš</item>
+        <item quantity="other">%d dienas iepriekš</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="zero">%d nedēļas iepriekš</item>
+        <item quantity="one">%d nedēļu iepriekš</item>
+        <item quantity="other">%d nedēļas iepriekš</item>
+    </plurals>
+    <string name="reminder_on_day_at">Tajā pašā dienā plkst. %1$s</string>
+    <string name="reminder_day_before_at">Dienu iepriekš plkst. %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="zero">%1$d dienas iepriekš plkst. %2$s</item>
+        <item quantity="one">%1$d dienu iepriekš plkst. %2$s</item>
+        <item quantity="other">%1$d dienas iepriekš plkst. %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="zero">%1$d nedēļas iepriekš plkst. %2$s</item>
+        <item quantity="one">%1$d nedēļu iepriekš plkst. %2$s</item>
+        <item quantity="other">%1$d nedēļas iepriekš plkst. %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Ikdienas paziņojums</string>
+    <string name="notify_daily_subtitle">Neatkarīgi no kalendāra, tieši no kontaktiem</string>
+    <string name="notify_today_switch">Paziņot par šodienas dzimšanas dienām</string>
+    <string name="notify_today_switch_sub">Tikai dienās, kad kādam ir dzimšanas diena</string>
+    <string name="notify_time">Laiks</string>
+    <string name="notify_test">Testa paziņojums</string>
+    <string name="notify_hint_title">Piezīme</string>
+    <string name="notify_hint_text">Lai paziņojums pienāktu laikā, vēl trūkst: %1$s</string>
+    <string name="notify_go_system">Uz sistēmas iestatījumiem</string>
+
+    <string name="system_all_ready">Viss gatavs</string>
+    <plurals name="system_open_items">
+        <item quantity="zero">%d atvērti punkti</item>
+        <item quantity="one">%d atvērts punkts</item>
+        <item quantity="other">%d atvērti punkti</item>
+    </plurals>
+    <string name="system_subtitle">Uzticamai sinhronizācijai fonā un savlaicīgiem paziņojumiem</string>
+    <string name="system_setup_info">Iestatīšana soli pa solim izved cauri visiem trūkstošajiem punktiem, katram sniedzot paskaidrojumu.</string>
+    <string name="system_run_setup">Sākt iestatīšanu</string>
+    <string name="check_state_done">Paveikts. %1$s</string>
+    <string name="check_state_required">Obligāti. %1$s</string>
+    <string name="check_state_recommended">Ieteicams. %1$s</string>
+    <string name="about_title">Par lietotni</string>
+    <string name="about_text">Visi dati paliek jūsu ierīcē. Lietotnei nav piekļuves internetam, un tā neko nevāc.</string>
+    <string name="about_privacy">Privātums</string>
+    <string name="about_source">Pirmkods</string>
+
+    <string name="check_contacts_title">Kontaktu lasīšana</string>
+    <string name="check_contacts_desc">Nepieciešams, lai lasītu dzimšanas dienas no kontaktu sarakstiem.</string>
+    <string name="check_calendar_title">Kalendāra lasīšana un rakstīšana</string>
+    <string name="check_calendar_desc">Nepieciešams, lai mērķa kalendārā izveidotu dzimšanas dienu notikumus un tos atjauninātu.</string>
+    <string name="check_notifications_title">Paziņojumi</string>
+    <string name="check_notifications_desc">Nepieciešams ikdienas dzimšanas dienu paziņojumam un kalendāra atgādinājumiem.</string>
+    <string name="check_exact_alarm_title">Precīzi signāli un atgādinājumi</string>
+    <string name="check_exact_alarm_desc">Lai ikdienas paziņojums pienāktu tieši iestatītajā laikā. Bez šīs atļaujas tas var nedaudz kavēties.</string>
+    <string name="check_battery_title">Izslēgt akumulatora optimizāciju</string>
+    <string name="check_battery_desc">Neļauj Android atlikt vai bloķēt sinhronizāciju fonā.</string>
+    <string name="check_background_title">Darbība fonā ir atļauta</string>
+    <string name="check_background_desc">Lietotnes darbībai fonā nedrīkst būt ierobežojumu (Informācija par lietotni → Akumulators → “Neierobežots”).</string>
+    <string name="check_hibernation_title">Neizmantotas lietotnes apturēšana ir izslēgta</string>
+    <string name="check_hibernation_desc">Pretējā gadījumā pēc dažiem mēnešiem bez atvēršanas Android atsauc atļaujas un sinhronizācija apstājas.</string>
+    <string name="check_power_save_title">Akumulatora jaudas taupīšanas režīms</string>
+    <string name="check_power_save_on">Akumulatora jaudas taupīšanas režīms ir ieslēgts un var aizkavēt sinhronizāciju.</string>
+    <string name="check_power_save_off">Akumulatora jaudas taupīšanas režīms ir izslēgts.</string>
+    <string name="check_vendor_title">Ražotāja akumulatora pārvaldība (%1$s)</string>
+    <string name="check_vendor_desc">Šis ražotājs bieži papildus aptur fona lietotnes. Lūdzu, atļaujiet lietotnei Birthday Sync automātisko palaišanu vai “Darbību fonā”. To nevar pārbaudīt automātiski.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="zero">%1$d. solis no %2$d</item>
+        <item quantity="one">%1$d. solis no %2$d</item>
+        <item quantity="other">%1$d. solis no %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Laipni lūdzam lietotnē Birthday Sync</string>
+    <string name="onboarding_welcome_text">Lietotne automātiski pārnes dzimšanas dienas no jūsu kontaktiem uz jūsu izvēlētu kalendāru un atgādina par tām pašā dienā.\n\nLai tas uzticami darbotos fonā, lietotnei ir vajadzīgas dažas atļaujas. Mēs tās izskatīsim soli pa solim un paskaidrosim, kam katra ir vajadzīga.\n\nViss paliek jūsu ierīcē – lietotnei nav piekļuves internetam.</string>
+    <string name="onboarding_contacts_title">Piekļuve jūsu kontaktiem</string>
+    <string name="onboarding_contacts_text">Dzimšanas dienas ir saglabātas jūsu kontaktos. Lai lietotne tās atrastu, tai ir vajadzīga lasīšanas piekļuve.\n\nTiek lasīti tikai vārdi, dzimšanas dienas un piederība kontiem un grupām, arī fonā regulārās sinhronizācijas laikā. Dati paliek ierīcē: lietotne nemaina kontaktus, tai nav piekļuves internetam un tā neko nekopīgo.</string>
+    <string name="onboarding_calendar_title">Piekļuve jūsu kalendāram</string>
+    <string name="onboarding_calendar_text">Katrai dzimšanas dienai lietotne izveido notikumu jūsu izvēlētā kalendārā un to atjaunina, piemēram, ja mainās dzimšanas datums.\n\nŠim nolūkam tai ir jālasa un jāraksta kalendāri. Tiek mainīti tikai tās pašas izveidotie dzimšanas dienu notikumi.</string>
+    <string name="onboarding_notifications_title">Paziņojumi</string>
+    <string name="onboarding_notifications_text">Ja vēlaties, lietotne noteiktā laikā paziņos, ka kādam šodien ir dzimšanas diena.\n\nBez šīs atļaujas paziņojums netiks rādīts.</string>
+    <string name="onboarding_exact_alarm_title">Savlaicīgs atgādinājums</string>
+    <string name="onboarding_exact_alarm_text">Lai ikdienas paziņojums pienāktu tieši iestatītajā laikā, nevis kaut kad vēlāk, lietotnei ir vajadzīga atļauja “Signāli un atgādinājumi”.\n\nNākamajā ekrānā ieslēdziet slēdzi lietotnei Birthday Sync un pēc tam atgriezieties šeit, izmantojot “Atpakaļ”.</string>
+    <string name="onboarding_battery_title">Darbība fonā</string>
+    <string name="onboarding_battery_text">Android labprāt iemidzina fona lietotnes, lai taupītu akumulatoru. Tad regulārā sinhronizācija var neizdoties.\n\nSinhronizācija aizņem tikai dažas sekundes dienā, papildu patēriņš ir gandrīz neizmērāms. Nākamajā sarakstā izvēlieties “Visas lietotnes”, pēc tam Birthday Sync un iestatiet “Neoptimizēt”.</string>
+    <string name="onboarding_background_title">Noņemt fona ierobežojumu</string>
+    <string name="onboarding_background_text">Šai lietotnei ir ierobežota darbība fonā, tāpēc sinhronizācija un paziņojums netiek veikti.\n\nLietotnes informācijā atveriet “Akumulators” un izvēlieties “Neierobežots”. Pēc tam atgriezieties šeit, izmantojot “Atpakaļ”.</string>
+    <string name="onboarding_hibernation_title">Neapturēt automātiski</string>
+    <string name="onboarding_hibernation_text">Ja dažus mēnešus neatverat lietotni, Android to aptur un atsauc tās atļaujas. Tad sinhronizācija nemanāmi apstātos – lai gan lietotnei ir jādarbojas tieši fonā.\n\nNākamajā ekrānā izslēdziet “Apturēt darbības lietotnē, ja tā netiek izmantota” un pēc tam atgriezieties šeit, izmantojot “Atpakaļ”.</string>
+    <string name="onboarding_almost_title">Gandrīz gatavs</string>
+    <string name="onboarding_all_granted">Visas atļaujas ir piešķirtas.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="zero">Vēl trūkst %1$d punktu. Varat tos jebkurā laikā pabeigt cilnē “%2$s”.</item>
+        <item quantity="one">Vēl trūkst %1$d punkta. Varat to jebkurā laikā pabeigt cilnē “%2$s”.</item>
+        <item quantity="other">Vēl trūkst %1$d punktu. Varat tos jebkurā laikā pabeigt cilnē “%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Tālākie soļi:\n1. Izvēlēties kontaktu sarakstus\n2. Izvēlēties mērķa kalendāru\n3. Gatavs – pārējo lietotne paveiks automātiski.</string>
+    <string name="onboarding_granted">✓ Piešķirta</string>
+    <string name="onboarding_not_granted">Vēl nav piešķirta. Varat mēģināt vēlreiz vai izlaist šo soli.</string>
+    <string name="onboarding_start">Sākam</string>
+    <string name="onboarding_next">Tālāk</string>
+    <string name="onboarding_skip">Izlaist</string>
+    <string name="onboarding_retry">Mēģināt vēlreiz</string>
+    <string name="onboarding_finish">Uz lietotni</string>
+
+    <string name="msg_calendar_selected">Kalendārs “%1$s” ir izvēlēts kā mērķis</string>
+    <string name="msg_calendar_create_failed">Kalendāru neizdevās izveidot: %1$s</string>
+    <string name="msg_remove_failed">Kļūda, noņemot: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="zero">Noņemti %d notikumi</item>
+        <item quantity="one">Noņemts %d notikums</item>
+        <item quantity="other">Noņemti %d notikumi</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Paziņojumi nav atļauti – skatiet cilni “%1$s”</string>
+
+    <string name="sync_no_calendar">Nav izvēlēts mērķa kalendārs</string>
+    <string name="sync_no_contacts_permission">Nav atļaujas piekļūt kontaktiem</string>
+    <string name="sync_no_calendar_permission">Nav atļaujas piekļūt kalendāram</string>
+    <string name="sync_invalid_calendar">Nav izvēlēts derīgs mērķa kalendārs</string>
+    <plurals name="sync_birthdays">
+        <item quantity="zero">%d dzimšanas dienas</item>
+        <item quantity="one">%d dzimšanas diena</item>
+        <item quantity="other">%d dzimšanas dienas</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="zero">%d notikumi periodā</item>
+        <item quantity="one">%d notikums periodā</item>
+        <item quantity="other">%d notikumi periodā</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – viss ir aktuāls</string>
+    <string name="sync_summary_changes">%1$s, %2$s – jauni: %3$d, atjaunināti: %4$d, noņemti: %5$d</string>
+    <string name="sync_error">Kļūda: %1$s</string>
+
+    <string name="event_description">Dzimšanas diena: %1$s</string>
+    <string name="event_description_born">Dzimšanas diena: %1$s (dzimis/-usi %2$d. gadā)</string>
+    <string name="event_auto_created">Automātiski izveidoja Birthday Sync. Šī notikuma izmaiņas tiks pārrakstītas nākamajā sinhronizācijā.</string>
+
+    <string name="channel_today_name">Šodienas dzimšanas dienas</string>
+    <string name="channel_today_desc">Ikdienas paziņojums par šodienas dzimšanas dienām</string>
+    <plurals name="notification_turns_today">
+        <item quantity="zero">%1$s: šodien paliek %2$d gadi</item>
+        <item quantity="one">%1$s: šodien paliek %2$d gads</item>
+        <item quantity="other">%1$s: šodien paliek %2$d gadi</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s: šodien ir dzimšanas diena</string>
+    <string name="notification_single_title">🎂 %1$s: dzimšanas diena</string>
+    <plurals name="notification_multi_title">
+        <item quantity="zero">🎂 Šodien %d dzimšanas dienas</item>
+        <item quantity="one">🎂 Šodien %d dzimšanas diena</item>
+        <item quantity="other">🎂 Šodien %d dzimšanas dienas</item>
+    </plurals>
+    <string name="notification_nobody_today">Šodien nevienam nav dzimšanas dienas</string>
+    <string name="notification_test_text">Birthday Sync testa paziņojums</string>
+</resources>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Přehled</string>
+    <string name="tab_contacts">Kontakty</string>
+    <string name="tab_calendar">Kalendář</string>
+    <string name="tab_notify">Oznámení</string>
+    <string name="tab_system">Systém</string>
+
+    <string name="action_allow">Povolit</string>
+    <string name="action_allow_access">Povolit přístup</string>
+    <string name="action_open">Otevřít</string>
+    <string name="action_open_setting">Otevřít nastavení</string>
+    <string name="action_open_app_info">Otevřít informace o aplikaci</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="action_sync_now">Synchronizovat nyní</string>
+    <string name="action_remove">Odebrat</string>
+    <string name="section_sync">Synchronizace</string>
+
+    <string name="overview_setup_incomplete_title">Nastavení není dokončeno</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Pro spolehlivou synchronizaci chybí %d oprávnění nebo nastavení.</item>
+        <item quantity="few">Pro spolehlivou synchronizaci chybí %d oprávnění nebo nastavení.</item>
+        <item quantity="many">Pro spolehlivou synchronizaci chybí %d oprávnění nebo nastavení.</item>
+        <item quantity="other">Pro spolehlivou synchronizaci chybí %d oprávnění nebo nastavení.</item>
+    </plurals>
+    <string name="overview_setup_now">Nastavit</string>
+    <string name="overview_first_steps">První kroky</string>
+    <string name="overview_step_contacts">1. Vyber seznamy kontaktů, ze kterých se mají převzít narozeniny.</string>
+    <string name="overview_choose_contacts">Vybrat seznamy kontaktů</string>
+    <string name="overview_step_calendar">2. Vyber kalendář, do kterého se budou události ukládat.</string>
+    <string name="overview_choose_calendar">Vybrat cílový kalendář</string>
+    <string name="overview_target_calendar">Cílový kalendář: %1$s</string>
+    <string name="overview_target_calendar_none">Cílový kalendář: nevybrán</string>
+    <string name="overview_auto_daily">Automaticky každý den</string>
+    <string name="overview_auto_weekly">Automaticky každý týden</string>
+    <string name="overview_auto_daily_next">Automaticky každý den, další spuštění nejdříve %1$s</string>
+    <string name="overview_auto_weekly_next">Automaticky každý týden, další spuštění nejdříve %1$s</string>
+    <string name="overview_auto_off">Automatická synchronizace je vypnutá</string>
+    <string name="overview_last_sync">Poslední synchronizace: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Zatím žádná synchronizace</string>
+    <string name="overview_syncing">Synchronizace…</string>
+    <string name="overview_upcoming">Nejbližší narozeniny</string>
+    <string name="overview_no_birthdays">Ve vybraných seznamech kontaktů nebyly nalezeny žádné narozeniny.</string>
+    <string name="upcoming_today">Dnes</string>
+    <string name="upcoming_tomorrow">Zítra</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">za %d den</item>
+        <item quantity="few">za %d dny</item>
+        <item quantity="many">za %d dne</item>
+        <item quantity="other">za %d dní</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · bude mít %2$d rok</item>
+        <item quantity="few">%1$s · bude mít %2$d roky</item>
+        <item quantity="many">%1$s · bude mít %2$d roku</item>
+        <item quantity="other">%1$s · bude mít %2$d let</item>
+    </plurals>
+
+    <string name="contacts_intro">Vyber celé účty nebo jednotlivé skupiny/štítky. Převezmou se narozeniny všech kontaktů, které obsahují.</string>
+    <string name="contacts_no_permission_title">Chybí přístup ke kontaktům</string>
+    <string name="contacts_no_permission_text">Bez tohoto oprávnění nelze zobrazit seznamy kontaktů.</string>
+    <string name="contacts_none_found">V zařízení nebyly nalezeny žádné kontakty.</string>
+    <string name="contacts_all">Všechny kontakty</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d kontakt</item>
+        <item quantity="few">%d kontakty</item>
+        <item quantity="many">%d kontaktu</item>
+        <item quantity="other">%d kontaktů</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d s narozeninami</item>
+        <item quantity="few">%d s narozeninami</item>
+        <item quantity="many">%d s narozeninami</item>
+        <item quantity="other">%d s narozeninami</item>
+    </plurals>
+    <string name="contacts_device_label">Zařízení</string>
+    <string name="contacts_local_account">Místně v tomto zařízení</string>
+    <string name="contacts_group_fallback">Skupina %1$d</string>
+    <string name="contacts_unnamed">Bez názvu</string>
+
+    <string name="calendar_target_title">Cílový kalendář</string>
+    <string name="calendar_target_subtitle">Sem se ukládají události s narozeninami</string>
+    <string name="calendar_no_permission">Chybí přístup ke kalendáři.</string>
+    <string name="calendar_local_name">Narozeniny</string>
+    <string name="calendar_create_local">Vytvořit vlastní kalendář „%1$s“</string>
+    <string name="calendar_local_info">Vlastní kalendář je uložen jen v tomto zařízení a v aplikaci kalendáře ho můžeš samostatně zobrazit nebo skrýt.</string>
+    <string name="calendar_fallback_name">Kalendář %1$d</string>
+    <string name="calendar_events_title">Události</string>
+    <string name="calendar_all_day">Celý den</string>
+    <string name="calendar_start">Začátek</string>
+    <string name="calendar_duration">Trvání</string>
+    <string name="calendar_reminder">Připomenutí v kalendáři</string>
+    <string name="calendar_remind">Připomenout</string>
+    <string name="calendar_title">Název</string>
+    <string name="calendar_title_help">Zástupné symboly: {name}, {age}. Příklad: %1$s</string>
+    <string name="calendar_example_name">Jana Nováková</string>
+    <string name="calendar_auto_sync">Synchronizovat automaticky</string>
+    <string name="calendar_frequency">Frekvence</string>
+    <string name="calendar_range">Období dopředu</string>
+    <string name="calendar_sync_info">Změněná jména nebo data narození se převezmou při příští synchronizaci, odebrané kontakty z kalendáře zmizí. Změny těchto nastavení se projeví za několik sekund.</string>
+    <string name="calendar_running">Probíhá…</string>
+    <string name="calendar_remove_events">Odebrat události</string>
+    <string name="calendar_remove_confirm_title">Odebrat všechny události?</string>
+    <string name="calendar_remove_confirm_text">Všechny události vytvořené aplikací Birthday Sync budou smazány ze všech kalendářů. Pokud je zapnutá automatická synchronizace, při dalším spuštění je vytvoří znovu.</string>
+    <string name="interval_daily">Denně</string>
+    <string name="interval_weekly">Týdně</string>
+    <plurals name="range_months">
+        <item quantity="one">%d měsíc</item>
+        <item quantity="few">%d měsíce</item>
+        <item quantity="many">%d měsíce</item>
+        <item quantity="other">%d měsíců</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minuta</item>
+        <item quantity="few">%d minuty</item>
+        <item quantity="many">%d minuty</item>
+        <item quantity="other">%d minut</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d hodina</item>
+        <item quantity="few">%d hodiny</item>
+        <item quantity="many">%d hodiny</item>
+        <item quantity="other">%d hodin</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">V čase začátku</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minutu předem</item>
+        <item quantity="few">%d minuty předem</item>
+        <item quantity="many">%d minuty předem</item>
+        <item quantity="other">%d minut předem</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d hodinu předem</item>
+        <item quantity="few">%d hodiny předem</item>
+        <item quantity="many">%d hodiny předem</item>
+        <item quantity="other">%d hodin předem</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d den předem</item>
+        <item quantity="few">%d dny předem</item>
+        <item quantity="many">%d dne předem</item>
+        <item quantity="other">%d dní předem</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d týden předem</item>
+        <item quantity="few">%d týdny předem</item>
+        <item quantity="many">%d týdne předem</item>
+        <item quantity="other">%d týdnů předem</item>
+    </plurals>
+    <string name="reminder_on_day_at">V den narozenin v %1$s</string>
+    <string name="reminder_day_before_at">Den předem v %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d den předem v %2$s</item>
+        <item quantity="few">%1$d dny předem v %2$s</item>
+        <item quantity="many">%1$d dne předem v %2$s</item>
+        <item quantity="other">%1$d dní předem v %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d týden předem v %2$s</item>
+        <item quantity="few">%1$d týdny předem v %2$s</item>
+        <item quantity="many">%1$d týdne předem v %2$s</item>
+        <item quantity="other">%1$d týdnů předem v %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Denní oznámení</string>
+    <string name="notify_daily_subtitle">Nezávisle na kalendáři, přímo z kontaktů</string>
+    <string name="notify_today_switch">Oznamovat dnešní narozeniny</string>
+    <string name="notify_today_switch_sub">Jen ve dnech, kdy má někdo narozeniny</string>
+    <string name="notify_time">Čas</string>
+    <string name="notify_test">Testovací oznámení</string>
+    <string name="notify_hint_title">Poznámka</string>
+    <string name="notify_hint_text">Aby oznámení přišlo včas, ještě chybí: %1$s</string>
+    <string name="notify_go_system">Přejít do nastavení systému</string>
+
+    <string name="system_all_ready">Vše připraveno</string>
+    <plurals name="system_open_items">
+        <item quantity="one">Zbývá %d bod</item>
+        <item quantity="few">Zbývají %d body</item>
+        <item quantity="many">Zbývá %d bodu</item>
+        <item quantity="other">Zbývá %d bodů</item>
+    </plurals>
+    <string name="system_subtitle">Pro spolehlivou synchronizaci na pozadí a včasná oznámení</string>
+    <string name="system_setup_info">Průvodce nastavením tě krok za krokem provede všemi chybějícími body a každý z nich vysvětlí.</string>
+    <string name="system_run_setup">Spustit průvodce</string>
+    <string name="check_state_done">Hotovo. %1$s</string>
+    <string name="check_state_required">Povinné. %1$s</string>
+    <string name="check_state_recommended">Doporučené. %1$s</string>
+    <string name="about_title">O aplikaci</string>
+    <string name="about_text">Všechna data zůstávají v tvém zařízení. Aplikace nemá přístup k internetu a nic neshromažďuje.</string>
+    <string name="about_privacy">Ochrana soukromí</string>
+    <string name="about_source">Zdrojový kód</string>
+
+    <string name="check_contacts_title">Čtení kontaktů</string>
+    <string name="check_contacts_desc">Potřebné ke čtení narozenin ze seznamů kontaktů.</string>
+    <string name="check_calendar_title">Čtení a zápis kalendáře</string>
+    <string name="check_calendar_desc">Potřebné k vytváření událostí s narozeninami v cílovém kalendáři a k jejich aktualizaci.</string>
+    <string name="check_notifications_title">Oznámení</string>
+    <string name="check_notifications_desc">Potřebné pro denní oznámení o narozeninách a připomenutí z kalendáře.</string>
+    <string name="check_exact_alarm_title">Přesné budíky a připomenutí</string>
+    <string name="check_exact_alarm_desc">Aby denní oznámení přišlo přesně v nastavený čas. Bez tohoto oprávnění se může trochu opozdit.</string>
+    <string name="check_battery_title">Vypnout optimalizaci baterie</string>
+    <string name="check_battery_desc">Zabrání tomu, aby Android odkládal nebo potlačoval synchronizaci na pozadí.</string>
+    <string name="check_background_title">Aktivita na pozadí povolena</string>
+    <string name="check_background_desc">Aplikace nesmí být na pozadí omezena (Informace o aplikaci → Baterie → „Neomezeno“).</string>
+    <string name="check_hibernation_title">Pozastavení nepoužívané aplikace vypnuto</string>
+    <string name="check_hibernation_desc">Jinak Android po několika měsících bez otevření aplikaci odebere oprávnění a synchronizace se zastaví.</string>
+    <string name="check_power_save_title">Spořič baterie</string>
+    <string name="check_power_save_on">Spořič baterie je zapnutý a může synchronizaci zpozdit.</string>
+    <string name="check_power_save_off">Spořič baterie je vypnutý.</string>
+    <string name="check_vendor_title">Správa baterie výrobce (%1$s)</string>
+    <string name="check_vendor_desc">Tento výrobce navíc často ukončuje aplikace na pozadí. Povol pro Birthday Sync automatické spouštění nebo „Ponechat aktivní na pozadí“. Tento stav nelze automaticky ověřit.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Krok %1$d z %2$d</item>
+        <item quantity="few">Krok %1$d z %2$d</item>
+        <item quantity="many">Krok %1$d z %2$d</item>
+        <item quantity="other">Krok %1$d z %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Vítej v Birthday Sync</string>
+    <string name="onboarding_welcome_text">Aplikace automaticky přenáší narozeniny z tvých kontaktů do kalendáře podle tvého výběru a v den narozenin ti je připomene.\n\nAby to spolehlivě fungovalo na pozadí, potřebuje několik oprávnění. Projdeme je krok za krokem a u každého vysvětlíme, k čemu slouží.\n\nVše zůstává v tvém zařízení – aplikace nemá přístup k internetu.</string>
+    <string name="onboarding_contacts_title">Přístup k tvým kontaktům</string>
+    <string name="onboarding_contacts_text">Narozeniny jsou uložené v tvých kontaktech. Aby je aplikace našla, potřebuje přístup ke čtení.\n\nČtou se jen jména, narozeniny a přiřazení k účtům a skupinám, a to i na pozadí při pravidelné synchronizaci. Data zůstávají v zařízení: aplikace nemění žádné kontakty, nemá přístup k internetu a nic nesdílí.</string>
+    <string name="onboarding_calendar_title">Přístup k tvému kalendáři</string>
+    <string name="onboarding_calendar_text">Pro každé narozeniny vytvoří aplikace událost v kalendáři podle tvého výběru a udržuje ji aktuální, například když se změní datum narození.\n\nK tomu potřebuje číst a zapisovat kalendáře. Mění se výhradně její vlastní události s narozeninami.</string>
+    <string name="onboarding_notifications_title">Oznámení</string>
+    <string name="onboarding_notifications_text">Pokud chceš, aplikace se v pevně nastavený čas ozve, když má dnes někdo narozeniny.\n\nBez tohoto oprávnění oznámení nepřijde.</string>
+    <string name="onboarding_exact_alarm_title">Včasné připomenutí</string>
+    <string name="onboarding_exact_alarm_text">Aby denní oznámení přišlo přesně v nastavený čas, a ne někdy později, potřebuje aplikace oprávnění „Budíky a připomenutí“.\n\nNa další obrazovce zapni přepínač u Birthday Sync a pak se sem vrať tlačítkem „Zpět“.</string>
+    <string name="onboarding_battery_title">Práce na pozadí</string>
+    <string name="onboarding_battery_text">Android rád uspává aplikace na pozadí, aby šetřil baterii. Pravidelná synchronizace pak může vypadnout.\n\nSynchronizace trvá jen pár sekund denně a spotřeba navíc je sotva měřitelná. V následujícím seznamu vyber „Všechny aplikace“, pak Birthday Sync a nastav „Neoptimalizovat“.</string>
+    <string name="onboarding_background_title">Zrušit omezení na pozadí</string>
+    <string name="onboarding_background_text">Tato aplikace má omezenou aktivitu na pozadí, a proto synchronizace a oznámení neproběhnou.\n\nV informacích o aplikaci otevři „Baterie“ a vyber „Neomezeno“. Pak se sem vrať tlačítkem „Zpět“.</string>
+    <string name="onboarding_hibernation_title">Nepozastavovat automaticky</string>
+    <string name="onboarding_hibernation_text">Když aplikaci několik měsíců neotevřeš, Android ji pozastaví a odebere jí oprávnění. Synchronizace by pak nepozorovaně přestala fungovat – přestože aplikace má pracovat právě na pozadí.\n\nNa další obrazovce vypni „Pozastavit aktivitu aplikace, pokud se nepoužívá“ a pak se sem vrať tlačítkem „Zpět“.</string>
+    <string name="onboarding_almost_title">Skoro hotovo</string>
+    <string name="onboarding_all_granted">Všechna oprávnění jsou udělena.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Ještě chybí %1$d bod. Můžeš ho kdykoli doplnit na kartě „%2$s“.</item>
+        <item quantity="few">Ještě chybí %1$d body. Můžeš je kdykoli doplnit na kartě „%2$s“.</item>
+        <item quantity="many">Ještě chybí %1$d bodu. Můžeš je kdykoli doplnit na kartě „%2$s“.</item>
+        <item quantity="other">Ještě chybí %1$d bodů. Můžeš je kdykoli doplnit na kartě „%2$s“.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Co bude dál:\n1. Vybrat seznamy kontaktů\n2. Vybrat cílový kalendář\n3. Hotovo – o zbytek se aplikace postará automaticky.</string>
+    <string name="onboarding_granted">✓ Uděleno</string>
+    <string name="onboarding_not_granted">Zatím neuděleno. Můžeš to zkusit znovu nebo tento krok přeskočit.</string>
+    <string name="onboarding_start">Jdeme na to</string>
+    <string name="onboarding_next">Další</string>
+    <string name="onboarding_skip">Přeskočit</string>
+    <string name="onboarding_retry">Zkusit znovu</string>
+    <string name="onboarding_finish">Do aplikace</string>
+
+    <string name="msg_calendar_selected">Kalendář „%1$s“ je vybrán jako cílový</string>
+    <string name="msg_calendar_create_failed">Kalendář se nepodařilo vytvořit: %1$s</string>
+    <string name="msg_remove_failed">Chyba při odebírání: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">Odebrána %d událost</item>
+        <item quantity="few">Odebrány %d události</item>
+        <item quantity="many">Odebráno %d události</item>
+        <item quantity="other">Odebráno %d událostí</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Oznámení nejsou povolena – viz karta „%1$s“</string>
+
+    <string name="sync_no_calendar">Není vybrán cílový kalendář</string>
+    <string name="sync_no_contacts_permission">Chybí oprávnění ke kontaktům</string>
+    <string name="sync_no_calendar_permission">Chybí oprávnění ke kalendáři</string>
+    <string name="sync_invalid_calendar">Není vybrán platný cílový kalendář</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d datum narození</item>
+        <item quantity="few">%d data narození</item>
+        <item quantity="many">%d data narození</item>
+        <item quantity="other">%d dat narození</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d událost v období</item>
+        <item quantity="few">%d události v období</item>
+        <item quantity="many">%d události v období</item>
+        <item quantity="other">%d událostí v období</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – vše aktuální</string>
+    <string name="sync_summary_changes">%1$s, %2$s – nové: %3$d, aktualizované: %4$d, odebrané: %5$d</string>
+    <string name="sync_error">Chyba: %1$s</string>
+
+    <string name="event_description">Narozeniny: %1$s</string>
+    <string name="event_description_born">Narozeniny: %1$s (nar. %2$d)</string>
+    <string name="event_auto_created">Automaticky vytvořeno aplikací Birthday Sync. Změny této události budou při příští synchronizaci přepsány.</string>
+
+    <string name="channel_today_name">Dnešní narozeniny</string>
+    <string name="channel_today_desc">Denní oznámení o dnešních narozeninách</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s dnes slaví %2$d rok</item>
+        <item quantity="few">%1$s dnes slaví %2$d roky</item>
+        <item quantity="many">%1$s dnes slaví %2$d roku</item>
+        <item quantity="other">%1$s dnes slaví %2$d let</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s má dnes narozeniny</string>
+    <string name="notification_single_title">🎂 %1$s má narozeniny</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 Dnes má narozeniny %d člověk</item>
+        <item quantity="few">🎂 Dnes mají narozeniny %d lidé</item>
+        <item quantity="many">🎂 Dnes má narozeniny %d člověka</item>
+        <item quantity="other">🎂 Dnes má narozeniny %d lidí</item>
+    </plurals>
+    <string name="notification_nobody_today">Dnes nikdo nemá narozeniny</string>
+    <string name="notification_test_text">Testovací oznámení z Birthday Sync</string>
+</resources>

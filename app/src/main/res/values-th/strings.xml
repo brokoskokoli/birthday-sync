@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">ภาพรวม</string>
+    <string name="tab_contacts">รายชื่อ</string>
+    <string name="tab_calendar">ปฏิทิน</string>
+    <string name="tab_notify">แจ้งเตือน</string>
+    <string name="tab_system">ระบบ</string>
+
+    <string name="action_allow">อนุญาต</string>
+    <string name="action_allow_access">อนุญาตการเข้าถึง</string>
+    <string name="action_open">เปิด</string>
+    <string name="action_open_setting">เปิดการตั้งค่า</string>
+    <string name="action_open_app_info">เปิดข้อมูลแอป</string>
+    <string name="action_settings">การตั้งค่า</string>
+    <string name="action_sync_now">ซิงค์เลย</string>
+    <string name="action_remove">นำออก</string>
+    <string name="section_sync">การซิงค์</string>
+
+    <string name="overview_setup_incomplete_title">ตั้งค่ายังไม่เสร็จ</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="other">ยังขาดสิทธิ์หรือการตั้งค่าอีก %d รายการเพื่อให้ซิงค์ได้อย่างเสถียร</item>
+    </plurals>
+    <string name="overview_setup_now">ตั้งค่าเลย</string>
+    <string name="overview_first_steps">เริ่มต้นใช้งาน</string>
+    <string name="overview_step_contacts">1. เลือกรายชื่อติดต่อที่ต้องการนำวันเกิดมาใช้</string>
+    <string name="overview_choose_contacts">เลือกรายชื่อติดต่อ</string>
+    <string name="overview_step_calendar">2. เลือกปฏิทินที่จะสร้างกิจกรรม</string>
+    <string name="overview_choose_calendar">เลือกปฏิทินปลายทาง</string>
+    <string name="overview_target_calendar">ปฏิทินปลายทาง: %1$s</string>
+    <string name="overview_target_calendar_none">ปฏิทินปลายทาง: ยังไม่ได้เลือก</string>
+    <string name="overview_auto_daily">อัตโนมัติทุกวัน</string>
+    <string name="overview_auto_weekly">อัตโนมัติทุกสัปดาห์</string>
+    <string name="overview_auto_daily_next">อัตโนมัติทุกวัน ครั้งถัดไปเร็วที่สุด %1$s</string>
+    <string name="overview_auto_weekly_next">อัตโนมัติทุกสัปดาห์ ครั้งถัดไปเร็วที่สุด %1$s</string>
+    <string name="overview_auto_off">ปิดการซิงค์อัตโนมัติอยู่</string>
+    <string name="overview_last_sync">ซิงค์ล่าสุด: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">ยังไม่เคยซิงค์</string>
+    <string name="overview_syncing">กำลังซิงค์…</string>
+    <string name="overview_upcoming">วันเกิดที่กำลังจะมาถึง</string>
+    <string name="overview_no_birthdays">ไม่พบวันเกิดในรายชื่อติดต่อที่เลือก</string>
+    <string name="upcoming_today">วันนี้</string>
+    <string name="upcoming_tomorrow">พรุ่งนี้</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="other">อีก %d วัน</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="other">%1$s · อายุครบ %2$d ปี</item>
+    </plurals>
+
+    <string name="contacts_intro">เลือกทั้งบัญชีหรือเฉพาะกลุ่ม/ป้ายกำกับ ระบบจะนำวันเกิดของรายชื่อติดต่อทั้งหมดในนั้นมาใช้</string>
+    <string name="contacts_no_permission_title">ไม่มีสิทธิ์เข้าถึงรายชื่อติดต่อ</string>
+    <string name="contacts_no_permission_text">หากไม่มีสิทธิ์นี้ จะแสดงรายชื่อติดต่อไม่ได้</string>
+    <string name="contacts_none_found">ไม่พบรายชื่อติดต่อในอุปกรณ์นี้</string>
+    <string name="contacts_all">รายชื่อติดต่อทั้งหมด</string>
+    <plurals name="contacts_count">
+        <item quantity="other">รายชื่อติดต่อ %d รายการ</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="other">มีวันเกิด %d รายการ</item>
+    </plurals>
+    <string name="contacts_device_label">อุปกรณ์</string>
+    <string name="contacts_local_account">ในอุปกรณ์นี้เท่านั้น</string>
+    <string name="contacts_group_fallback">กลุ่ม %1$d</string>
+    <string name="contacts_unnamed">ไม่มีชื่อ</string>
+
+    <string name="calendar_target_title">ปฏิทินปลายทาง</string>
+    <string name="calendar_target_subtitle">กิจกรรมวันเกิดจะถูกสร้างที่นี่</string>
+    <string name="calendar_no_permission">ไม่มีสิทธิ์เข้าถึงปฏิทิน</string>
+    <string name="calendar_local_name">วันเกิด</string>
+    <string name="calendar_create_local">สร้างปฏิทินของตัวเอง “%1$s”</string>
+    <string name="calendar_local_info">ปฏิทินของตัวเองจะเก็บไว้ในอุปกรณ์นี้เท่านั้น และแสดงหรือซ่อนแยกต่างหากได้ในแอปปฏิทิน</string>
+    <string name="calendar_fallback_name">ปฏิทิน %1$d</string>
+    <string name="calendar_events_title">กิจกรรม</string>
+    <string name="calendar_all_day">ทั้งวัน</string>
+    <string name="calendar_start">เริ่ม</string>
+    <string name="calendar_duration">ระยะเวลา</string>
+    <string name="calendar_reminder">การช่วยเตือนในปฏิทิน</string>
+    <string name="calendar_remind">เตือน</string>
+    <string name="calendar_title">ชื่อกิจกรรม</string>
+    <string name="calendar_title_help">ตัวยึดตำแหน่ง: {name}, {age} ตัวอย่าง: %1$s</string>
+    <string name="calendar_example_name">สมชาย ใจดี</string>
+    <string name="calendar_auto_sync">ซิงค์อัตโนมัติ</string>
+    <string name="calendar_frequency">ความถี่</string>
+    <string name="calendar_range">ช่วงเวลาล่วงหน้า</string>
+    <string name="calendar_sync_info">ชื่อหรือวันเกิดที่เปลี่ยนจะอัปเดตเมื่อซิงค์ครั้งถัดไป ส่วนรายชื่อติดต่อที่นำออกจะหายไปจากปฏิทิน การเปลี่ยนแปลงการตั้งค่าเหล่านี้จะมีผลภายในไม่กี่วินาที</string>
+    <string name="calendar_running">กำลังทำงาน…</string>
+    <string name="calendar_remove_events">นำกิจกรรมออก</string>
+    <string name="calendar_remove_confirm_title">นำกิจกรรมทั้งหมดออกไหม</string>
+    <string name="calendar_remove_confirm_text">กิจกรรมทั้งหมดที่ Birthday Sync สร้างไว้จะถูกลบออกจากทุกปฏิทิน หากเปิดการซิงค์อัตโนมัติอยู่ ระบบจะสร้างกิจกรรมเหล่านั้นขึ้นใหม่ในการทำงานครั้งถัดไป</string>
+    <string name="interval_daily">ทุกวัน</string>
+    <string name="interval_weekly">ทุกสัปดาห์</string>
+    <plurals name="range_months">
+        <item quantity="other">%d เดือน</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d นาที</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d ชั่วโมง</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d ชม. %2$d นาที</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">เมื่อถึงเวลาเริ่ม</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="other">%d นาทีก่อน</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="other">%d ชั่วโมงก่อน</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="other">%d วันก่อน</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="other">%d สัปดาห์ก่อน</item>
+    </plurals>
+    <string name="reminder_on_day_at">ในวันนั้นเวลา %1$s</string>
+    <string name="reminder_day_before_at">วันก่อนหน้าเวลา %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="other">%1$d วันก่อน เวลา %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="other">%1$d สัปดาห์ก่อน เวลา %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">การแจ้งเตือนรายวัน</string>
+    <string name="notify_daily_subtitle">ไม่ขึ้นกับปฏิทิน ดึงจากรายชื่อติดต่อโดยตรง</string>
+    <string name="notify_today_switch">แจ้งวันเกิดของวันนี้</string>
+    <string name="notify_today_switch_sub">เฉพาะวันที่มีคนเกิด</string>
+    <string name="notify_time">เวลา</string>
+    <string name="notify_test">ทดสอบการแจ้งเตือน</string>
+    <string name="notify_hint_title">หมายเหตุ</string>
+    <string name="notify_hint_text">เพื่อให้การแจ้งเตือนมาตรงเวลา ยังขาดรายการต่อไปนี้: %1$s</string>
+    <string name="notify_go_system">ไปที่การตั้งค่าระบบ</string>
+
+    <string name="system_all_ready">พร้อมแล้ว</string>
+    <plurals name="system_open_items">
+        <item quantity="other">ค้างอยู่ %d รายการ</item>
+    </plurals>
+    <string name="system_subtitle">เพื่อการซิงค์ในเบื้องหลังที่เสถียรและการแจ้งเตือนที่ตรงเวลา</string>
+    <string name="system_setup_info">การตั้งค่าจะพาคุณไปทีละขั้นตอนผ่านทุกรายการที่ขาด พร้อมคำอธิบายของแต่ละรายการ</string>
+    <string name="system_run_setup">เริ่มการตั้งค่า</string>
+    <string name="check_state_done">เสร็จแล้ว %1$s</string>
+    <string name="check_state_required">จำเป็น %1$s</string>
+    <string name="check_state_recommended">แนะนำ %1$s</string>
+    <string name="about_title">เกี่ยวกับแอป</string>
+    <string name="about_text">ข้อมูลทั้งหมดจะอยู่ในอุปกรณ์ของคุณ แอปนี้ไม่มีการเข้าถึงอินเทอร์เน็ตและไม่เก็บรวบรวมข้อมูลใดๆ</string>
+    <string name="about_privacy">ความเป็นส่วนตัว</string>
+    <string name="about_source">ซอร์สโค้ด</string>
+
+    <string name="check_contacts_title">อ่านรายชื่อติดต่อ</string>
+    <string name="check_contacts_desc">จำเป็นสำหรับการอ่านวันเกิดจากรายชื่อติดต่อ</string>
+    <string name="check_calendar_title">อ่านและเขียนปฏิทิน</string>
+    <string name="check_calendar_desc">จำเป็นสำหรับการสร้างกิจกรรมวันเกิดในปฏิทินปลายทางและอัปเดตให้เป็นปัจจุบันอยู่เสมอ</string>
+    <string name="check_notifications_title">การแจ้งเตือน</string>
+    <string name="check_notifications_desc">จำเป็นสำหรับการแจ้งเตือนวันเกิดรายวันและการช่วยเตือนในปฏิทิน</string>
+    <string name="check_exact_alarm_title">การปลุกและการช่วยเตือนที่แม่นยำ</string>
+    <string name="check_exact_alarm_desc">เพื่อให้การแจ้งเตือนรายวันมาตรงตามเวลาที่ตั้งไว้ หากไม่มีสิทธิ์นี้ การแจ้งเตือนอาจมาช้าเล็กน้อย</string>
+    <string name="check_battery_title">ปิดการเพิ่มประสิทธิภาพแบตเตอรี่</string>
+    <string name="check_battery_desc">ป้องกันไม่ให้ Android เลื่อนหรือระงับการซิงค์ในเบื้องหลัง</string>
+    <string name="check_background_title">อนุญาตกิจกรรมในเบื้องหลังแล้ว</string>
+    <string name="check_background_desc">แอปต้องไม่ถูกจำกัดในเบื้องหลัง (ข้อมูลแอป → แบตเตอรี่ → “ไม่จำกัด”)</string>
+    <string name="check_hibernation_title">ปิดการหยุดแอปชั่วคราวเมื่อไม่ได้ใช้แล้ว</string>
+    <string name="check_hibernation_desc">มิฉะนั้น หากไม่ได้เปิดแอปเป็นเวลาหลายเดือน Android จะเพิกถอนสิทธิ์และการซิงค์จะหยุดลง</string>
+    <string name="check_power_save_title">โหมดประหยัดแบตเตอรี่</string>
+    <string name="check_power_save_on">โหมดประหยัดแบตเตอรี่เปิดอยู่และอาจทำให้การซิงค์ล่าช้า</string>
+    <string name="check_power_save_off">โหมดประหยัดแบตเตอรี่ปิดอยู่</string>
+    <string name="check_vendor_title">การจัดการแบตเตอรี่ของผู้ผลิต (%1$s)</string>
+    <string name="check_vendor_desc">ผู้ผลิตรายนี้มักหยุดแอปที่ทำงานในเบื้องหลังเพิ่มเติมอีกด้วย โปรดอนุญาตการเริ่มอัตโนมัติหรือ “ให้ทำงานในเบื้องหลังต่อไป” สำหรับ Birthday Sync รายการนี้ตรวจสอบโดยอัตโนมัติไม่ได้</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="other">ขั้นตอนที่ %1$d จาก %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">ยินดีต้อนรับสู่ Birthday Sync</string>
+    <string name="onboarding_welcome_text">แอปนี้จะคัดลอกวันเกิดจากรายชื่อติดต่อของคุณไปยังปฏิทินที่คุณเลือกโดยอัตโนมัติ และเตือนคุณในวันนั้น\n\nเพื่อให้ทำงานในเบื้องหลังได้อย่างเสถียร แอปต้องใช้สิทธิ์บางอย่าง เราจะพาคุณไปทีละขั้นตอนและอธิบายว่าแต่ละสิทธิ์ใช้ทำอะไร\n\nทุกอย่างอยู่ในอุปกรณ์ของคุณ – แอปนี้ไม่มีการเข้าถึงอินเทอร์เน็ต</string>
+    <string name="onboarding_contacts_title">เข้าถึงรายชื่อติดต่อของคุณ</string>
+    <string name="onboarding_contacts_text">วันเกิดจะเก็บอยู่ในรายชื่อติดต่อของคุณ แอปต้องมีสิทธิ์อ่านจึงจะหาวันเกิดเหล่านั้นเจอ\n\nแอปจะอ่านเฉพาะชื่อ วันเกิด และบัญชีกับกลุ่มที่รายชื่อนั้นอยู่ รวมถึงในเบื้องหลังระหว่างการซิงค์ตามรอบ ข้อมูลจะอยู่ในอุปกรณ์ของคุณ: แอปไม่เปลี่ยนแปลงรายชื่อติดต่อใดๆ ไม่มีการเข้าถึงอินเทอร์เน็ต และไม่แชร์ข้อมูลใดๆ</string>
+    <string name="onboarding_calendar_title">เข้าถึงปฏิทินของคุณ</string>
+    <string name="onboarding_calendar_text">แอปจะสร้างกิจกรรมสำหรับวันเกิดแต่ละวันในปฏิทินที่คุณเลือก และอัปเดตให้เป็นปัจจุบันอยู่เสมอ เช่น เมื่อวันเกิดมีการเปลี่ยนแปลง\n\nด้วยเหตุนี้ แอปจึงต้องอ่านและเขียนปฏิทินได้ แอปจะเปลี่ยนแปลงเฉพาะกิจกรรมวันเกิดที่แอปสร้างขึ้นเองเท่านั้น</string>
+    <string name="onboarding_notifications_title">การแจ้งเตือน</string>
+    <string name="onboarding_notifications_text">หากต้องการ แอปจะแจ้งให้คุณทราบในเวลาที่กำหนดเมื่อวันนี้มีคนเกิด\n\nหากไม่มีสิทธิ์นี้ จะไม่มีการแจ้งเตือน</string>
+    <string name="onboarding_exact_alarm_title">เตือนตรงเวลา</string>
+    <string name="onboarding_exact_alarm_text">เพื่อให้การแจ้งเตือนรายวันมาตรงตามเวลาที่ตั้งไว้ ไม่ใช่มาช้ากว่านั้น แอปต้องมีสิทธิ์ “การปลุกและการช่วยเตือน”\n\nในหน้าจอถัดไป ให้เปิดสวิตช์สำหรับ Birthday Sync แล้วกลับมาที่นี่ด้วยปุ่ม “กลับ”</string>
+    <string name="onboarding_battery_title">ทำงานในเบื้องหลัง</string>
+    <string name="onboarding_battery_text">Android มักทำให้แอปในเบื้องหลังเข้าสู่โหมดพักเพื่อประหยัดแบตเตอรี่ ซึ่งอาจทำให้การซิงค์ตามรอบไม่เกิดขึ้น\n\nการซิงค์ใช้เวลาเพียงไม่กี่วินาทีต่อวัน และใช้แบตเตอรี่เพิ่มขึ้นน้อยมาก ในรายการถัดไป ให้เลือก “แอปทั้งหมด” จากนั้นเลือก Birthday Sync แล้วเลือก “ไม่ต้องเพิ่มประสิทธิภาพ”</string>
+    <string name="onboarding_background_title">ยกเลิกการจำกัดในเบื้องหลัง</string>
+    <string name="onboarding_background_text">แอปนี้ถูกจำกัดกิจกรรมในเบื้องหลัง จึงซิงค์และแจ้งเตือนไม่ได้\n\nในข้อมูลแอป ให้เปิด “แบตเตอรี่” แล้วเลือก “ไม่จำกัด” จากนั้นกลับมาที่นี่ด้วยปุ่ม “กลับ”</string>
+    <string name="onboarding_hibernation_title">ไม่หยุดชั่วคราวโดยอัตโนมัติ</string>
+    <string name="onboarding_hibernation_text">หากคุณไม่ได้เปิดแอปเป็นเวลาหลายเดือน Android จะหยุดแอปชั่วคราวและนำสิทธิ์ของแอปออก การซิงค์จึงจะหยุดลงโดยที่คุณไม่รู้ตัว ทั้งที่แอปนี้มีไว้เพื่อทำงานในเบื้องหลัง\n\nในหน้าจอถัดไป ให้ปิด “หยุดกิจกรรมในแอปชั่วคราวหากไม่ได้ใช้งาน” แล้วกลับมาที่นี่ด้วยปุ่ม “กลับ”</string>
+    <string name="onboarding_almost_title">ใกล้เสร็จแล้ว</string>
+    <string name="onboarding_all_granted">ให้สิทธิ์ครบทั้งหมดแล้ว</string>
+    <plurals name="onboarding_missing">
+        <item quantity="other">ยังขาดอีก %1$d รายการ คุณทำต่อให้เสร็จได้ทุกเมื่อในแท็บ “%2$s”</item>
+    </plurals>
+    <string name="onboarding_next_steps">ขั้นตอนต่อไป:\n1. เลือกรายชื่อติดต่อ\n2. เลือกปฏิทินปลายทาง\n3. เสร็จแล้ว – แอปจะจัดการส่วนที่เหลือให้โดยอัตโนมัติ</string>
+    <string name="onboarding_granted">✓ ให้สิทธิ์แล้ว</string>
+    <string name="onboarding_not_granted">ยังไม่ได้ให้สิทธิ์ คุณลองอีกครั้งหรือข้ามขั้นตอนนี้ได้</string>
+    <string name="onboarding_start">เริ่มกันเลย</string>
+    <string name="onboarding_next">ถัดไป</string>
+    <string name="onboarding_skip">ข้าม</string>
+    <string name="onboarding_retry">ลองอีกครั้ง</string>
+    <string name="onboarding_finish">ไปที่แอป</string>
+
+    <string name="msg_calendar_selected">เลือกปฏิทิน “%1$s” เป็นปลายทางแล้ว</string>
+    <string name="msg_calendar_create_failed">สร้างปฏิทินไม่ได้: %1$s</string>
+    <string name="msg_remove_failed">เกิดข้อผิดพลาดขณะนำออก: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="other">นำกิจกรรมออกแล้ว %d รายการ</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">ไม่ได้อนุญาตการแจ้งเตือน – ดูที่แท็บ “%1$s”</string>
+
+    <string name="sync_no_calendar">ยังไม่ได้เลือกปฏิทินปลายทาง</string>
+    <string name="sync_no_contacts_permission">ไม่มีสิทธิ์เข้าถึงรายชื่อติดต่อ</string>
+    <string name="sync_no_calendar_permission">ไม่มีสิทธิ์เข้าถึงปฏิทิน</string>
+    <string name="sync_invalid_calendar">ไม่ได้เลือกปฏิทินปลายทางที่ถูกต้อง</string>
+    <plurals name="sync_birthdays">
+        <item quantity="other">วันเกิด %d รายการ</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="other">กิจกรรมในช่วงเวลา %d รายการ</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – เป็นปัจจุบันทั้งหมด</string>
+    <string name="sync_summary_changes">%1$s, %2$s – ใหม่: %3$d, อัปเดต: %4$d, นำออก: %5$d</string>
+    <string name="sync_error">ข้อผิดพลาด: %1$s</string>
+
+    <string name="event_description">วันเกิดของ %1$s</string>
+    <string name="event_description_born">วันเกิดของ %1$s (เกิดปี %2$d)</string>
+    <string name="event_auto_created">สร้างโดยอัตโนมัติโดย Birthday Sync การเปลี่ยนแปลงกิจกรรมนี้จะถูกเขียนทับเมื่อซิงค์ครั้งถัดไป</string>
+
+    <string name="channel_today_name">วันเกิดวันนี้</string>
+    <string name="channel_today_desc">การแจ้งเตือนรายวันเกี่ยวกับวันเกิดของวันนี้</string>
+    <plurals name="notification_turns_today">
+        <item quantity="other">วันนี้ %1$s อายุครบ %2$d ปี</item>
+    </plurals>
+    <string name="notification_birthday_today">วันนี้เป็นวันเกิดของ %1$s</string>
+    <string name="notification_single_title">🎂 วันเกิดของ %1$s</string>
+    <plurals name="notification_multi_title">
+        <item quantity="other">🎂 วันนี้มีคนเกิด %d คน</item>
+    </plurals>
+    <string name="notification_nobody_today">วันนี้ไม่มีใครเกิด</string>
+    <string name="notification_test_text">การแจ้งเตือนทดสอบจาก Birthday Sync</string>
+</resources>

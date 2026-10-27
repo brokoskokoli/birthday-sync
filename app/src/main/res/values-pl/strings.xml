@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Przegląd</string>
+    <string name="tab_contacts">Kontakty</string>
+    <string name="tab_calendar">Kalendarz</string>
+    <string name="tab_notify">Alerty</string>
+    <string name="tab_system">System</string>
+
+    <string name="action_allow">Zezwól</string>
+    <string name="action_allow_access">Zezwól na dostęp</string>
+    <string name="action_open">Otwórz</string>
+    <string name="action_open_setting">Otwórz ustawienie</string>
+    <string name="action_open_app_info">Otwórz informacje o aplikacji</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="action_sync_now">Synchronizuj teraz</string>
+    <string name="action_remove">Usuń</string>
+    <string name="section_sync">Synchronizacja</string>
+
+    <string name="overview_setup_incomplete_title">Konfiguracja niekompletna</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Brakuje %d uprawnienia lub ustawienia, aby synchronizacja działała niezawodnie.</item>
+        <item quantity="few">Brakuje %d uprawnień lub ustawień, aby synchronizacja działała niezawodnie.</item>
+        <item quantity="many">Brakuje %d uprawnień lub ustawień, aby synchronizacja działała niezawodnie.</item>
+        <item quantity="other">Brakuje %d uprawnienia lub ustawienia, aby synchronizacja działała niezawodnie.</item>
+    </plurals>
+    <string name="overview_setup_now">Skonfiguruj teraz</string>
+    <string name="overview_first_steps">Pierwsze kroki</string>
+    <string name="overview_step_contacts">1. Wybierz listy kontaktów, z których mają być pobierane urodziny.</string>
+    <string name="overview_choose_contacts">Wybierz listy kontaktów</string>
+    <string name="overview_step_calendar">2. Wybierz kalendarz, w którym będą tworzone wydarzenia.</string>
+    <string name="overview_choose_calendar">Wybierz kalendarz docelowy</string>
+    <string name="overview_target_calendar">Kalendarz docelowy: %1$s</string>
+    <string name="overview_target_calendar_none">Kalendarz docelowy: nie wybrano</string>
+    <string name="overview_auto_daily">Automatycznie codziennie</string>
+    <string name="overview_auto_weekly">Automatycznie co tydzień</string>
+    <string name="overview_auto_daily_next">Automatycznie codziennie, następne uruchomienie najwcześniej %1$s</string>
+    <string name="overview_auto_weekly_next">Automatycznie co tydzień, następne uruchomienie najwcześniej %1$s</string>
+    <string name="overview_auto_off">Automatyczna synchronizacja jest wyłączona</string>
+    <string name="overview_last_sync">Ostatnia synchronizacja: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Jeszcze nie synchronizowano</string>
+    <string name="overview_syncing">Synchronizuję…</string>
+    <string name="overview_upcoming">Najbliższe urodziny</string>
+    <string name="overview_no_birthdays">Na wybranych listach kontaktów nie znaleziono urodzin.</string>
+    <string name="upcoming_today">Dziś</string>
+    <string name="upcoming_tomorrow">Jutro</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">za %d dzień</item>
+        <item quantity="few">za %d dni</item>
+        <item quantity="many">za %d dni</item>
+        <item quantity="other">za %d dnia</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · skończy %2$d rok</item>
+        <item quantity="few">%1$s · skończy %2$d lata</item>
+        <item quantity="many">%1$s · skończy %2$d lat</item>
+        <item quantity="other">%1$s · skończy %2$d roku</item>
+    </plurals>
+
+    <string name="contacts_intro">Wybierz całe konta lub pojedyncze grupy/etykiety. Pobrane zostaną urodziny wszystkich kontaktów, które się w nich znajdują.</string>
+    <string name="contacts_no_permission_title">Brak dostępu do kontaktów</string>
+    <string name="contacts_no_permission_text">Bez tego uprawnienia nie można wyświetlić list kontaktów.</string>
+    <string name="contacts_none_found">Nie znaleziono kontaktów na tym urządzeniu.</string>
+    <string name="contacts_all">Wszystkie kontakty</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d kontakt</item>
+        <item quantity="few">%d kontakty</item>
+        <item quantity="many">%d kontaktów</item>
+        <item quantity="other">%d kontaktu</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d z datą urodzin</item>
+        <item quantity="few">%d z datą urodzin</item>
+        <item quantity="many">%d z datą urodzin</item>
+        <item quantity="other">%d z datą urodzin</item>
+    </plurals>
+    <string name="contacts_device_label">Urządzenie</string>
+    <string name="contacts_local_account">Lokalnie na tym urządzeniu</string>
+    <string name="contacts_group_fallback">Grupa %1$d</string>
+    <string name="contacts_unnamed">Bez nazwy</string>
+
+    <string name="calendar_target_title">Kalendarz docelowy</string>
+    <string name="calendar_target_subtitle">Tutaj tworzone są wydarzenia urodzinowe</string>
+    <string name="calendar_no_permission">Brak dostępu do kalendarza.</string>
+    <string name="calendar_local_name">Urodziny</string>
+    <string name="calendar_create_local">Utwórz własny kalendarz „%1$s”</string>
+    <string name="calendar_local_info">Własny kalendarz jest zapisany tylko na tym urządzeniu i w aplikacji kalendarza można go osobno pokazywać lub ukrywać.</string>
+    <string name="calendar_fallback_name">Kalendarz %1$d</string>
+    <string name="calendar_events_title">Wydarzenia</string>
+    <string name="calendar_all_day">Cały dzień</string>
+    <string name="calendar_start">Początek</string>
+    <string name="calendar_duration">Czas trwania</string>
+    <string name="calendar_reminder">Przypomnienie w kalendarzu</string>
+    <string name="calendar_remind">Przypomnij</string>
+    <string name="calendar_title">Tytuł</string>
+    <string name="calendar_title_help">Symbole zastępcze: {name}, {age}. Przykład: %1$s</string>
+    <string name="calendar_example_name">Anna Kowalska</string>
+    <string name="calendar_auto_sync">Synchronizuj automatycznie</string>
+    <string name="calendar_frequency">Częstotliwość</string>
+    <string name="calendar_range">Zakres czasu naprzód</string>
+    <string name="calendar_sync_info">Zmienione imiona lub daty urodzenia zostaną uwzględnione przy następnej synchronizacji, a usunięte kontakty znikną z kalendarza. Zmiany tych ustawień zostaną zastosowane po kilku sekundach.</string>
+    <string name="calendar_running">Trwa…</string>
+    <string name="calendar_remove_events">Usuń wydarzenia</string>
+    <string name="calendar_remove_confirm_title">Usunąć wszystkie wydarzenia?</string>
+    <string name="calendar_remove_confirm_text">Wszystkie wydarzenia utworzone przez Birthday Sync zostaną usunięte ze wszystkich kalendarzy. Jeśli automatyczna synchronizacja jest włączona, przy następnym uruchomieniu utworzy je ponownie.</string>
+    <string name="interval_daily">Codziennie</string>
+    <string name="interval_weekly">Co tydzień</string>
+    <plurals name="range_months">
+        <item quantity="one">%d miesiąc</item>
+        <item quantity="few">%d miesiące</item>
+        <item quantity="many">%d miesięcy</item>
+        <item quantity="other">%d miesiąca</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minuta</item>
+        <item quantity="few">%d minuty</item>
+        <item quantity="many">%d minut</item>
+        <item quantity="other">%d minuty</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d godzina</item>
+        <item quantity="few">%d godziny</item>
+        <item quantity="many">%d godzin</item>
+        <item quantity="other">%d godziny</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d godz. %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">W chwili rozpoczęcia</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minutę wcześniej</item>
+        <item quantity="few">%d minuty wcześniej</item>
+        <item quantity="many">%d minut wcześniej</item>
+        <item quantity="other">%d minuty wcześniej</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d godzinę wcześniej</item>
+        <item quantity="few">%d godziny wcześniej</item>
+        <item quantity="many">%d godzin wcześniej</item>
+        <item quantity="other">%d godziny wcześniej</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d dzień wcześniej</item>
+        <item quantity="few">%d dni wcześniej</item>
+        <item quantity="many">%d dni wcześniej</item>
+        <item quantity="other">%d dnia wcześniej</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d tydzień wcześniej</item>
+        <item quantity="few">%d tygodnie wcześniej</item>
+        <item quantity="many">%d tygodni wcześniej</item>
+        <item quantity="other">%d tygodnia wcześniej</item>
+    </plurals>
+    <string name="reminder_on_day_at">W dniu urodzin o %1$s</string>
+    <string name="reminder_day_before_at">Dzień wcześniej o %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d dzień wcześniej o %2$s</item>
+        <item quantity="few">%1$d dni wcześniej o %2$s</item>
+        <item quantity="many">%1$d dni wcześniej o %2$s</item>
+        <item quantity="other">%1$d dnia wcześniej o %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d tydzień wcześniej o %2$s</item>
+        <item quantity="few">%1$d tygodnie wcześniej o %2$s</item>
+        <item quantity="many">%1$d tygodni wcześniej o %2$s</item>
+        <item quantity="other">%1$d tygodnia wcześniej o %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Codzienne powiadomienie</string>
+    <string name="notify_daily_subtitle">Niezależnie od kalendarza, prosto z kontaktów</string>
+    <string name="notify_today_switch">Powiadamiaj o dzisiejszych urodzinach</string>
+    <string name="notify_today_switch_sub">Tylko w dni, w które ktoś ma urodziny</string>
+    <string name="notify_time">Godzina</string>
+    <string name="notify_test">Powiadomienie testowe</string>
+    <string name="notify_hint_title">Uwaga</string>
+    <string name="notify_hint_text">Aby powiadomienie przychodziło punktualnie, brakuje jeszcze: %1$s</string>
+    <string name="notify_go_system">Przejdź do ustawień systemu</string>
+
+    <string name="system_all_ready">Wszystko gotowe</string>
+    <plurals name="system_open_items">
+        <item quantity="one">Pozostał %d punkt</item>
+        <item quantity="few">Pozostały %d punkty</item>
+        <item quantity="many">Pozostało %d punktów</item>
+        <item quantity="other">Pozostało %d punktu</item>
+    </plurals>
+    <string name="system_subtitle">Dla niezawodnej synchronizacji w tle i punktualnych powiadomień</string>
+    <string name="system_setup_info">Konfiguracja przeprowadzi cię krok po kroku przez wszystkie brakujące punkty i wyjaśni każdy z nich.</string>
+    <string name="system_run_setup">Uruchom konfigurację</string>
+    <string name="check_state_done">Gotowe. %1$s</string>
+    <string name="check_state_required">Wymagane. %1$s</string>
+    <string name="check_state_recommended">Zalecane. %1$s</string>
+    <string name="about_title">O aplikacji</string>
+    <string name="about_text">Wszystkie dane pozostają na twoim urządzeniu. Aplikacja nie ma dostępu do internetu i niczego nie zbiera.</string>
+    <string name="about_privacy">Prywatność</string>
+    <string name="about_source">Kod źródłowy</string>
+
+    <string name="check_contacts_title">Odczyt kontaktów</string>
+    <string name="check_contacts_desc">Potrzebne do odczytu urodzin z list kontaktów.</string>
+    <string name="check_calendar_title">Odczyt i zapis kalendarza</string>
+    <string name="check_calendar_desc">Potrzebne do tworzenia wydarzeń urodzinowych w kalendarzu docelowym i ich aktualizowania.</string>
+    <string name="check_notifications_title">Powiadomienia</string>
+    <string name="check_notifications_desc">Potrzebne do codziennego powiadomienia o urodzinach i przypomnień z kalendarza.</string>
+    <string name="check_exact_alarm_title">Dokładne alarmy i przypomnienia</string>
+    <string name="check_exact_alarm_desc">Dzięki temu codzienne powiadomienie przyjdzie dokładnie o ustawionej godzinie. Bez tego uprawnienia może się nieco spóźnić.</string>
+    <string name="check_battery_title">Wyłącz optymalizację baterii</string>
+    <string name="check_battery_desc">Zapobiega odkładaniu lub blokowaniu synchronizacji w tle przez Androida.</string>
+    <string name="check_background_title">Aktywność w tle dozwolona</string>
+    <string name="check_background_desc">Aplikacja nie może mieć ograniczeń w tle (Informacje o aplikacji → Bateria → „Bez ograniczeń”).</string>
+    <string name="check_hibernation_title">Wstrzymywanie nieużywanej aplikacji wyłączone</string>
+    <string name="check_hibernation_desc">W przeciwnym razie Android po kilku miesiącach bez otwierania aplikacji odbierze jej uprawnienia i synchronizacja się zatrzyma.</string>
+    <string name="check_power_save_title">Oszczędzanie baterii</string>
+    <string name="check_power_save_on">Oszczędzanie baterii jest włączone i może opóźniać synchronizację.</string>
+    <string name="check_power_save_off">Oszczędzanie baterii jest wyłączone.</string>
+    <string name="check_vendor_title">Zarządzanie baterią producenta (%1$s)</string>
+    <string name="check_vendor_desc">Ten producent często dodatkowo zamyka aplikacje działające w tle. Zezwól dla Birthday Sync na autostart lub „Działanie w tle”. Tego stanu nie da się sprawdzić automatycznie.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Krok %1$d z %2$d</item>
+        <item quantity="few">Krok %1$d z %2$d</item>
+        <item quantity="many">Krok %1$d z %2$d</item>
+        <item quantity="other">Krok %1$d z %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Witaj w Birthday Sync</string>
+    <string name="onboarding_welcome_text">Aplikacja automatycznie przenosi urodziny z twoich kontaktów do wybranego kalendarza i przypomina ci o nich w dniu urodzin.\n\nAby działało to niezawodnie w tle, potrzebuje kilku uprawnień. Przejdziemy przez nie krok po kroku i wyjaśnimy, do czego służy każde z nich.\n\nWszystko zostaje na twoim urządzeniu – aplikacja nie ma dostępu do internetu.</string>
+    <string name="onboarding_contacts_title">Dostęp do kontaktów</string>
+    <string name="onboarding_contacts_text">Urodziny są zapisane w twoich kontaktach. Aby aplikacja mogła je znaleźć, potrzebuje dostępu do odczytu.\n\nOdczytywane są tylko imiona i nazwiska, daty urodzin oraz przypisanie do kont i grup – także w tle podczas regularnej synchronizacji. Dane pozostają na urządzeniu: aplikacja nie zmienia żadnych kontaktów, nie ma dostępu do internetu i niczego nie udostępnia.</string>
+    <string name="onboarding_calendar_title">Dostęp do kalendarza</string>
+    <string name="onboarding_calendar_text">Dla każdych urodzin aplikacja tworzy wydarzenie w wybranym kalendarzu i dba o jego aktualność, na przykład gdy zmieni się data urodzenia.\n\nW tym celu musi odczytywać i zapisywać kalendarze. Zmieniane są wyłącznie jej własne wydarzenia urodzinowe.</string>
+    <string name="onboarding_notifications_title">Powiadomienia</string>
+    <string name="onboarding_notifications_text">Jeśli chcesz, aplikacja o stałej godzinie da ci znać, że ktoś ma dziś urodziny.\n\nBez tego uprawnienia powiadomienie się nie pojawi.</string>
+    <string name="onboarding_exact_alarm_title">Punktualne przypomnienie</string>
+    <string name="onboarding_exact_alarm_text">Aby codzienne powiadomienie przychodziło dokładnie o ustawionej godzinie, a nie kiedyś później, aplikacja potrzebuje uprawnienia „Alarmy i przypomnienia”.\n\nNa następnym ekranie włącz przełącznik przy Birthday Sync, a potem wróć tutaj przyciskiem „Wstecz”.</string>
+    <string name="onboarding_battery_title">Praca w tle</string>
+    <string name="onboarding_battery_text">Android chętnie usypia aplikacje działające w tle, aby oszczędzać baterię. Wtedy regularna synchronizacja może się nie odbyć.\n\nSynchronizacja trwa tylko kilka sekund dziennie, a dodatkowe zużycie baterii jest ledwo mierzalne. Na następnej liście wybierz „Wszystkie aplikacje”, potem Birthday Sync i ustaw „Nie optymalizuj”.</string>
+    <string name="onboarding_background_title">Usuń ograniczenie w tle</string>
+    <string name="onboarding_background_text">Ta aplikacja ma ograniczoną aktywność w tle, dlatego synchronizacja i powiadomienie nie działają.\n\nW informacjach o aplikacji otwórz „Bateria” i wybierz „Bez ograniczeń”. Potem wróć tutaj przyciskiem „Wstecz”.</string>
+    <string name="onboarding_hibernation_title">Bez automatycznego wstrzymywania</string>
+    <string name="onboarding_hibernation_text">Jeśli nie otworzysz aplikacji przez kilka miesięcy, Android ją wstrzyma i odbierze jej uprawnienia. Synchronizacja przestałaby wtedy działać bez twojej wiedzy – choć aplikacja ma przecież pracować właśnie w tle.\n\nNa następnym ekranie wyłącz „Wstrzymaj aktywność w aplikacji, jeśli nie jest używana”, a potem wróć tutaj przyciskiem „Wstecz”.</string>
+    <string name="onboarding_almost_title">Prawie gotowe</string>
+    <string name="onboarding_all_granted">Wszystkie uprawnienia zostały przyznane.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Brakuje jeszcze %1$d punktu. Możesz go uzupełnić w dowolnej chwili na karcie „%2$s”.</item>
+        <item quantity="few">Brakuje jeszcze %1$d punktów. Możesz je uzupełnić w dowolnej chwili na karcie „%2$s”.</item>
+        <item quantity="many">Brakuje jeszcze %1$d punktów. Możesz je uzupełnić w dowolnej chwili na karcie „%2$s”.</item>
+        <item quantity="other">Brakuje jeszcze %1$d punktu. Możesz je uzupełnić w dowolnej chwili na karcie „%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Co dalej:\n1. Wybierz listy kontaktów\n2. Wybierz kalendarz docelowy\n3. Gotowe – resztą aplikacja zajmie się automatycznie.</string>
+    <string name="onboarding_granted">✓ Przyznano</string>
+    <string name="onboarding_not_granted">Jeszcze nie przyznano. Możesz spróbować ponownie lub pominąć ten krok.</string>
+    <string name="onboarding_start">Zaczynamy</string>
+    <string name="onboarding_next">Dalej</string>
+    <string name="onboarding_skip">Pomiń</string>
+    <string name="onboarding_retry">Spróbuj ponownie</string>
+    <string name="onboarding_finish">Do aplikacji</string>
+
+    <string name="msg_calendar_selected">Kalendarz „%1$s” został wybrany jako docelowy</string>
+    <string name="msg_calendar_create_failed">Nie udało się utworzyć kalendarza: %1$s</string>
+    <string name="msg_remove_failed">Błąd podczas usuwania: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">Usunięto %d wydarzenie</item>
+        <item quantity="few">Usunięto %d wydarzenia</item>
+        <item quantity="many">Usunięto %d wydarzeń</item>
+        <item quantity="other">Usunięto %d wydarzenia</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Powiadomienia są niedozwolone – zobacz kartę „%1$s”</string>
+
+    <string name="sync_no_calendar">Nie wybrano kalendarza docelowego</string>
+    <string name="sync_no_contacts_permission">Brak uprawnienia do kontaktów</string>
+    <string name="sync_no_calendar_permission">Brak uprawnienia do kalendarza</string>
+    <string name="sync_invalid_calendar">Nie wybrano prawidłowego kalendarza docelowego</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d data urodzin</item>
+        <item quantity="few">%d daty urodzin</item>
+        <item quantity="many">%d dat urodzin</item>
+        <item quantity="other">%d daty urodzin</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d wydarzenie w zakresie</item>
+        <item quantity="few">%d wydarzenia w zakresie</item>
+        <item quantity="many">%d wydarzeń w zakresie</item>
+        <item quantity="other">%d wydarzenia w zakresie</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – wszystko aktualne</string>
+    <string name="sync_summary_changes">%1$s, %2$s – nowe: %3$d, zaktualizowane: %4$d, usunięte: %5$d</string>
+    <string name="sync_error">Błąd: %1$s</string>
+
+    <string name="event_description">Urodziny: %1$s</string>
+    <string name="event_description_born">Urodziny: %1$s (ur. %2$d)</string>
+    <string name="event_auto_created">Utworzone automatycznie przez Birthday Sync. Zmiany w tym wydarzeniu zostaną nadpisane przy następnej synchronizacji.</string>
+
+    <string name="channel_today_name">Dzisiejsze urodziny</string>
+    <string name="channel_today_desc">Codzienne powiadomienie o dzisiejszych urodzinach</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s kończy dziś %2$d rok</item>
+        <item quantity="few">%1$s kończy dziś %2$d lata</item>
+        <item quantity="many">%1$s kończy dziś %2$d lat</item>
+        <item quantity="other">%1$s kończy dziś %2$d roku</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s ma dziś urodziny</string>
+    <string name="notification_single_title">🎂 %1$s ma urodziny</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d osoba ma dziś urodziny</item>
+        <item quantity="few">🎂 %d osoby mają dziś urodziny</item>
+        <item quantity="many">🎂 %d osób ma dziś urodziny</item>
+        <item quantity="other">🎂 %d osoby ma dziś urodziny</item>
+    </plurals>
+    <string name="notification_nobody_today">Nikt nie ma dziś urodzin</string>
+    <string name="notification_test_text">Powiadomienie testowe z Birthday Sync</string>
+</resources>

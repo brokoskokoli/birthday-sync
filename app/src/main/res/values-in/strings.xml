@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Ringkasan</string>
+    <string name="tab_contacts">Kontak</string>
+    <string name="tab_calendar">Kalender</string>
+    <string name="tab_notify">Notifikasi</string>
+    <string name="tab_system">Sistem</string>
+
+    <string name="action_allow">Izinkan</string>
+    <string name="action_allow_access">Izinkan akses</string>
+    <string name="action_open">Buka</string>
+    <string name="action_open_setting">Buka setelan</string>
+    <string name="action_open_app_info">Buka Info aplikasi</string>
+    <string name="action_settings">Setelan</string>
+    <string name="action_sync_now">Sinkronkan sekarang</string>
+    <string name="action_remove">Hapus</string>
+    <string name="section_sync">Sinkronisasi</string>
+
+    <string name="overview_setup_incomplete_title">Penyiapan belum selesai</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="other">Masih kurang %d izin atau setelan agar sinkronisasi berjalan andal.</item>
+    </plurals>
+    <string name="overview_setup_now">Siapkan sekarang</string>
+    <string name="overview_first_steps">Memulai</string>
+    <string name="overview_step_contacts">1. Pilih daftar kontak yang ulang tahunnya ingin disertakan.</string>
+    <string name="overview_choose_contacts">Pilih daftar kontak</string>
+    <string name="overview_step_calendar">2. Pilih kalender tempat acara akan dibuat.</string>
+    <string name="overview_choose_calendar">Pilih kalender tujuan</string>
+    <string name="overview_target_calendar">Kalender tujuan: %1$s</string>
+    <string name="overview_target_calendar_none">Kalender tujuan: belum dipilih</string>
+    <string name="overview_auto_daily">Otomatis setiap hari</string>
+    <string name="overview_auto_weekly">Otomatis setiap minggu</string>
+    <string name="overview_auto_daily_next">Otomatis setiap hari, berikutnya paling cepat %1$s</string>
+    <string name="overview_auto_weekly_next">Otomatis setiap minggu, berikutnya paling cepat %1$s</string>
+    <string name="overview_auto_off">Sinkronisasi otomatis nonaktif</string>
+    <string name="overview_last_sync">Sinkronisasi terakhir: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Belum pernah disinkronkan</string>
+    <string name="overview_syncing">Menyinkronkan …</string>
+    <string name="overview_upcoming">Ulang tahun mendatang</string>
+    <string name="overview_no_birthdays">Tidak ada ulang tahun di daftar kontak yang dipilih.</string>
+    <string name="upcoming_today">Hari ini</string>
+    <string name="upcoming_tomorrow">Besok</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="other">dalam %d hari</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="other">%1$s · genap %2$d tahun</item>
+    </plurals>
+
+    <string name="contacts_intro">Pilih seluruh akun atau grup/label tertentu. Ulang tahun semua kontak di dalamnya akan disertakan.</string>
+    <string name="contacts_no_permission_title">Tidak ada akses ke kontak</string>
+    <string name="contacts_no_permission_text">Tanpa izin ini, daftar kontak tidak dapat ditampilkan.</string>
+    <string name="contacts_none_found">Tidak ada kontak di perangkat ini.</string>
+    <string name="contacts_all">Semua kontak</string>
+    <plurals name="contacts_count">
+        <item quantity="other">%d kontak</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="other">%d dengan ulang tahun</item>
+    </plurals>
+    <string name="contacts_device_label">Perangkat</string>
+    <string name="contacts_local_account">Lokal di perangkat ini</string>
+    <string name="contacts_group_fallback">Grup %1$d</string>
+    <string name="contacts_unnamed">Tanpa nama</string>
+
+    <string name="calendar_target_title">Kalender tujuan</string>
+    <string name="calendar_target_subtitle">Di sinilah acara ulang tahun dibuat</string>
+    <string name="calendar_no_permission">Tidak ada akses ke kalender.</string>
+    <string name="calendar_local_name">Ulang Tahun</string>
+    <string name="calendar_create_local">Buat kalender sendiri “%1$s”</string>
+    <string name="calendar_local_info">Kalender sendiri hanya disimpan di perangkat ini dan dapat ditampilkan atau disembunyikan secara terpisah di aplikasi kalender.</string>
+    <string name="calendar_fallback_name">Kalender %1$d</string>
+    <string name="calendar_events_title">Acara</string>
+    <string name="calendar_all_day">Sepanjang hari</string>
+    <string name="calendar_start">Mulai</string>
+    <string name="calendar_duration">Durasi</string>
+    <string name="calendar_reminder">Pengingat kalender</string>
+    <string name="calendar_remind">Ingatkan</string>
+    <string name="calendar_title">Judul</string>
+    <string name="calendar_title_help">Placeholder: {name}, {age}. Contoh: %1$s</string>
+    <string name="calendar_example_name">Budi Santoso</string>
+    <string name="calendar_auto_sync">Sinkronkan otomatis</string>
+    <string name="calendar_frequency">Frekuensi</string>
+    <string name="calendar_range">Rentang waktu ke depan</string>
+    <string name="calendar_sync_info">Perubahan nama atau tanggal lahir diterapkan saat sinkronisasi berikutnya; kontak yang dihapus akan hilang dari kalender. Perubahan pada setelan ini diterapkan setelah beberapa detik.</string>
+    <string name="calendar_running">Berjalan …</string>
+    <string name="calendar_remove_events">Hapus acara</string>
+    <string name="calendar_remove_confirm_title">Hapus semua acara?</string>
+    <string name="calendar_remove_confirm_text">Semua acara yang dibuat oleh Birthday Sync akan dihapus dari semua kalender. Jika sinkronisasi otomatis aktif, acara tersebut akan dibuat lagi saat sinkronisasi berikutnya.</string>
+    <string name="interval_daily">Harian</string>
+    <string name="interval_weekly">Mingguan</string>
+    <plurals name="range_months">
+        <item quantity="other">%d bulan</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="other">%d menit</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="other">%d jam</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d j %2$d mnt</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Saat dimulai</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="other">%d menit sebelumnya</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="other">%d jam sebelumnya</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="other">%d hari sebelumnya</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="other">%d minggu sebelumnya</item>
+    </plurals>
+    <string name="reminder_on_day_at">Di hari itu pukul %1$s</string>
+    <string name="reminder_day_before_at">Sehari sebelumnya pukul %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="other">%1$d hari sebelumnya pukul %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="other">%1$d minggu sebelumnya pukul %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Notifikasi harian</string>
+    <string name="notify_daily_subtitle">Tidak bergantung pada kalender, langsung dari kontak Anda</string>
+    <string name="notify_today_switch">Beri tahu ulang tahun hari ini</string>
+    <string name="notify_today_switch_sub">Hanya pada hari ketika ada yang berulang tahun</string>
+    <string name="notify_time">Waktu</string>
+    <string name="notify_test">Uji notifikasi</string>
+    <string name="notify_hint_title">Catatan</string>
+    <string name="notify_hint_text">Agar notifikasi datang tepat waktu, hal berikut masih kurang: %1$s</string>
+    <string name="notify_go_system">Buka setelan sistem</string>
+
+    <string name="system_all_ready">Semua siap</string>
+    <plurals name="system_open_items">
+        <item quantity="other">%d item belum selesai</item>
+    </plurals>
+    <string name="system_subtitle">Untuk sinkronisasi latar belakang yang andal dan notifikasi tepat waktu</string>
+    <string name="system_setup_info">Penyiapan memandu Anda langkah demi langkah melalui semua item yang masih kurang, masing-masing dengan penjelasan.</string>
+    <string name="system_run_setup">Jalankan penyiapan</string>
+    <string name="check_state_done">Selesai. %1$s</string>
+    <string name="check_state_required">Wajib. %1$s</string>
+    <string name="check_state_recommended">Disarankan. %1$s</string>
+    <string name="about_title">Tentang aplikasi</string>
+    <string name="about_text">Semua data tetap di perangkat Anda. Aplikasi ini tidak memiliki akses internet dan tidak mengumpulkan apa pun.</string>
+    <string name="about_privacy">Privasi</string>
+    <string name="about_source">Kode sumber</string>
+
+    <string name="check_contacts_title">Baca kontak</string>
+    <string name="check_contacts_desc">Diperlukan untuk membaca ulang tahun dari daftar kontak.</string>
+    <string name="check_calendar_title">Baca dan tulis kalender</string>
+    <string name="check_calendar_desc">Diperlukan untuk membuat acara ulang tahun di kalender tujuan dan terus memperbaruinya.</string>
+    <string name="check_notifications_title">Notifikasi</string>
+    <string name="check_notifications_desc">Diperlukan untuk notifikasi ulang tahun harian dan pengingat kalender.</string>
+    <string name="check_exact_alarm_title">Alarm dan pengingat yang tepat waktu</string>
+    <string name="check_exact_alarm_desc">Agar notifikasi harian datang tepat pada waktu yang ditetapkan. Tanpa izin ini, notifikasi mungkin sedikit terlambat.</string>
+    <string name="check_battery_title">Nonaktifkan pengoptimalan baterai</string>
+    <string name="check_battery_desc">Mencegah Android menunda atau menahan sinkronisasi latar belakang.</string>
+    <string name="check_background_title">Aktivitas latar belakang diizinkan</string>
+    <string name="check_background_desc">Aplikasi tidak boleh dibatasi di latar belakang (Info aplikasi → Baterai → “Tidak dibatasi”).</string>
+    <string name="check_hibernation_title">Jeda aplikasi saat tidak digunakan nonaktif</string>
+    <string name="check_hibernation_desc">Jika tidak, Android akan mencabut izin setelah beberapa bulan aplikasi tidak dibuka, dan sinkronisasi berhenti.</string>
+    <string name="check_power_save_title">Penghemat Baterai</string>
+    <string name="check_power_save_on">Penghemat Baterai aktif dan dapat menunda sinkronisasi.</string>
+    <string name="check_power_save_off">Penghemat Baterai nonaktif.</string>
+    <string name="check_vendor_title">Pengelolaan baterai produsen (%1$s)</string>
+    <string name="check_vendor_desc">Produsen ini sering kali juga menghentikan aplikasi di latar belakang. Izinkan mulai otomatis atau “Tetap berjalan di latar belakang” untuk Birthday Sync. Hal ini tidak dapat diperiksa secara otomatis.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="other">Langkah %1$d dari %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Selamat datang di Birthday Sync</string>
+    <string name="onboarding_welcome_text">Aplikasi ini otomatis menyalin ulang tahun dari kontak Anda ke kalender pilihan Anda dan mengingatkan Anda tepat di hari itu.\n\nAgar dapat berjalan andal di latar belakang, aplikasi memerlukan beberapa izin. Kita akan membahasnya langkah demi langkah dan menjelaskan kegunaan masing-masing.\n\nSemuanya tetap di perangkat Anda – aplikasi ini tidak memiliki akses internet.</string>
+    <string name="onboarding_contacts_title">Akses ke kontak Anda</string>
+    <string name="onboarding_contacts_text">Ulang tahun tersimpan di kontak Anda. Agar aplikasi dapat menemukannya, diperlukan akses baca.\n\nYang dibaca hanya nama, ulang tahun, serta keterkaitan dengan akun dan grup, juga di latar belakang saat sinkronisasi rutin. Data tetap di perangkat Anda: aplikasi tidak mengubah kontak, tidak memiliki akses internet, dan tidak membagikan apa pun.</string>
+    <string name="onboarding_calendar_title">Akses ke kalender Anda</string>
+    <string name="onboarding_calendar_text">Untuk setiap ulang tahun, aplikasi membuat acara di kalender pilihan Anda dan terus memperbaruinya, misalnya saat tanggal lahir berubah.\n\nUntuk itu, aplikasi perlu membaca dan menulis kalender. Yang diubah hanya acara ulang tahun yang dibuatnya sendiri.</string>
+    <string name="onboarding_notifications_title">Notifikasi</string>
+    <string name="onboarding_notifications_text">Jika mau, aplikasi akan memberi tahu Anda pada waktu tertentu saat ada yang berulang tahun hari ini.\n\nTanpa izin ini, notifikasi tidak akan muncul.</string>
+    <string name="onboarding_exact_alarm_title">Pengingat tepat waktu</string>
+    <string name="onboarding_exact_alarm_text">Agar notifikasi harian datang tepat pada waktu yang ditetapkan dan tidak terlambat, aplikasi memerlukan izin “Alarm &amp; pengingat”.\n\nDi layar berikutnya, aktifkan tombol untuk Birthday Sync, lalu kembali ke sini dengan “Kembali”.</string>
+    <string name="onboarding_battery_title">Bekerja di latar belakang</string>
+    <string name="onboarding_battery_text">Android suka menidurkan aplikasi di latar belakang untuk menghemat baterai. Akibatnya, sinkronisasi rutin bisa gagal.\n\nSinkronisasi hanya butuh beberapa detik sehari; tambahan pemakaian baterai nyaris tak terukur. Di daftar berikut, pilih “Semua aplikasi”, lalu Birthday Sync, dan pilih “Jangan optimalkan”.</string>
+    <string name="onboarding_background_title">Hapus batasan latar belakang</string>
+    <string name="onboarding_background_text">Aktivitas latar belakang aplikasi ini dibatasi, sehingga sinkronisasi dan notifikasi tidak berjalan.\n\nDi Info aplikasi, buka “Baterai” dan pilih “Tidak dibatasi”. Lalu kembali ke sini dengan “Kembali”.</string>
+    <string name="onboarding_hibernation_title">Jangan jeda otomatis</string>
+    <string name="onboarding_hibernation_text">Jika Anda tidak membuka aplikasi selama beberapa bulan, Android akan menjedanya dan mencabut izinnya. Sinkronisasi pun berhenti tanpa Anda sadari – padahal aplikasi ini justru dibuat untuk bekerja di latar belakang.\n\nDi layar berikutnya, nonaktifkan “Jeda aktivitas aplikasi jika tidak digunakan”, lalu kembali ke sini dengan “Kembali”.</string>
+    <string name="onboarding_almost_title">Hampir selesai</string>
+    <string name="onboarding_all_granted">Semua izin telah diberikan.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="other">%1$d item masih kurang. Anda dapat melengkapinya kapan saja di tab “%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Langkah selanjutnya:\n1. Pilih daftar kontak\n2. Pilih kalender tujuan\n3. Selesai – sisanya diurus otomatis oleh aplikasi.</string>
+    <string name="onboarding_granted">✓ Diberikan</string>
+    <string name="onboarding_not_granted">Belum diberikan. Anda dapat mencoba lagi atau melewati langkah ini.</string>
+    <string name="onboarding_start">Ayo mulai</string>
+    <string name="onboarding_next">Berikutnya</string>
+    <string name="onboarding_skip">Lewati</string>
+    <string name="onboarding_retry">Coba lagi</string>
+    <string name="onboarding_finish">Ke aplikasi</string>
+
+    <string name="msg_calendar_selected">Kalender “%1$s” dipilih sebagai tujuan</string>
+    <string name="msg_calendar_create_failed">Kalender tidak dapat dibuat: %1$s</string>
+    <string name="msg_remove_failed">Gagal menghapus: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="other">%d acara dihapus</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Notifikasi tidak diizinkan – lihat tab “%1$s”</string>
+
+    <string name="sync_no_calendar">Kalender tujuan belum dipilih</string>
+    <string name="sync_no_contacts_permission">Tidak ada izin untuk kontak</string>
+    <string name="sync_no_calendar_permission">Tidak ada izin untuk kalender</string>
+    <string name="sync_invalid_calendar">Tidak ada kalender tujuan yang valid</string>
+    <plurals name="sync_birthdays">
+        <item quantity="other">%d ulang tahun</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="other">%d acara dalam rentang</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – semua sudah terbaru</string>
+    <string name="sync_summary_changes">%1$s, %2$s – baru: %3$d, diperbarui: %4$d, dihapus: %5$d</string>
+    <string name="sync_error">Kesalahan: %1$s</string>
+
+    <string name="event_description">Ulang tahun %1$s</string>
+    <string name="event_description_born">Ulang tahun %1$s (lahir %2$d)</string>
+    <string name="event_auto_created">Dibuat otomatis oleh Birthday Sync. Perubahan pada acara ini akan ditimpa saat sinkronisasi berikutnya.</string>
+
+    <string name="channel_today_name">Ulang tahun hari ini</string>
+    <string name="channel_today_desc">Notifikasi harian tentang ulang tahun hari ini</string>
+    <plurals name="notification_turns_today">
+        <item quantity="other">%1$s genap berusia %2$d tahun hari ini</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s berulang tahun hari ini</string>
+    <string name="notification_single_title">🎂 %1$s berulang tahun</string>
+    <plurals name="notification_multi_title">
+        <item quantity="other">🎂 %d ulang tahun hari ini</item>
+    </plurals>
+    <string name="notification_nobody_today">Tidak ada yang berulang tahun hari ini</string>
+    <string name="notification_test_text">Notifikasi uji dari Birthday Sync</string>
+</resources>

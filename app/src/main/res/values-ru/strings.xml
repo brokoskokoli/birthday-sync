@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Обзор</string>
+    <string name="tab_contacts">Контакты</string>
+    <string name="tab_calendar">Календарь</string>
+    <string name="tab_notify">Оповещения</string>
+    <string name="tab_system">Система</string>
+
+    <string name="action_allow">Разрешить</string>
+    <string name="action_allow_access">Разрешить доступ</string>
+    <string name="action_open">Открыть</string>
+    <string name="action_open_setting">Открыть настройку</string>
+    <string name="action_open_app_info">Открыть «О приложении»</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_sync_now">Синхронизировать</string>
+    <string name="action_remove">Удалить</string>
+    <string name="section_sync">Синхронизация</string>
+
+    <string name="overview_setup_incomplete_title">Настройка не завершена</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Для надёжной синхронизации не хватает %d разрешения или настройки.</item>
+        <item quantity="few">Для надёжной синхронизации не хватает %d разрешений или настроек.</item>
+        <item quantity="many">Для надёжной синхронизации не хватает %d разрешений или настроек.</item>
+        <item quantity="other">Для надёжной синхронизации не хватает %d разрешения или настройки.</item>
+    </plurals>
+    <string name="overview_setup_now">Настроить</string>
+    <string name="overview_first_steps">Первые шаги</string>
+    <string name="overview_step_contacts">1. Выбери списки контактов, дни рождения из которых нужно перенести.</string>
+    <string name="overview_choose_contacts">Выбрать списки контактов</string>
+    <string name="overview_step_calendar">2. Выбери календарь, в котором будут создаваться события.</string>
+    <string name="overview_choose_calendar">Выбрать целевой календарь</string>
+    <string name="overview_target_calendar">Целевой календарь: %1$s</string>
+    <string name="overview_target_calendar_none">Целевой календарь: не выбран</string>
+    <string name="overview_auto_daily">Автоматически каждый день</string>
+    <string name="overview_auto_weekly">Автоматически каждую неделю</string>
+    <string name="overview_auto_daily_next">Автоматически каждый день, следующий запуск не раньше %1$s</string>
+    <string name="overview_auto_weekly_next">Автоматически каждую неделю, следующий запуск не раньше %1$s</string>
+    <string name="overview_auto_off">Автосинхронизация выключена</string>
+    <string name="overview_last_sync">Последняя синхронизация: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Синхронизации ещё не было</string>
+    <string name="overview_syncing">Синхронизация …</string>
+    <string name="overview_upcoming">Ближайшие дни рождения</string>
+    <string name="overview_no_birthdays">В выбранных списках контактов не найдено дней рождения.</string>
+    <string name="upcoming_today">Сегодня</string>
+    <string name="upcoming_tomorrow">Завтра</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">через %d день</item>
+        <item quantity="few">через %d дня</item>
+        <item quantity="many">через %d дней</item>
+        <item quantity="other">через %d дня</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · исполнится %2$d год</item>
+        <item quantity="few">%1$s · исполнится %2$d года</item>
+        <item quantity="many">%1$s · исполнится %2$d лет</item>
+        <item quantity="other">%1$s · исполнится %2$d года</item>
+    </plurals>
+
+    <string name="contacts_intro">Выбери целые аккаунты или отдельные группы/ярлыки. Дни рождения всех контактов в них будут перенесены.</string>
+    <string name="contacts_no_permission_title">Нет доступа к контактам</string>
+    <string name="contacts_no_permission_text">Без этого разрешения списки контактов показать нельзя.</string>
+    <string name="contacts_none_found">На устройстве не найдено контактов.</string>
+    <string name="contacts_all">Все контакты</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d контакт</item>
+        <item quantity="few">%d контакта</item>
+        <item quantity="many">%d контактов</item>
+        <item quantity="other">%d контакта</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d с днём рождения</item>
+        <item quantity="few">%d с днём рождения</item>
+        <item quantity="many">%d с днём рождения</item>
+        <item quantity="other">%d с днём рождения</item>
+    </plurals>
+    <string name="contacts_device_label">Устройство</string>
+    <string name="contacts_local_account">Только на этом устройстве</string>
+    <string name="contacts_group_fallback">Группа %1$d</string>
+    <string name="contacts_unnamed">Без названия</string>
+
+    <string name="calendar_target_title">Целевой календарь</string>
+    <string name="calendar_target_subtitle">Здесь создаются события с днями рождения</string>
+    <string name="calendar_no_permission">Нет доступа к календарю.</string>
+    <string name="calendar_local_name">Дни рождения</string>
+    <string name="calendar_create_local">Создать свой календарь «%1$s»</string>
+    <string name="calendar_local_info">Свой календарь хранится только на этом устройстве, и в приложении календаря его можно отдельно показывать или скрывать.</string>
+    <string name="calendar_fallback_name">Календарь %1$d</string>
+    <string name="calendar_events_title">События</string>
+    <string name="calendar_all_day">Весь день</string>
+    <string name="calendar_start">Начало</string>
+    <string name="calendar_duration">Длительность</string>
+    <string name="calendar_reminder">Напоминание в календаре</string>
+    <string name="calendar_remind">Напоминать</string>
+    <string name="calendar_title">Название</string>
+    <string name="calendar_title_help">Переменные: {name}, {age}. Пример: %1$s</string>
+    <string name="calendar_example_name">Анна Иванова</string>
+    <string name="calendar_auto_sync">Синхронизировать автоматически</string>
+    <string name="calendar_frequency">Частота</string>
+    <string name="calendar_range">Период вперёд</string>
+    <string name="calendar_sync_info">Изменённые имена и даты рождения применяются при следующей синхронизации; удалённые контакты исчезают из календаря. Изменения этих настроек вступают в силу через несколько секунд.</string>
+    <string name="calendar_running">Выполняется …</string>
+    <string name="calendar_remove_events">Удалить события</string>
+    <string name="calendar_remove_confirm_title">Удалить все события?</string>
+    <string name="calendar_remove_confirm_text">Все события, созданные Birthday Sync, будут удалены из всех календарей. Если автосинхронизация включена, при следующем запуске она создаст их заново.</string>
+    <string name="interval_daily">Ежедневно</string>
+    <string name="interval_weekly">Еженедельно</string>
+    <plurals name="range_months">
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+        <item quantity="other">%d месяца</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+        <item quantity="other">%d минуты</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+        <item quantity="other">%d часа</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d ч %2$d мин</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">В момент начала</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">За %d минуту</item>
+        <item quantity="few">За %d минуты</item>
+        <item quantity="many">За %d минут</item>
+        <item quantity="other">За %d минуты</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">За %d час</item>
+        <item quantity="few">За %d часа</item>
+        <item quantity="many">За %d часов</item>
+        <item quantity="other">За %d часа</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">За %d день</item>
+        <item quantity="few">За %d дня</item>
+        <item quantity="many">За %d дней</item>
+        <item quantity="other">За %d дня</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">За %d неделю</item>
+        <item quantity="few">За %d недели</item>
+        <item quantity="many">За %d недель</item>
+        <item quantity="other">За %d недели</item>
+    </plurals>
+    <string name="reminder_on_day_at">В тот же день в %1$s</string>
+    <string name="reminder_day_before_at">Накануне в %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">За %1$d день в %2$s</item>
+        <item quantity="few">За %1$d дня в %2$s</item>
+        <item quantity="many">За %1$d дней в %2$s</item>
+        <item quantity="other">За %1$d дня в %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">За %1$d неделю в %2$s</item>
+        <item quantity="few">За %1$d недели в %2$s</item>
+        <item quantity="many">За %1$d недель в %2$s</item>
+        <item quantity="other">За %1$d недели в %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Ежедневное уведомление</string>
+    <string name="notify_daily_subtitle">Независимо от календаря, прямо из контактов</string>
+    <string name="notify_today_switch">Сообщать о сегодняшних днях рождения</string>
+    <string name="notify_today_switch_sub">Только в дни, когда у кого-то день рождения</string>
+    <string name="notify_time">Время</string>
+    <string name="notify_test">Тестовое уведомление</string>
+    <string name="notify_hint_title">Примечание</string>
+    <string name="notify_hint_text">Чтобы уведомление приходило вовремя, ещё не хватает: %1$s</string>
+    <string name="notify_go_system">К системным настройкам</string>
+
+    <string name="system_all_ready">Всё готово</string>
+    <plurals name="system_open_items">
+        <item quantity="one">Остался %d пункт</item>
+        <item quantity="few">Осталось %d пункта</item>
+        <item quantity="many">Осталось %d пунктов</item>
+        <item quantity="other">Осталось %d пункта</item>
+    </plurals>
+    <string name="system_subtitle">Для надёжной фоновой синхронизации и своевременных уведомлений</string>
+    <string name="system_setup_info">Мастер настройки шаг за шагом проведёт тебя через все недостающие пункты и объяснит каждый из них.</string>
+    <string name="system_run_setup">Запустить настройку</string>
+    <string name="check_state_done">Готово. %1$s</string>
+    <string name="check_state_required">Обязательно. %1$s</string>
+    <string name="check_state_recommended">Рекомендуется. %1$s</string>
+    <string name="about_title">О приложении</string>
+    <string name="about_text">Все данные остаются на твоём устройстве. У приложения нет доступа к интернету, и оно ничего не собирает.</string>
+    <string name="about_privacy">Конфиденциальность</string>
+    <string name="about_source">Исходный код</string>
+
+    <string name="check_contacts_title">Чтение контактов</string>
+    <string name="check_contacts_desc">Нужно, чтобы читать дни рождения из списков контактов.</string>
+    <string name="check_calendar_title">Чтение и запись календаря</string>
+    <string name="check_calendar_desc">Нужно, чтобы создавать события с днями рождения в целевом календаре и поддерживать их актуальность.</string>
+    <string name="check_notifications_title">Уведомления</string>
+    <string name="check_notifications_desc">Нужно для ежедневного уведомления о днях рождения и напоминаний календаря.</string>
+    <string name="check_exact_alarm_title">Точные будильники и напоминания</string>
+    <string name="check_exact_alarm_desc">Чтобы ежедневное уведомление приходило точно в заданное время. Без этого разрешения оно может немного опаздывать.</string>
+    <string name="check_battery_title">Отключить оптимизацию батареи</string>
+    <string name="check_battery_desc">Не даёт Android откладывать или блокировать фоновую синхронизацию.</string>
+    <string name="check_background_title">Работа в фоне разрешена</string>
+    <string name="check_background_desc">Работа приложения в фоне не должна быть ограничена (О приложении → Батарея → «Без ограничений»).</string>
+    <string name="check_hibernation_title">Приостановка при неиспользовании выключена</string>
+    <string name="check_hibernation_desc">Иначе через несколько месяцев без запуска Android отзовёт разрешения, и синхронизация остановится.</string>
+    <string name="check_power_save_title">Режим энергосбережения</string>
+    <string name="check_power_save_on">Режим энергосбережения включён и может задерживать синхронизацию.</string>
+    <string name="check_power_save_off">Режим энергосбережения выключен.</string>
+    <string name="check_vendor_title">Управление батареей от производителя (%1$s)</string>
+    <string name="check_vendor_desc">Этот производитель часто дополнительно закрывает фоновые приложения. Разреши для Birthday Sync автозапуск или «Работу в фоне». Проверить это автоматически нельзя.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Шаг %1$d из %2$d</item>
+        <item quantity="few">Шаг %1$d из %2$d</item>
+        <item quantity="many">Шаг %1$d из %2$d</item>
+        <item quantity="other">Шаг %1$d из %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Добро пожаловать в Birthday Sync</string>
+    <string name="onboarding_welcome_text">Приложение автоматически переносит дни рождения из твоих контактов в выбранный тобой календарь и напоминает о них в сам день.\n\nЧтобы это надёжно работало в фоне, ему нужно несколько разрешений. Мы пройдём их шаг за шагом и объясним, зачем нужно каждое.\n\nВсё остаётся на твоём устройстве – у приложения нет доступа к интернету.</string>
+    <string name="onboarding_contacts_title">Доступ к твоим контактам</string>
+    <string name="onboarding_contacts_text">Дни рождения хранятся в твоих контактах. Чтобы приложение их нашло, ему нужен доступ на чтение.\n\nЧитаются только имена, дни рождения и привязка к аккаунтам и группам – в том числе в фоне при регулярной синхронизации. Данные остаются на устройстве: приложение не изменяет контакты, не имеет доступа к интернету и ничего никому не передаёт.</string>
+    <string name="onboarding_calendar_title">Доступ к твоему календарю</string>
+    <string name="onboarding_calendar_text">Для каждого дня рождения приложение создаёт событие в выбранном тобой календаре и поддерживает его актуальным, например если изменилась дата рождения.\n\nДля этого ему нужно читать и изменять календари. Изменяются только его собственные события с днями рождения.</string>
+    <string name="onboarding_notifications_title">Уведомления</string>
+    <string name="onboarding_notifications_text">По желанию приложение в заданное время сообщит, если у кого-то сегодня день рождения.\n\nБез этого разрешения уведомлений не будет.</string>
+    <string name="onboarding_exact_alarm_title">Напоминание вовремя</string>
+    <string name="onboarding_exact_alarm_text">Чтобы ежедневное уведомление приходило точно в заданное время, а не когда-нибудь позже, приложению нужно разрешение «Будильники и напоминания».\n\nНа следующем экране включи переключатель для Birthday Sync, а затем вернись сюда кнопкой «Назад».</string>
+    <string name="onboarding_battery_title">Работа в фоне</string>
+    <string name="onboarding_battery_text">Android любит усыплять фоновые приложения, чтобы экономить заряд. Тогда регулярная синхронизация может не сработать.\n\nСинхронизация занимает всего несколько секунд в день, дополнительный расход батареи почти незаметен. В следующем списке выбери «Все приложения», затем Birthday Sync и установи «Не экономить».</string>
+    <string name="onboarding_background_title">Снять фоновое ограничение</string>
+    <string name="onboarding_background_text">Для этого приложения ограничена работа в фоне, поэтому синхронизация и уведомление не выполняются.\n\nВ разделе «О приложении» открой «Батарея» и выбери «Без ограничений». Затем вернись сюда кнопкой «Назад».</string>
+    <string name="onboarding_hibernation_title">Не приостанавливать автоматически</string>
+    <string name="onboarding_hibernation_text">Если ты несколько месяцев не открываешь приложение, Android приостанавливает его и отзывает разрешения. Синхронизация тогда незаметно прекратится – хотя приложение как раз и должно работать в фоне.\n\nНа следующем экране выключи «Приостанавливать работу в неактивный период», а затем вернись сюда кнопкой «Назад».</string>
+    <string name="onboarding_almost_title">Почти готово</string>
+    <string name="onboarding_all_granted">Все разрешения предоставлены.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Не хватает ещё %1$d пункта. Ты можешь добавить его в любой момент на вкладке «%2$s».</item>
+        <item quantity="few">Не хватает ещё %1$d пунктов. Ты можешь добавить их в любой момент на вкладке «%2$s».</item>
+        <item quantity="many">Не хватает ещё %1$d пунктов. Ты можешь добавить их в любой момент на вкладке «%2$s».</item>
+        <item quantity="other">Не хватает ещё %1$d пункта. Ты можешь добавить их в любой момент на вкладке «%2$s».</item>
+    </plurals>
+    <string name="onboarding_next_steps">Что дальше:\n1. Выбрать списки контактов\n2. Выбрать целевой календарь\n3. Готово – остальное приложение сделает само.</string>
+    <string name="onboarding_granted">✓ Предоставлено</string>
+    <string name="onboarding_not_granted">Пока не предоставлено. Можно попробовать ещё раз или пропустить этот шаг.</string>
+    <string name="onboarding_start">Поехали</string>
+    <string name="onboarding_next">Далее</string>
+    <string name="onboarding_skip">Пропустить</string>
+    <string name="onboarding_retry">Повторить</string>
+    <string name="onboarding_finish">К приложению</string>
+
+    <string name="msg_calendar_selected">Календарь «%1$s» выбран как целевой</string>
+    <string name="msg_calendar_create_failed">Не удалось создать календарь: %1$s</string>
+    <string name="msg_remove_failed">Ошибка при удалении: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">Удалено %d событие</item>
+        <item quantity="few">Удалено %d события</item>
+        <item quantity="many">Удалено %d событий</item>
+        <item quantity="other">Удалено %d события</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Уведомления не разрешены – см. вкладку «%1$s»</string>
+
+    <string name="sync_no_calendar">Целевой календарь не выбран</string>
+    <string name="sync_no_contacts_permission">Нет разрешения на доступ к контактам</string>
+    <string name="sync_no_calendar_permission">Нет разрешения на доступ к календарю</string>
+    <string name="sync_invalid_calendar">Не выбран действительный целевой календарь</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d день рождения</item>
+        <item quantity="few">%d дня рождения</item>
+        <item quantity="many">%d дней рождения</item>
+        <item quantity="other">%d дня рождения</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d событие в периоде</item>
+        <item quantity="few">%d события в периоде</item>
+        <item quantity="many">%d событий в периоде</item>
+        <item quantity="other">%d события в периоде</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – всё актуально</string>
+    <string name="sync_summary_changes">%1$s, %2$s – создано: %3$d, обновлено: %4$d, удалено: %5$d</string>
+    <string name="sync_error">Ошибка: %1$s</string>
+
+    <string name="event_description">День рождения: %1$s</string>
+    <string name="event_description_born">День рождения: %1$s (%2$d г. р.)</string>
+    <string name="event_auto_created">Создано автоматически приложением Birthday Sync. Изменения в этом событии будут перезаписаны при следующей синхронизации.</string>
+
+    <string name="channel_today_name">Дни рождения сегодня</string>
+    <string name="channel_today_desc">Ежедневное уведомление о сегодняшних днях рождения</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s: сегодня исполняется %2$d год</item>
+        <item quantity="few">%1$s: сегодня исполняется %2$d года</item>
+        <item quantity="many">%1$s: сегодня исполняется %2$d лет</item>
+        <item quantity="other">%1$s: сегодня исполняется %2$d года</item>
+    </plurals>
+    <string name="notification_birthday_today">Сегодня день рождения: %1$s</string>
+    <string name="notification_single_title">🎂 День рождения: %1$s</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 Сегодня %d день рождения</item>
+        <item quantity="few">🎂 Сегодня %d дня рождения</item>
+        <item quantity="many">🎂 Сегодня %d дней рождения</item>
+        <item quantity="other">🎂 Сегодня %d дня рождения</item>
+    </plurals>
+    <string name="notification_nobody_today">Сегодня ни у кого нет дня рождения</string>
+    <string name="notification_test_text">Тестовое уведомление от Birthday Sync</string>
+</resources>

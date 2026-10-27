@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Oversigt</string>
+    <string name="tab_contacts">Kontakter</string>
+    <string name="tab_calendar">Kalender</string>
+    <string name="tab_notify">Påmindelser</string>
+    <string name="tab_system">System</string>
+
+    <string name="action_allow">Tillad</string>
+    <string name="action_allow_access">Tillad adgang</string>
+    <string name="action_open">Åbn</string>
+    <string name="action_open_setting">Åbn indstilling</string>
+    <string name="action_open_app_info">Åbn Appinfo</string>
+    <string name="action_settings">Indstillinger</string>
+    <string name="action_sync_now">Synkroniser nu</string>
+    <string name="action_remove">Fjern</string>
+    <string name="section_sync">Synkronisering</string>
+
+    <string name="overview_setup_incomplete_title">Konfigurationen er ikke færdig</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Der mangler %d tilladelse eller indstilling for pålidelig synkronisering.</item>
+        <item quantity="other">Der mangler %d tilladelser eller indstillinger for pålidelig synkronisering.</item>
+    </plurals>
+    <string name="overview_setup_now">Konfigurer nu</string>
+    <string name="overview_first_steps">Kom godt i gang</string>
+    <string name="overview_step_contacts">1. Vælg de kontaktlister, hvis fødselsdage skal medtages.</string>
+    <string name="overview_choose_contacts">Vælg kontaktlister</string>
+    <string name="overview_step_calendar">2. Vælg den kalender, som begivenhederne skal oprettes i.</string>
+    <string name="overview_choose_calendar">Vælg målkalender</string>
+    <string name="overview_target_calendar">Målkalender: %1$s</string>
+    <string name="overview_target_calendar_none">Målkalender: ikke valgt</string>
+    <string name="overview_auto_daily">Automatisk hver dag</string>
+    <string name="overview_auto_weekly">Automatisk hver uge</string>
+    <string name="overview_auto_daily_next">Automatisk hver dag, næste kørsel tidligst %1$s</string>
+    <string name="overview_auto_weekly_next">Automatisk hver uge, næste kørsel tidligst %1$s</string>
+    <string name="overview_auto_off">Automatisk synkronisering er slået fra</string>
+    <string name="overview_last_sync">Seneste synkronisering: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Ingen synkronisering endnu</string>
+    <string name="overview_syncing">Synkroniserer …</string>
+    <string name="overview_upcoming">Kommende fødselsdage</string>
+    <string name="overview_no_birthdays">Der blev ikke fundet nogen fødselsdage i de valgte kontaktlister.</string>
+    <string name="upcoming_today">I dag</string>
+    <string name="upcoming_tomorrow">I morgen</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">om %d dag</item>
+        <item quantity="other">om %d dage</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · fylder %2$d</item>
+        <item quantity="other">%1$s · fylder %2$d</item>
+    </plurals>
+
+    <string name="contacts_intro">Vælg hele konti eller enkelte grupper/etiketter. Fødselsdagene for alle kontakter i dem medtages.</string>
+    <string name="contacts_no_permission_title">Ingen adgang til kontakter</string>
+    <string name="contacts_no_permission_text">Uden denne tilladelse kan der ikke vises nogen kontaktlister.</string>
+    <string name="contacts_none_found">Der blev ikke fundet nogen kontakter på enheden.</string>
+    <string name="contacts_all">Alle kontakter</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d kontakt</item>
+        <item quantity="other">%d kontakter</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d med fødselsdag</item>
+        <item quantity="other">%d med fødselsdag</item>
+    </plurals>
+    <string name="contacts_device_label">Enhed</string>
+    <string name="contacts_local_account">Lokalt på enheden</string>
+    <string name="contacts_group_fallback">Gruppe %1$d</string>
+    <string name="contacts_unnamed">Unavngivet</string>
+
+    <string name="calendar_target_title">Målkalender</string>
+    <string name="calendar_target_subtitle">Her oprettes fødselsdagsbegivenhederne</string>
+    <string name="calendar_no_permission">Ingen adgang til kalenderen.</string>
+    <string name="calendar_local_name">Fødselsdage</string>
+    <string name="calendar_create_local">Opret egen kalender “%1$s”</string>
+    <string name="calendar_local_info">En egen kalender ligger kun på enheden og kan vises eller skjules separat i kalenderappen.</string>
+    <string name="calendar_fallback_name">Kalender %1$d</string>
+    <string name="calendar_events_title">Begivenheder</string>
+    <string name="calendar_all_day">Hele dagen</string>
+    <string name="calendar_start">Start</string>
+    <string name="calendar_duration">Varighed</string>
+    <string name="calendar_reminder">Kalenderpåmindelse</string>
+    <string name="calendar_remind">Påmind</string>
+    <string name="calendar_title">Titel</string>
+    <string name="calendar_title_help">Pladsholdere: {name}, {age}. Eksempel: %1$s</string>
+    <string name="calendar_example_name">Jens Hansen</string>
+    <string name="calendar_auto_sync">Synkroniser automatisk</string>
+    <string name="calendar_frequency">Hyppighed</string>
+    <string name="calendar_range">Periode frem i tiden</string>
+    <string name="calendar_sync_info">Ændrede navne eller fødselsdatoer medtages ved næste synkronisering; fjernede kontakter forsvinder fra kalenderen. Ændringer af disse indstillinger anvendes efter få sekunder.</string>
+    <string name="calendar_running">Kører …</string>
+    <string name="calendar_remove_events">Fjern begivenheder</string>
+    <string name="calendar_remove_confirm_title">Vil du fjerne alle begivenheder?</string>
+    <string name="calendar_remove_confirm_text">Alle begivenheder, som Birthday Sync har oprettet, slettes fra alle kalendere. Hvis automatisk synkronisering er slået til, opretter den dem igen ved næste kørsel.</string>
+    <string name="interval_daily">Dagligt</string>
+    <string name="interval_weekly">Ugentligt</string>
+    <plurals name="range_months">
+        <item quantity="one">%d måned</item>
+        <item quantity="other">%d måneder</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="other">%d minutter</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d time</item>
+        <item quantity="other">%d timer</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d t %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">Ved starttidspunktet</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">%d minut før</item>
+        <item quantity="other">%d minutter før</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">%d time før</item>
+        <item quantity="other">%d timer før</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">%d dag før</item>
+        <item quantity="other">%d dage før</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">%d uge før</item>
+        <item quantity="other">%d uger før</item>
+    </plurals>
+    <string name="reminder_on_day_at">På dagen kl. %1$s</string>
+    <string name="reminder_day_before_at">Dagen før kl. %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">%1$d dag før kl. %2$s</item>
+        <item quantity="other">%1$d dage før kl. %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">%1$d uge før kl. %2$s</item>
+        <item quantity="other">%1$d uger før kl. %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Daglig notifikation</string>
+    <string name="notify_daily_subtitle">Uafhængigt af kalenderen, direkte fra dine kontakter</string>
+    <string name="notify_today_switch">Giv besked om dagens fødselsdage</string>
+    <string name="notify_today_switch_sub">Kun på dage, hvor nogen har fødselsdag</string>
+    <string name="notify_time">Tidspunkt</string>
+    <string name="notify_test">Testnotifikation</string>
+    <string name="notify_hint_title">Bemærk</string>
+    <string name="notify_hint_text">For at notifikationen kommer til tiden, mangler stadig: %1$s</string>
+    <string name="notify_go_system">Gå til systemindstillinger</string>
+
+    <string name="system_all_ready">Alt er klar</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d punkt mangler</item>
+        <item quantity="other">%d punkter mangler</item>
+    </plurals>
+    <string name="system_subtitle">For pålidelig synkronisering i baggrunden og notifikationer til tiden</string>
+    <string name="system_setup_info">Guiden fører dig trin for trin gennem alle manglende punkter med en forklaring til hvert.</string>
+    <string name="system_run_setup">Start guiden</string>
+    <string name="check_state_done">Udført. %1$s</string>
+    <string name="check_state_required">Påkrævet. %1$s</string>
+    <string name="check_state_recommended">Anbefalet. %1$s</string>
+    <string name="about_title">Om appen</string>
+    <string name="about_text">Alle data bliver på din enhed. Appen har ingen internetadgang og indsamler intet.</string>
+    <string name="about_privacy">Privatliv</string>
+    <string name="about_source">Kildekode</string>
+
+    <string name="check_contacts_title">Læse kontakter</string>
+    <string name="check_contacts_desc">Nødvendigt for at læse fødselsdage fra kontaktlisterne.</string>
+    <string name="check_calendar_title">Læse og skrive i kalenderen</string>
+    <string name="check_calendar_desc">Nødvendigt for at oprette fødselsdagsbegivenheder i målkalenderen og holde dem opdateret.</string>
+    <string name="check_notifications_title">Notifikationer</string>
+    <string name="check_notifications_desc">Nødvendigt for den daglige fødselsdagsnotifikation og kalenderpåmindelser.</string>
+    <string name="check_exact_alarm_title">Præcise alarmer og påmindelser</string>
+    <string name="check_exact_alarm_desc">Så den daglige notifikation kommer præcis på det indstillede tidspunkt. Uden denne tilladelse kan den komme lidt for sent.</string>
+    <string name="check_battery_title">Slå batterioptimering fra</string>
+    <string name="check_battery_desc">Forhindrer, at Android udskyder eller blokerer synkroniseringen i baggrunden.</string>
+    <string name="check_background_title">Baggrundsaktivitet tilladt</string>
+    <string name="check_background_desc">Appen må ikke være begrænset i baggrunden (Appinfo → Batteri → “Ubegrænset”).</string>
+    <string name="check_hibernation_title">Pause af appen ved manglende brug er slået fra</string>
+    <string name="check_hibernation_desc">Ellers fjerner Android tilladelserne efter nogle måneder, hvor appen ikke er åbnet, og synkroniseringen stopper.</string>
+    <string name="check_power_save_title">Batterisparefunktion</string>
+    <string name="check_power_save_on">Batterisparefunktionen er slået til og kan forsinke synkroniseringen.</string>
+    <string name="check_power_save_off">Batterisparefunktionen er slået fra.</string>
+    <string name="check_vendor_title">Producentens batteristyring (%1$s)</string>
+    <string name="check_vendor_desc">Denne producent stopper desuden ofte apps i baggrunden. Tillad autostart eller “Hold kørende i baggrunden” for Birthday Sync. Det kan ikke kontrolleres automatisk.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Trin %1$d af %2$d</item>
+        <item quantity="other">Trin %1$d af %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Velkommen til Birthday Sync</string>
+    <string name="onboarding_welcome_text">Appen overfører automatisk fødselsdagene fra dine kontakter til en kalender efter eget valg og minder dig om dem på selve dagen.\n\nFor at det kan fungere pålideligt i baggrunden, skal appen bruge nogle tilladelser. Vi gennemgår dem trin for trin og forklarer, hvad hver enkelt bruges til.\n\nAlt bliver på din enhed – appen har ingen internetadgang.</string>
+    <string name="onboarding_contacts_title">Adgang til dine kontakter</string>
+    <string name="onboarding_contacts_text">Fødselsdagene står i dine kontakter. For at appen kan finde dem, skal den have læseadgang.\n\nDer læses kun navne, fødselsdage og tilknytningen til konti og grupper, også i baggrunden ved den regelmæssige synkronisering. Dataene bliver på enheden: Appen ændrer ingen kontakter, har ingen internetadgang og deler intet.</string>
+    <string name="onboarding_calendar_title">Adgang til din kalender</string>
+    <string name="onboarding_calendar_text">For hver fødselsdag opretter appen en begivenhed i en kalender efter eget valg og holder den opdateret, f.eks. hvis en fødselsdato ændres.\n\nDerfor skal den kunne læse og skrive i kalendere. Det er kun appens egne fødselsdagsbegivenheder, der nogensinde ændres.</string>
+    <string name="onboarding_notifications_title">Notifikationer</string>
+    <string name="onboarding_notifications_text">Hvis du vil, giver appen besked på et fast tidspunkt, når nogen har fødselsdag i dag.\n\nUden denne tilladelse forbliver notifikationen tavs.</string>
+    <string name="onboarding_exact_alarm_title">Påmindelse til tiden</string>
+    <string name="onboarding_exact_alarm_text">For at den daglige notifikation kommer præcis på det indstillede tidspunkt og ikke på et tilfældigt senere tidspunkt, skal appen have tilladelse til alarmer og påmindelser.\n\nAktivér kontakten for Birthday Sync på næste skærm, og vend derefter tilbage hertil med “Tilbage”.</string>
+    <string name="onboarding_battery_title">Arbejde i baggrunden</string>
+    <string name="onboarding_battery_text">Android sætter gerne apps i baggrunden i dvale for at spare på batteriet. Så kan den regelmæssige synkronisering udeblive.\n\nSynkroniseringen tager kun få sekunder om dagen, og det ekstra batteriforbrug er knap målbart. Vælg “Alle apps” på listen, der følger, derefter Birthday Sync, og vælg “Optimer ikke”.</string>
+    <string name="onboarding_background_title">Ophæv baggrundsbegrænsningen</string>
+    <string name="onboarding_background_text">Baggrundsaktiviteten er begrænset for denne app, så synkroniseringen og notifikationen udebliver.\n\nÅbn “Batteri” i Appinfo, og vælg “Ubegrænset”. Vend derefter tilbage hertil med “Tilbage”.</string>
+    <string name="onboarding_hibernation_title">Sæt ikke automatisk på pause</string>
+    <string name="onboarding_hibernation_text">Hvis du ikke åbner appen i nogle måneder, sætter Android den på pause og fjerner dens tilladelser. Synkroniseringen ville så stoppe, uden at du opdager det – selvom appen netop skal arbejde i baggrunden.\n\nSlå “Sæt appaktivitet på pause, hvis appen ikke bruges” fra på næste skærm, og vend derefter tilbage hertil med “Tilbage”.</string>
+    <string name="onboarding_almost_title">Næsten færdig</string>
+    <string name="onboarding_all_granted">Alle tilladelser er givet.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">%1$d punkt mangler stadig. Du kan klare det når som helst på fanen “%2$s”.</item>
+        <item quantity="other">%1$d punkter mangler stadig. Du kan klare dem når som helst på fanen “%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Sådan fortsætter du:\n1. Vælg kontaktlister\n2. Vælg målkalender\n3. Færdig – resten klarer appen automatisk.</string>
+    <string name="onboarding_granted">✓ Givet</string>
+    <string name="onboarding_not_granted">Ikke givet endnu. Du kan prøve igen eller springe dette trin over.</string>
+    <string name="onboarding_start">Kom i gang</string>
+    <string name="onboarding_next">Næste</string>
+    <string name="onboarding_skip">Spring over</string>
+    <string name="onboarding_retry">Prøv igen</string>
+    <string name="onboarding_finish">Til appen</string>
+
+    <string name="msg_calendar_selected">Kalenderen “%1$s” er valgt som mål</string>
+    <string name="msg_calendar_create_failed">Kalenderen kunne ikke oprettes: %1$s</string>
+    <string name="msg_remove_failed">Fejl ved fjernelse: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d begivenhed er fjernet</item>
+        <item quantity="other">%d begivenheder er fjernet</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Notifikationer er ikke tilladt – se fanen “%1$s”</string>
+
+    <string name="sync_no_calendar">Ingen målkalender valgt</string>
+    <string name="sync_no_contacts_permission">Ingen tilladelse til kontakter</string>
+    <string name="sync_no_calendar_permission">Ingen tilladelse til kalenderen</string>
+    <string name="sync_invalid_calendar">Ingen gyldig målkalender valgt</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d fødselsdag</item>
+        <item quantity="other">%d fødselsdage</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d begivenhed i perioden</item>
+        <item quantity="other">%d begivenheder i perioden</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – alt er opdateret</string>
+    <string name="sync_summary_changes">%1$s, %2$s – nye: %3$d, opdaterede: %4$d, fjernede: %5$d</string>
+    <string name="sync_error">Fejl: %1$s</string>
+
+    <string name="event_description">Fødselsdag for %1$s</string>
+    <string name="event_description_born">Fødselsdag for %1$s (født %2$d)</string>
+    <string name="event_auto_created">Oprettet automatisk af Birthday Sync. Ændringer af denne begivenhed overskrives ved næste synkronisering.</string>
+
+    <string name="channel_today_name">Fødselsdage i dag</string>
+    <string name="channel_today_desc">Daglig notifikation om dagens fødselsdage</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s fylder %2$d i dag</item>
+        <item quantity="other">%1$s fylder %2$d i dag</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s har fødselsdag i dag</string>
+    <string name="notification_single_title">🎂 %1$s har fødselsdag</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d fødselsdag i dag</item>
+        <item quantity="other">🎂 %d fødselsdage i dag</item>
+    </plurals>
+    <string name="notification_nobody_today">Ingen har fødselsdag i dag</string>
+    <string name="notification_test_text">Testnotifikation fra Birthday Sync</string>
+</resources>

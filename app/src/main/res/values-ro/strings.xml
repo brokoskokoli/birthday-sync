@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Rezumat</string>
+    <string name="tab_contacts">Contacte</string>
+    <string name="tab_calendar">Calendar</string>
+    <string name="tab_notify">Alerte</string>
+    <string name="tab_system">Sistem</string>
+
+    <string name="action_allow">Permite</string>
+    <string name="action_allow_access">Permite accesul</string>
+    <string name="action_open">Deschide</string>
+    <string name="action_open_setting">Deschide setarea</string>
+    <string name="action_open_app_info">Deschide Informații despre aplicație</string>
+    <string name="action_settings">Setări</string>
+    <string name="action_sync_now">Sincronizează acum</string>
+    <string name="action_remove">Elimină</string>
+    <string name="section_sync">Sincronizare</string>
+
+    <string name="overview_setup_incomplete_title">Configurare incompletă</string>
+    <plurals name="overview_setup_incomplete_text">
+        <item quantity="one">Lipsește %d permisiune sau setare pentru o sincronizare fiabilă.</item>
+        <item quantity="few">Lipsesc %d permisiuni sau setări pentru o sincronizare fiabilă.</item>
+        <item quantity="other">Lipsesc %d de permisiuni sau setări pentru o sincronizare fiabilă.</item>
+    </plurals>
+    <string name="overview_setup_now">Configurează acum</string>
+    <string name="overview_first_steps">Primii pași</string>
+    <string name="overview_step_contacts">1. Alege listele de contacte ale căror zile de naștere vor fi preluate.</string>
+    <string name="overview_choose_contacts">Alege listele de contacte</string>
+    <string name="overview_step_calendar">2. Alege calendarul în care vor fi create evenimentele.</string>
+    <string name="overview_choose_calendar">Alege calendarul țintă</string>
+    <string name="overview_target_calendar">Calendar țintă: %1$s</string>
+    <string name="overview_target_calendar_none">Calendar țintă: neselectat</string>
+    <string name="overview_auto_daily">Automat, zilnic</string>
+    <string name="overview_auto_weekly">Automat, săptămânal</string>
+    <string name="overview_auto_daily_next">Automat, zilnic; următoarea rulare cel mai devreme la %1$s</string>
+    <string name="overview_auto_weekly_next">Automat, săptămânal; următoarea rulare cel mai devreme la %1$s</string>
+    <string name="overview_auto_off">Sincronizarea automată este dezactivată</string>
+    <string name="overview_last_sync">Ultima sincronizare: %1$s\n%2$s</string>
+    <string name="overview_no_sync_yet">Nicio sincronizare încă</string>
+    <string name="overview_syncing">Se sincronizează…</string>
+    <string name="overview_upcoming">Zile de naștere apropiate</string>
+    <string name="overview_no_birthdays">Nu s-au găsit zile de naștere în listele de contacte selectate.</string>
+    <string name="upcoming_today">Azi</string>
+    <string name="upcoming_tomorrow">Mâine</string>
+    <plurals name="upcoming_in_days">
+        <item quantity="one">peste %d zi</item>
+        <item quantity="few">peste %d zile</item>
+        <item quantity="other">peste %d de zile</item>
+    </plurals>
+    <plurals name="upcoming_date_turns">
+        <item quantity="one">%1$s · împlinește %2$d an</item>
+        <item quantity="few">%1$s · împlinește %2$d ani</item>
+        <item quantity="other">%1$s · împlinește %2$d de ani</item>
+    </plurals>
+
+    <string name="contacts_intro">Alege conturi întregi sau grupuri/etichete individuale. Vor fi preluate zilele de naștere ale tuturor contactelor din ele.</string>
+    <string name="contacts_no_permission_title">Nu există acces la contacte</string>
+    <string name="contacts_no_permission_text">Fără această permisiune nu pot fi afișate liste de contacte.</string>
+    <string name="contacts_none_found">Nu s-au găsit contacte pe acest dispozitiv.</string>
+    <string name="contacts_all">Toate contactele</string>
+    <plurals name="contacts_count">
+        <item quantity="one">%d contact</item>
+        <item quantity="few">%d contacte</item>
+        <item quantity="other">%d de contacte</item>
+    </plurals>
+    <plurals name="contacts_with_birthday">
+        <item quantity="one">%d cu zi de naștere</item>
+        <item quantity="few">%d cu zi de naștere</item>
+        <item quantity="other">%d cu zi de naștere</item>
+    </plurals>
+    <string name="contacts_device_label">Dispozitiv</string>
+    <string name="contacts_local_account">Local, pe acest dispozitiv</string>
+    <string name="contacts_group_fallback">Grupul %1$d</string>
+    <string name="contacts_unnamed">Fără nume</string>
+
+    <string name="calendar_target_title">Calendar țintă</string>
+    <string name="calendar_target_subtitle">Aici sunt create evenimentele pentru zilele de naștere</string>
+    <string name="calendar_no_permission">Nu există acces la calendar.</string>
+    <string name="calendar_local_name">Zile de naștere</string>
+    <string name="calendar_create_local">Creează calendarul propriu „%1$s”</string>
+    <string name="calendar_local_info">Un calendar propriu este stocat doar pe acest dispozitiv și poate fi afișat sau ascuns separat în aplicația de calendar.</string>
+    <string name="calendar_fallback_name">Calendarul %1$d</string>
+    <string name="calendar_events_title">Evenimente</string>
+    <string name="calendar_all_day">Toată ziua</string>
+    <string name="calendar_start">Început</string>
+    <string name="calendar_duration">Durată</string>
+    <string name="calendar_reminder">Memento în calendar</string>
+    <string name="calendar_remind">Amintește</string>
+    <string name="calendar_title">Titlu</string>
+    <string name="calendar_title_help">Substituenți: {name}, {age}. Exemplu: %1$s</string>
+    <string name="calendar_example_name">Ana Popescu</string>
+    <string name="calendar_auto_sync">Sincronizează automat</string>
+    <string name="calendar_frequency">Frecvență</string>
+    <string name="calendar_range">Perioadă în avans</string>
+    <string name="calendar_sync_info">Numele sau datele de naștere modificate sunt preluate la următoarea sincronizare, iar contactele eliminate dispar din calendar. Modificările acestor setări se aplică după câteva secunde.</string>
+    <string name="calendar_running">Rulează…</string>
+    <string name="calendar_remove_events">Elimină evenimentele</string>
+    <string name="calendar_remove_confirm_title">Elimini toate evenimentele?</string>
+    <string name="calendar_remove_confirm_text">Toate evenimentele create de Birthday Sync vor fi șterse din toate calendarele. Dacă sincronizarea automată este activă, le va crea din nou la următoarea rulare.</string>
+    <string name="interval_daily">Zilnic</string>
+    <string name="interval_weekly">Săptămânal</string>
+    <plurals name="range_months">
+        <item quantity="one">%d lună</item>
+        <item quantity="few">%d luni</item>
+        <item quantity="other">%d de luni</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minut</item>
+        <item quantity="few">%d minute</item>
+        <item quantity="other">%d de minute</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d oră</item>
+        <item quantity="few">%d ore</item>
+        <item quantity="other">%d de ore</item>
+    </plurals>
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="time_of_day">%1$s</string>
+
+    <string name="reminder_at_start">La ora de început</string>
+    <plurals name="reminder_minutes_before">
+        <item quantity="one">Cu %d minut înainte</item>
+        <item quantity="few">Cu %d minute înainte</item>
+        <item quantity="other">Cu %d de minute înainte</item>
+    </plurals>
+    <plurals name="reminder_hours_before">
+        <item quantity="one">Cu %d oră înainte</item>
+        <item quantity="few">Cu %d ore înainte</item>
+        <item quantity="other">Cu %d de ore înainte</item>
+    </plurals>
+    <plurals name="reminder_days_before">
+        <item quantity="one">Cu %d zi înainte</item>
+        <item quantity="few">Cu %d zile înainte</item>
+        <item quantity="other">Cu %d de zile înainte</item>
+    </plurals>
+    <plurals name="reminder_weeks_before">
+        <item quantity="one">Cu %d săptămână înainte</item>
+        <item quantity="few">Cu %d săptămâni înainte</item>
+        <item quantity="other">Cu %d de săptămâni înainte</item>
+    </plurals>
+    <string name="reminder_on_day_at">În ziua respectivă, la %1$s</string>
+    <string name="reminder_day_before_at">Cu o zi înainte, la %1$s</string>
+    <plurals name="reminder_days_before_at">
+        <item quantity="one">Cu %1$d zi înainte, la %2$s</item>
+        <item quantity="few">Cu %1$d zile înainte, la %2$s</item>
+        <item quantity="other">Cu %1$d de zile înainte, la %2$s</item>
+    </plurals>
+    <plurals name="reminder_weeks_before_at">
+        <item quantity="one">Cu %1$d săptămână înainte, la %2$s</item>
+        <item quantity="few">Cu %1$d săptămâni înainte, la %2$s</item>
+        <item quantity="other">Cu %1$d de săptămâni înainte, la %2$s</item>
+    </plurals>
+
+    <string name="notify_daily_title">Notificare zilnică</string>
+    <string name="notify_daily_subtitle">Independent de calendar, direct din contacte</string>
+    <string name="notify_today_switch">Anunță zilele de naștere de azi</string>
+    <string name="notify_today_switch_sub">Doar în zilele în care cineva își serbează ziua</string>
+    <string name="notify_time">Ora</string>
+    <string name="notify_test">Notificare de test</string>
+    <string name="notify_hint_title">Notă</string>
+    <string name="notify_hint_text">Pentru ca notificarea să sosească la timp, mai lipsesc: %1$s</string>
+    <string name="notify_go_system">Accesează setările de sistem</string>
+
+    <string name="system_all_ready">Totul este gata</string>
+    <plurals name="system_open_items">
+        <item quantity="one">%d element nefinalizat</item>
+        <item quantity="few">%d elemente nefinalizate</item>
+        <item quantity="other">%d de elemente nefinalizate</item>
+    </plurals>
+    <string name="system_subtitle">Pentru sincronizări fiabile în fundal și notificări la timp</string>
+    <string name="system_setup_info">Configurarea te ghidează pas cu pas prin toate elementele lipsă, fiecare cu explicația sa.</string>
+    <string name="system_run_setup">Pornește configurarea</string>
+    <string name="check_state_done">Gata. %1$s</string>
+    <string name="check_state_required">Obligatoriu. %1$s</string>
+    <string name="check_state_recommended">Recomandat. %1$s</string>
+    <string name="about_title">Despre aplicație</string>
+    <string name="about_text">Toate datele rămân pe dispozitivul tău. Aplicația nu are acces la internet și nu colectează nimic.</string>
+    <string name="about_privacy">Confidențialitate</string>
+    <string name="about_source">Cod sursă</string>
+
+    <string name="check_contacts_title">Citirea contactelor</string>
+    <string name="check_contacts_desc">Necesar pentru a citi zilele de naștere din listele de contacte.</string>
+    <string name="check_calendar_title">Citirea și scrierea calendarului</string>
+    <string name="check_calendar_desc">Necesar pentru a crea evenimente pentru zilele de naștere în calendarul țintă și a le menține actualizate.</string>
+    <string name="check_notifications_title">Notificări</string>
+    <string name="check_notifications_desc">Necesar pentru notificarea zilnică despre zilele de naștere și pentru mementourile din calendar.</string>
+    <string name="check_exact_alarm_title">Alarme și mementouri exacte</string>
+    <string name="check_exact_alarm_desc">Pentru ca notificarea zilnică să sosească exact la ora setată. Fără această permisiune poate întârzia puțin.</string>
+    <string name="check_battery_title">Dezactivează optimizarea bateriei</string>
+    <string name="check_battery_desc">Împiedică Android să amâne sau să blocheze sincronizarea în fundal.</string>
+    <string name="check_background_title">Activitate în fundal permisă</string>
+    <string name="check_background_desc">Aplicația nu trebuie să fie restricționată în fundal (Informații despre aplicație → Baterie → „Nerestricționat”).</string>
+    <string name="check_hibernation_title">Întreruperea aplicației nefolosite este dezactivată</string>
+    <string name="check_hibernation_desc">Altfel, Android revocă permisiunile dacă aplicația nu este deschisă câteva luni, iar sincronizarea se oprește.</string>
+    <string name="check_power_save_title">Economisirea bateriei</string>
+    <string name="check_power_save_on">Economisirea bateriei este activată și poate întârzia sincronizările.</string>
+    <string name="check_power_save_off">Economisirea bateriei este dezactivată.</string>
+    <string name="check_vendor_title">Gestionarea bateriei de către producător (%1$s)</string>
+    <string name="check_vendor_desc">Pe lângă asta, acest producător oprește adesea aplicațiile din fundal. Permite pornirea automată sau „Păstrează activă în fundal” pentru Birthday Sync. Starea nu poate fi verificată automat.</string>
+
+    <plurals name="onboarding_step">
+        <item quantity="one">Pasul %1$d din %2$d</item>
+        <item quantity="few">Pasul %1$d din %2$d</item>
+        <item quantity="other">Pasul %1$d din %2$d</item>
+    </plurals>
+    <string name="onboarding_welcome_title">Bun venit în Birthday Sync</string>
+    <string name="onboarding_welcome_text">Aplicația copiază automat zilele de naștere din contactele tale într-un calendar ales de tine și îți amintește de ele chiar în ziua respectivă.\n\nCa să funcționeze fiabil în fundal, are nevoie de câteva permisiuni. Le parcurgem pas cu pas și îți explicăm la ce folosește fiecare.\n\nTotul rămâne pe dispozitivul tău – aplicația nu are acces la internet.</string>
+    <string name="onboarding_contacts_title">Acces la contactele tale</string>
+    <string name="onboarding_contacts_text">Zilele de naștere sunt salvate în contactele tale. Pentru ca aplicația să le găsească, are nevoie de acces de citire.\n\nSunt citite doar numele, zilele de naștere și asocierea cu conturi și grupuri, inclusiv în fundal, la sincronizarea regulată. Datele rămân pe dispozitiv: aplicația nu modifică niciun contact, nu are acces la internet și nu partajează nimic.</string>
+    <string name="onboarding_calendar_title">Acces la calendarul tău</string>
+    <string name="onboarding_calendar_text">Pentru fiecare zi de naștere, aplicația creează un eveniment într-un calendar ales de tine și îl menține actualizat, de exemplu când se schimbă o dată de naștere.\n\nPentru asta trebuie să citească și să scrie în calendare. Sunt modificate exclusiv propriile evenimente pentru zile de naștere.</string>
+    <string name="onboarding_notifications_title">Notificări</string>
+    <string name="onboarding_notifications_text">Dacă vrei, aplicația te anunță la o oră fixă când cineva își serbează azi ziua de naștere.\n\nFără această permisiune, notificarea nu apare.</string>
+    <string name="onboarding_exact_alarm_title">Memento la timp</string>
+    <string name="onboarding_exact_alarm_text">Pentru ca notificarea zilnică să sosească exact la ora setată, și nu cândva mai târziu, aplicația are nevoie de permisiunea „Alarme și mementouri”.\n\nPe ecranul următor, activează comutatorul pentru Birthday Sync, apoi revino aici cu „Înapoi”.</string>
+    <string name="onboarding_battery_title">Funcționare în fundal</string>
+    <string name="onboarding_battery_text">Android pune bucuros aplicațiile din fundal în repaus ca să economisească bateria. Atunci sincronizarea regulată poate eșua.\n\nSincronizarea durează doar câteva secunde pe zi, iar consumul suplimentar este abia măsurabil. În lista următoare, alege „Toate aplicațiile”, apoi Birthday Sync și setează „Nu optimiza”.</string>
+    <string name="onboarding_background_title">Elimină restricția în fundal</string>
+    <string name="onboarding_background_text">Activitatea în fundal este restricționată pentru această aplicație, așa că sincronizarea și notificarea nu au loc.\n\nÎn Informații despre aplicație, deschide „Baterie” și alege „Nerestricționat”. Apoi revino aici cu „Înapoi”.</string>
+    <string name="onboarding_hibernation_title">Fără întrerupere automată</string>
+    <string name="onboarding_hibernation_text">Dacă nu deschizi aplicația câteva luni, Android o întrerupe și îi retrage permisiunile. Sincronizarea s-ar opri atunci fără să observi – deși aplicația ar trebui să lucreze tocmai în fundal.\n\nPe ecranul următor, dezactivează „Întrerupe activitatea în aplicație dacă nu este folosită”, apoi revino aici cu „Înapoi”.</string>
+    <string name="onboarding_almost_title">Aproape gata</string>
+    <string name="onboarding_all_granted">Toate permisiunile au fost acordate.</string>
+    <plurals name="onboarding_missing">
+        <item quantity="one">Mai lipsește %1$d element. Îl poți completa oricând în fila „%2$s”.</item>
+        <item quantity="few">Mai lipsesc %1$d elemente. Le poți completa oricând în fila „%2$s”.</item>
+        <item quantity="other">Mai lipsesc %1$d de elemente. Le poți completa oricând în fila „%2$s”.</item>
+    </plurals>
+    <string name="onboarding_next_steps">Ce urmează:\n1. Alege listele de contacte\n2. Alege calendarul țintă\n3. Gata – de restul se ocupă aplicația automat.</string>
+    <string name="onboarding_granted">✓ Acordată</string>
+    <string name="onboarding_not_granted">Încă nu a fost acordată. Poți încerca din nou sau poți sări peste acest pas.</string>
+    <string name="onboarding_start">Să începem</string>
+    <string name="onboarding_next">Înainte</string>
+    <string name="onboarding_skip">Omite</string>
+    <string name="onboarding_retry">Reîncearcă</string>
+    <string name="onboarding_finish">La aplicație</string>
+
+    <string name="msg_calendar_selected">Calendarul „%1$s” este selectat ca țintă</string>
+    <string name="msg_calendar_create_failed">Calendarul nu a putut fi creat: %1$s</string>
+    <string name="msg_remove_failed">Eroare la eliminare: %1$s</string>
+    <plurals name="msg_events_removed">
+        <item quantity="one">%d eveniment eliminat</item>
+        <item quantity="few">%d evenimente eliminate</item>
+        <item quantity="other">%d de evenimente eliminate</item>
+    </plurals>
+    <string name="msg_notifications_not_allowed">Notificările nu sunt permise – vezi fila „%1$s”</string>
+
+    <string name="sync_no_calendar">Niciun calendar țintă selectat</string>
+    <string name="sync_no_contacts_permission">Nicio permisiune pentru contacte</string>
+    <string name="sync_no_calendar_permission">Nicio permisiune pentru calendar</string>
+    <string name="sync_invalid_calendar">Niciun calendar țintă valid selectat</string>
+    <plurals name="sync_birthdays">
+        <item quantity="one">%d zi de naștere</item>
+        <item quantity="few">%d zile de naștere</item>
+        <item quantity="other">%d de zile de naștere</item>
+    </plurals>
+    <plurals name="sync_events_in_range">
+        <item quantity="one">%d eveniment în perioadă</item>
+        <item quantity="few">%d evenimente în perioadă</item>
+        <item quantity="other">%d de evenimente în perioadă</item>
+    </plurals>
+    <string name="sync_summary_up_to_date">%1$s, %2$s – totul este actualizat</string>
+    <string name="sync_summary_changes">%1$s, %2$s – noi: %3$d, actualizate: %4$d, eliminate: %5$d</string>
+    <string name="sync_error">Eroare: %1$s</string>
+
+    <string name="event_description">Zi de naștere: %1$s</string>
+    <string name="event_description_born">Zi de naștere: %1$s (n. %2$d)</string>
+    <string name="event_auto_created">Creat automat de Birthday Sync. Modificările aduse acestui eveniment vor fi suprascrise la următoarea sincronizare.</string>
+
+    <string name="channel_today_name">Zile de naștere azi</string>
+    <string name="channel_today_desc">Notificare zilnică despre zilele de naștere de azi</string>
+    <plurals name="notification_turns_today">
+        <item quantity="one">%1$s împlinește azi %2$d an</item>
+        <item quantity="few">%1$s împlinește azi %2$d ani</item>
+        <item quantity="other">%1$s împlinește azi %2$d de ani</item>
+    </plurals>
+    <string name="notification_birthday_today">%1$s își serbează azi ziua de naștere</string>
+    <string name="notification_single_title">🎂 %1$s își serbează ziua de naștere</string>
+    <plurals name="notification_multi_title">
+        <item quantity="one">🎂 %d zi de naștere azi</item>
+        <item quantity="few">🎂 %d zile de naștere azi</item>
+        <item quantity="other">🎂 %d de zile de naștere azi</item>
+    </plurals>
+    <string name="notification_nobody_today">Azi nu își serbează nimeni ziua de naștere</string>
+    <string name="notification_test_text">Notificare de test de la Birthday Sync</string>
+</resources>
