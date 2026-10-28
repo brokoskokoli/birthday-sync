@@ -3,7 +3,6 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.compose")
 }
 
@@ -18,7 +17,7 @@ val releaseStoreFile = signingValue("storeFile", "SIGNING_STORE_FILE")
 
 android {
     namespace = "io.github.brokoskokoli.birthdaysync"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "io.github.brokoskokoli.birthdaysync"
