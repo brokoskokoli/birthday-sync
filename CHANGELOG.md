@@ -15,6 +15,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-28
+
+Maintenance release with an updated build toolchain; no functional changes.
+
+### Changed
+
+- Built with Android Gradle Plugin 9.4, Gradle 9.8 and Kotlin 2.4, and updated AndroidX
+  libraries (Compose BOM 2026.09, core-ktx 1.19, WorkManager 2.12). The app is now compiled
+  against Android API 37; the target API stays at 36.
+- Release builds check that the APK is signed with the published release certificate.
+
 ## [0.1.0] - 2026-10-28
 
 First public release: Birthday Sync copies the birthdays from your Android contacts into a
@@ -44,5 +55,6 @@ calendar of your choice and keeps the events up to date – on the device, witho
   welcome review by native speakers.
 - **Private by design** – no internet permission, no ads, no tracking, no analytics.
 
-[Unreleased]: https://github.com/brokoskokoli/birthday-sync/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/brokoskokoli/birthday-sync/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/brokoskokoli/birthday-sync/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/brokoskokoli/birthday-sync/releases/tag/v0.1.0
